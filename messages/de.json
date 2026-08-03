@@ -1,0 +1,618 @@
+{
+  "Meta": {
+    "title": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
+    "titleTemplate": "%s | Agjent038",
+    "description": "Agjent038 beantwortet jeden Anruf auf Albanisch, Englisch, Serbisch, Deutsch und Türkisch — 24/7. Gebaut für Kosovo-Callcenter, Kliniken und BPOs. Live in zwei Wochen ab 499$/Monat.",
+    "keywords": [
+      "KI-Rezeptionist Kosovo",
+      "KI-Callcenter Kosovo",
+      "KI-Kundensupport Kosovo",
+      "Albanischer KI-Stimmanentrainer",
+      "Virtueller Rezeptionist Pristina",
+      "Callcenter-Automatisierung Kosovo",
+      "KI-Beantwortungsservice Albanien",
+      "BPO-KI-Automatisierung"
+    ],
+    "ogTitle": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
+    "ogDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, in fünf Sprachen, rund um die Uhr. Ab 499$ pro Monat.",
+    "twitterTitle": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
+    "twitterDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, in fünf Sprachen, rund um die Uhr. Ab 499$ pro Monat."
+  },
+  "Site": {
+    "name": "Agjent038",
+    "tagline": "KI-Rezeptionist für Kosovo-Callcenter",
+    "location": "Pristina"
+  },
+  "Nav": {
+    "platform": "Plattform",
+    "solutions": "Lösungen",
+    "results": "Ergebnisse",
+    "pricing": "Preise",
+    "insights": "Einblicke",
+    "company": "Unternehmen"
+  },
+  "Home": {
+    "heroEyebrow": "Gebaut in Pristina für Kosovo-Betreiber",
+    "heroTitle1": "Jeder Anruf beantwortet.",
+    "heroTitle2": "Jede Stunde. In der Sprache des Anrufers.",
+    "heroDescription": "Agjent038 ist ein KI-Rezeptionist für Kosovo-Callcenter und Servicounternehmen. Es nimmt am ersten Klingeln ab, versteht, was der Anrufer auf Albanisch, Englisch, Serbisch, Deutsch oder Türkisch benötigt, führt die Aufgabe in Ihren Systemen aus und übergibt die schwierigen Gespräche an Ihr Team mit einer vollständigen Zusammenfassung.",
+    "heroCta": "Hören Sie es bei Ihren Anrufen",
+    "heroCtaSecondary": "Die Zahlen sehen",
+    "stat1Value": "499$",
+    "stat1Label": "pro Monat, alles inklusive",
+    "stat2Value": "14 Tage",
+    "stat2Label": "vom Start bis live",
+    "stat3Value": "0",
+    "stat3Label": "verpasste Anrufe",
+    "outcomesEyebrow": "Das Ergebnis",
+    "outcomesTitle": "Sie kaufen keine Software. Sie kaufen eine Warteschlange, die nie überläuft.",
+    "outcomesLede": "Das sind die Zahlen, die unsere Kunden innerhalb der ersten neunzig Tage sehen, wenn sie Agjent038 auf ihrem Eingangsverkehr einsetzen.",
+    "shiftEyebrow": "Der Wandel",
+    "shiftTitle": "Die Anrufe, die Sie verlieren, sind das billigste Einkommen, das Sie jemals zurückgewinnen werden.",
+    "shiftLede": "Niemand hinterlässt eine Sprachnachricht. Sie rufen die nächste Nummer auf der Liste an. Agjent038 beseitigt dieses Leck dauerhaft — ohne einen einzigen Arbeitsplatz auf Ihrer Payroll hinzuzufügen.",
+    "shiftCta": "Modellieren Sie es für Ihren Betrieb",
+    "today": "Heute",
+    "withAgjent038": "Mit Agjent038",
+    "dashboardEyebrow": "Die Konsole",
+    "dashboardTitle": "Volle Sichtbarkeit, keine Blackbox",
+    "dashboardLede": "Beobachten Sie Aufschlussrate, Sprachmix, Eskalationen und Ergebnisse in Echtzeit. Jedes Gespräch wird aufgezeichnet, transkribiert und bewertet — sodass Qualitätssicherung keine Stichprobenübung mehr ist.",
+    "explorePlatform": "Plattform erkunden",
+    "pillarsEyebrow": "Warum es hier funktioniert",
+    "pillarsTitle": "Die meisten KI-Agenten scheitern in Kosovo aus den gleichen vier Gründen. Wir haben alle behoben.",
+    "capabilitiesEyebrow": "Was es tut",
+    "capabilitiesTitle": "Acht Aufgaben, ein Rezeptionist, kein Dienstplan",
+    "capabilitiesLede": "Jede davon läuft vom selben Gehirn, auf derselben Nummer, mit demselben Wissen über Ihr Geschäft.",
+    "processEyebrow": "Einführung",
+    "processTitle": "Live in vierzehn Tagen, nichts dem Zufall überlassen",
+    "processLede": "Sie genehmigen jedes Verhalten im Schattenmodus, bevor ein einziger Kunde die KI hört.",
+    "pricingEyebrow": "Preise",
+    "pricingTitle": "499$ pro Monat. Weniger als ein Teilzeit-Rezeptionist.",
+    "pricingLede": "Keine Einrichtungsgebühr. Keine Überraschungen bei der Minutenabrechnung im Basistarif. Monatlich kündbar, weil die Ergebnisse Sie halten sollten, nicht der Vertrag.",
+    "pricingCta": "Sehen Sie, was enthalten ist",
+    "pricingDemo": "Demo buchen",
+    "receptionPlan": "Empfangsplan",
+    "pricingFeatures": [
+      "24/7 Beantwortung, 5 Sprachen",
+      "1.000 Gespräche inklusive",
+      "Buchung + SMS-Bestätigung",
+      "CRM- & Kalenderintegration",
+      "Transkripte und Aufzeichnungen",
+      "Warmer Transfer mit Zusammenfassung",
+      "14-Tage-Schattenmodus",
+      "Keine Einrichtungsgebühr"
+    ],
+    "testimonialsEyebrow": "In der Praxis",
+    "testimonialsTitle": "Was sich im ersten Quartal ändert",
+    "faqEyebrow": "Fragen",
+    "faqTitle": "Die Dinge, nach denen Betreiber uns zuerst fragen",
+    "faqCta": "Alle Fragen lesen",
+    "ctaTitle": "Schicken Sie uns zwanzig Ihrer echten Anrufe. Wir zeigen Ihnen genau, wie viele Agjent038 bearbeitet hätte.",
+    "ctaDescription": "Ein dreißigminütiges Gespräch, eine Aufzeichnung von Agjent038, wie es in Ihrer Branche antwortet, und eine ehrliche Einschätzung der Aufschlussrate für Ihre Warteschlange. Wenn es nicht passt, sagen wir es Ihnen.",
+    "ctaBookAudit": "Ihren Call-Audit buchen",
+    "ctaReviewPricing": "Preise ansehen",
+    "ctaLocation": "Pristina, Kosovo"
+  },
+  "Common": {
+    "bookDemo": "Demo buchen",
+    "requestDemo": "Live-Demo anfordern",
+    "seePricing": "Preise ansehen",
+    "startCallAudit": "Mit einem Call-Audit beginnen",
+    "requestAudit": "Call-Audit anfordern",
+    "contactUs": "Kontaktieren Sie uns",
+    "learnMore": "Mehr erfahren",
+    "readArticle": "Artikel lesen",
+    "next": "→",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "office": "Büro",
+    "hours": "Öffnungszeiten"
+  },
+  "Footer": {
+    "description": "Der KI-Rezeptionist, gebaut für Kosovo-Callcenter — antwortet auf Albanisch, Englisch, Serbisch, Deutsch und Türkisch, 24 Stunden am Tag.",
+    "product": "Produkt",
+    "solutions": "Lösungen",
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "insights": "Einblicke",
+    "contact": "Kontakt",
+    "copyright": "Alle Rechte vorbehalten.",
+    "gdpr": "DSGVO-konforme Verarbeitung",
+    "euResidency": "EU-Datenresidenz verfügbar",
+    "fromPrice": "Ab 499$/Monat"
+  },
+  "Platform": {
+    "eyebrow": "Plattform",
+    "title": "Ein Rezeptionist, der versteht, handelt und berichtet — auf Infrastruktur, die Sie bereits besitzen.",
+    "description": "Agjent038 ist kein Telefonbaum mit einer freundlicheren Stimme. Es ist ein Konversationsagent mit Zugang zu Ihren Systemen, einer schriftlichen Eskalationsrichtlinie und einer Messschicht, die beweist, was es getan hat. Hier ist genau, wie es zusammengesetzt ist.",
+    "cta1": "Live-Demo anfordern",
+    "cta2": "Preise ansehen",
+    "architectureEyebrow": "Architektur",
+    "architectureTitle": "Fünf Schichten, ein Gespräch",
+    "architectureLede": "Jede Schicht ist ersetzbar und beobachtbar. An Ihrem aktuellen Setup muss nichts herausgerissen werden.",
+    "consoleEyebrow": "Konsole",
+    "consoleTitle": "Die Messschicht, nach Ihren Kunden fragen werden",
+    "consoleLede": "Aufschlussrate, Stimmung, Sprachmix, Eskalationsgründe und Ergebniszuordnung — live aktualisiert und exportierbar.",
+    "guardrailsEyebrow": "Sicherheitsvorkehrungen",
+    "guardrailsTitle": "Vertrauen kommt durch Einschränkungen",
+    "guardrailsLede": "Ein KI-Rezeptionist ist nur vertrauenswürdig, wenn Sie vorhersagen können, was er nie tun wird.",
+    "capabilitiesEyebrow": "Fähigkeiten",
+    "capabilitiesTitle": "Alles läuft von einem Gehirn",
+    "integrationsEyebrow": "Integrationen",
+    "integrationsTitle": "Verbunden mit den Tools, in denen Ihr Team bereits lebt",
+    "integrationsLede": "Standard-Connectors werden am ersten Tag ausgeliefert. Alles mit einer REST-API kann während der Einführung eingebunden werden.",
+    "deploymentEyebrow": "Bereitstellung",
+    "deploymentTitle": "Vierzehn Tage, vier Phasen, null Überraschungen",
+    "stack": [
+      {
+        "layer": "Schicht 01",
+        "title": "Telefonie",
+        "body": "Ihre bestehenden Nummern und Trunks. SIP, Twilio, 3CX, Asterisk, FreePBX oder direkte Carrier-Verbindung. 10% des Verkehrs oder alles weiterleiten."
+      },
+      {
+        "layer": "Schicht 02",
+        "title": "Sprache",
+        "body": "Streaming-Erkennung, abgestimmt auf Kosovo-Albanisch, mit Unterbrechung, Endpunktlokalisierung und lokaler Normalisierung von Nummern, Daten und Adressen."
+      },
+      {
+        "layer": "Schicht 03",
+        "title": "Denken",
+        "body": "Intent-Erkennung gegen Ihre Wissensbasis, Tool-Aufrufe in Ihre Systeme, Richtlinienprüfungen und ein deterministischer Pfad für regulierte Skripte."
+      },
+      {
+        "layer": "Schicht 04",
+        "title": "Aktionen",
+        "body": "Buchungen, Abfragen, Ticketerstellung, CRM-Schreibungen, SMS-Bestätigungen und Warmentfers — während des Anrufs abgeschlossen, nicht für später in die Warteschlange gestellt."
+      },
+      {
+        "layer": "Schicht 05",
+        "title": "Beobachtbarkeit",
+        "body": "Aufzeichnung, Transkription, Stimmung, QA-Bewertung und Berichterstattung für jedes Gespräch, exportierbar an Ihre Kunden und Stakeholder."
+      }
+    ],
+    "guardrails": [
+      {
+        "title": "Eskalationsrichtlinie, die Sie schreiben",
+        "body": "Rückerstattungsgrenzen, Beschwerdeschlüsselwörter, erkannte Frustration, VIP-Konten, rechtliche Themen — jedes löst sofortigen Warmentransfer mit schriftlicher Zusammenfassung aus."
+      },
+      {
+        "title": "Vertrauensschwellen",
+        "body": "Wenn das Vertrauen in die Erkennung oder den Intent unter Ihren Schwellenwert sinkt, bestätigt Agjent038 statt zu raten und übergibt statt zu improvisieren."
+      },
+      {
+        "title": "Nur fundierte Antworten",
+        "body": "Antworten sind auf Ihre genehmigte Wissensbasis und Live-Systemdaten beschränkt. Wenn die Antwort nicht da ist, sagt Agjent038 das und leitet den Anruf weiter."
+      },
+      {
+        "title": "Vollständige Audit-Trail",
+        "body": "Jede Wendung, jeder Tool-Aufruf und jede Entscheidung wird protokolliert. Sie können monate später genau rekonstruieren, was bei jedem Anruf passiert ist."
+      }
+    ]
+  },
+  "Solutions": {
+    "eyebrow": "Lösungen",
+    "title": "Derselbe Rezeptionist. Sehr unterschiedliche Aufgaben.",
+    "description": "Agjent038 wird gegen Ihre Intents, Ihre Systeme und Ihre Eskalationsregeln konfiguriert. Was folgt, ist, wie das in den Branchen aussieht, mit denen wir am häufigsten in Kosovo und der Region arbeiten.",
+    "cta": "Call-Audit anfordern",
+    "notListedEyebrow": "Nicht aufgeführt?",
+    "notListedTitle": "Wenn das Telefon klingelt und jemand antworten muss, kann Agjent038 den ersten Durchgang übernehmen.",
+    "notListedLede": "Logistikversand, kommunale Dienste, Bildungsaufnahme, Versorger, rechtliche Aufnahme — das Muster ist dasselbe: hochvolumige repetitive Anfragen vor einer kleineren Zahl wirklich komplexer."
+  },
+  "Results": {
+    "eyebrow": "Ergebnisse",
+    "title": "Der Fall ist Arithmetik, nicht Begeisterung.",
+    "description": "Unten ist ein Modell, das Sie gegen Ihre eigenen Zahlen laufen lassen können, gefolgt von dem, was in drei realen Bereitstellungen passiert ist. Wir verwenden absichtlich konservative Annahmen — der Punkt ist eine Entscheidung, die Sie intern verteidigen können.",
+    "roiTitle": "Die Zahlen für Ihre Warteschlange berechnen",
+    "roiLede": "Schieben Sie die Regler, um Ihren Betrieb anzupassen. Das Modell erholt 86% der verpassten Anrufe, nimmt eine 12%ige Konversion bei wiederhergestellten Kontakten und 68% Aufschlussrate beim Traffic erster Stufe an.",
+    "deploymentsEyebrow": "Bereitstellungen",
+    "deploymentsTitle": "Drei Betriebe, drei unterschiedliche Probleme",
+    "testimonialsEyebrow": "In ihren Worten",
+    "testimonialsTitle": "Was Betreiber nach neunzig Tagen sagen",
+    "cta": "Holen Sie sich Ihre eigene Schätzung"
+  },
+  "Pricing": {
+    "eyebrow": "Preise",
+    "title": "Eine monatliche Gebühr. Alles, was es zum Funktionieren bringt, ist darin enthalten.",
+    "description": "Keine Implementierungsrechnung, keine Professional-Services-Zeile, keine Minutenabrechnung im Basistarif. Einführung, Integration, Schulung und monatliche Optimierung sind Teil des Abonnements, weil sie das ausmachen, was einen Unterschied zwischen einer Demo und einem Ergebnis macht.",
+    "mostChosen": "Am häufigsten gewählt",
+    "extraConversations": "Preise in USD, monatlich abgerechnet. Zusätzliche Gespräche über Ihren Plan hinaus kosten 0,28$ each — wir werden Sie immer warnen, bevor Sie die Linie überschreiten.",
+    "includedEyebrow": "In jedem Plan enthalten",
+    "includedTitle": "Die Arbeit, die tatsächlich das Ergebnis liefert",
+    "includedLede": "Das sind keine Zusätze. Nichts davon erscheint auf einer separaten Rechnung.",
+    "compareEyebrow": "Vergleichen",
+    "compareTitle": "Plan für Plan",
+    "contextEyebrow": "Kontext",
+    "contextTitle": "Was 499$ wo anders kaufen",
+    "contextLede": "Ein Teilzeit-Rezeptionist, der zwanzig Stunden pro Woche abdeckt, eine Sprache, einen Anrufer gleichzeitig — mit Feiertagen, Krankheitstagen und einem Einstellungsprozess.",
+    "questionsEyebrow": "Preisfragen",
+    "questionsTitle": "Bevor Sie Ihr Finanzteam fragen",
+    "cta": "Demo buchen",
+    "ctaSecondary": "Ihre ROI modellieren",
+    "features": {
+      "conversations": "Beantwortete Gespräche / Monat",
+      "languages": "Sprachen",
+      "voiceChannel": "Sprachkanal",
+      "messaging": "WhatsApp, Viber, Chat & E-Mail",
+      "outbound": "Outbound-Kampagnen",
+      "apiIntegrations": "Benutzerdefinierte API-Integrationen",
+      "automatedQA": "Automatisierte QA bei 100% der Anrufe",
+      "dedicatedInstance": "Dedizierte Instanz & EU-Residenz",
+      "customVoice": "Benutzerdefinierte Markenstimme",
+      "uptimeSLA": "Uptime-SLA",
+      "supportResponse": "Support-Reaktion",
+      "setupFee": "Einrichtungsgebühr"
+    }
+  },
+  "Company": {
+    "eyebrow": "Unternehmen",
+    "title": "Wir haben das gebaut, weil wir immer dasselbe Besetzt-Signal gehört haben.",
+    "description": "Kosovo hat eine der fähigsten Outsourcing-Workforces in Europa und einen Service-Sektor, der schneller wächst, als er besetzt werden kann. Die Einschränkung ist nicht das Talent — es ist, dass das Telefon schneller klingelt, als jemand abnehmen kann. Agjent038 existiert, um diese Einschränkung zu beseitigen, ohne jemanden seinen Job verlieren zu lassen.",
+    "howWeWorkEyebrow": "Wie wir arbeiten",
+    "howWeWorkTitle": "Vier Verpflichtungen, über die wir nicht verhandeln",
+    "responsibilityEyebrow": "Verantwortung",
+    "responsibilityTitle": "Automatisierung, die Menschen umsetzt, statt sie zu entfernen",
+    "responsibilityLede": "Jede Bereitstellung, die wir bisher durchgeführt haben, endete mit demselben Team an Ort und Stelle, das andere Arbeit verrichtet. Agenten wechseln vom Vorlesen von Bestellstatus zu Kundenbindung, komplexen Fällen und Umsatz-Arbeit — die Arbeit, die besser bezahlt und langsamer ausbrennt.",
+    "contactTitle": "Kontaktieren Sie uns"
+  },
+  "FAQ": {
+    "eyebrow": "Fragen",
+    "title": "Alles, was Betreiber fragen, klar beantwortet.",
+    "description": "Wenn hier etwas fehlt, schreiben Sie uns und wir antworten direkt — einschließlich der Teile, in denen ein KI-Rezeptionist nicht die richtige Lösung ist.",
+    "generalEyebrow": "Allgemein",
+    "generalTitle": "Der Service",
+    "technicalEyebrow": "Technisch",
+    "technicalTitle": "Systeme, Daten und Zuverlässigkeit",
+    "stillDecidingEyebrow": "Noch am Entscheiden",
+    "stillDecidingTitle": "Die schnellste Antwort ist eine Aufzeichnung Ihrer eigenen Anrufe",
+    "stillDecidingLede": "Dreißig Minuten, keine Präsentation. Wir spielen zurück, was Agjent038 gesagt hätte, und geben Ihnen eine ehrliche Aufschluss-Schätzung.",
+    "cta": "Call-Audit buchen"
+  },
+  "Insights": {
+    "eyebrow": "Einblicke",
+    "title": "Was wir gelernt haben, als wir KI auf echten Kosovo-Anrufwarteschlangen eingesetzt haben.",
+    "description": "Operatives Schreiben für Menschen, die für eine Telefonwarteschlange verantwortlich sind — Ökonomie, technische Details und Compliance, ohne den Anbieter-Glanz.",
+    "featured": "Hervorgehoben",
+    "cta": "Call-Audit anfordern"
+  },
+  "NotFound": {
+    "title": "Diese Leitung ist nicht verbunden.",
+    "description": "Die Seite, nach der Sie suchen, existiert nicht. Unsere Empfangsstation antwortet jedoch immer.",
+    "home": "Zurück zur Startseite",
+    "contact": "Kontaktieren Sie uns"
+  },
+  "Console": {
+    "eyebrow": "Kundenportal",
+    "title": "Das Dashboard, das zeigt, was der Agent tatsächlich tut",
+    "description": "Sobald es live ist, bekommt jeder Kunde einen einfachen Einblick in Anrufvolumen, Aufschlussrate und Anruferabsicht — ohne auf einen monatlichen Bericht warten zu müssen.",
+    "dashboardEyebrow": "Was Sie sehen",
+    "dashboardTitle": "Für Operations-Manager gebaut, nicht für Analysten",
+    "dashboardLede": "Sie brauchen kein BI-Tool, um zu verstehen, ob es funktioniert. Die Zahlen, die wichtig sind, sind auf einem Bildschirm.",
+    "callsTitle": "Live-Anruf-Feed",
+    "callsDesc": "Sehen Sie jeden eingehenden Anruf, während er stattfindet, einschließlich Dauer, Ergebnis und ob der Anrufer eskaliert oder direkt gebucht hat.",
+    "containmentTitle": "Aufschlussrate",
+    "containmentDesc": "Ein rollender Überblick darüber, wie viele Anrufe der Agent von Anfang bis Ende bearbeitet, aufgeschlüsselt nach Stunde, Tag und Woche.",
+    "performanceTitle": "Intent-Aufschlüsselung",
+    "performanceDesc": "Verstehen Sie, warum Menschen anrufen — Buchungen, Statusprüfungen, Beschwerden, Weiterleitungen — damit Sie das Playbook des Agenten anpassen können.",
+    "settingsTitle": "Agent-Einstellungen",
+    "settingsDesc": "Bearbeiten Sie Arbeitszeiten, Eskalationsregeln, Sprachansagen und Terminfenster, ohne ein Ticket zu erstellen.",
+    "cta": "Die Zahlen Ihres Agenten auf einem Bildschirm"
+  },
+  "Contact": {
+    "eyebrow": "Demo buchen",
+    "title": "Bringen Sie uns zwanzig echte Anrufe. Wir sagen Ihnen genau, was sich ändert.",
+    "description": "Kein Druck und kein Beschaffungstheater. Sie hören Agjent038 in Ihrer eigenen Sprache und Ihrem eigenen Kontext antworten, bevor es irgendein Gespräch über Verträge gibt.",
+    "expectations": [
+      {
+        "step": "Innerhalb eines Werktages",
+        "body": "Ein Specialist antwortet mit zwei vorgeschlagenen Zeiten und einer kurzen Aufzeichnung von Agjent038, wie es einen Anruf in Ihrer Branche beantwortet."
+      },
+      {
+        "step": "Das 30-minütige Gespräch",
+        "body": "Wir fragen nach Ihrem Volumen, Ihren Spitzen und Ihren Haupt-Intents. Sie fragen uns alles. Keine Folien."
+      },
+      {
+        "step": "Innerhalb einer Woche",
+        "body": "Ein schriftlicher Call-Audit: Haupt-Intents, geschätzte Aufschlussrate, projizierter monatlicher Impact und ein fester Preis."
+      },
+      {
+        "step": "Wenn es passt",
+        "body": "Kickoff, dann in vierzehn Tagen live — mit vierzehn Tagen Schattenmodus, bevor ein einziger Kunde die KI hört."
+      }
+    ],
+    "noSetupFee": "Keine Einrichtungsgebühr",
+    "noSetupFeeDescription": "Einführung, Integration und Schulung sind im Abonnement enthalten.",
+    "monthToMonth": "Monatlich kündbar",
+    "monthToMonthDescription": "Standardtarife laufen monatlich mit 30 Tagen Kündigungsfrist. Ergebnisse halten Sie, nicht Papierkram.",
+    "gdpr": "DSGVO-konform",
+    "gdprDescription": "EU-Verarbeitung, unterzeichnete DPA, konfigurierbare Aufbewahrung und Löschung auf Anfrage."
+  },
+  "Outcomes": [
+    {
+      "stat": "0s",
+      "label": "Durchschnittliche Antwortzeit",
+      "note": "Jeder Anruf wird am ersten Klingeln angenommen, einschließlich 03:00 und Feiertage."
+    },
+    {
+      "stat": "68%",
+      "label": "Vollständig gelöste Gespräche",
+      "note": "Traffic erster Stufe abgeschlossen, ohne dass ein menschlicher Agent das Ticket berührt."
+    },
+    {
+      "stat": "3,4x",
+      "label": "Mehr qualifizierte Buchungen",
+      "note": "Verpasste Anrufe verwandeln sich in bestätigte Termine und Rückrufe."
+    },
+    {
+      "stat": "24/7",
+      "label": "Abdeckung in 5 Sprachen",
+      "note": "Albanisch, Englisch, Serbisch, Deutsch und Türkisch auf einer Nummer."
+    }
+  ],
+  "BeforeAfter": {
+    "today": [
+      "30–45% der Anrufe in der Spitze unbeantwortet",
+      "Nichts beantwortet nach 17:00 oder am Wochenende",
+      "Eine Sprache, ein Anrufer gleichzeitig",
+      "QS auf einer 2%-Stichprobe, wenn jemand Zeit hat",
+      "Einstellung ist der einzige Weg, Kapazität hinzuzufügen"
+    ],
+    "after": [
+      "100% der angebotenen Anrufe in 0,4s beantwortet",
+      "24/7/365-Abdeckung einschließlich Feiertage",
+      "Fünf Sprachen, unbegrenzte Gleichzeitigkeit",
+      "Jedes Gespräch transkribiert und bewertet",
+      "Kapazität skaliert, sobald das Volumen steigt"
+    ]
+  },
+  "Capabilities": [
+    {
+      "title": "Eingangsannahme",
+      "description": "Begrüßt, identifiziert den Anrufer, versteht den Anrufgrund und löst oder leitet in einem Durchgang weiter."
+    },
+    {
+      "title": "Überlauf & Feierabend",
+      "description": "Fängt die 30–60% der Anrufe auf, die in der Spitze unbeantwortet bleiben, und jeden Anruf außerhalb der Arbeitszeit."
+    },
+    {
+      "title": "Terminvereinbarung",
+      "description": "Liest Live-Verfügbarkeit, bucht, verschiebt und sendet SMS-Bestätigungen, um No-Shows zu reduzieren."
+    },
+    {
+      "title": "Lead-Qualifizierung",
+      "description": "Bewertet Intent gegen Ihre Kriterien und schiebt saubere, strukturierte Datensätze in Ihr CRM."
+    },
+    {
+      "title": "Bestell- & Ticketstatus",
+      "description": "Holt echte Daten aus Ihren Systemen und antwortet 'wo ist meine Bestellung' ohne einen Menschen in der Schleife."
+    },
+    {
+      "title": "Outbound-Follow-up",
+      "description": "Rückrufe, Zahlungserinnerungen, Zufriedenheitsprüfungen und Reaktivierungskampagnen nach Zeitplan."
+    },
+    {
+      "title": "Eskalation mit Kontext",
+      "description": "Wenn ein Mensch benötigt wird, erhält der Agent eine vollständige Zusammenfassung, bevor er Hallo sagt."
+    },
+    {
+      "title": "Qualitätssicherung",
+      "description": "100% der Anrufe automatisch überprüft — nicht die 2%-Stichprobe, die Ihr QS-Team anhören kann."
+    }
+  ],
+  "SolutionsList": [
+    {
+      "slug": "call-centers",
+      "name": "Callcenter & BPOs",
+      "headline": "Mehr Sitze übernehmen, ohne mehr Sitze einzustellen",
+      "body": "Agjent038 absorbiert Traffic erster Stufe, sodass Ihre Agenten die Gespräche führen, die tatsächlich Urteilsvermögen benötigen. Margen verbessern sich, SLAs rutschen nicht mehr ab, und Sie können auf Verträge bieten, die Ihr Personal zuvor nicht unterstützen konnte.",
+      "wins": [
+        "100% der angebotenen Anrufe beantworten, auch in der Montag-09:00-Spitze",
+        "Durchschnittliche Bearbeitungszeit kürzen durch Zusammenfassung vor Transfer",
+        "Klientenfertige QS-Berichterstattung zu jeder Interaktion liefern"
+      ]
+    },
+    {
+      "slug": "clinics",
+      "name": "Kliniken & Zahnärzte",
+      "headline": "Hören Sie auf, Patienten an ein Besetzt-Signal zu verlieren",
+      "body": "Die Rezeption beantwortet die Person vor ihr. Agjent038 nimmt den Anruf entgegen, bucht in Ihren Kalender, bestätigt per SMS und ruft No-Shows zurück — auf Albanisch, ohne ein Skript, das roboterhaft klingt.",
+      "wins": [
+        "Buchungen nach 17:00 und am Wochenende erfasst",
+        "Automatische Erinnerungen, die No-Shows reduzieren",
+        "Triage-Regeln, die dringende Fälle sofort eskalieren"
+      ]
+    },
+    {
+      "slug": "hospitality",
+      "name": "Hotels & Restaurants",
+      "headline": "Jede Reservierungsanfrage in der Sprache des Gastes beantwortet",
+      "body": "Gäste rufen aus Deutschland, der Schweiz, der Türkei und Serbien an. Agjent038 behandelt Reservierungen, Verfügbarkeit, Wegbeschreibungen und besondere Wünsche in fünf Sprachen und schreibt sie in Ihr PMS.",
+      "wins": [
+        "Mehrsprachige Reservierungen ohne mehrsprachiges Personal",
+        "Upsells werden bei jedem Anruf konsistent angeboten",
+        "Gruppen- und Veranstaltungsanfragen werden mit Kontext an den Vertrieb weitergeleitet"
+      ]
+    },
+    {
+      "slug": "radhë-logjistika",
+      "name": "Einzelhandel & Logistik",
+      "headline": "Bestellstatus-Anrufe, ohne Menschen gelöst",
+      "body": "Der anrufstärkste, wertärmste Anruf in Ihrer Warteschlange ist 'wo ist mein Paket'. Agjent038 holt den echten Datensatz, antwortet in Sekunden und meldet die Ausnahme, wenn etwas wirklich falsch ist.",
+      "wins": [
+        "Echtzeit-Abfragen aus Ihrem Bestellsystem",
+        "Rücksendungen und Umtausche während des Anrufs initiiert",
+        "Spitzenverkehr absorbiert ohne Einstellung"
+      ]
+    },
+    {
+      "slug": "shërbime-financiare",
+      "name": "Banken, Versicherungen & Fintech",
+      "headline": "Compliant First-Line-Support in großem Maßstab",
+      "body": "Konfigurierbare Verifizierung, strenge Offenlegungsskripte, vollständige Aufzeichnungs- und Aufbewahrungskontrollen. Agjent038 behandelt Guthaben-, Schaden- und Policenanfragen und übergibt alles, was einen Berater erfordert.",
+      "wins": [
+        "Deterministische Skripte, wo die Regulation sie erfordert",
+        "Vollständige Audit-Trail zu jedem Gespräch",
+        "DSGVO-konforme Datenverarbeitung und EU-Datenresidenz"
+      ]
+    },
+    {
+      "slug": "pasuria-e-paluajtshme",
+      "name": "Immobilien & Grundstücke",
+      "headline": "Verpassen Sie nie den Käufer, der einmal anruft",
+      "body": "Immobilienanfragen sind zeitkritisch und Einmalversuche. Agjent038 antwortet sofort, qualifiziert Budget und Zeitrahmen, bucht die Besichtigung und benachrichtigt den Agenten, bevor der Anrufer auflegt.",
+      "wins": [
+        "Sofortige Antwort auf Portal- und Werbeanfragen",
+        "Qualifizierung gegen Budget, Fläche und Zeitrahmen",
+        "Besichtigungen direkt in Agentenkalender gebucht"
+      ]
+    }
+  ],
+  "Articles": [
+    {
+      "slug": "cost-of-missed-calls-kosovo-call-centers",
+      "title": "Die wahren Kosten eines verpassten Anrufs in einem Kosovo-Callcenter",
+      "description": "Ein praktisches Modell zur Berechnung, was unbeantwortete Anrufe Ihren Betrieb pro Monat kosten — und warum die Zahl normalerweise größer ist als die Payroll, die Sie schützen."
+    },
+    {
+      "slug": "ai-receptionist-vs-hiring-receptionist",
+      "title": "KI-Rezeptionist vs. Einstellung: ein ehrlicher Vergleich",
+      "description": "Wo ein KI-Rezeptionist klar gewinnt, wo ein Mensch noch die richtige Antwort ist und wie die meisten Betreiber am Ende beide betreiben."
+    },
+    {
+      "slug": "albanische-sprache-ki-stimmanentrainer",
+      "title": "Was es braucht, um einen KI-Stimmanentrainer zu bauen, der echtes Albanisch spricht",
+      "description": "Dialekt, Latenz, Unterbrechung und Code-Switching: Die technischen Details, die einen brauchbaren albanischen KI-Stimmanentrainer von einer Demo trennen."
+    },
+    {
+      "slug": "gdpr-anrufaufzeichnung-kosovo",
+      "title": "DSGVO, Anrufaufzeichnung und KI: Was Kosovo-Betreiber richtig machen müssen",
+      "description": "Eine checkliste in einfacher Sprache zum Umgang mit Aufzeichnungen, Transkripten und KI-Verarbeitung ohne Compliance-Risiken zu schaffen."
+    }
+  ],
+  "TechnicalFAQ": [
+    {
+      "q": "Welche Telefoniesysteme unterstützen Sie?",
+      "a": "SIP- und VoIP-Trunks von jedem Carrier plus native Integrationen mit Twilio, 3CX, Asterisk und FreePBX. Wenn Sie einen gehosteten PBX verwenden, können wir uns normalerweise über SIP-Registrierung oder eine weitergeleitete Nummer in unter einem Tag verbinden."
+    },
+    {
+      "q": "Wie viele Anrufe kann es gleichzeitig bearbeiten?",
+      "a": "Gleichzeitigkeit ist praktisch unbegrenzt — die Plattform skaliert horizontal, sodass ein Spitzenanstieg von drei gleichzeitigen Anrufen auf achtzig keine Warteschlange erzeugt. Das ist der strukturelle Vorteil gegenüber Personal: Die Spitzenlast hört auf, ein Personalproblem zu sein."
+    },
+    {
+      "q": "Kann es in unser CRM und unseren Kalender schreiben?",
+      "a": "Ja. Standard-Connectors existieren für HubSpot, Zoho, Pipedrive, Salesforce, Google Calendar und Microsoft 365. Alles mit einer REST-API kann während der Einführung integriert werden, und wir bauen die Feldzuordnung mit Ihnen."
+    },
+    {
+      "q": "Was passiert, wenn Ihr Service ausfällt?",
+      "a": "Anrufe schalten sofort auf Ihre bestehende Weiterleitung um, sodass ein Anrufer Ihr Team erreicht, wie es vor Agjent038 der Fall war. Operations-Pläne tragen ein 99,5%-Uptime-Ziel und Enterprise einen vertraglichen 99,9%-SLA."
+    },
+    {
+      "q": "Verwenden Sie unsere Gespräche, um gemeinsame Modelle zu trainieren?",
+      "a": "Nein. Ihre Daten werden nur verwendet, um Ihre eigene Bereitstellung zu verbessern, unter Ihrer Aufbewahrungsrichtlinie. Enterprise-Kunden können auf einer vollständig isolierten Instanz mit EU-Datenresidenz-Garantien laufen, die im Vertrag festgehalten sind."
+    },
+    {
+      "q": "Können wir es zuerst nur in einem Teil unseres Betriebs laufen lassen?",
+      "a": "Das ist, was wir empfehlen. Beginnen Sie mit Feierabend und Überlauf — die Anrufe, die Sie bereits verlieren. Messen Sie die Aufschlussrate dreißig Tage lang, dann entscheiden Sie, ob Sie primären Warteschlangen-Verkehr überführen möchten."
+    }
+  ],
+  "Testimonials": [
+    {
+      "quote": "Wir haben zwischen 12:00 und 14:00 ungefähr 40% der Anrufe verloren. Jetzt geht nichts unbeantwortet und unsere Agenten verbringen schließlich den Tag mit den Fällen, die eine Person brauchen.",
+      "name": "Arbër K.",
+      "role": "Operationsdirektor",
+      "org": "Outsourced Contact Centre, Pristina"
+    },
+    {
+      "quote": "Unsere Kunden fragen nach QS bei jedem Anruf. Wir haben früher 2% gestichprobt. Jetzt wird jedes Gespräch bewertet und die Berichterstattung schreibt sich selbst — das allein hat uns einen Vertrag eingebracht.",
+      "name": "Vlora M.",
+      "role": "Leiterin der Bereitstellung",
+      "org": "BPO, Prizren"
+    },
+    {
+      "quote": "Die Rezeption hörte auf, ein Flaschenhals zu sein. Buchungen nach Feierabend gingen von null auf etwa sechzig pro Monat und No-Shows sanken, weil Bestätigungen tatsächlich rausgehen.",
+      "name": "Dr. Endrit S.",
+      "role": "Klinikbesitzer",
+      "org": "Zahngruppe, Ferizaj"
+    }
+  ],
+  "Inclusions": [
+    "Call-Audit bei Entdeckung",
+    "Wissensbasis-Aufbau",
+    "Telefonie-Integration",
+    "CRM- & Kalender-Synchronisation",
+    "Stimmen- & Persona-Abstimmung",
+    "14-Tage-Schattenmodus",
+    "Live-Analytik-Dashboard",
+    "Anrufaufzeichnungen & Transkripte",
+    "Eskalationsregeln",
+    "Monatliche Optimierung",
+    "DSGVO-konforme Verarbeitung",
+    "Keine Einrichtungsgebühr"
+  ],
+  "Plans": [
+    {
+      "name": "Empfang",
+      "price": "499$",
+      "cadence": "pro Monat",
+      "meta": "Bis zu 1.000 beantwortete Gespräche",
+      "summary": "Der vollständige KI-Rezeptionist für einen Standort oder eine fokussierte Eingangswarteschlange. Live in zwei Wochen.",
+      "cta": "Mit Empfang starten"
+    },
+    {
+      "name": "Operationen",
+      "price": "1.290$",
+      "cadence": "pro Monat",
+      "meta": "Bis zu 4.000 beantwortete Gespräche",
+      "summary": "Für Callcenter und Multi-Site-Betreiber mit echtem Volumen über Sprache und Nachrichten.",
+      "cta": "Mit Operationen skalieren"
+    },
+    {
+      "name": "Enterprise",
+      "cadence": "Jahresvereinbarung",
+      "meta": "Unbegrenztes Volumen, dedizierte Infrastruktur",
+      "summary": "Dedizierte Kapazität, benutzerdefinierte Stimme und vertragliche SLAs für regulierte und hochvolumige Operationen.",
+      "cta": "Sprechen Sie mit uns"
+    }
+  ],
+  "FAQs": [
+    {
+      "q": "Spricht die KI tatsächlich natürliches Albanisch?",
+      "a": "Ja. Agjent038 ist auf Kosovo-Albanisch abgestimmt, einschließlich Gheg-Aussprache und dem Code-Switching, das Menschen tatsächlich am Telefon verwenden. Es behandelt auch Englisch, Serbisch, Deutsch und Türkisch und wechselt die Sprache mitten im Anruf, wenn der Anrufer das tut. Sie können echte Aufnahmen bei Ihrem Entdeckungsgespräch hören, bevor Sie sich zu etwas verpflichten."
+    },
+    {
+      "q": "Was passiert, wenn die KI etwas nicht handhaben kann?",
+      "a": "Sie eskaliert. Sie definieren die Regeln — Rückerstattungsgrenzen, Beschwerdeschlüsselwörter, erkannte Frustration, VIP-Konten — und Agjent038 leitet den Anrufer mit einer schriftlichen Zusammenfassung an den richtigen Menschen weiter. Nichts bleibt im Limbo und kein Anrufer bleibt in einer Schleife hängen."
+    },
+    {
+      "q": "Wird das meine Agenten ersetzen?",
+      "a": "Es ersetzt die Warteschlange, nicht die Menschen. Die meisten Betreiber behalten ihr Team und setzen sie auf Kundenbindung, komplexe Fälle und Umsatz-Arbeit ein, während Agjent038 den repetitiven Traffic erster Stufe absorbiert, der Agenten ausbrennt und Kosten pro Kontakt aufbläht."
+    },
+    {
+      "q": "Wie lange dauert es, live zu gehen?",
+      "a": "Zwei Wochen ab Kickoff für den Empfangsplan. Tage 1–3 sind Entdeckung und Call-Audit, Tage 4–10 sind Aufbau und Schulung, Tage 11–14 sind Schattenmodus, in dem die KI auf einer Testleitung antwortet und Sie jedes Verhalten genehmigen. Komplexe Integrationen können eine Woche hinzufügen."
+    },
+    {
+      "q": "Was beinhaltet 499$ pro Monat wirklich?",
+      "a": "Das vollständige Produkt: 24/7-Beantwortung in fünf Sprachen, bis zu 1.000 beantwortete Gespräche, Buchung, CRM- und Kalenderintegration, Transkripte, Aufzeichnungen, das Live-Dashboard, Warmentransfer, Einführung und Schattenmodus. Es gibt keine Einrichtungsgebühr und keine Überraschungen bei der Minutenabrechnung im Basistarif."
+    },
+    {
+      "q": "Wie vergleicht sich das mit der Einstellung eines Rezeptionisten?",
+      "a": "Ein Vollzeit-Agent in Kosovo deckt ungefähr 40 Stunden pro Woche ab und beantwortet einen Anruf gleichzeitig. Agjent038 deckt 168 Stunden pro Woche ab, beantwortet unbegrenzte gleichzeitige Anrufe, hat nie einen schlechten Tag und kostet weniger als ein einzelnes Gehalt — und produziert ein Transkript und eine Qualitätsbewertung für jedes Gespräch."
+    },
+    {
+      "q": "Sind unsere Kundendaten sicher?",
+      "a": "Gespräche werden bei der Übertragung und Speicherung verschlüsselt, auf EU-Infrastruktur verarbeitet und nur so lange aufbewahrt, wie Ihre Richtlinie vorgibt. Wir unterzeichnen eine DPA, unterstützen DSGVO-Datensubjekt-Anfragen und Enterprise-Kunden können auf einer dedizierten Instanz mit strengen Residenzgarantien laufen."
+    },
+    {
+      "q": "Können wir unsere aktuelle Telefonnummer und Anbieter behalten?",
+      "a": "Ja. Agjent038 sitzt auf Ihrer bestehenden Telefonie — SIP-Trunks, Twilio, 3CX, Asterisk, FreePBX oder Ihrem Carrier. Nichts muss herausgerissen werden und Sie können nur einen Prozentsatz des Verkehrs weiterleiten, während Sie Vertrauen aufbauen."
+    },
+    {
+      "q": "Was, wenn es für uns nicht funktioniert?",
+      "a": "Sie sehen die Leistung im Schattenmodus, bevor ein einziger Kunde damit konfrontiert wird, und monatliche Pläne sind monatlich mit 30 Tagen Kündigungsfrist. Wenn die Aufschlussrate nicht das Ziel erreicht, das wir in der Entdeckung vereinbart haben, optimieren wir weiter ohne zusätzliche Kosten oder Sie gehen."
+    }
+  ],
+  "Languages": {
+    "sq": "Shqip",
+    "en": "English",
+    "de": "Deutsch"
+  }
+}
