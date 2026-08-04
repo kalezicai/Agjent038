@@ -8,10 +8,13 @@ import LanguageSwitcher from "@/components/language-switcher";
 
 function Mark() {
   return (
-    <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-navy text-white">
-      <span className="font-display text-lg leading-none">A</span>
-      <span className="absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full bg-gold" />
-    </span>
+    <img
+      src="/favicon.png"
+      alt="Agjent038"
+      className="h-9 w-9 rounded-xl object-contain"
+      width={36}
+      height={36}
+    />
   );
 }
 

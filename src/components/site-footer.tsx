@@ -52,10 +52,13 @@ export default async function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-navy text-white">
-                <span className="font-display text-lg leading-none">A</span>
-                <span className="absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full bg-gold" />
-              </span>
+              <img
+                src="/favicon.png"
+                alt="Agjent038"
+                className="h-9 w-9 rounded-xl object-contain"
+                width={36}
+                height={36}
+              />
               <span className="font-display text-lg">{site.name}</span>
             </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink-mute">
