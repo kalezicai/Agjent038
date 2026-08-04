@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Dashboard from "@/components/dashboard";
 import OrbScene from "@/components/orb-scene";
 import Reveal from "@/components/reveal";
 import Accordion from "@/components/accordion";
 import { ButtonLink, Card, Eyebrow, JsonLd, Section, SectionHead } from "@/components/ui";
-import {
-  capabilities,
-  faqs,
-  integrations,
-  platformPillars,
-  steps,
-} from "@/lib/content";
 import { absoluteUrl, buildMetadata, site } from "@/lib/site";
 import { locales, type Locale } from "@/i18n/config";
 
@@ -41,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "24/7 call answering Kosovo",
       "Albanian AI receptionist",
     ],
+    locale,
   });
 }
 
@@ -48,7 +42,27 @@ async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Home" });
-  const tCap = await getTranslations({ locale, namespace: "Capabilities" });
+
+  const messages = await getMessages({ locale });
+  const platformPillars = (messages.PlatformPillars ?? []) as Array<{
+    glyph: string;
+    title: string;
+    description: string;
+    detail?: string[];
+  }>;
+  const capabilities = (messages.Capabilities ?? []) as Array<{
+    glyph: string;
+    title: string;
+    description: string;
+  }>;
+  const steps = (messages.Steps ?? []) as Array<{
+    step: string;
+    title: string;
+    body: string;
+    days: string;
+  }>;
+  const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
+  const integrations = (messages.Integrations ?? []) as string[];
 
   const faqLd = {
     "@context": "https://schema.org",
@@ -352,7 +366,7 @@ async function HomePage({ params }: Props) {
               </p>
               <div className="mt-5 flex items-baseline gap-2">
                 <span className="font-display text-5xl text-white">$499</span>
-                <span className="text-sm text-white/50">/ muaj</span>
+                <span className="text-sm text-white/50">{t("monthLabel")}</span>
               </div>
               <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                 {(t.raw("pricingFeatures") as string[]).map((f) => (

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "nodejs";
-export const alt = "Zana AI — AI Receptionist for Kosovo Call Centres";
+export const dynamic = "force-static";
+export const alt = "Agjent038 — AI Receptionist for Kosovo Call Centres";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -34,9 +34,9 @@ export default async function OpengraphImage() {
               fontSize: 30,
             }}
           >
-            Z
+            A
           </div>
-          <div style={{ fontSize: 28, color: "#0b1220" }}>Zana AI</div>
+          <div style={{ fontSize: 28, color: "#0b1220" }}>Agjent038</div>
           <div
             style={{
               marginLeft: 12,

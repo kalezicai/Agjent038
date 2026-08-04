@@ -1,33 +1,37 @@
-import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { getLocale, getTranslations, getMessages } from "next-intl/server";
 import { site } from "@/lib/site";
 
-const solutionsSlinks = [
-  { slug: "call-centers", key: "call-centers" },
-  { slug: "clinics", key: "clinics" },
-  { slug: "hospitality", key: "hospitality" },
-  { slug: "radhë-logjistika", key: "retail-logistics" },
-  { slug: "shërbime-financiare", key: "financial-services" },
+const solutionsLinks = [
+  { slug: "call-centers" },
+  { slug: "clinics" },
+  { slug: "hospitality" },
+  { slug: "radhë-logjistika" },
+  { slug: "shërbime-financiare" },
 ];
 
-export default function SiteFooter() {
-  const t = useTranslations("Footer");
-  const tSol = useTranslations("SolutionsList");
+export default async function SiteFooter() {
+  const locale = await getLocale();
+  const t = await getTranslations({ locale, namespace: "Footer" });
+  const tProductLinks = await getTranslations({ locale, namespace: "FooterProductLinks" });
+  const messages = await getMessages({ locale });
+  const solutionsList = (messages.SolutionsList ?? []) as Array<{ slug: string; name: string }>;
+  const solutionsMap = new Map(solutionsList.map((s) => [s.slug, s.name]));
 
   const columns = [
     {
       title: t("product"),
       links: [
-        { label: "Platforma", href: "/platform" },
-        { label: "Çmimet", href: "/pricing" },
-        { label: "Rezultatet & ROI", href: "/results" },
-        { label: "FAQ", href: "/faq" },
+        { label: tProductLinks("platform"), href: "/platform" },
+        { label: tProductLinks("pricing"), href: "/pricing" },
+        { label: tProductLinks("results"), href: "/results" },
+        { label: tProductLinks("faq"), href: "/faq" },
       ],
     },
     {
       title: t("solutions"),
-      links: solutionsSlinks.map((s) => ({
-        label: tSol(`${s.key}.name`),
+      links: solutionsLinks.map((s) => ({
+        label: solutionsMap.get(s.slug) ?? s.slug,
         href: `/solutions#${s.slug}`,
       })),
     },
@@ -37,7 +41,7 @@ export default function SiteFooter() {
         { label: t("about"), href: "/company" },
         { label: t("insights"), href: "/insights" },
         { label: t("contact"), href: "/contact" },
-        { label: "Rezervoni një demonstrim", href: "/contact" },
+        { label: tProductLinks("bookDemo"), href: "/contact" },
       ],
     },
   ];

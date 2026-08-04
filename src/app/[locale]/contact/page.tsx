@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "book AI call center demo",
       "contact Agjent038 Prishtina",
     ],
+    locale,
   });
 }
 

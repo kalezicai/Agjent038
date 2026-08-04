@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import Reveal from "@/components/reveal";
 import {
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Agjent038 is a Prishtina-based team building Albanian-native AI receptionists for call centres, clinics and service businesses across Kosovo and the region.",
     path: "/company",
     keywords: ["AI company Kosovo", "Prishtina AI startup", "Albanian AI team"],
+    locale,
   });
 }
 
@@ -39,6 +40,11 @@ async function CompanyPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "Company" });
   const tCommon = await getTranslations({ locale, namespace: "Common" });
 
+  const messages = await getMessages({ locale });
+  const principles = (messages.CompanyPrinciples ?? []) as Array<{ title: string; body: string }>;
+  const facts = (messages.CompanyFacts ?? []) as Array<[string, string]>;
+  const limitsBody = (messages.CompanyLimits ?? "") as string;
+
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -47,32 +53,6 @@ async function CompanyPage({ params }: Props) {
       { "@type": "ListItem", position: 2, name: "Company", item: absoluteUrl("/company") },
     ],
   };
-
-  const principles = [
-    {
-      title: "Sell the outcome, prove it monthly",
-      body: "Containment, recovered calls and released capacity are the only numbers that matter. We report them every month, including the months where the curve flattens.",
-    },
-    {
-      title: "Local language is not a feature, it is the product",
-      body: "An agent that mispronounces a caller's town loses the call. We spend most of our engineering time on the parts of Albanian that generic models get wrong.",
-    },
-    {
-      title: "No lock-in as a strategy",
-      body: "Month-to-month on our standard plans. You keep your numbers and your data. If we stop earning the subscription, leaving should be simple.",
-    },
-    {
-      title: "Say no when it will not work",
-      body: "Some queues are too complex or too low-volume to justify automation today. We would rather tell you in the first call than take a year of your budget.",
-    },
-  ];
-
-  const facts = [
-    ["2024", "Founded in Prishtina"],
-    ["5", "Languages supported"],
-    ["<600ms", "Median response latency"],
-    ["EU", "Data processing region"],
-  ];
 
   return (
     <>
@@ -133,10 +113,7 @@ async function CompanyPage({ params }: Props) {
               lede={t("responsibilityLede")}
             />
             <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-ink-soft">
-              We are equally direct about limits. Agjent038 does not negotiate
-              contracts, handle grief, or improvise policy. Those calls belong
-              to a person, and our job is to make sure that person receives them
-              with full context and enough time to do it properly.
+              {limitsBody}
             </p>
             <div className="mt-9">
               <ButtonLink href="/contact">{tCommon("contactUs")}</ButtonLink>
@@ -173,7 +150,7 @@ async function CompanyPage({ params }: Props) {
                 <div>
                   <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{tCommon("hours")}</dt>
                   <dd className="mt-1.5 text-ink-soft">
-                    Mon–Fri, 09:00–18:00 CET. Our own line is answered by Agjent038 outside those hours.
+                    {t("hoursDescription")}
                   </dd>
                 </div>
               </dl>

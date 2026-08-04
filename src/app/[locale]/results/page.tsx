@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import Reveal from "@/components/reveal";
 import RoiCalculator from "@/components/roi-calculator";
@@ -11,7 +11,6 @@ import {
   SectionHead,
   Stat,
 } from "@/components/ui";
-import { outcomes } from "@/lib/content";
 import { absoluteUrl, buildMetadata } from "@/lib/site";
 import { locales } from "@/i18n/config";
 
@@ -37,59 +36,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "call center cost savings Kosovo",
       "missed call cost calculator",
     ],
+    locale,
   });
 }
-
-const cases = [
-  {
-    tag: "Outsourced contact centre · Prishtina",
-    title: "From 41% abandonment to zero missed calls",
-    context:
-      "Twelve seats handling inbound support for two telecom clients. Peak-hour abandonment was costing them an SLA penalty every month.",
-    metrics: [
-      ["0%", "Abandoned calls"],
-      ["71%", "Tier-1 contained"],
-      ["4 FTE", "Redeployed to retention"],
-      ["11 days", "To go live"],
-    ],
-    quote:
-      "The SLA penalties stopped in the first full month. That alone paid for it several times over.",
-  },
-  {
-    tag: "Dental group · Ferizaj",
-    title: "Sixty extra bookings a month from calls nobody was answering",
-    context:
-      "Four clinics sharing one reception line. Roughly a third of calls arrived while staff were with patients or after closing.",
-    metrics: [
-      ["+58", "Bookings / month"],
-      ["-34%", "No-show rate"],
-      ["24/7", "Coverage"],
-      ["9 days", "To go live"],
-    ],
-    quote:
-      "Patients do not realise they are speaking to an AI until we tell them. What they notice is that someone finally answers.",
-  },
-  {
-    tag: "E-commerce & logistics · Prishtina",
-    title: "Order status calls resolved without a human",
-    context:
-      "Seasonal volume spikes were forcing temporary hiring every quarter, with three weeks of training before anyone was useful.",
-    metrics: [
-      ["82%", "Status calls automated"],
-      ["0", "Seasonal hires"],
-      ["-46%", "Cost per contact"],
-      ["14 days", "To go live"],
-    ],
-    quote:
-      "We stopped hiring for peak. The queue just absorbs it now, and the reporting is better than what we had before.",
-  },
-];
 
 async function ResultsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Results" });
-  const tTestimonials = await getTranslations({ locale, namespace: "Testimonials" });
+  const tCases = await getTranslations({ locale, namespace: "Cases" });
+
+  const messages = await getMessages({ locale });
+  const cases = (messages.Cases ?? []) as Array<{
+    tag: string;
+    title: string;
+    context: string;
+    metrics: [string, string][];
+    quote: string;
+  }>;
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -100,7 +64,8 @@ async function ResultsPage({ params }: Props) {
     ],
   };
 
-  const testimonialData = tTestimonials.raw("") as Array<{ quote: string; name: string; role: string; org: string }>;
+  const outcomes = (messages.Home?.Outcomes ?? []) as Array<{ stat: string; label: string; note: string }>;
+  const testimonialData = (messages.Home?.Testimonials ?? []) as Array<{ quote: string; name: string; role: string; org: string }>;
 
   return (
     <>
@@ -130,7 +95,7 @@ async function ResultsPage({ params }: Props) {
 
       <Section tone="paper" id="calculator">
         <SectionHead
-          eyebrow="ROI model"
+          eyebrow={t("roiModelEyebrow")}
           title={t("roiTitle")}
           lede={t("roiLede")}
         />

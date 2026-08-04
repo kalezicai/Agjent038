@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import Dashboard from "@/components/dashboard";
 import Reveal from "@/components/reveal";
@@ -11,7 +11,6 @@ import {
   Section,
   SectionHead,
 } from "@/components/ui";
-import { capabilities, integrations, platformPillars, steps } from "@/lib/content";
 import { absoluteUrl, buildMetadata } from "@/lib/site";
 import { locales, type Locale } from "@/i18n/config";
 
@@ -37,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "AI receptionist integration 3CX Asterisk Twilio",
       "Albanian speech recognition call center",
     ],
+    locale,
   });
 }
 
@@ -44,6 +44,26 @@ async function PlatformPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Platform" });
+
+  const messages = await getMessages({ locale });
+  const platformPillars = (messages.PlatformPillars ?? []) as Array<{
+    glyph: string;
+    title: string;
+    description: string;
+    detail?: string[];
+  }>;
+  const capabilities = (messages.Capabilities ?? []) as Array<{
+    glyph: string;
+    title: string;
+    description: string;
+  }>;
+  const steps = (messages.Steps ?? []) as Array<{
+    step: string;
+    title: string;
+    body: string;
+    days: string;
+  }>;
+  const integrations = (messages.Integrations ?? []) as string[];
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -101,8 +121,8 @@ async function PlatformPage({ params }: Props) {
 
       <Section>
         <SectionHead
-          eyebrow="Engineered for Kosovo"
-          title="The four details that decide whether callers accept an AI"
+          eyebrow={t("pillarsEyebrow")}
+          title={t("pillarsTitle")}
         />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {platformPillars.map((p, i) => (

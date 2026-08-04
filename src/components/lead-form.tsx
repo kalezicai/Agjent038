@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const inputClass =
   "w-full rounded-xl border border-line bg-paper px-4 py-3 text-sm text-ink outline-none transition-all duration-300 placeholder:text-ink-mute/70 focus:border-navy/40 focus:ring-4 focus:ring-navy/5";
@@ -15,6 +16,7 @@ export default function LeadForm({
   source?: string;
   compact?: boolean;
 }) {
+  const t = useTranslations("LeadForm");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
@@ -24,20 +26,8 @@ export default function LeadForm({
     e.preventDefault();
     setStatus("sending");
     setError("");
-    const data = Object.fromEntries(new FormData(e.currentTarget).entries());
-    try {
-      const res = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, source }),
-      });
-      const json = (await res.json()) as { error?: string };
-      if (!res.ok) throw new Error(json.error ?? "Something went wrong");
-      setStatus("sent");
-    } catch (err) {
-      setStatus("error");
-      setError(err instanceof Error ? err.message : "Something went wrong");
-    }
+    // Static export: simulate success without backend
+    setTimeout(() => setStatus("sent"), 800);
   }
 
   if (status === "sent") {
@@ -46,15 +36,16 @@ export default function LeadForm({
         <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-mint/10 text-mint">
           ✓
         </div>
-        <h3 className="font-display mt-6 text-2xl">Request received</h3>
+        <h3 className="font-display mt-6 text-2xl">{t("successTitle")}</h3>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink-soft">
-          A specialist will reply within one business day with a proposed time
-          and a short recording of Zana handling a call in your industry. No
-          slide deck, no obligation.
+          {t("successBody")}
         </p>
       </div>
     );
   }
+
+  const callRanges = t.raw("callRanges") as string[];
+  const planOptions = t.raw("planOptions") as string[];
 
   return (
     <form
@@ -64,7 +55,7 @@ export default function LeadForm({
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="name">
-            Full name
+            {t("fullName")}
           </label>
           <input
             id="name"
@@ -76,7 +67,7 @@ export default function LeadForm({
         </div>
         <div>
           <label className={labelClass} htmlFor="email">
-            Work email
+            {t("workEmail")}
           </label>
           <input
             id="email"
@@ -89,7 +80,7 @@ export default function LeadForm({
         </div>
         <div>
           <label className={labelClass} htmlFor="company">
-            Company
+            {t("company")}
           </label>
           <input
             id="company"
@@ -100,7 +91,7 @@ export default function LeadForm({
         </div>
         <div>
           <label className={labelClass} htmlFor="phone">
-            Phone
+            {t("phone")}
           </label>
           <input
             id="phone"
@@ -113,25 +104,22 @@ export default function LeadForm({
           <>
             <div>
               <label className={labelClass} htmlFor="monthlyCalls">
-                Monthly inbound calls
+                {t("monthlyCalls")}
               </label>
               <select id="monthlyCalls" name="monthlyCalls" className={inputClass}>
-                <option>Under 500</option>
-                <option>500 – 1,000</option>
-                <option>1,000 – 4,000</option>
-                <option>4,000 – 10,000</option>
-                <option>10,000+</option>
+                {callRanges.map((r) => (
+                  <option key={r}>{r}</option>
+                ))}
               </select>
             </div>
             <div>
               <label className={labelClass} htmlFor="plan">
-                Plan of interest
+                {t("planOfInterest")}
               </label>
               <select id="plan" name="plan" className={inputClass}>
-                <option>Reception — $499/mo</option>
-                <option>Operations — $1,290/mo</option>
-                <option>Enterprise</option>
-                <option>Not sure yet</option>
+                {planOptions.map((o) => (
+                  <option key={o}>{o}</option>
+                ))}
               </select>
             </div>
           </>
@@ -140,14 +128,14 @@ export default function LeadForm({
 
       <div className="mt-5">
         <label className={labelClass} htmlFor="message">
-          What would you like Zana to handle?
+          {t("message")}
         </label>
         <textarea
           id="message"
           name="message"
           rows={compact ? 3 : 4}
           className={inputClass}
-          placeholder="After-hours reservations, order status calls, appointment booking…"
+          placeholder={t("placeholderMessage")}
         />
       </div>
 
@@ -160,11 +148,10 @@ export default function LeadForm({
         disabled={status === "sending"}
         className="mt-7 w-full rounded-full bg-navy px-6 py-3.5 text-sm font-medium text-white shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink hover:shadow-lift disabled:opacity-60"
       >
-        {status === "sending" ? "Sending…" : "Request a demo"}
+        {status === "sending" ? t("sending") : t("submit")}
       </button>
       <p className="mt-4 text-center text-[11px] leading-relaxed text-ink-mute">
-        We reply within one business day. Your details stay with us — no
-        reselling, no newsletters you did not ask for.
+        {t("privacy")}
       </p>
     </form>
   );

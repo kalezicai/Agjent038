@@ -90,7 +90,66 @@
     "ctaDescription": "Një bisedë 30-minutëshe, një regjistrim i Agjent038 që përgjigjet në industrinë tuaj dhe një vlerësim i sinqertë i përmbajtjes për radhën tuaj. Nëse nuk përshtatet, do t'ju themi.",
     "ctaBookAudit": "Rezervoni auditimin e thirrjeve tuaja",
     "ctaReviewPricing": "Shikoni çmimet",
-    "ctaLocation": "Prishtinë, Kosovë"
+    "ctaLocation": "Prishtinë, Kosovë",
+    "Outcomes": [
+      {
+        "stat": "0s",
+        "label": "Koha mesatare e përgjigjes",
+        "note": "Çdo thirrje kapet në rastin e parë, duke përfshirë 03:00 dhe pushimet."
+      },
+      {
+        "stat": "68%",
+        "label": "Biseda të zgjidhura plotësisht",
+        "note": "Volumi i nivelit të parë mbyllet pa prekur një agjent njerëzor."
+      },
+      {
+        "stat": "3.4x",
+        "label": "Më shumë rezervime të kualifikuara",
+        "note": "Thirrjet e humbura kthehen në takime të konfirmuara dhe thirrje prapë."
+      },
+      {
+        "stat": "24/7",
+        "label": "Mbulim në 5 gjuhë",
+        "note": "Shqip, anglisht, serbisht, gjermanisht dhe turqisht në një numër."
+      }
+    ],
+    "BeforeAfter": {
+      "today": [
+        "30-45% e thirrjeve të papërgjigjura në pikën",
+        "Asnjë përgjigje pas orës 17:00 ose në fundjavë",
+        "Një gjuhë, një telefonues në një kohë",
+        "Cilësia në 2% mostrë, nëse dikush ka kohë",
+        "Punësimi është rruga e vetme për të shtuar kapacitet"
+      ],
+      "after": [
+        "100% e thirrjeve të ofruara të përgjigjura në 0.4s",
+        "Mbulim 24/7/365 duke përfshirë pushimet",
+        "Pesë gjuhë, bashkëkohësi e pakufizuar",
+        "Çdo bisedë e transkriptuar dhe vlerësuar",
+        "Kapaciteti shkallëzohet sapo vëllimi bie"
+      ]
+    },
+    "Testimonials": [
+      {
+        "quote": "Ne po humbisnim rreth 40% të thirrjeve midis 12:00 dhe 14:00. Tani asgjë nuk shkon e papërgjigjur, dhe agjentët tanë më në fund kalojnë ditën me rastet që kanë nevojë për një person.",
+        "name": "Arbër K.",
+        "role": "Drejtor Operacionesh",
+        "org": "Qendër e kontatuar e outsourcing, Prishtinë"
+      },
+      {
+        "quote": "Klientët tanë kërkojnë cilësi në çdo thirrje. Ne mostërtonim 2%. Tani çdo bisedë vlerësohet dhe raportimi shkruhet vetë — kjo vetëm fitoi një kontratë.",
+        "name": "Vlora M.",
+        "role": "Shefe e Dorëzimit",
+        "org": "BPO, Prizren"
+      },
+      {
+        "quote": "Pranimi ndaloji të ishte një pengesë. Rezervimet pas orarit shkuan nga zero në rreth gjashtëdhjetë në muaj, dhe mungesat u ulën sepse konfirmimet dalin me të vërtetë.",
+        "name": "Dr. Endrit S.",
+        "role": "Pronar Klinike",
+        "org": "Grup dentistësh, Ferizaj"
+      }
+    ],
+    "monthLabel": "/ muaj"
   },
   "Common": {
     "bookDemo": "Rezervoni një demonstrim",
@@ -137,6 +196,8 @@
     "guardrailsLede": "Një pranimës AI është i besueshëm vetëm nëse mund të parashikoni çfarë nuk do të bëjë kurrë.",
     "capabilitiesEyebrow": "Aftësitë",
     "capabilitiesTitle": "Gjithçka që drejtohet nga një tru",
+    "pillarsEyebrow": "Inxhinieruar për Kosovën",
+    "pillarsTitle": "Katër detajet që vendosin nëse thirrësit pranojnë një AI",
     "integrationsEyebrow": "Integrimet",
     "integrationsTitle": "I lidhur me mjetet ku ekipi juaj jeton tashmë",
     "integrationsLede": "Lidhësit standard dalin në ditën e parë. Çdo gjë me REST API mund të lidhet gjatë nisjes.",
@@ -195,10 +256,12 @@
     "cta": "Kërkoni një auditim thirrjesh",
     "notListedEyebrow": "Nuk është në listë?",
     "notListedTitle": "Nëse telefoni bie dhe dikush duhet të përgjigjet, Agjent038 mund të marrë kalimin e parë.",
-    "notListedLede": "Logjistika e shpërndarjes, shërbimet komunale, pranimet arsimore, shërbimet publike, marrja ligjore — modeli i njëjtë: pyetje të përsëritura me vëllim të lartë përpara një numri më të vogël të vërtetë të komplikuar."
+    "notListedLede": "Logjistika e shpërndarjes, shërbimet komunale, pranimet arsimore, shërbimet publike, marrja ligjore — modeli i njëjtë: pyetje të përsëritura me vëllim të lartë përpara një numri më të vogël të vërtetë të komplikuar.",
+    "auditDescription": "Na dërgoni njëzet thirrje të regjistruara nga radha juaj. Brenda një jave do të kthejmë një përshkrim me shkrim të qëllimeve kryesore, pjesën që Agjent038 do të përmbante sot dhe pjesën që do të kishte ende nevojë për një njeri. Pa kosto, pa detyrim."
   },
   "Results": {
     "eyebrow": "Rezultatet",
+    "roiModelEyebrow": "Modeli i ROI",
     "title": "Rasti është aritmetik, jo entuziazëm.",
     "description": "Më poshtë është një model që mund të ekzekutoni kundër numrave tuaj, i ndjekur nga çfarë ndodhi në tre zbatime reale. Ne përdorim supozime të konservuara qëllimisht — pika është një vendim që mund të mbrohet brenda.",
     "roiTitle": "Ekzekutoni numrat për radhën tuaj",
@@ -251,7 +314,8 @@
     "responsibilityEyebrow": "Përgjegjësia",
     "responsibilityTitle": "Automatizimi që ridrejton njerëzit në vend se t'i heqë ata",
     "responsibilityLede": "Çdo zbatim që kemi ekzekutuar deri më tani përfundoi me të njëjtin ekip në vend, duke bërë punë të ndryshme. Agjentët kaluan nga leximi i statuseve të porosive me zë në ruajtjen e klienteve, raste komplekse dhe punë të ardhurash dalëse — puna që paguan më mirë dhe digjet më ngadalë.",
-    "contactTitle": "Kontaktoni"
+    "contactTitle": "Kontaktoni",
+    "hoursDescription": "E Hënë–E Premte, 09:00–18:00 CET. Linja jonë përgjigjet nga Agjent038 jashtë atyre orarave."
   },
   "FAQ": {
     "eyebrow": "Pyetje",
@@ -271,7 +335,9 @@
     "title": "Çfarë kemi mësuar duke ekzekutuar AI në radhët reale të thirrjeve në Kosovë.",
     "description": "Shkrim operational për njerëzit përgjegjës për një radhë telefoni — ekonomi, detaje teknike dhe përputhja, pa glossy-n e furnizuesit.",
     "featured": "E veçanta",
-    "cta": "Kërkoni një auditim thirrjesh"
+    "cta": "Kërkoni një auditim thirrjesh",
+    "auditDescription": "Do të auditoni njëzet thirrjet tuaja dhe do të shkruani se çfarë automatizimi do të përmbante realisht, pa kosto.",
+    "auditTitle": "Gati për të parë si duket përmbajtja në radhën tuaj reale?"
   },
   "NotFound": {
     "title": "Kjo vijë nuk është e lidhur.",
@@ -324,44 +390,6 @@
     "monthToMonthDescription": "Planet standard udhëtohen mujorisht me 30 ditë njoftim. Rezultatet duhet t'ju mbajnë, jo dokumentet.",
     "gdpr": "Në përputhje me GDPR",
     "gdprDescription": "Përpunim BE, DPA e nënshkruar, mbajtje e konfigurueshme dhe fshirje në kërkesë."
-  },
-  "Outcomes": [
-    {
-      "stat": "0s",
-      "label": "Koha mesatare e përgjigjes",
-      "note": "Çdo thirrje kapet në rastin e parë, duke përfshirë 03:00 dhe pushimet."
-    },
-    {
-      "stat": "68%",
-      "label": "Biseda të zgjidhura plotësisht",
-      "note": "Volumi i nivelit të parë mbyllet pa prekur një agjent njerëzor."
-    },
-    {
-      "stat": "3.4x",
-      "label": "Më shumë rezervime të kualifikuara",
-      "note": "Thirrjet e humbura kthehen në takime të konfirmuara dhe thirrje prapë."
-    },
-    {
-      "stat": "24/7",
-      "label": "Mbulim në 5 gjuhë",
-      "note": "Shqip, anglisht, serbisht, gjermanisht dhe turqisht në një numër."
-    }
-  ],
-  "BeforeAfter": {
-    "today": [
-      "30-45% e thirrjeve të papërgjigjura në pikën",
-      "Asnjë përgjigje pas orës 17:00 ose në fundjavë",
-      "Një gjuhë, një telefonues në një kohë",
-      "Cilësia në 2% mostrë, nëse dikush ka kohë",
-      "Punësimi është rruga e vetme për të shtuar kapacitet"
-    ],
-    "after": [
-      "100% e thirrjeve të ofruara të përgjigjura në 0.4s",
-      "Mbulim 24/7/365 duke përfshirë pushimet",
-      "Pesë gjuhë, bashkëkohësi e pakufizuar",
-      "Çdo bisedë e transkriptuar dhe vlerësuar",
-      "Kapaciteti shkallëzohet sapo vëllimi bie"
-    ]
   },
   "Capabilities": [
     {
@@ -513,26 +541,6 @@
       "a": "Kjo është ajo që rekomandojmë. Filloni me pas orarit dhe mbishkarkimin — thirrjet që tashmë po i humbisni. Matni përmbajtjen për tridhjetë ditë, pastaj vendosni nëse doni të kaloni trafikun e radhës kryesore."
     }
   ],
-  "Testimonials": [
-    {
-      "quote": "Ne po humbisnim rreth 40% të thirrjeve midis 12:00 dhe 14:00. Tani asgjë nuk shkon e papërgjigjur, dhe agjentët tanë më në fund kalojnë ditën me rastet që kanë nevojë për një person.",
-      "name": "Arbër K.",
-      "role": "Drejtor Operacionesh",
-      "org": "Qendër e kontatuar e outsourcing, Prishtinë"
-    },
-    {
-      "quote": "Klientët tanë kërkojnë cilësi në çdo thirrje. Ne mostërtonim 2%. Tani çdo bisedë vlerësohet dhe raportimi shkruhet vetë — kjo vetëm fitoi një kontratë.",
-      "name": "Vlora M.",
-      "role": "Shefe e Dorëzimit",
-      "org": "BPO, Prizren"
-    },
-    {
-      "quote": "Pranimi ndaloji të ishte një pengesë. Rezervimet pas orarit shkuan nga zero në rreth gjashtëdhjetë në muaj, dhe mungesat u ulën sepse konfirmimet dalin me të vërtetë.",
-      "name": "Dr. Endrit S.",
-      "role": "Pronar Klinike",
-      "org": "Grup dentistësh, Ferizaj"
-    }
-  ],
   "Inclusions": [
     "Auditim thirrjesh",
     "Ndërtim baze njohurish",
@@ -554,6 +562,16 @@
       "cadence": "për muaj",
       "meta": "Deri në 1,000 biseda të përgjigjura",
       "summary": "Pranimësi i plotë AI për një vendndodhje ose një radhë të fokusuar hyrëse. Gati në dy javë.",
+      "includes": [
+        "Përgjigjje 24/7 në 5 gjuhë",
+        "Deri në 1,000 biseda të përgjigjura / muaj",
+        "Rezervim takimesh + konfirmime SMS",
+        "Integrim kalendari, email dhe CRM",
+        "Panel i gjallë, transkripte dhe regjistrime",
+        "Transfer i ngrohtë te ekipi juaj me përmbledhje",
+        "Nisja e udhëhequr + 14 ditë modalitet hije",
+        "Mbështetje me email, përgjigje ditën e ardhshme"
+      ],
       "cta": "Filloni me Pranimin"
     },
     {
@@ -562,6 +580,16 @@
       "cadence": "për muaj",
       "meta": "Deri në 4,000 biseda të përgjigjura",
       "summary": "Për qendra thirrjesh dhe operatorë të shumë-faqeve që ekzekutojnë vëllim të vërtetë në zë dhe mesazhe.",
+      "includes": [
+        "Gjithçka në Pranim",
+        "Deri në 4,000 biseda të përgjigjura / muaj",
+        "Agjent WhatsApp, Viber, bisedë web dhe email",
+        "Thirrje prapë dhe fushata ndjekjeje dalëse",
+        "Integrim API dhe bazash të personalizuara",
+        "Vlerësim AA i automatizuar në 100% të thirrjeve",
+        "Specialist suksesi i emëruar + përmirësim mujor",
+        "Mbështetje prioritare, SLA përgjigjeje 4 orë"
+      ],
       "cta": "Shkallëzoni me Operacionet"
     },
     {
@@ -569,6 +597,16 @@
       "cadence": "marrëveshje vjetore",
       "meta": "Vëllim i pakufizuar, infrastrukturë e dedikuar",
       "summary": "Kapacitet i dedikuar, zë i personalizuar dhe SLA kontraktuale për operacionet e rregulluara dhe me vëllim të lartë.",
+      "includes": [
+        "Gjithçka në Operacione",
+        "Vëllim i pakufizuar bisedash",
+        "Instancë e dedikuar dhe rezidenca e të dhënave BE",
+        "Zë dhe personazh i personalizuar",
+        "SLA 99.9% kohë pune me gjoba",
+        "SSO, qasje e bazuar në rol, regjistra auditimi",
+        "Opsion markë e bardhë për resellerë BPO",
+        "Shqyrtim tremujor i biznesit me ekipin tonë"
+      ],
       "cta": "Flisni me ne"
     }
   ],
@@ -614,5 +652,254 @@
     "sq": "Shqip",
     "en": "English",
     "de": "Deutsch"
-  }
+  },
+  "LeadForm": {
+    "successTitle": "Kërkesa u pranua",
+    "successBody": "Një specialist do t'ju përgjigjet brenda një dite pune me kohën e propozuar dhe një regjistrim të shkurtër të Agjent038 duke u përgjigjur në një thirrje në industrinë tuaj. Pa slides, pa detyrime.",
+    "fullName": "Emri i plotë",
+    "workEmail": "Email i punës",
+    "company": "Kompania",
+    "phone": "Telefoni",
+    "monthlyCalls": "Thirrje hyrëse mujore",
+    "planOfInterest": "Plani i interesit",
+    "message": "Çfarë dëshironi që Agjent038 të trajtojë?",
+    "sending": "Duke dërguar…",
+    "submit": "Kërkoni një demonstrim",
+    "privacy": "Ne përgjigjemi brenda një dite pune. Detajet tuaja qëndrojnë tek ne — pa rishitje, pa buletine që nuk keni kërkuar.",
+    "callRanges": ["Nën 500", "500 – 1,000", "1,000 – 4,000", "4,000 – 10,000", "10,000+"],
+    "planOptions": ["Pranimi — 499$/muaj", "Operacionet — 1,290$/muaj", "Enterprise", " ende nuk e di"],
+    "placeholderMessage": "Rezervime pas orarit, thirrje statusi porosie, rezervim takimesh…"
+  },
+  "Roi": {
+    "yourOperation": "Operacioni juaj",
+    "callsPerMonth": "Thirrje hyrëse në muaj",
+    "shareUnanswered": "Pjesa e papërgjigjur aktuale",
+    "avgCallValue": "Vlera mesatare e një thirrjeje të zgjidhur",
+    "agentsTier1": "Agjentë në nivelin e parë",
+    "costPerAgent": "Kosto e plotë për agjent / muaj",
+    "projectedImpact": "Ndikimi i projektuar mujor",
+    "netGain": "Fitimi neto mujor pas Agjent038",
+    "returnOn": "kthim në planin",
+    "callsRecovered": "Thirrje të rimarra",
+    "revenueRecovered": "Të ardhura të rimarra",
+    "agentCapacity": "Kapaciteti i liruar i agjentëve",
+    "conversationsAutomated": "Biseda të automatizuara",
+    "agjent038Plan": "Plani Agjent038",
+    "saved": "Ruajtur — do t'ju sjellim këtë në thirrjen tuaj",
+    "saving": "Duke ruajtur…",
+    "saveEstimate": "Ruaj këtë vlerësim",
+    "disclaimer": "Vlerësimet përdorin standarde të konservuara nga zbatimet e gjalla: 86% e thirrjeve të humbura të rimarra, 12% konversion, 68% përmbajtje në nivelin e parë."
+  },
+  "Dashboard": {
+    "consoleName": "Konsola Agjent038 · Operacionet",
+    "live": "Live",
+    "callsAnswered": "Thirrje të përgjigjura",
+    "containment": "Përmbajtje",
+    "avgAnswer": "Përgjigje mesatare",
+    "missedCalls": "Thirrje të humbura",
+    "conversationsHandled": "Biseda të trajtuara",
+    "todayHourly": "Sot · për orë",
+    "peakConcurrency": "Bashkëkohësi e pikut",
+    "escalated": "Eskaluar",
+    "csat": "Kënaqësia",
+    "languageMix": "Përzierja e gjuhëve",
+    "liveQueue": "Radhja live",
+    "autoRefresh": "përditësim automatik",
+    "feed": [
+      { "lang": "SQ", "intent": "Rezervim termini", "outcome": "Rezervuar", "dur": "1:12", "tone": "mint" },
+      { "lang": "EN", "intent": "Statusi i porosisë", "outcome": "Zgjidhur", "dur": "0:48", "tone": "mint" },
+      { "lang": "DE", "intent": "Ankesë", "outcome": "Eskaluar", "dur": "2:05", "tone": "gold" },
+      { "lang": "SQ", "intent": "Informacion çmimi", "outcome": "Zgjidhur", "dur": "0:39", "tone": "mint" },
+      { "lang": "SR", "intent": "Ndryshim termini", "outcome": "Riplanifikuar", "dur": "1:27", "tone": "mint" }
+    ],
+    "languages": [
+      { "code": "Shqip", "pct": 58 },
+      { "code": "English", "pct": 19 },
+      { "code": "Deutsch", "pct": 12 },
+      { "code": "Srpski", "pct": 7 },
+      { "code": "Türkçe", "pct": 4 }
+    ]
+  },
+  "Cases": [
+    {
+      "tag": "Qendër kontaktesh e jashtme · Prishtinë",
+      "title": "Nga 41% braktisje në zero thirrje të humbura",
+      "context": "Dymbëdhjetë vende duke trajtuar mbështetjen hyrëse për dy klientë telekom. Braktisja në pikë po i kushtonte një gjobë SLA çdo muaj.",
+      "metrics": [
+        ["0%", "Thirrje të braktisura"],
+        ["71%", "Niveli i parë i përmbajtur"],
+        ["4 FTE", "Ridrejtuar në mbajtje"],
+        ["11 ditë", "Për të shkuar live"]
+      ],
+      "quote": "Gjobat SLA ndaluan në muajin e parë të plotë. Vetëm ajo e pagoi veten disa herë."
+    },
+    {
+      "tag": "Grup dentistësh · Ferizaj",
+      "title": "Gjashtëdhjetë rezervime shtesë në muaj nga thirrje që askush nuk i përgjigjej",
+      "context": "Katër klinika duke ndarë një vijë pranimi. Rreth e një e treta e thirrjeve arrinte gjatë kohës kur stafi ishte me pacientë ose pas mbylljes.",
+      "metrics": [
+        ["+58", "Rezervime / muaj"],
+        ["-34%", "Norma e mungesave"],
+        ["24/7", "Mbulim"],
+        ["9 ditë", "Për të shkuar live"]
+      ],
+      "quote": "Pacientët nuk e vërejnë se flasin me AI derisa ua themi. Ata vërejnë se dikush më në fund përgjigjet."
+    },
+    {
+      "tag": "Tregti elektronike dhe logjistikë · Prishtinë",
+      "title": "Thirrjet e statusit të porosisë të zgjidhura pa njeri",
+      "context": "Volumi sezonal po detyronte punësim të përkohshëm çdo tremujor, me tre javë trajnim përpara se dikush të ishte i dobishëm.",
+      "metrics": [
+        ["82%", "Thirrje statusi të automatizuara"],
+        ["0", "Punësime sezona"],
+        ["-46%", "Kosto për kontakt"],
+        ["14 ditë", "Për të shkuar live"]
+      ],
+      "quote": "Ndaluam së punësuari për pikun. Radha thith tani, dhe raportimi është më i mirë se çfarë kishim përpara."
+    }
+  ],
+  "CompanyPrinciples": [
+    {
+      "title": "Shisni rezultatin, provojeni çdo muaj",
+      "body": "Përmbajtja, thirrjet e rimarra dhe kapaciteti i liruar janë numrat e vetëm që kanë rëndësi. Ne i raportojmë çdo muaj, përfshirë muajt kur kurba sheshohet."
+    },
+    {
+      "title": "Gjuha vendase nuk është veçori, është produkti",
+      "body": "Një agjent që shqipton gabimisht qytetin e telefonuesit e humb thirrjen. Ne kalojmë shumicën e kohës së inxhinierisë në pjesët e shqipes që modelet e përgjithshme i bëjnë gabim."
+    },
+    {
+      "title": "Pa kyçje si strategji",
+      "body": "Muaj për muaj në planet tona standarde. Ju i ruani numrat dhe të dhënat tuaja. Nëse ndalojmë së fituari abonimin, largimi duhet të jetë i thjeshtë."
+    },
+    {
+      "title": "Thoni jo kur nuk do të funksionojë",
+      "body": "Disa radhë janë shumë të komplikuara ose me vëllim të ulët për të justifikuar automatizimin sot. Ne preferojmë t'ju themi në thirrjen e parë sesa të marrim një vit buxhetin tuaj."
+    }
+  ],
+  "CompanyFacts": [
+    ["2024", "Themeluar në Prishtinë"],
+    ["5", "Gjuhë të mbështetura"],
+    ["<600ms", "Vonesa mesatare përgjigjeje"],
+    ["BE", "Rajoni i përpunimit të të dhënave"]
+  ],
+  "CompanyLimits": "Ne jemi po aq të drejtë për kufizimet. Agjent038 nuk negocion kontrata, nuk trajton dhimbje, dhe nuk improvizon politika. Ata thirrje i takojnë një personi, dhe puna jonë është të sigurohemi që ai person t'i marrë me kontekst të plotë dhe kohë të mjaftueshme për ta bërë si duhet.",
+  "PricingCompare": [
+    ["Biseda të përgjigjura / muaj", "1,000", "4,000", "Të pakufizuara"],
+    ["Gjuhë", "5", "5", "5 + e personalizuar"],
+    ["Kanali zanor", "I përfshirë", "I përfshirë", "I përfshirë"],
+    ["WhatsApp, Viber, chat & email", "—", "I përfshirë", "I përfshirë"],
+    ["Fushata dalëse", "—", "I përfshirë", "I përfshirë"],
+    ["Integrim API të personalizuara", "Vetëm standard", "I përfshirë", "Të pakufizuara"],
+    ["AA e automatizuar në 100% të thirrjeve", "—", "I përfshirë", "I përfshirë"],
+    ["Instanca e dedikuar & rezidenca BE", "—", "—", "I përfshirë"],
+    ["Zë i personalizuar", "—", "—", "I përfshirë"],
+    ["SLA e kohës së punimit", "Më e mira e mundshme", "99.5%", "99.9% kontraktuale"],
+    ["Përgjigja e mbështetjes", "Dita e ardhshme e punës", "4 orë", "1 orë + në thirrje"],
+    ["Tarifa e vendosjes", "Asnjë", "Asnjë", "Asnjë"]
+  ],
+  "PricingContext": [
+    ["168 orë/javë", "Mbulim Agjent038"],
+    ["40 orë/javë", "Një agjent me kohë të plotë"],
+    ["Të pakufizuara", "Thirrje bashkëkohëse me Agjent038"],
+    ["1", "Thirrje bashkëkohëse për agjent"]
+  ],
+  "Layout": {
+    "skipToContent": "Kaloni te përmbajtja",
+    "jsonLdDescription": "Agjent038 ndërton pranimës dhe agjentë mbështetjeje klienti AI për qendra thirrjesh dhe biznese shërbimesh në Kosovë, duke përgjigjur 24/7 në shqip, anglisht, serbisht, gjermanisht dhe turqisht.",
+    "jsonLdServiceType": "Pranimës AI dhe agjent mbështetjeje klienti",
+    "jsonLdAudienceType": "Qendra thirrjesh, BPO, klinika, hotele dhe biznese shërbimesh"
+  },
+  "FooterProductLinks": {
+    "platform": "Platforma",
+    "pricing": "Çmimet",
+    "results": "Rezultatet & ROI",
+    "faq": "FAQ",
+    "bookDemo": "Rezervoni një demonstrim"
+  },
+  "PlatformPillars": [
+    {
+      "glyph": "◆",
+      "title": "Zë vendor shqip, jo një shtresë përkthimi",
+      "description": "Trajnuar në dialektet e Kosovës, shqiptimin Gheg dhe transkriptet reale të qendrave të thirrjeve, kështu që telefonuesit nuk kërkojnë të transferohen te një njeri sepse u keqkuptuan.",
+      "detail": [
+        "Shqip Gheg dhe standarde, plus anglisht, serbisht, gjermanisht, turqisht",
+        "Vonesa përgjigjjeje nën 600ms në transportuesit lokalë",
+        "Mbështetje ndërprerjeje: telefonuesit mund të ndërpresin natyrshëm"
+      ]
+    },
+    {
+      "glyph": "◇",
+      "title": "Përgjigjet, rezervon, verifikon dhe eskalon",
+      "description": "Agjent038 nuk është një pemë IVR. Ai kupton qëllimin, kontrollon sistemet tuaja, kryen detyrën dhe rrugëton te një njeri vetëm kur politika ose emocioni e kërkon atë.",
+      "detail": [
+        "Rezervim takimesh me disponueshmëri reale kalendari",
+        "Status porosie, fatura dhe kërkime llogarie përmes API",
+        "Verifikim identiteti me rregulla të konfigurueshme"
+      ]
+    },
+    {
+      "glyph": "○",
+      "title": "Ulet mbi grumbullin tuaj ekzistues",
+      "description": "Mbani numrat tuaj, CRM-në tuaj dhe agjentët tuaj. Agjent038 lidhet me atë që keni tashmë dhe fillon të marrë mbishkarkimin brenda ditësh, jo tremujorësh.",
+      "detail": [
+        "Trungje SIP / VoIP, Twilio, 3CX, Asterisk, FreePBX",
+        "Sinkronizim CRM: HubSpot, Zoho, Pipedrive, Salesforce, REST i personalizuar",
+        "WhatsApp, Viber, bisedë web dhe email nga e njëjta tru"
+      ]
+    },
+    {
+      "glyph": "□",
+      "title": "Një sallë kontrolli, jo një kuti e zezë",
+      "description": "Çdo bisedë transkriptohet, vlerësohet dhe kërkohet. Ju shikoni përmbajtjen, ndjenjën, të ardhurat e influencuara dhe ku AI dorëzohet — drejtpërdrejt.",
+      "detail": [
+        "Radhë live, transkripte dhe regjistrime thirrjesh",
+        "Vlerësim cilësie në 12 dimensione për bisedë",
+        "Raportim i eksportueshëm për klientë dhe palë të interesuara"
+      ]
+    }
+  ],
+  "Steps": [
+    {
+      "step": "01",
+      "title": "Zbulimi dhe auditimi i thirrjeve",
+      "days": "Dita 1–3",
+      "body": "Dëgjojmë një mostër të thirrjeve tuaja reale, hartojmë qëllimet kryesore dhe llogarisim sa kushtojnë thirrjet e humbura dhe të keqtrajtuara çdo muaj."
+    },
+    {
+      "step": "02",
+      "title": "Ndërtimi dhe trajnimi",
+      "days": "Dita 4–10",
+      "body": "Shkruajmë bazën tuaj të njohurive, lidhim telefoninë dhe CRM-në tuaj dhe trajnojmë Agjent038 në skriptet, tonin, ofertat dhe politikën tuaj të eskalimit."
+    },
+    {
+      "step": "03",
+      "title": "Modaliteti hijë",
+      "days": "Dita 11–14",
+      "body": "Agjent038 përgjigjet paralelisht me ekipin tuaj në një numër testi. Ju shikoni transkriptet dhe miratoni çdo sjellje përpara se një klient i vetëm ta dëgjojë atë."
+    },
+    {
+      "step": "04",
+      "title": "Jeta e drejtpërdrejtë dhe përmirësimi",
+      "days": "Dita 15 e më tej",
+      "body": "Rrugëtojmë trafik real, shikojmë përmbajtjen çdo ditë dhe përmirësojmë çdo javë. Ju merrni një specialist të emëruar dhe një shqyrtim mujor të performancës."
+    }
+  ],
+  "Integrations": [
+    "Twilio",
+    "3CX",
+    "Asterisk",
+    "FreePBX",
+    "HubSpot",
+    "Zoho CRM",
+    "Pipedrive",
+    "Salesforce",
+    "Google Calendar",
+    "Microsoft 365",
+    "WhatsApp Business",
+    "Viber",
+    "Slack",
+    "Zendesk",
+    "Shopify",
+    "REST API i personalizuar"
+  ]
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import { ButtonLink, Eyebrow, JsonLd, Section } from "@/components/ui";
 import { articles } from "@/lib/content";
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "AI voice agent Albanian article",
       "contact centre automation insights",
     ],
+    locale,
   });
 }
 
@@ -137,8 +138,7 @@ async function InsightsPage({ params }: Props) {
             {t("cta")}
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-ink-soft">
-            We will audit twenty of your calls and write up what automation
-            would realistically contain, at no cost.
+            {t("auditDescription")}
           </p>
           <div className="mt-9 flex justify-center">
             <ButtonLink href="/contact">{tCommon("requestAudit")}</ButtonLink>

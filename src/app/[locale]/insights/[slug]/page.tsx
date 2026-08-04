@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import { JsonLd, Section } from "@/components/ui";
 import { articles } from "@/lib/content";
@@ -20,7 +19,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const article = articles.find((a) => a.slug === slug);
   if (!article) return {};
   return buildMetadata({
@@ -28,18 +27,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: article.description,
     path: `/insights/${article.slug}`,
     keywords: ["AI call centre Kosovo", "Albanian voice agent guide", article.title],
+    locale,
   });
 }
 
-function ArticlePage({ params }: Props) {
-  const { locale, slug } = use(params);
+async function ArticlePage({ params }: Props) {
+  const { locale, slug } = await params;
   const article = articles.find((a) => a.slug === slug);
   if (!article) notFound();
 
   setRequestLocale(locale);
-  const t = useTranslations("Insights");
-  const tArt = useTranslations("Articles");
-  const tCommon = useTranslations("Common");
+
+  const tArt = await getTranslations({ locale, namespace: "Insights" });
+  const tCommon = await getTranslations({ locale, namespace: "Common" });
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -74,7 +74,7 @@ function ArticlePage({ params }: Props) {
               className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ink-mute transition-colors hover:text-navy"
             >
               <span className="transition-transform duration-300">←</span>
-              {tCommon("insights")}
+              {tArt("eyebrow")}
             </Link>
             <span className="mt-6 block text-[11px] uppercase tracking-[0.2em] text-gold">{article.category}</span>
             <h1 className="font-display mt-4 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
@@ -101,47 +101,34 @@ function ArticlePage({ params }: Props) {
             {article.description}
           </p>
 
-          {article.sections.map((section) => (
+          {article.body.map((section) => (
             <div key={section.heading} className="mt-12">
               <h2 className="font-display text-2xl leading-snug">{section.heading}</h2>
-              <p className="mt-4 text-base leading-relaxed text-ink-soft">{section.body}</p>
-              {section.bullets && section.bullets.length > 0 && (
+              {section.paragraphs.map((p, i) => (
+                <p key={i} className="mt-4 text-base leading-relaxed text-ink-soft">{p}</p>
+              ))}
+              {section.list && section.list.length > 0 && (
                 <ul className="mt-4 space-y-3">
-                  {section.bullets.map((bullet) => (
-                    <li key={bullet} className="flex gap-3 text-base leading-relaxed text-ink-soft">
+                  {section.list.map((item) => (
+                    <li key={item} className="flex gap-3 text-base leading-relaxed text-ink-soft">
                       <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
-                      {bullet}
+                      {item}
                     </li>
                   ))}
                 </ul>
               )}
             </div>
           ))}
-
-          {article.takeaways && (
-            <div className="mt-14 rounded-2xl border border-line bg-canvas/50 p-8">
-              <h3 className="font-display text-lg">{tArt("takeaways")}</h3>
-              <ul className="mt-4 space-y-3">
-                {article.takeaways.map((t) => (
-                  <li key={t} className="flex gap-3 text-sm leading-relaxed text-ink-soft">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
-                    {t}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </article>
       </Section>
 
       <Section>
         <div className="flex flex-col items-center gap-6 rounded-2xl border border-line bg-paper p-10 text-center md:p-14">
           <h2 className="font-display max-w-2xl text-2xl leading-snug md:text-3xl">
-            Ready to see what containment looks like on your actual queue?
+            {tArt("auditTitle")}
           </h2>
           <p className="max-w-xl text-sm leading-relaxed text-ink-soft">
-            We will audit twenty of your calls and write up what automation
-            would realistically contain, at no cost.
+            {tArt("auditDescription")}
           </p>
           <Link
             href="/contact"

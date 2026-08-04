@@ -1,7 +1,7 @@
 export const site = {
   name: "Agjent038",
   legalName: "Agjent038 Sh.p.k.",
-  tagline: "Pranimës AI për qendrat e thirrjeve në Kosovë",
+  tagline: "AI receptionist for Kosovo call centres",
   domain: "https://agjent038.com",
   email: "hello@agjent038.com",
   phone: "+383 49 000 300",
@@ -18,18 +18,45 @@ export const site = {
   languages: ["Albanian", "English", "Serbian", "German", "Turkish"],
 } as const;
 
-export const nav: { label: string; href: string }[] = [
-  { label: "Platforma", href: "/platform" },
-  { label: "Zgjidhjet", href: "/solutions" },
-  { label: "Rezultatet", href: "/results" },
-  { label: "Çmimet", href: "/pricing" },
-  { label: "Njohuritë", href: "/insights" },
-  { label: "Kompania", href: "/company" },
-];
-
 export function absoluteUrl(path = "/") {
   return `${site.domain}${path}`;
 }
+
+const ogLocaleMap: Record<string, string> = {
+  sq: "sq_AL",
+  en: "en_GB",
+  de: "de_DE",
+};
+
+const baseKeywords: Record<string, string[]> = {
+  sq: [
+    "pranimës AI Kosovë",
+    "qendër thirrjesh AI Kosovë",
+    "mbështetje klienti AI Kosovë",
+    "pranimës virtual Prishtinë",
+    "automatizim qendre thirrjesh shqip",
+    "agjent zanor gjuhë shqipe",
+    "automatizim BPO Kosovë",
+  ],
+  en: [
+    "AI receptionist Kosovo",
+    "AI call centre Kosovo",
+    "AI customer support Kosovo",
+    "virtual receptionist Prishtina",
+    "call centre automation Albanian",
+    "AI voice agent Albanian language",
+    "BPO automation Kosovo",
+  ],
+  de: [
+    "KI-Rezeptionist Kosovo",
+    "KI-Callcenter Kosovo",
+    "KI-Kundenbetreuung Kosovo",
+    "virtueller Rezeptionist Pristina",
+    "Callcenter-Automatisierung Albanisch",
+    "KI-Stimmapent Albanische Sprache",
+    "BPO-Automatisierung Kosovo",
+  ],
+};
 
 type SeoInput = {
   title: string;
@@ -37,6 +64,7 @@ type SeoInput = {
   path: string;
   keywords?: string[];
   type?: "website" | "article";
+  locale?: string;
 };
 
 export function buildMetadata({
@@ -45,21 +73,14 @@ export function buildMetadata({
   path,
   keywords = [],
   type = "website",
+  locale = "sq",
 }: SeoInput) {
   const url = absoluteUrl(path);
+  const localeKw = baseKeywords[locale] ?? baseKeywords.sq;
   return {
     title,
     description,
-    keywords: [
-      "pranimës AI Kosovë",
-      "qendër thirrjesh AI Kosovë",
-      "mbështetje klienti AI Kosovë",
-      "pranimës virtual Prishtinë",
-      "automatizim qendre thirrjesh shqip",
-      "agjent zanor gjuhë shqipe",
-      "automatizim BPO Kosovë",
-      ...keywords,
-    ],
+    keywords: [...localeKw, ...keywords],
     alternates: { canonical: url },
     openGraph: {
       title,
@@ -67,7 +88,7 @@ export function buildMetadata({
       url,
       siteName: site.name,
       type,
-      locale: "sq_AL",
+      locale: ogLocaleMap[locale] ?? "sq_AL",
     },
     twitter: {
       card: "summary_large_image" as const,

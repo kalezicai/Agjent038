@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Accordion from "@/components/accordion";
 import Reveal from "@/components/reveal";
 import {
@@ -11,7 +11,6 @@ import {
   Section,
   SectionHead,
 } from "@/components/ui";
-import { faqs, inclusions, plans } from "@/lib/content";
 import { absoluteUrl, buildMetadata, site } from "@/lib/site";
 import { locales } from "@/i18n/config";
 
@@ -38,28 +37,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "$499 AI receptionist",
       "call center automation pricing",
     ],
+    locale,
   });
 }
-
-const comparisonData: [string, string, string, string][] = [
-  ["Answered conversations / month", "1,000", "4,000", "Unlimited"],
-  ["Languages", "5", "5", "5 + custom"],
-  ["Voice channel", "Included", "Included", "Included"],
-  ["WhatsApp, Viber, chat & email", "—", "Included", "Included"],
-  ["Outbound campaigns", "—", "Included", "Included"],
-  ["Custom API integrations", "Standard only", "Included", "Unlimited"],
-  ["Automated QA on 100% of calls", "—", "Included", "Included"],
-  ["Dedicated instance & EU residency", "—", "—", "Included"],
-  ["Custom branded voice", "—", "—", "Included"],
-  ["Uptime SLA", "Best effort", "99.5%", "99.9% contractual"],
-  ["Support response", "Next business day", "4 hours", "1 hour + on-call"],
-  ["Setup fee", "None", "None", "None"],
-];
 
 async function PricingPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Pricing" });
+
+  const messages = await getMessages({ locale });
+  const plans = (messages.Plans ?? []) as Array<{
+    name: string;
+    price: string;
+    cadence: string;
+    meta: string;
+    summary: string;
+    includes: string[];
+    cta: string;
+    featured?: boolean;
+  }>;
+  const inclusions = (messages.Inclusions ?? []) as string[];
+  const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
+  const comparisonData = (messages.PricingCompare ?? []) as [string, string, string, string][];
+  const contextData = (messages.PricingContext ?? []) as [string, string][];
 
   const productLd = {
     "@context": "https://schema.org",
@@ -220,12 +221,7 @@ async function PricingPage({ params }: Props) {
           />
           <Reveal delay={100}>
             <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
-              {[
-                ["168 h/week", "Agjent038 coverage"],
-                ["40 h/week", "One full-time agent"],
-                ["Unlimited", "Concurrent calls with Agjent038"],
-                ["1", "Concurrent calls per agent"],
-              ].map(([v, l]) => (
+              {contextData.map(([v, l]) => (
                 <div key={l} className="bg-paper p-7">
                   <div className="font-display text-3xl text-navy">{v}</div>
                   <div className="mt-2 text-sm text-ink-mute">{l}</div>

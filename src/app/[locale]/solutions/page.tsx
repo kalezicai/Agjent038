@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import Reveal from "@/components/reveal";
 import {
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "hotel AI reservations Albanian",
       "AI order status support",
     ],
+    locale,
   });
 }
 
@@ -42,7 +43,8 @@ async function SolutionsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Solutions" });
-  const tSol = await getTranslations({ locale, namespace: "SolutionsList" });
+  const messages = await getMessages({ locale });
+  const solutionsData = (messages.SolutionsList ?? []) as Array<{ slug: string; name: string; headline: string; body: string; wins: string[] }>;
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -54,6 +56,7 @@ async function SolutionsPage({ params }: Props) {
   };
 
   const slugs = ["call-centers", "clinics", "hospitality", "radhë-logjistika", "shërbime-financiare", "pasuria-e-paluajtshme"];
+  const solutionsMap = new Map(solutionsData.map((s) => [s.slug, s]));
 
   return (
     <>
@@ -85,18 +88,18 @@ async function SolutionsPage({ params }: Props) {
                 <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
                   <div>
                     <span className="text-[11px] uppercase tracking-[0.22em] text-gold">
-                      {String(i + 1).padStart(2, "0")} — {tSol(`${slug}.name`)}
+                      {String(i + 1).padStart(2, "0")} — {solutionsMap.get(slug)?.name ?? slug}
                     </span>
                     <h2 className="font-display mt-5 text-2xl leading-snug md:text-[1.75rem]">
-                      {tSol(`${slug}.headline`)}
+                      {solutionsMap.get(slug)?.headline ?? ""}
                     </h2>
                   </div>
                   <div>
                     <p className="text-[15px] leading-relaxed text-ink-soft">
-                      {tSol(`${slug}.body`)}
+                      {solutionsMap.get(slug)?.body ?? ""}
                     </p>
                     <ul className="mt-7 grid gap-3 border-t border-line pt-6">
-                      {(tSol.raw(`${slug}.wins`) as string[]).map((w) => (
+                      {(solutionsMap.get(slug)?.wins ?? []).map((w) => (
                         <li key={w} className="flex gap-3 text-sm text-ink-mute">
                           <span className="text-gold">◆</span>
                           {w}
@@ -121,10 +124,7 @@ async function SolutionsPage({ params }: Props) {
           <Reveal delay={100}>
             <div className="rounded-2xl border border-line bg-paper p-8">
               <p className="text-sm leading-relaxed text-ink-soft">
-                Send us twenty recorded calls from your queue. Within a week we
-                will return a written breakdown of the top intents, the share
-                Agjent038 would contain today, and the share that would still need a
-                human. No cost, no obligation.
+                {t("auditDescription")}
               </p>
               <div className="mt-7">
                 <ButtonLink href="/contact">{t("cta")}</ButtonLink>

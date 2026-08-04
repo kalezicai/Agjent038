@@ -1,70 +1,36 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const kpis = [
-  { label: "Calls answered", value: "1,284", delta: "+18%", good: true },
-  { label: "Containment", value: "68%", delta: "+11 pts", good: true },
-  { label: "Avg. answer", value: "0.4s", delta: "-6.1s", good: true },
-  { label: "Missed calls", value: "0", delta: "-412", good: true },
-];
-
-const volume = [42, 55, 48, 71, 66, 84, 78, 92, 88, 96, 90, 100];
-const labels = ["08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
-
-const feed = [
-  {
-    lang: "SQ",
-    intent: "Rezervim termini",
-    outcome: "Booked",
-    dur: "1:12",
-    tone: "mint",
-  },
-  {
-    lang: "EN",
-    intent: "Order status",
-    outcome: "Resolved",
-    dur: "0:48",
-    tone: "mint",
-  },
-  {
-    lang: "DE",
-    intent: "Reklamation",
-    outcome: "Escalated",
-    dur: "2:05",
-    tone: "gold",
-  },
-  {
-    lang: "SQ",
-    intent: "Informacion çmimi",
-    outcome: "Resolved",
-    dur: "0:39",
-    tone: "mint",
-  },
-  {
-    lang: "SR",
-    intent: "Promena termina",
-    outcome: "Rescheduled",
-    dur: "1:27",
-    tone: "mint",
-  },
-];
-
-const languages = [
-  { code: "Albanian", pct: 58 },
-  { code: "English", pct: 19 },
-  { code: "German", pct: 12 },
-  { code: "Serbian", pct: 7 },
-  { code: "Turkish", pct: 4 },
-];
+import { useTranslations } from "next-intl";
 
 export default function Dashboard({ compact = false }: { compact?: boolean }) {
+  const t = useTranslations("Dashboard");
   const [tick, setTick] = useState(0);
+
+  const kpis = [
+    { label: t("callsAnswered"), value: "1,284", delta: "+18%", good: true },
+    { label: t("containment"), value: "68%", delta: "+11 pts", good: true },
+    { label: t("avgAnswer"), value: "0.4s", delta: "-6.1s", good: true },
+    { label: t("missedCalls"), value: "0", delta: "-412", good: true },
+  ];
+
+  const feed = t.raw("feed") as Array<{
+    lang: string;
+    intent: string;
+    outcome: string;
+    dur: string;
+    tone: string;
+  }>;
+
+  const languages = t.raw("languages") as Array<{ code: string; pct: number }>;
+
+  const volume = [42, 55, 48, 71, 66, 84, 78, 92, 88, 96, 90, 100];
+  const labels = ["08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
 
   useEffect(() => {
     const id = setInterval(() => setTick((t) => (t + 1) % feed.length), 2600);
     return () => clearInterval(id);
-  }, []);
+  }, [feed.length]);
 
   const points = volume
     .map((v, i) => `${(i / (volume.length - 1)) * 100},${100 - v * 0.85}`)
@@ -79,13 +45,13 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
           <span className="h-2.5 w-2.5 rounded-full bg-line" />
           <span className="h-2.5 w-2.5 rounded-full bg-line" />
           <span className="ml-3 text-xs font-medium text-ink-soft">
-            Zana Console · Operations
+            {t("consoleName")}
           </span>
         </div>
         <div className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-mint" />
           <span className="text-[11px] uppercase tracking-[0.16em] text-ink-mute">
-            Live
+            {t("live")}
           </span>
         </div>
       </div>
@@ -119,9 +85,9 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
           <div className="rounded-xl border border-line p-5">
             <div className="flex items-baseline justify-between">
               <p className="text-sm font-medium text-ink">
-                Conversations handled
+                {t("conversationsHandled")}
               </p>
-              <p className="text-[11px] text-ink-mute">Today · hourly</p>
+              <p className="text-[11px] text-ink-mute">{t("todayHourly")}</p>
             </div>
             <div className="relative mt-5 h-40">
               <svg
@@ -171,15 +137,15 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
             </div>
             <div className="mt-9 grid grid-cols-3 gap-3 border-t border-line pt-4">
               <div>
-                <p className="text-[11px] text-ink-mute">Peak concurrency</p>
+                <p className="text-[11px] text-ink-mute">{t("peakConcurrency")}</p>
                 <p className="mt-1 text-sm font-medium text-ink">37 calls</p>
               </div>
               <div>
-                <p className="text-[11px] text-ink-mute">Escalated</p>
+                <p className="text-[11px] text-ink-mute">{t("escalated")}</p>
                 <p className="mt-1 text-sm font-medium text-ink">32%</p>
               </div>
               <div>
-                <p className="text-[11px] text-ink-mute">CSAT</p>
+                <p className="text-[11px] text-ink-mute">{t("csat")}</p>
                 <p className="mt-1 text-sm font-medium text-ink">4.6 / 5</p>
               </div>
             </div>
@@ -188,7 +154,7 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
           {/* right column */}
           <div className="space-y-4">
             <div className="rounded-xl border border-line p-5">
-              <p className="text-sm font-medium text-ink">Language mix</p>
+              <p className="text-sm font-medium text-ink">{t("languageMix")}</p>
               <ul className="mt-4 space-y-3">
                 {languages.map((l, i) => (
                   <li key={l.code}>
@@ -212,8 +178,8 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
 
             <div className="rounded-xl border border-line p-5">
               <div className="flex items-center justify-between">
-                <p className="text-sm font-medium text-ink">Live queue</p>
-                <span className="text-[11px] text-ink-mute">auto-refresh</span>
+                <p className="text-sm font-medium text-ink">{t("liveQueue")}</p>
+                <span className="text-[11px] text-ink-mute">{t("autoRefresh")}</span>
               </div>
               <ul className="mt-4 space-y-2.5">
                 {feed.map((f, i) => (

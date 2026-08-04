@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site";
@@ -28,6 +27,11 @@ const navItems = [
 export default function SiteHeader() {
   const pathname = usePathname();
   const t = useTranslations("Nav");
+
+  const isActive = (href: string) => {
+    const clean = pathname.replace(/^\/(sq|en|de)(\/|$)/, "/") || "/";
+    return clean === href || clean.startsWith(`${href}/`);
+  };
   const tHome = useTranslations("Home");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -67,8 +71,7 @@ export default function SiteHeader() {
 
           <nav className="hidden items-center gap-1 lg:flex">
             {navItems.map((item) => {
-              const active =
-                pathname === item.href || pathname.startsWith(`${item.href}/`);
+              const active = isActive(item.href);
               return (
                 <Link
                   key={item.href}

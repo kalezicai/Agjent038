@@ -90,7 +90,66 @@
     "ctaDescription": "A thirty-minute call, a recording of Agjent038 answering in your industry, and an honest containment estimate for your queue. If it does not fit, we will tell you.",
     "ctaBookAudit": "Book your call audit",
     "ctaReviewPricing": "Review pricing",
-    "ctaLocation": "Prishtina, Kosovo"
+    "ctaLocation": "Prishtina, Kosovo",
+    "Outcomes": [
+      {
+        "stat": "0s",
+        "label": "Average answer time",
+        "note": "Every call picked up on the first ring, including 03:00 and holidays."
+      },
+      {
+        "stat": "68%",
+        "label": "Conversations fully resolved",
+        "note": "Tier-1 volume closed without a human agent touching the ticket."
+      },
+      {
+        "stat": "3.4x",
+        "label": "More qualified bookings",
+        "note": "Missed calls turn into confirmed appointments and callbacks."
+      },
+      {
+        "stat": "24/7",
+        "label": "Coverage in 5 languages",
+        "note": "Albanian, English, Serbian, German and Turkish on one number."
+      }
+    ],
+    "BeforeAfter": {
+      "today": [
+        "30–45% of calls unanswered at peak",
+        "Nothing answered after 17:00 or on weekends",
+        "One language, one caller at a time",
+        "QA on a 2% sample, if anyone has time",
+        "Hiring is the only way to add capacity"
+      ],
+      "after": [
+        "100% of offered calls answered in 0.4s",
+        "24/7/365 coverage including holidays",
+        "Five languages, unlimited concurrency",
+        "Every conversation transcribed and scored",
+        "Capacity scales the moment volume does"
+      ]
+    },
+    "Testimonials": [
+      {
+        "quote": "We were losing roughly 40% of calls between 12:00 and 14:00. Now nothing goes unanswered, and our agents finally spend their day on the cases that need a person.",
+        "name": "Arbër K.",
+        "role": "Operations Director",
+        "org": "Outsourced contact centre, Prishtina"
+      },
+      {
+        "quote": "Our clients ask for QA on every call. We used to sample 2%. Now every conversation is scored and the reporting writes itself — that alone won us a contract.",
+        "name": "Vlora M.",
+        "role": "Head of Delivery",
+        "org": "BPO, Prizren"
+      },
+      {
+        "quote": "Reception stopped being a bottleneck. Bookings after hours went from zero to about sixty a month, and no-shows dropped because confirmations actually go out.",
+        "name": "Dr. Endrit S.",
+        "role": "Clinic Owner",
+        "org": "Dental group, Ferizaj"
+      }
+    ],
+    "monthLabel": "/ month"
   },
   "Common": {
     "bookDemo": "Book a demo",
@@ -137,6 +196,8 @@
     "guardrailsLede": "An AI receptionist is only trustworthy if you can predict what it will never do.",
     "capabilitiesEyebrow": "Capabilities",
     "capabilitiesTitle": "Everything running from one brain",
+    "pillarsEyebrow": "Engineered for Kosovo",
+    "pillarsTitle": "The four details that decide whether callers accept an AI",
     "integrationsEyebrow": "Integrations",
     "integrationsTitle": "Connected to the tools your team already lives in",
     "integrationsLede": "Standard connectors ship on day one. Anything with a REST API can be wired in during onboarding.",
@@ -195,10 +256,12 @@
     "cta": "Request a call audit",
     "notListedEyebrow": "Not listed?",
     "notListedTitle": "If the phone rings and someone has to answer it, Agjent038 can take the first pass.",
-    "notListedLede": "Logistics dispatch, municipal services, education admissions, utilities, legal intake — the pattern is the same: high-volume repetitive enquiries in front of a smaller number of genuinely complex ones."
+    "notListedLede": "Logistics dispatch, municipal services, education admissions, utilities, legal intake — the pattern is the same: high-volume repetitive enquiries in front of a smaller number of genuinely complex ones.",
+    "auditDescription": "Send us twenty recorded calls from your queue. Within a week we will return a written breakdown of the top intents, the share Agjent038 would contain today, and the share that would still need a human. No cost, no obligation."
   },
   "Results": {
     "eyebrow": "Results",
+    "roiModelEyebrow": "ROI model",
     "title": "The case is arithmetic, not enthusiasm.",
     "description": "Below is a model you can run against your own numbers, followed by what happened in three real deployments. We use conservative assumptions on purpose — the point is a decision you can defend internally.",
     "roiTitle": "Run the numbers for your queue",
@@ -251,7 +314,8 @@
     "responsibilityEyebrow": "Responsibility",
     "responsibilityTitle": "Automation that redeploys people rather than removing them",
     "responsibilityLede": "Every deployment we have run so far ended with the same team in place, doing different work. Agents move from reading order statuses aloud to retention, complex cases and outbound revenue — the work that pays better and burns out slower.",
-    "contactTitle": "Get in touch"
+    "contactTitle": "Get in touch",
+    "hoursDescription": "Mon–Fri, 09:00–18:00 CET. Our own line is answered by Agjent038 outside those hours."
   },
   "FAQ": {
     "eyebrow": "Questions",
@@ -271,7 +335,9 @@
     "title": "What we have learned running AI on real Kosovo call queues.",
     "description": "Operational writing for people responsible for a phone queue — economics, engineering detail and compliance, without the vendor gloss.",
     "featured": "Featured",
-    "cta": "Request a call audit"
+    "cta": "Request a call audit",
+    "auditDescription": "We will audit twenty of your calls and write up what automation would realistically contain, at no cost.",
+    "auditTitle": "Ready to see what containment looks like on your actual queue?"
   },
   "NotFound": {
     "title": "This line is not connected.",
@@ -324,44 +390,6 @@
     "monthToMonthDescription": "Standard plans run monthly with 30 days' notice. Results keep you, not paperwork.",
     "gdpr": "GDPR-aligned",
     "gdprDescription": "EU processing, signed DPA, configurable retention and deletion on request."
-  },
-  "Outcomes": [
-    {
-      "stat": "0s",
-      "label": "Average answer time",
-      "note": "Every call picked up on the first ring, including 03:00 and holidays."
-    },
-    {
-      "stat": "68%",
-      "label": "Conversations fully resolved",
-      "note": "Tier-1 volume closed without a human agent touching the ticket."
-    },
-    {
-      "stat": "3.4x",
-      "label": "More qualified bookings",
-      "note": "Missed calls turn into confirmed appointments and callbacks."
-    },
-    {
-      "stat": "24/7",
-      "label": "Coverage in 5 languages",
-      "note": "Albanian, English, Serbian, German and Turkish on one number."
-    }
-  ],
-  "BeforeAfter": {
-    "today": [
-      "30–45% of calls unanswered at peak",
-      "Nothing answered after 17:00 or on weekends",
-      "One language, one caller at a time",
-      "QA on a 2% sample, if anyone has time",
-      "Hiring is the only way to add capacity"
-    ],
-    "after": [
-      "100% of offered calls answered in 0.4s",
-      "24/7/365 coverage including holidays",
-      "Five languages, unlimited concurrency",
-      "Every conversation transcribed and scored",
-      "Capacity scales the moment volume does"
-    ]
   },
   "Capabilities": [
     {
@@ -513,26 +541,6 @@
       "a": "That is what we recommend. Start with after-hours and overflow — the calls you are already losing. Measure containment for thirty days, then decide whether to move primary queue traffic across."
     }
   ],
-  "Testimonials": [
-    {
-      "quote": "We were losing roughly 40% of calls between 12:00 and 14:00. Now nothing goes unanswered, and our agents finally spend their day on the cases that need a person.",
-      "name": "Arbër K.",
-      "role": "Operations Director",
-      "org": "Outsourced contact centre, Prishtina"
-    },
-    {
-      "quote": "Our clients ask for QA on every call. We used to sample 2%. Now every conversation is scored and the reporting writes itself — that alone won us a contract.",
-      "name": "Vlora M.",
-      "role": "Head of Delivery",
-      "org": "BPO, Prizren"
-    },
-    {
-      "quote": "Reception stopped being a bottleneck. Bookings after hours went from zero to about sixty a month, and no-shows dropped because confirmations actually go out.",
-      "name": "Dr. Endrit S.",
-      "role": "Clinic Owner",
-      "org": "Dental group, Ferizaj"
-    }
-  ],
   "Inclusions": [
     "Discovery call audit",
     "Knowledge base build",
@@ -554,6 +562,16 @@
       "cadence": "per month",
       "meta": "Up to 1,000 answered conversations",
       "summary": "The full AI receptionist for a single location or a focused inbound queue. Live in two weeks.",
+      "includes": [
+        "24/7 inbound answering in 5 languages",
+        "Up to 1,000 answered conversations / month",
+        "Appointment booking + SMS confirmations",
+        "Calendar, email and CRM integration",
+        "Live dashboard, transcripts and recordings",
+        "Warm transfer to your team with summary",
+        "Guided onboarding + 14-day shadow mode",
+        "Email support, next-business-day response"
+      ],
       "cta": "Start with Reception"
     },
     {
@@ -562,6 +580,16 @@
       "cadence": "per month",
       "meta": "Up to 4,000 answered conversations",
       "summary": "For call centres and multi-site operators running real volume across voice and messaging.",
+      "includes": [
+        "Everything in Reception",
+        "Up to 4,000 answered conversations / month",
+        "WhatsApp, Viber, web chat and email agent",
+        "Outbound callbacks and follow-up campaigns",
+        "Custom API and database integrations",
+        "Automated QA scoring on 100% of calls",
+        "Named success specialist + monthly tuning",
+        "Priority support, 4-hour response SLA"
+      ],
       "cta": "Scale with Operations"
     },
     {
@@ -569,6 +597,16 @@
       "cadence": "annual agreement",
       "meta": "Unlimited volume, dedicated infrastructure",
       "summary": "Dedicated capacity, custom voice, and contractual SLAs for regulated and high-volume operations.",
+      "includes": [
+        "Everything in Operations",
+        "Unlimited conversation volume",
+        "Dedicated instance and EU data residency",
+        "Custom branded voice and persona",
+        "99.9% uptime SLA with penalties",
+        "SSO, role-based access, audit logs",
+        "White-label option for BPO resellers",
+        "Quarterly business review with our team"
+      ],
       "cta": "Talk to us"
     }
   ],
@@ -614,5 +652,254 @@
     "sq": "Shqip",
     "en": "English",
     "de": "Deutsch"
-  }
+  },
+  "LeadForm": {
+    "successTitle": "Request received",
+    "successBody": "A specialist will reply within one business day with a proposed time and a short recording of Agjent038 answering a call in your industry. No slide deck, no obligation.",
+    "fullName": "Full name",
+    "workEmail": "Work email",
+    "company": "Company",
+    "phone": "Phone",
+    "monthlyCalls": "Monthly inbound calls",
+    "planOfInterest": "Plan of interest",
+    "message": "What would you like Agjent038 to handle?",
+    "sending": "Sending…",
+    "submit": "Request a demo",
+    "privacy": "We reply within one business day. Your details stay with us — no reselling, no newsletters you did not ask for.",
+    "callRanges": ["Under 500", "500 – 1,000", "1,000 – 4,000", "4,000 – 10,000", "10,000+"],
+    "planOptions": ["Reception — $499/mo", "Operations — $1,290/mo", "Enterprise", "Not sure yet"],
+    "placeholderMessage": "After-hours reservations, order status calls, appointment booking…"
+  },
+  "Roi": {
+    "yourOperation": "Your operation",
+    "callsPerMonth": "Inbound calls per month",
+    "shareUnanswered": "Share currently unanswered",
+    "avgCallValue": "Average value of a resolved call",
+    "agentsTier1": "Agents covering tier-1",
+    "costPerAgent": "Fully loaded cost per agent / month",
+    "projectedImpact": "Projected monthly impact",
+    "netGain": "Net monthly gain after Agjent038",
+    "returnOn": "return on a",
+    "callsRecovered": "Calls recovered",
+    "revenueRecovered": "Revenue recovered",
+    "agentCapacity": "Agent capacity released",
+    "conversationsAutomated": "Conversations automated",
+    "agjent038Plan": "Agjent038 plan",
+    "saved": "Saved — we'll bring this to your call",
+    "saving": "Saving…",
+    "saveEstimate": "Save this estimate",
+    "disclaimer": "Estimates use conservative benchmarks from live deployments: 86% of missed calls recovered, 12% conversion, 68% tier-1 containment."
+  },
+  "Dashboard": {
+    "consoleName": "Agjent038 Console · Operations",
+    "live": "Live",
+    "callsAnswered": "Calls answered",
+    "containment": "Containment",
+    "avgAnswer": "Avg. answer",
+    "missedCalls": "Missed calls",
+    "conversationsHandled": "Conversations handled",
+    "todayHourly": "Today · hourly",
+    "peakConcurrency": "Peak concurrency",
+    "escalated": "Escalated",
+    "csat": "CSAT",
+    "languageMix": "Language mix",
+    "liveQueue": "Live queue",
+    "autoRefresh": "auto-refresh",
+    "feed": [
+      { "lang": "SQ", "intent": "Appointment booking", "outcome": "Booked", "dur": "1:12", "tone": "mint" },
+      { "lang": "EN", "intent": "Order status", "outcome": "Resolved", "dur": "0:48", "tone": "mint" },
+      { "lang": "DE", "intent": "Complaint", "outcome": "Escalated", "dur": "2:05", "tone": "gold" },
+      { "lang": "SQ", "intent": "Price enquiry", "outcome": "Resolved", "dur": "0:39", "tone": "mint" },
+      { "lang": "SR", "intent": "Reschedule", "outcome": "Rescheduled", "dur": "1:27", "tone": "mint" }
+    ],
+    "languages": [
+      { "code": "Albanian", "pct": 58 },
+      { "code": "English", "pct": 19 },
+      { "code": "German", "pct": 12 },
+      { "code": "Serbian", "pct": 7 },
+      { "code": "Turkish", "pct": 4 }
+    ]
+  },
+  "Cases": [
+    {
+      "tag": "Outsourced contact centre · Prishtina",
+      "title": "From 41% abandonment to zero missed calls",
+      "context": "Twelve seats handling inbound support for two telecom clients. Peak-hour abandonment was costing them an SLA penalty every month.",
+      "metrics": [
+        ["0%", "Abandoned calls"],
+        ["71%", "Tier-1 contained"],
+        ["4 FTE", "Redeployed to retention"],
+        ["11 days", "To go live"]
+      ],
+      "quote": "The SLA penalties stopped in the first full month. That alone paid for it several times over."
+    },
+    {
+      "tag": "Dental group · Ferizaj",
+      "title": "Sixty extra bookings a month from calls nobody was answering",
+      "context": "Four clinics sharing one reception line. Roughly a third of calls arrived while staff were with patients or after closing.",
+      "metrics": [
+        ["+58", "Bookings / month"],
+        ["-34%", "No-show rate"],
+        ["24/7", "Coverage"],
+        ["9 days", "To go live"]
+      ],
+      "quote": "Patients do not realise they are speaking to an AI until we tell them. What they notice is that someone finally answers."
+    },
+    {
+      "tag": "E-commerce & logistics · Prishtina",
+      "title": "Order status calls resolved without a human",
+      "context": "Seasonal volume spikes were forcing temporary hiring every quarter, with three weeks of training before anyone was useful.",
+      "metrics": [
+        ["82%", "Status calls automated"],
+        ["0", "Seasonal hires"],
+        ["-46%", "Cost per contact"],
+        ["14 days", "To go live"]
+      ],
+      "quote": "We stopped hiring for peak. The queue just absorbs it now, and the reporting is better than what we had before."
+    }
+  ],
+  "CompanyPrinciples": [
+    {
+      "title": "Sell the outcome, prove it monthly",
+      "body": "Containment, recovered calls and released capacity are the only numbers that matter. We report them every month, including the months where the curve flattens."
+    },
+    {
+      "title": "Local language is not a feature, it is the product",
+      "body": "An agent that mispronounces a caller's town loses the call. We spend most of our engineering time on the parts of Albanian that generic models get wrong."
+    },
+    {
+      "title": "No lock-in as a strategy",
+      "body": "Month-to-month on our standard plans. You keep your numbers and your data. If we stop earning the subscription, leaving should be simple."
+    },
+    {
+      "title": "Say no when it will not work",
+      "body": "Some queues are too complex or too low-volume to justify automation today. We would rather tell you in the first call than take a year of your budget."
+    }
+  ],
+  "CompanyFacts": [
+    ["2024", "Founded in Prishtina"],
+    ["5", "Languages supported"],
+    ["<600ms", "Median response latency"],
+    ["EU", "Data processing region"]
+  ],
+  "CompanyLimits": "We are equally direct about limits. Agjent038 does not negotiate contracts, handle grief, or improvise policy. Those calls belong to a person, and our job is to make sure that person receives them with full context and enough time to do it properly.",
+  "PricingCompare": [
+    ["Answered conversations / month", "1,000", "4,000", "Unlimited"],
+    ["Languages", "5", "5", "5 + custom"],
+    ["Voice channel", "Included", "Included", "Included"],
+    ["WhatsApp, Viber, chat & email", "—", "Included", "Included"],
+    ["Outbound campaigns", "—", "Included", "Included"],
+    ["Custom API integrations", "Standard only", "Included", "Unlimited"],
+    ["Automated QA on 100% of calls", "—", "Included", "Included"],
+    ["Dedicated instance & EU residency", "—", "—", "Included"],
+    ["Custom branded voice", "—", "—", "Included"],
+    ["Uptime SLA", "Best effort", "99.5%", "99.9% contractual"],
+    ["Support response", "Next business day", "4 hours", "1 hour + on-call"],
+    ["Setup fee", "None", "None", "None"]
+  ],
+  "PricingContext": [
+    ["168 h/week", "Agjent038 coverage"],
+    ["40 h/week", "One full-time agent"],
+    ["Unlimited", "Concurrent calls with Agjent038"],
+    ["1", "Concurrent calls per agent"]
+  ],
+  "Layout": {
+    "skipToContent": "Skip to content",
+    "jsonLdDescription": "Agjent038 builds AI receptionists and customer support agents for call centres and service businesses in Kosovo, answering 24/7 in Albanian, English, Serbian, German and Turkish.",
+    "jsonLdServiceType": "AI receptionist and customer support agent",
+    "jsonLdAudienceType": "Call centres, BPOs, clinics, hotels and service businesses"
+  },
+  "FooterProductLinks": {
+    "platform": "Platform",
+    "pricing": "Pricing",
+    "results": "Results & ROI",
+    "faq": "FAQ",
+    "bookDemo": "Book a demo"
+  },
+  "PlatformPillars": [
+    {
+      "glyph": "◆",
+      "title": "Native Albanian voice, not a translation layer",
+      "description": "Trained on Kosovo dialects, Gheg pronunciation and real call-centre transcripts, so callers never ask to be transferred to a human because they were misunderstood.",
+      "detail": [
+        "Gheg and standard Albanian, plus English, Serbian, German, Turkish",
+        "Sub-600ms response latency on local carriers",
+        "Barge-in support: callers can interrupt naturally"
+      ]
+    },
+    {
+      "glyph": "◇",
+      "title": "Answers, books, verifies and escalates",
+      "description": "Agjent038 is not an IVR tree. It understands intent, checks your systems, completes the task and only routes to a human when policy or emotion demands it.",
+      "detail": [
+        "Appointment booking with live calendar availability",
+        "Order status, invoices and account lookups via API",
+        "Identity verification with configurable rules"
+      ]
+    },
+    {
+      "glyph": "○",
+      "title": "Sits on top of your existing stack",
+      "description": "Keep your numbers, your CRM and your agents. Agjent038 connects to what you already run and starts taking overflow within days, not quarters.",
+      "detail": [
+        "SIP / VoIP trunking, Twilio, 3CX, Asterisk, FreePBX",
+        "CRM sync: HubSpot, Zoho, Pipedrive, Salesforce, custom REST",
+        "WhatsApp, Viber, web chat and email from the same brain"
+      ]
+    },
+    {
+      "glyph": "□",
+      "title": "A control room, not a black box",
+      "description": "Every conversation is transcribed, scored and searchable. You see containment, sentiment, revenue influenced and where the AI handed off — live.",
+      "detail": [
+        "Live queue, transcripts and call recordings",
+        "Quality scoring on 12 dimensions per conversation",
+        "Exportable reporting for clients and stakeholders"
+      ]
+    }
+  ],
+  "Steps": [
+    {
+      "step": "01",
+      "title": "Discovery & call audit",
+      "days": "Day 1–3",
+      "body": "We listen to a sample of your real calls, map the top intents, and quantify what missed and mishandled calls are costing you every month."
+    },
+    {
+      "step": "02",
+      "title": "Build & train",
+      "days": "Day 4–10",
+      "body": "We write your knowledge base, connect your telephony and CRM, and train Agjent038 on your scripts, tone, offers and escalation policy."
+    },
+    {
+      "step": "03",
+      "title": "Shadow mode",
+      "days": "Day 11–14",
+      "body": "Agjent038 answers in parallel with your team on a test number. You review transcripts and approve every behaviour before a single customer hears it."
+    },
+    {
+      "step": "04",
+      "title": "Go live & optimise",
+      "days": "Day 15 onward",
+      "body": "We route real traffic, watch containment daily, and tune weekly. You get a named specialist and a monthly performance review."
+    }
+  ],
+  "Integrations": [
+    "Twilio",
+    "3CX",
+    "Asterisk",
+    "FreePBX",
+    "HubSpot",
+    "Zoho CRM",
+    "Pipedrive",
+    "Salesforce",
+    "Google Calendar",
+    "Microsoft 365",
+    "WhatsApp Business",
+    "Viber",
+    "Slack",
+    "Zendesk",
+    "Shopify",
+    "Custom REST API"
+  ]
 }

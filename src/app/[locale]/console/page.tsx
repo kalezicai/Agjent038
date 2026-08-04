@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Management dashboard for Agjent038 customers: monitor calls, view monthly reports and control your agent capabilities.",
     path: "/console",
     keywords: ["AI agent dashboard", "call centre console"],
+    locale,
   });
 }
 

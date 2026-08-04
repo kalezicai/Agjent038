@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import Accordion from "@/components/accordion";
 import Reveal from "@/components/reveal";
 import { ButtonLink, Eyebrow, JsonLd, Section, SectionHead } from "@/components/ui";
-import { faqs } from "@/lib/content";
 import { absoluteUrl, buildMetadata } from "@/lib/site";
 import { locales } from "@/i18n/config";
 
@@ -26,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Answers on Albanian language quality, escalation, onboarding time, data protection, telephony integration and what the $499 plan includes.",
     path: "/faq",
     keywords: ["AI receptionist FAQ", "AI call answering questions Kosovo"],
+    locale,
   });
 }
 
@@ -33,8 +33,11 @@ async function FaqPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "FAQ" });
-  const tTech = await getTranslations({ locale, namespace: "TechnicalFAQ" });
   const tCommon = await getTranslations({ locale, namespace: "Common" });
+
+  const messages = await getMessages({ locale });
+  const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
+  const technical = (messages.TechnicalFAQ ?? []) as Array<{ q: string; a: string }>;
 
   const faqLd = {
     "@context": "https://schema.org",
@@ -54,8 +57,6 @@ async function FaqPage({ params }: Props) {
       { "@type": "ListItem", position: 2, name: "FAQ", item: absoluteUrl("/faq") },
     ],
   };
-
-  const technical = tTech.raw("") as Array<{ q: string; a: string }>;
 
   return (
     <>
