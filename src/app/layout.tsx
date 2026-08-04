@@ -9,10 +9,38 @@ export const metadata: Metadata = {
     default: "Agjent038",
     template: "%s | Agjent038",
   },
+  description: "AI receptionist for Kosovo call centres — from $499 / month",
   authors: [{ name: site.legalName }],
   creator: site.legalName,
   publisher: site.legalName,
   category: "technology",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Agjent038",
+    description: "AI receptionist for Kosovo call centres — from $499 / month",
+    url: site.domain,
+    siteName: "Agjent038",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Agjent038 — AI Receptionist for Kosovo Call Centres",
+        type: "image/png",
+      },
+    ],
+    locale: "sq_AL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Agjent038",
+    description: "AI receptionist for Kosovo call centres — from $499 / month",
+    images: ["/opengraph-image.png"],
+  },
   robots: {
     index: true,
     follow: true,

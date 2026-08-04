@@ -89,11 +89,21 @@ export function buildMetadata({
       siteName: site.name,
       type,
       locale: ogLocaleMap[locale] ?? "sq_AL",
+      images: [
+        {
+          url: absoluteUrl("/opengraph-image.png"),
+          width: 1200,
+          height: 630,
+          alt: `${site.name} — ${site.tagline}`,
+          type: "image/png",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image" as const,
       title,
       description,
+      images: [absoluteUrl("/opengraph-image.png")],
     },
   };
 }
