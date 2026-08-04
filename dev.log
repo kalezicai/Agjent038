@@ -4071,3 +4071,15 @@ Error: Page "/[locale]/page" is missing param "/[locale]" in "generateStaticPara
  GET /sq 200 in 882ms (next.js: 53ms, generate-params: 36ms, application-code: 830ms)
  GET /sq 200 in 2.1s (next.js: 71ms, generate-params: 45ms, application-code: 2.1s)
  GET /sq 200 in 2.1s (next.js: 1326ms, generate-params: 148µs, application-code: 747ms)
+ GET /sq 200 in 925ms (next.js: 79ms, generate-params: 42ms, application-code: 846ms)
+ GET /sq 200 in 546ms (next.js: 34ms, generate-params: 21ms, application-code: 512ms)
+ GET /sq 200 in 819ms (next.js: 239ms, generate-params: 22ms, application-code: 581ms)
+ GET /sq 200 in 932ms (next.js: 11ms, generate-params: 102µs, application-code: 921ms)
+ GET /sq 200 in 924ms (next.js: 28ms, generate-params: 21ms, application-code: 897ms)
+ GET /sq 200 in 1030ms (next.js: 32ms, generate-params: 24ms, application-code: 998ms)
+ GET /sq 200 in 1357ms (next.js: 25ms, generate-params: 19ms, application-code: 1332ms)
+ GET /sq 200 in 1650ms (next.js: 194ms, generate-params: 23ms, application-code: 1456ms)
+ GET /favicon.ico 200 in 731ms (next.js: 25ms, generate-params: 15ms, application-code: 706ms)
+⨯ Failed to generate static paths for /[locale]:
+Error: Page "/[locale]/page" is missing param "/[locale]" in "generateStaticParams()", which is required with "output: export" config.
+    at ignore-listed frames
