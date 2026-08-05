@@ -26,13 +26,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Agjentë Zanorë AI për Qendrat e Thirrjeve në Kosovë — Çdo Thirrje e Përgjigjur, 24/7"
       : "AI Voice Agents for Kosovo Call Centres — Every Call Answered, 24/7",
     description: isAlb
-      ? "Agjent038 përgjigjet çdo thirrje hyrëse në shqip, anglisht, serbisht, gjermanisht dhe turqisht, rezervon takime, zgjidh biletat e nivelit të parë dhe eskalon me kontekst. Gati në dy javë nga 499$ në muaj."
-      : "Agjent038 answers every inbound call in Albanian, English, Serbian, German and Turkish, books appointments, resolves tier-1 tickets and escalates with context. Live in two weeks from $499/month.",
+      ? "Agjent038 përgjigjet çdo thirrje hyrëse me mbështetje shumëgjuhëshe, rezervon takime, zgjidh biletat e nivelit të parë dhe eskalon me kontekst. Gati në dy javë nga 299€ në muaj."
+      : "Agjent038 answers every inbound call with multilingual support, books appointments, resolves tier-1 tickets and escalates with context. Live in two weeks from €299/month.",
     path: "/",
     keywords: [
-      "AI receptionist $499",
+      "AI receptionist Kosovo",
       "24/7 call answering Kosovo",
-      "Albanian AI receptionist",
+      "AI voice agent call center",
     ],
     locale,
   });
@@ -365,7 +365,7 @@ async function HomePage({ params }: Props) {
                 {t("receptionPlan")}
               </p>
               <div className="mt-5 flex items-baseline gap-2">
-                <span className="font-display text-5xl text-white">$499</span>
+                <span className="font-display text-5xl text-white">€499</span>
                 <span className="text-sm text-white/50">{t("monthLabel")}</span>
               </div>
               <ul className="mt-8 grid gap-3 sm:grid-cols-2">

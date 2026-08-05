@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "Agjent038",
     template: "%s | Agjent038",
   },
-  description: "AI receptionist for Kosovo call centres — from $499 / month",
+  description: "AI receptionist for Kosovo call centres — from €299 / month",
   authors: [{ name: site.legalName }],
   creator: site.legalName,
   publisher: site.legalName,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Agjent038",
-    description: "AI receptionist for Kosovo call centres — from $499 / month",
+    description: "AI receptionist for Kosovo call centres — from €299 / month",
     url: site.domain,
     siteName: "Agjent038",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Agjent038",
-    description: "AI receptionist for Kosovo call centres — from $499 / month",
+    description: "AI receptionist for Kosovo call centres — from €299 / month",
     images: ["/opengraph-image.png"],
   },
   robots: {

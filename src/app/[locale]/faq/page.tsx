@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "FAQ — Pyetje për Pranimësin AI të Përgjigjura"
       : "FAQ — AI Receptionist Questions Answered",
     description: isAlb
-      ? "Përgjigje për cilësinë e gjuhës shqipe, eskalimin, kohën e nisjes, mbrojtjen e të dhënave, integrimin e telefonisë dhe çfarë përfshin plani 499$."
-      : "Answers on Albanian language quality, escalation, onboarding time, data protection, telephony integration and what the $499 plan includes.",
+      ? "Përgjigje për cilësinë e mbështetjes shumëgjuhëshe, eskalimin, kohën e nisjes, mbrojtjen e të dhënave, integrimin e telefonisë dhe planet tona."
+      : "Answers on multilingual support, escalation, onboarding time, data protection, telephony integration and our plans.",
     path: "/faq",
     keywords: ["AI receptionist FAQ", "AI call answering questions Kosovo"],
     locale,
