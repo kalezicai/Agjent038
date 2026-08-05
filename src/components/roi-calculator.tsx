@@ -14,7 +14,7 @@ export default function RoiCalculator() {
     missed: 28,
     value: 40,
     agents: 6,
-    cost: 750,
+    cost: 1000,
   });
   const [saved, setSaved] = useState<"idle" | "saving" | "done">("idle");
 
@@ -23,7 +23,7 @@ export default function RoiCalculator() {
     { key: "missed" as const, label: t("shareUnanswered"), min: 0, max: 60, step: 1, suffix: "%" },
     { key: "value" as const, label: t("avgCallValue"), min: 5, max: 300, step: 5, suffix: "€" },
     { key: "agents" as const, label: t("agentsTier1"), min: 1, max: 40, step: 1, suffix: "" },
-    { key: "cost" as const, label: t("costPerAgent"), min: 300, max: 3000, step: 50, suffix: "€" },
+    { key: "cost" as const, label: t("costPerAgent"), min: 500, max: 3000, step: 50, suffix: "€" },
   ];
 
   const result = useMemo(() => {

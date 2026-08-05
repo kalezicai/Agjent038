@@ -79,9 +79,20 @@ async function PricingPage({ params }: Props) {
     })),
   };
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
       <JsonLd data={productLd} />
+      <JsonLd data={faqLd} />
 
       <section className="relative overflow-hidden border-b border-line bg-canvas">
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
@@ -97,6 +108,37 @@ async function PricingPage({ params }: Props) {
           </Reveal>
         </div>
       </section>
+
+      <Section>
+        <Reveal>
+          <div className="mx-auto max-w-3xl overflow-hidden rounded-2xl border border-line">
+            <table className="w-full border-collapse text-left text-sm">
+              <thead>
+                <tr className="bg-canvas/70">
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute"></th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">Human agent</th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-navy">Agjent038</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  [t("anchorCost"), "€1,000+/mo", "From €299/mo"],
+                  [t("anchorHours"), "40 h/week", "168 h/week"],
+                  [t("anchorConcurrency"), "1 call at a time", "Unlimited"],
+                  [t("anchorAvailability"), "Shifts, breaks, PTO", "24/7/365"],
+                  [t("anchorRamp"), "Weeks of hiring", "Live in 2 weeks"],
+                ].map(([label, human, ai], i) => (
+                  <tr key={label} className={`border-t border-line ${i % 2 ? "bg-paper" : "bg-canvas/30"}`}>
+                    <td className="px-6 py-4 font-medium text-ink">{label}</td>
+                    <td className="px-6 py-4 text-ink-mute">{human}</td>
+                    <td className="px-6 py-4 font-medium text-navy">{ai}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </Reveal>
+      </Section>
 
       <Section tone="paper">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">

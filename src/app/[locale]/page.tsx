@@ -103,6 +103,12 @@ async function HomePage({ params }: Props) {
                 </span>
               </Reveal>
 
+              <Reveal delay={40}>
+                <h2 className="mt-5 text-sm font-medium tracking-wide text-navy-soft">
+                  {t("heroSubhead")}
+                </h2>
+              </Reveal>
+
               <Reveal delay={80}>
                 <h1 className="font-display mt-7 text-[2.6rem] leading-[1.05] text-ink sm:text-5xl lg:text-[3.75rem]">
                   {t("heroTitle1")}

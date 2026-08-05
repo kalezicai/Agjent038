@@ -33,6 +33,7 @@
   },
   "Home": {
     "heroEyebrow": "Gebaut in Pristina für Kosovo-Betreiber",
+    "heroSubhead": "Der KI-Stimmagent für Kosovo-Callcenter",
     "heroTitle1": "Jeder Anruf beantwortet.",
     "heroTitle2": "Jede Stunde. In der Sprache des Anrufers.",
     "heroDescription": "Agjent038 ist ein KI-Rezeptionist für Kosovo-Callcenter und Servicounternehmen. Es nimmt am ersten Klingeln ab, versteht, was der Anrufer benötigt, führt die Aufgabe in Ihren Systemen aus und übergibt die schwierigen Gespräche an Ihr Team mit einer vollständigen Zusammenfassung.",
@@ -73,7 +74,7 @@
     "receptionPlan": "Empfangsplan",
     "pricingFeatures": [
       "24/7 Beantwortung, mehrsprachig",
-      "Bis zu 1.000 Gespräche inklusive",
+      "Bis zu 1.000 Minuten inklusive",
       "Buchung + SMS-Bestätigung",
       "CRM- & Kalenderintegration",
       "Transkripte und Aufzeichnungen",
@@ -270,14 +271,15 @@
     "deploymentsTitle": "Drei Betriebe, drei unterschiedliche Probleme",
     "testimonialsEyebrow": "In ihren Worten",
     "testimonialsTitle": "Was Betreiber nach neunzig Tagen sagen",
-    "cta": "Holen Sie sich Ihre eigene Schätzung"
+    "cta": "Holen Sie sich Ihre eigene Schätzung",
+    "casesDisclaimer": "Die gezeigten Metriken basieren auf Pilot-Einsatzannahmen. Individuelle Ergebnisse hängen von Anrufvolumen, Mix und betrieblichem Kontext ab."
   },
   "Pricing": {
     "eyebrow": "Preise",
     "title": "Eine monatliche Gebühr. Alles, was es zum Funktionieren bringt, ist darin enthalten.",
     "description": "Keine Implementierungsrechnung, keine Professional-Services-Zeile, keine Minutenabrechnung im Basistarif. Einführung, Integration, Schulung und monatliche Optimierung sind Teil des Abonnements, weil sie das ausmachen, was einen Unterschied zwischen einer Demo und einem Ergebnis macht.",
     "mostChosen": "Am häufigsten gewählt",
-    "extraConversations": "Preise in EUR, monatlich abgerechnet. Zusätzliche Minuten über Ihren Plan hinaus kosten €0,20/Min — wir werden Sie immer warnen, bevor Sie die Linie überschreiten.",
+    "extraConversations": "Alle Pläne enthalten die aufgeführten Minuten. Zusätzliche Minuten kosten €0,20/min. Keine versteckten Gebühren.",
     "includedEyebrow": "In jedem Plan enthalten",
     "includedTitle": "Die Arbeit, die tatsächlich das Ergebnis liefert",
     "includedLede": "Das sind keine Zusätze. Nichts davon erscheint auf einer separaten Rechnung.",
@@ -290,6 +292,11 @@
     "questionsTitle": "Bevor Sie Ihr Finanzteam fragen",
     "cta": "Demo buchen",
     "ctaSecondary": "Ihre ROI modellieren",
+    "anchorCost": "Monatliche Kosten",
+    "anchorHours": "Wöchentliche Abdeckung",
+    "anchorConcurrency": "Gleichzeitigkeit",
+    "anchorAvailability": "Verfügbarkeit",
+    "anchorRamp": "Einsatzzeit",
     "features": {
       "conversations": "Minuten / Monat",
       "languages": "Sprachunterstützung",

@@ -33,6 +33,7 @@
   },
   "Home": {
     "heroEyebrow": "Ndërtuar në Prishtinë për operatorët kosovarë",
+    "heroSubhead": "Agjenti zanor AI i ndërtuar për qendrat e thirrjeve në Kosovë",
     "heroTitle1": "Çdo thirrje e përgjigjur.",
     "heroTitle2": "Çdo orë. Në gjuhën e tyre.",
     "heroDescription": "Agjent038 është një pranimës AI për qendrat e thirrjeve dhe bizneset e shërbimeve në Kosovë. Ai përgjigjet në rastin e parë, kupton se çfarë telefonuesi ka nevojë shumëgjuhësisht, kryen detyrën në sistemet tuaja dhe i kalon bisedat e vështira ekipit tuaj me një përmbledhje të plotë.",
@@ -270,14 +271,15 @@
     "deploymentsTitle": "Tre operacione, tre probleme të ndryshme",
     "testimonialsEyebrow": "Në fjalët e tyre",
     "testimonialsTitle": "Çfarë thonë operatorët pas nëntëdhjetë ditësh",
-    "cta": "Merrni vlerësimin tuaj"
+    "cta": "Merrni vlerësimin tuaj",
+    "casesDisclaimer": "Metrikat e shfaqura janë modeluar sipas supozimeve të zbatimit pilot. Rezultatet individuale varen nga vëllimi i thirrjeve, përzierja dhe konteksti operacional."
   },
   "Pricing": {
     "eyebrow": "Çmimet",
     "title": "Një tarifë mujore. Gjëja që e bën atë të funksionojë është brenda.",
     "description": "Pa faturë implementimi, pa linjë shërbimesh profesionale, pa faturim për minutë në planin bazë. Nisja, integrimi, trajnimi dhe përmirësimi mujor janë pjesë e abonimit, sepse ato janë gjëja që bën diferencën midis një demonstrimi dhe një rezultati.",
     "mostChosen": "Më i zgjedhuri",
-    "extraConversations": "Çmimet në euro, faturuar mujorisht. Përtej lejes së planit: 0.20€ për minutë — ne gjithmonë do t'ju njoftojmë para se të kaloni vijën.",
+    "extraConversations": "Të gjitha planet përfshinë minuta sipas listës. Minuta shtesë kushtojnë €0.20/min. Pa tarifa të fshehura.",
     "includedEyebrow": "E përfshirë në çdo plan",
     "includedTitle": "Puna që me të vërtetë prodhon rezultatin",
     "includedLede": "Këto nuk janë shtesa. Asgjë këtu nuk shfaqet në një faturë të veçantë.",
@@ -290,8 +292,13 @@
     "questionsTitle": "Para se t'i pyesni ekipin tuaj financiar",
     "cta": "Rezervoni një demonstrim",
     "ctaSecondary": "Modeloni ROI-në tuaj",
+    "anchorCost": "Kosto mujore",
+    "anchorHours": "Mbulesa javore",
+    "anchorConcurrency": "Përputhshmëria",
+    "anchorAvailability": "Disponueshmëria",
+    "anchorRamp": "Koha për të deployuar",
     "features": {
-      "conversations": "Biseda të përgjigjura / muaj",
+      "conversations": "Minuta të përgjigjura / muaj",
       "languages": "Gjuhë e konfigurueshme",
       "voiceChannel": "Kanali zanor",
       "messaging": "WhatsApp, Viber, chat & email",

@@ -33,6 +33,7 @@
   },
   "Home": {
     "heroEyebrow": "Built in Prishtina for Kosovo operators",
+    "heroSubhead": "The AI voice agent built for Kosovo call centres",
     "heroTitle1": "Every call answered.",
     "heroTitle2": "Every hour. In their language.",
     "heroDescription": "Agjent038 is an AI receptionist for Kosovo call centres and service businesses. It picks up on the first ring, understands what the caller needs, speaks your customers' language, completes the task in your systems, and hands the hard conversations to your team with a full summary.",
@@ -73,7 +74,7 @@
     "receptionPlan": "Reception plan",
     "pricingFeatures": [
       "24/7 answering, Multilingual",
-      "1,000 conversations included",
+      "1,000 minutes included",
       "Booking + SMS confirmation",
       "CRM & calendar integration",
       "Transcripts and recordings",
@@ -270,14 +271,15 @@
     "deploymentsTitle": "Three operations, three different problems",
     "testimonialsEyebrow": "In their words",
     "testimonialsTitle": "What operators say after ninety days",
-    "cta": "Get your own estimate"
+    "cta": "Get your own estimate",
+    "casesDisclaimer": "Metrics shown are modeled on pilot deployment assumptions. Individual results depend on call volume, mix and operational context."
   },
   "Pricing": {
     "eyebrow": "Pricing",
     "title": "One monthly fee. Everything that makes it work is inside it.",
     "description": "No implementation invoice, no professional-services line, no per-minute billing on the base plan. Onboarding, integration, training and monthly tuning are part of the subscription, because they are what make the difference between a demo and a result.",
     "mostChosen": "Most chosen",
-    "extraConversations": "Prices in EUR, billed monthly. Overage: €0.20/min beyond your plan allowance.",
+    "extraConversations": "All plans include minutes as listed. Additional minutes are €0.20/min. No hidden fees.",
     "includedEyebrow": "Included in every plan",
     "includedTitle": "The work that actually delivers the result",
     "includedLede": "These are not add-ons. Nothing here appears on a separate invoice.",
@@ -290,8 +292,13 @@
     "questionsTitle": "Before you ask your finance team",
     "cta": "Book a demo",
     "ctaSecondary": "Model your ROI",
+    "anchorCost": "Monthly cost",
+    "anchorHours": "Weekly coverage",
+    "anchorConcurrency": "Concurrency",
+    "anchorAvailability": "Availability",
+    "anchorRamp": "Time to deploy",
     "features": {
-      "conversations": "Answered conversations / month",
+      "conversations": "Answered minutes / month",
       "languages": "Languages",
       "voiceChannel": "Voice channel",
       "messaging": "WhatsApp, Viber, chat & email",
@@ -649,7 +656,7 @@
     },
     {
       "q": "What does €499 per month actually include?",
-      "a": "The full product: 24/7 answering in multilingual, up to 1,000 answered conversations, booking, CRM and calendar integration, transcripts, recordings, the live dashboard, warm transfer, onboarding and shadow mode. There is no setup fee and no per-minute surprise billing on the base plan."
+      "a": "The full product: 24/7 answering in multilingual, up to 1,000 answered minutes, booking, CRM and calendar integration, transcripts, recordings, the live dashboard, warm transfer, onboarding and shadow mode. There is no setup fee and no per-minute surprise billing on the base plan."
     },
     {
       "q": "How does this compare with hiring a receptionist?",

@@ -134,6 +134,9 @@ async function ResultsPage({ params }: Props) {
               </article>
             </Reveal>
           ))}
+          <p className="text-center text-xs text-ink-mute">
+            {t("casesDisclaimer")}
+          </p>
         </div>
       </Section>
 
