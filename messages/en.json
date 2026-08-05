@@ -580,6 +580,7 @@
       "cadence": "per month",
       "meta": "24/7, 1,000 min, multilingual, CRM, warm transfer",
       "summary": "The full AI receptionist for a single location or a focused inbound queue. Live in two weeks.",
+      "featured": true,
       "includes": [
         "24/7 inbound answering",
         "Up to 1,000 answered minutes / month",

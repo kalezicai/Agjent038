@@ -25,16 +25,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isAlb = locale === "sq";
   return buildMetadata({
     title: isAlb
-      ? "Çmimet — Pranimës AI nga 499$ në Muaj"
-      : "Pricing — AI Receptionist from $499 per Month",
+      ? "Çmimet — Pranimës AI nga 299€ në Muaj"
+      : "Pricing — AI Receptionist from €299 per Month",
     description: isAlb
-      ? "Çmime transparente për pranimësin AI Agjent038: Pranimi në 499$/muaj, Operacionet në 1,290$/muaj dhe Enterprise. Pa tarifë vendosje, muaj për muaj, gjithçka e përfshirë."
-      : "Transparent pricing for the Agjent038 AI receptionist: Reception at $499/month, Operations at $1,290/month, and Enterprise. No setup fee, month-to-month, everything included.",
+      ? "Çmime transparente për pranimësin AI Agjent038: Overflow në 299€/muaj, Pranimi në 499€/muaj, Operacionet në 899€/muaj dhe Enterprise. Pa tarifë vendosje, muaj për muaj, gjithçka e përfshirë."
+      : "Transparent pricing for the Agjent038 AI receptionist: Overflow at €299/month, Reception at €499/month, Operations at €899/month, and Enterprise. No setup fee, month-to-month, everything included.",
     path: "/pricing",
     keywords: [
       "AI receptionist price Kosovo",
       "AI customer support cost",
-      "$499 AI receptionist",
+      "AI receptionist pricing",
       "call center automation pricing",
     ],
     locale,
@@ -67,13 +67,13 @@ async function PricingPage({ params }: Props) {
     "@type": "Product",
     name: "Agjent038 AI Receptionist",
     description:
-      "AI receptionist and customer support agent for Kosovo call centres, answering 24/7 in Albanian, English, Serbian, German and Turkish.",
+      "AI receptionist and customer support agent for Kosovo call centres, answering 24/7 with multilingual support.",
     brand: { "@type": "Brand", name: site.name },
-    offers: plans.slice(0, 2).map((p) => ({
+    offers: plans.slice(0, 3).map((p) => ({
       "@type": "Offer",
       name: p.name,
-      price: p.price.replace(/[$,]/g, ""),
-      priceCurrency: "USD",
+      price: p.price.replace(/[€,]/g, ""),
+      priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
       url: absoluteUrl("/pricing"),
     })),
@@ -99,7 +99,7 @@ async function PricingPage({ params }: Props) {
       </section>
 
       <Section tone="paper">
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {plans.map((plan, i) => (
             <Reveal key={plan.name} delay={i * 100}>
               <div

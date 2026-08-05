@@ -580,6 +580,7 @@
       "cadence": "pro Monat",
       "meta": "1.000 Minuten, mehrsprachig",
       "summary": "Der vollständige KI-Rezeptionist für einen Standort oder eine fokussierte Eingangswarteschlange. Live in zwei Wochen.",
+      "featured": true,
       "mostChosen": true,
       "includes": [
         "24/7-Eingangsannahme, mehrsprachig",
