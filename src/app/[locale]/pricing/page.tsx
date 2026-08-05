@@ -59,7 +59,7 @@ async function PricingPage({ params }: Props) {
   }>;
   const inclusions = (messages.Inclusions ?? []) as string[];
   const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
-  const comparisonData = (messages.PricingCompare ?? []) as [string, string, string, string][];
+  const comparisonData = (messages.PricingCompare ?? []) as [string, string, string, string, string][];
   const contextData = (messages.PricingContext ?? []) as [string, string][];
 
   const productLd = {
@@ -204,6 +204,7 @@ async function PricingPage({ params }: Props) {
                     <td className="px-6 py-4 text-ink">{row[1]}</td>
                     <td className="px-6 py-4 text-ink">{row[2]}</td>
                     <td className="px-6 py-4 text-ink">{row[3]}</td>
+                    <td className="px-6 py-4 text-ink">{row[4]}</td>
                   </tr>
                 ))}
               </tbody>
