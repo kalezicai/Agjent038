@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
 function currency(n: number) {
-  return `$${Math.round(n).toLocaleString("en-US")}`;
+  return `€${Math.round(n).toLocaleString("en-US")}`;
 }
 
 export default function RoiCalculator() {
@@ -21,9 +21,9 @@ export default function RoiCalculator() {
   const fields = [
     { key: "calls" as const, label: t("callsPerMonth"), min: 300, max: 20000, step: 100, suffix: "" },
     { key: "missed" as const, label: t("shareUnanswered"), min: 0, max: 60, step: 1, suffix: "%" },
-    { key: "value" as const, label: t("avgCallValue"), min: 5, max: 300, step: 5, suffix: "$" },
+    { key: "value" as const, label: t("avgCallValue"), min: 5, max: 300, step: 5, suffix: "€" },
     { key: "agents" as const, label: t("agentsTier1"), min: 1, max: 40, step: 1, suffix: "" },
-    { key: "cost" as const, label: t("costPerAgent"), min: 300, max: 3000, step: 50, suffix: "$" },
+    { key: "cost" as const, label: t("costPerAgent"), min: 300, max: 3000, step: 50, suffix: "€" },
   ];
 
   const result = useMemo(() => {
@@ -42,7 +42,7 @@ export default function RoiCalculator() {
     );
     const laborSaving = Math.max(agentsFreed, 0) * state.cost;
 
-    const plan = state.calls <= 1000 ? 499 : state.calls <= 4000 ? 1290 : 2400;
+    const plan = state.calls <= 400 ? 299 : state.calls <= 1000 ? 499 : state.calls <= 2500 ? 899 : 2400;
     const gross = recoveredRevenue + laborSaving;
     const net = gross - plan;
     const roi = plan > 0 ? (net / plan) * 100 : 0;
@@ -84,7 +84,7 @@ export default function RoiCalculator() {
                   {f.label}
                 </label>
                 <span className="font-display text-lg text-navy">
-                  {f.suffix === "$" ? "$" : ""}
+                  {f.suffix === "€" ? "€" : ""}
                   {state[f.key].toLocaleString("en-US")}
                   {f.suffix === "%" ? "%" : ""}
                 </span>

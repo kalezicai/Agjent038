@@ -13,9 +13,9 @@ export const site = {
     country: "XK",
     countryName: "Kosovo",
   },
-  priceFrom: 499,
-  currency: "USD",
-  languages: ["Albanian", "English", "Serbian", "German", "Turkish"],
+  priceFrom: 299,
+  currency: "EUR",
+  languages: ["English"],
 } as const;
 
 export function absoluteUrl(path = "/") {
@@ -34,8 +34,8 @@ const baseKeywords: Record<string, string[]> = {
     "qendër thirrjesh AI Kosovë",
     "mbështetje klienti AI Kosovë",
     "pranimës virtual Prishtinë",
-    "automatizim qendre thirrjesh shqip",
-    "agjent zanor gjuhë shqipe",
+    "automatizim qendre thirrjesh",
+    "agjent zanor shumëgjuhësh",
     "automatizim BPO Kosovë",
   ],
   en: [
@@ -43,8 +43,8 @@ const baseKeywords: Record<string, string[]> = {
     "AI call centre Kosovo",
     "AI customer support Kosovo",
     "virtual receptionist Prishtina",
-    "call centre automation Albanian",
-    "AI voice agent Albanian language",
+    "call centre automation Kosovo",
+    "multilingual AI voice agent",
     "BPO automation Kosovo",
   ],
   de: [
@@ -52,8 +52,8 @@ const baseKeywords: Record<string, string[]> = {
     "KI-Callcenter Kosovo",
     "KI-Kundenbetreuung Kosovo",
     "virtueller Rezeptionist Pristina",
-    "Callcenter-Automatisierung Albanisch",
-    "KI-Stimmapent Albanische Sprache",
+    "Callcenter-Automatisierung Kosovo",
+    "mehrsprachiger KI-Stimmapent",
     "BPO-Automatisierung Kosovo",
   ],
 };

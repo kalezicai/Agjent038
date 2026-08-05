@@ -2,21 +2,21 @@
   "Meta": {
     "title": "Agjent038 — AI Voice Agents for Kosovo Call Centres",
     "titleTemplate": "%s | Agjent038",
-    "description": "Agjent038 answers every call in Albanian, English, Serbian, German and Turkish — 24/7. Built for Kosovo call centres, clinics and BPOs. Live in two weeks from $499/month.",
+    "description": "Agjent038 answers every call with multilingual support — 24/7. Built for Kosovo call centres, clinics and BPOs. Live in two weeks from €499/month.",
     "keywords": [
       "AI receptionist Kosovo",
       "AI call center Kosovo",
       "AI customer support Kosovo",
-      "Albanian AI voice agent",
+      "AI voice agent multilingual",
       "virtual receptionist Prishtina",
       "call center automation Kosovo",
       "AI answering service Albania",
       "BPO AI automation"
     ],
     "ogTitle": "Agjent038 — AI Voice Agents for Kosovo Call Centres",
-    "ogDescription": "Every call answered in 0.4 seconds, in five languages, around the clock. From $499 per month.",
+    "ogDescription": "Every call answered in 0.4 seconds, multilingual, around the clock. From €499 per month.",
     "twitterTitle": "Agjent038 — AI Voice Agents for Kosovo Call Centres",
-    "twitterDescription": "Every call answered in 0.4 seconds, in five languages, around the clock. From $499 per month."
+    "twitterDescription": "Every call answered in 0.4 seconds, multilingual, around the clock. From €499 per month."
   },
   "Site": {
     "name": "Agjent038",
@@ -35,10 +35,10 @@
     "heroEyebrow": "Built in Prishtina for Kosovo operators",
     "heroTitle1": "Every call answered.",
     "heroTitle2": "Every hour. In their language.",
-    "heroDescription": "Agjent038 is an AI receptionist for Kosovo call centres and service businesses. It picks up on the first ring, understands what the caller needs in Albanian, English, Serbian, German or Turkish, completes the task in your systems, and hands the hard conversations to your team with a full summary.",
+    "heroDescription": "Agjent038 is an AI receptionist for Kosovo call centres and service businesses. It picks up on the first ring, understands what the caller needs, speaks your customers' language, completes the task in your systems, and hands the hard conversations to your team with a full summary.",
     "heroCta": "Hear it on your calls",
     "heroCtaSecondary": "See the numbers",
-    "stat1Value": "$499",
+    "stat1Value": "€499",
     "stat1Label": "per month, all in",
     "stat2Value": "14 days",
     "stat2Label": "from kickoff to live",
@@ -66,13 +66,13 @@
     "processTitle": "Live in fourteen days, with nothing left to chance",
     "processLede": "You approve every behaviour in shadow mode before a single customer hears the AI.",
     "pricingEyebrow": "Pricing",
-    "pricingTitle": "$499 a month. Less than one part-time receptionist.",
+    "pricingTitle": "From €299 a month. Less than one part-time receptionist.",
     "pricingLede": "No setup fee. No per-minute surprises on the base plan. Month-to-month, because the results should keep you, not the contract.",
     "pricingCta": "See what is included",
     "pricingDemo": "Book a demo",
     "receptionPlan": "Reception plan",
     "pricingFeatures": [
-      "24/7 answering, 5 languages",
+      "24/7 answering, Multilingual",
       "1,000 conversations included",
       "Booking + SMS confirmation",
       "CRM & calendar integration",
@@ -109,22 +109,22 @@
       },
       {
         "stat": "24/7",
-        "label": "Coverage in 5 languages",
-        "note": "Albanian, English, Serbian, German and Turkish on one number."
+        "label": "Multilingual coverage",
+        "note": "Speaks your customers' language on one number."
       }
     ],
     "BeforeAfter": {
       "today": [
         "30–45% of calls unanswered at peak",
         "Nothing answered after 17:00 or on weekends",
-        "One language, one caller at a time",
+        "Limited capacity, one caller at a time",
         "QA on a 2% sample, if anyone has time",
         "Hiring is the only way to add capacity"
       ],
       "after": [
         "100% of offered calls answered in 0.4s",
         "24/7/365 coverage including holidays",
-        "Five languages, unlimited concurrency",
+        "Multilingual, unlimited concurrency",
         "Every conversation transcribed and scored",
         "Capacity scales the moment volume does"
       ]
@@ -167,7 +167,7 @@
     "hours": "Hours"
   },
   "Footer": {
-    "description": "The AI receptionist built for Kosovo call centres — answering in Albanian, English, Serbian, German and Turkish, 24 hours a day.",
+    "description": "The AI receptionist built for Kosovo call centres — with multilingual support, 24 hours a day.",
     "product": "Product",
     "solutions": "Solutions",
     "company": "Company",
@@ -177,7 +177,7 @@
     "copyright": "All rights reserved.",
     "gdpr": "GDPR-aligned processing",
     "euResidency": "EU data residency available",
-    "fromPrice": "From $499/month"
+    "fromPrice": "From €299/month"
   },
   "Platform": {
     "eyebrow": "Platform",
@@ -212,7 +212,7 @@
       {
         "layer": "Layer 02",
         "title": "Speech",
-        "body": "Streaming recognition tuned on Kosovo Albanian, with barge-in, endpointing and local number, date and address normalisation."
+        "body": "Streaming recognition tuned for natural conversation in your configured language, with barge-in, endpointing and local number, date and address normalisation."
       },
       {
         "layer": "Layer 03",
@@ -277,14 +277,14 @@
     "title": "One monthly fee. Everything that makes it work is inside it.",
     "description": "No implementation invoice, no professional-services line, no per-minute billing on the base plan. Onboarding, integration, training and monthly tuning are part of the subscription, because they are what make the difference between a demo and a result.",
     "mostChosen": "Most chosen",
-    "extraConversations": "Prices in USD, billed monthly. Additional conversations beyond your plan are $0.28 each — we will always flag it before you cross the line.",
+    "extraConversations": "Prices in EUR, billed monthly. Overage: €0.20/min beyond your plan allowance.",
     "includedEyebrow": "Included in every plan",
     "includedTitle": "The work that actually delivers the result",
     "includedLede": "These are not add-ons. Nothing here appears on a separate invoice.",
     "compareEyebrow": "Compare",
     "compareTitle": "Plan by plan",
     "contextEyebrow": "Context",
-    "contextTitle": "What $499 buys elsewhere",
+    "contextTitle": "What €299 buys elsewhere",
     "contextLede": "A part-time receptionist covering twenty hours a week, one language, one caller at a time — with holidays, sick days and a recruitment process attached.",
     "questionsEyebrow": "Pricing questions",
     "questionsTitle": "Before you ask your finance team",
@@ -441,7 +441,7 @@
       "slug": "clinics",
       "name": "Clinics & dental",
       "headline": "Stop losing patients to a busy signal",
-      "body": "Reception is answering the person in front of them. Agjent038 answers the phone, books into your calendar, confirms by SMS and calls back no-shows — in Albanian, without a script that sounds robotic.",
+      "body": "Reception is answering the person in front of them. Agjent038 answers the phone, books into your calendar, confirms by SMS and calls back no-shows — in your customers' language, without a script that sounds robotic.",
       "wins": [
         "Bookings captured after 17:00 and on weekends",
         "Automatic reminders that cut no-shows",
@@ -452,7 +452,7 @@
       "slug": "hospitality",
       "name": "Hotels & restaurants",
       "headline": "Every reservation request answered in the guest's language",
-      "body": "Guests call from Germany, Switzerland, Turkey and Serbia. Agjent038 handles reservations, availability, directions and special requests in five languages, then writes it into your PMS.",
+      "body": "Guests call from Germany, Switzerland, Turkey and Serbia. Agjent038 handles reservations, availability, directions and special requests in your customers' language, then writes it into your PMS.",
       "wins": [
         "Multilingual reservations without multilingual staff",
         "Upsells offered consistently on every call",
@@ -557,14 +557,33 @@
   ],
   "Plans": [
     {
-      "name": "Reception",
-      "price": "$499",
+      "name": "Overflow",
+      "price": "€299",
       "cadence": "per month",
-      "meta": "Up to 1,000 answered conversations",
+      "meta": "Nights/weekends + peak overflow, 400 min",
+      "summary": "Catch the calls you are already losing after hours and at peak. Live in days, not weeks.",
+      "includes": [
+        "Nights, weekends and peak overflow answering",
+        "Up to 400 minutes / month",
+        "1 configurable language",
+        "Warm transfer to on-call team",
+        "Live dashboard and call recordings",
+        "SMS confirmations and callbacks",
+        "No setup fee",
+        "Month-to-month"
+      ],
+      "cta": "Start with Overflow"
+    },
+    {
+      "name": "Reception",
+      "price": "€499",
+      "cadence": "per month",
+      "meta": "24/7, 1,000 min, multilingual, CRM, warm transfer",
       "summary": "The full AI receptionist for a single location or a focused inbound queue. Live in two weeks.",
       "includes": [
-        "24/7 inbound answering in 5 languages",
-        "Up to 1,000 answered conversations / month",
+        "24/7 inbound answering",
+        "Up to 1,000 answered minutes / month",
+        "Multilingual — your default language plus more",
         "Appointment booking + SMS confirmations",
         "Calendar, email and CRM integration",
         "Live dashboard, transcripts and recordings",
@@ -576,19 +595,19 @@
     },
     {
       "name": "Operations",
-      "price": "$1,290",
+      "price": "€899",
       "cadence": "per month",
-      "meta": "Up to 4,000 answered conversations",
+      "meta": "2,500 min, outbound follow-ups, QA dashboard",
       "summary": "For call centres and multi-site operators running real volume across voice and messaging.",
       "includes": [
         "Everything in Reception",
-        "Up to 4,000 answered conversations / month",
-        "WhatsApp, Viber, web chat and email agent",
+        "Up to 2,500 answered minutes / month",
         "Outbound callbacks and follow-up campaigns",
-        "Custom API and database integrations",
         "Automated QA scoring on 100% of calls",
         "Named success specialist + monthly tuning",
-        "Priority support, 4-hour response SLA"
+        "Priority support, 4-hour response SLA",
+        "WhatsApp, Viber, web chat and email agent",
+        "Custom API and database integrations"
       ],
       "cta": "Scale with Operations"
     },
@@ -612,8 +631,8 @@
   ],
   "FAQs": [
     {
-      "q": "Does the AI actually speak natural Albanian?",
-      "a": "Yes. Agjent038 is tuned on Kosovo Albanian, including Gheg pronunciation and the code-switching people actually use on the phone. It also handles English, Serbian, German and Turkish, and switches language mid-call when the caller does. You can hear real recorded samples on your discovery call before you commit to anything."
+      "q": "Does the AI speak naturally?",
+      "a": "Yes. Agjent038 is tuned for natural conversation in your configured language, with proper pronunciation and the code-switching people actually use on the phone. It handles multiple languages and switches mid-call when the caller does. You can hear real recorded samples on your discovery call before you commit to anything."
     },
     {
       "q": "What happens when the AI cannot handle something?",
@@ -628,8 +647,8 @@
       "a": "Two weeks from kickoff for the Reception plan. Days 1–3 are discovery and call audit, days 4–10 are build and training, days 11–14 are shadow mode where the AI answers on a test line and you approve every behaviour. Complex integrations may add a week."
     },
     {
-      "q": "What does $499 per month actually include?",
-      "a": "The full product: 24/7 answering in five languages, up to 1,000 answered conversations, booking, CRM and calendar integration, transcripts, recordings, the live dashboard, warm transfer, onboarding and shadow mode. There is no setup fee and no per-minute surprise billing on the base plan."
+      "q": "What does €499 per month actually include?",
+      "a": "The full product: 24/7 answering in multilingual, up to 1,000 answered conversations, booking, CRM and calendar integration, transcripts, recordings, the live dashboard, warm transfer, onboarding and shadow mode. There is no setup fee and no per-minute surprise billing on the base plan."
     },
     {
       "q": "How does this compare with hiring a receptionist?",
@@ -667,7 +686,7 @@
     "submit": "Request a demo",
     "privacy": "We reply within one business day. Your details stay with us — no reselling, no newsletters you did not ask for.",
     "callRanges": ["Under 500", "500 – 1,000", "1,000 – 4,000", "4,000 – 10,000", "10,000+"],
-    "planOptions": ["Reception — $499/mo", "Operations — $1,290/mo", "Enterprise", "Not sure yet"],
+    "planOptions": ["Overflow — €299/mo", "Reception — €499/mo", "Operations — €899/mo", "Enterprise", "Not sure yet"],
     "placeholderMessage": "After-hours reservations, order status calls, appointment booking…"
   },
   "Roi": {
@@ -706,18 +725,18 @@
     "liveQueue": "Live queue",
     "autoRefresh": "auto-refresh",
     "feed": [
-      { "lang": "SQ", "intent": "Appointment booking", "outcome": "Booked", "dur": "1:12", "tone": "mint" },
-      { "lang": "EN", "intent": "Order status", "outcome": "Resolved", "dur": "0:48", "tone": "mint" },
+      { "lang": "EN", "intent": "Appointment booking", "outcome": "Booked", "dur": "1:12", "tone": "mint" },
+      { "lang": "FR", "intent": "Order status", "outcome": "Resolved", "dur": "0:48", "tone": "mint" },
       { "lang": "DE", "intent": "Complaint", "outcome": "Escalated", "dur": "2:05", "tone": "gold" },
-      { "lang": "SQ", "intent": "Price enquiry", "outcome": "Resolved", "dur": "0:39", "tone": "mint" },
-      { "lang": "SR", "intent": "Reschedule", "outcome": "Rescheduled", "dur": "1:27", "tone": "mint" }
+      { "lang": "EN", "intent": "Price enquiry", "outcome": "Resolved", "dur": "0:39", "tone": "mint" },
+      { "lang": "ES", "intent": "Reschedule", "outcome": "Rescheduled", "dur": "1:27", "tone": "mint" }
     ],
     "languages": [
-      { "code": "Albanian", "pct": 58 },
-      { "code": "English", "pct": 19 },
+      { "code": "English", "pct": 58 },
+      { "code": "French", "pct": 19 },
       { "code": "German", "pct": 12 },
-      { "code": "Serbian", "pct": 7 },
-      { "code": "Turkish", "pct": 4 }
+      { "code": "Spanish", "pct": 7 },
+      { "code": "Italian", "pct": 4 }
     ]
   },
   "Cases": [
@@ -764,8 +783,8 @@
       "body": "Containment, recovered calls and released capacity are the only numbers that matter. We report them every month, including the months where the curve flattens."
     },
     {
-      "title": "Local language is not a feature, it is the product",
-      "body": "An agent that mispronounces a caller's town loses the call. We spend most of our engineering time on the parts of Albanian that generic models get wrong."
+      "title": "Natural language is not a feature, it is the product",
+      "body": "An agent that mispronounces a caller's words loses the call. We spend most of our engineering time on making conversation feel natural in your configured language."
     },
     {
       "title": "No lock-in as a strategy",
@@ -778,24 +797,24 @@
   ],
   "CompanyFacts": [
     ["2024", "Founded in Prishtina"],
-    ["5", "Languages supported"],
+    ["Multilingual", "Configurable language support"],
     ["<600ms", "Median response latency"],
     ["EU", "Data processing region"]
   ],
   "CompanyLimits": "We are equally direct about limits. Agjent038 does not negotiate contracts, handle grief, or improvise policy. Those calls belong to a person, and our job is to make sure that person receives them with full context and enough time to do it properly.",
   "PricingCompare": [
-    ["Answered conversations / month", "1,000", "4,000", "Unlimited"],
-    ["Languages", "5", "5", "5 + custom"],
-    ["Voice channel", "Included", "Included", "Included"],
-    ["WhatsApp, Viber, chat & email", "—", "Included", "Included"],
-    ["Outbound campaigns", "—", "Included", "Included"],
-    ["Custom API integrations", "Standard only", "Included", "Unlimited"],
-    ["Automated QA on 100% of calls", "—", "Included", "Included"],
-    ["Dedicated instance & EU residency", "—", "—", "Included"],
-    ["Custom branded voice", "—", "—", "Included"],
-    ["Uptime SLA", "Best effort", "99.5%", "99.9% contractual"],
-    ["Support response", "Next business day", "4 hours", "1 hour + on-call"],
-    ["Setup fee", "None", "None", "None"]
+    ["Answered minutes / month", "400", "1,000", "2,500", "Unlimited"],
+    ["Languages", "1", "Multilingual", "Multilingual", "Custom"],
+    ["Voice channel", "Included", "Included", "Included", "Included"],
+    ["WhatsApp, Viber, chat & email", "—", "—", "Included", "Included"],
+    ["Outbound campaigns", "—", "—", "Included", "Included"],
+    ["Custom API integrations", "—", "Standard only", "Included", "Unlimited"],
+    ["Automated QA on 100% of calls", "—", "—", "Included", "Included"],
+    ["Dedicated instance & EU residency", "—", "—", "—", "Included"],
+    ["Custom branded voice", "—", "—", "—", "Included"],
+    ["Uptime SLA", "Best effort", "Best effort", "99.5%", "99.9% contractual"],
+    ["Support response", "Email", "Next business day", "4 hours", "1 hour + on-call"],
+    ["Setup fee", "None", "None", "None", "None"]
   ],
   "PricingContext": [
     ["168 h/week", "Agjent038 coverage"],
@@ -805,7 +824,7 @@
   ],
   "Layout": {
     "skipToContent": "Skip to content",
-    "jsonLdDescription": "Agjent038 builds AI receptionists and customer support agents for call centres and service businesses in Kosovo, answering 24/7 in Albanian, English, Serbian, German and Turkish.",
+    "jsonLdDescription": "Agjent038 builds AI receptionists and customer support agents for call centres and service businesses in Kosovo, answering 24/7 with multilingual support.",
     "jsonLdServiceType": "AI receptionist and customer support agent",
     "jsonLdAudienceType": "Call centres, BPOs, clinics, hotels and service businesses"
   },
@@ -819,10 +838,10 @@
   "PlatformPillars": [
     {
       "glyph": "◆",
-      "title": "Native Albanian voice, not a translation layer",
-      "description": "Trained on Kosovo dialects, Gheg pronunciation and real call-centre transcripts, so callers never ask to be transferred to a human because they were misunderstood.",
+      "title": "Natural voice in your configured language, not a translation layer",
+      "description": "Trained on real call-centre transcripts and natural pronunciation, so callers never ask to be transferred to a human because they were misunderstood.",
       "detail": [
-        "Gheg and standard Albanian, plus English, Serbian, German, Turkish",
+        "Configurable language support — your default language plus more on request",
         "Sub-600ms response latency on local carriers",
         "Barge-in support: callers can interrupt naturally"
       ]

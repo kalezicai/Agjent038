@@ -2,7 +2,7 @@
   "Meta": {
     "title": "Agjent038 — Agjentë Zanorë AI për Qendrat e Thirrjeve në Kosovë",
     "titleTemplate": "%s | Agjent038",
-    "description": "Agjent038 përgjigjet çdo thirrje në shqip, anglisht, serbisht, gjermanisht dhe turqisht — 24/7. Ndërtuar për qendrat e thirrjeve, klinikat dhe BPO-të në Kosovë. Gati në dy javë nga 499$ në muaj.",
+    "description": "Agjent038 përgjigjet çdo thirrje shumëgjuhëshe 24/7 — flet gjuhën e klientëve tuaj. Ndërtuar për qendrat e thirrjeve, klinikat dhe BPO-të në Kosovë. Gati në dy javë nga 299€ në muaj.",
     "keywords": [
       "pranimës AI Kosovë",
       "qendër thirrjesh AI Kosovë",
@@ -14,9 +14,9 @@
       "automatizim BPO Kosovë"
     ],
     "ogTitle": "Agjent038 — Agjentë Zanorë AI për Qendrat e Thirrjeve në Kosovë",
-    "ogDescription": "Çdo thirrje e përgjigjur në 0.4 sekonda, në pesë gjuhë, gjatë gjithë ditës. Nga 499$ në muaj.",
+    "ogDescription": "Çdo thirrje e përgjigjur në 0.4 sekonda, shumëgjuhëshe, gjatë gjithë ditës. Nga 299€ në muaj.",
     "twitterTitle": "Agjent038 — Agjentë Zanorë AI për Qendrat e Thirrjeve në Kosovë",
-    "twitterDescription": "Çdo thirrje e përgjigjur në 0.4 sekonda, në pesë gjuhë, gjatë gjithë ditës. Nga 499$ në muaj."
+    "twitterDescription": "Çdo thirrje e përgjigjur në 0.4 sekonda, shumëgjuhëshe, gjatë gjithë ditës. Nga 299€ në muaj."
   },
   "Site": {
     "name": "Agjent038",
@@ -35,10 +35,10 @@
     "heroEyebrow": "Ndërtuar në Prishtinë për operatorët kosovarë",
     "heroTitle1": "Çdo thirrje e përgjigjur.",
     "heroTitle2": "Çdo orë. Në gjuhën e tyre.",
-    "heroDescription": "Agjent038 është një pranimës AI për qendrat e thirrjeve dhe bizneset e shërbimeve në Kosovë. Ai përgjigjet në rastin e parë, kupton se çfarë telefonuesi ka nevojë në shqip, anglisht, serbisht, gjermanisht ose turqisht, kryen detyrën në sistemet tuaja dhe i kalon bisedat e vështira ekipit tuaj me një përmbledhje të plotë.",
+    "heroDescription": "Agjent038 është një pranimës AI për qendrat e thirrjeve dhe bizneset e shërbimeve në Kosovë. Ai përgjigjet në rastin e parë, kupton se çfarë telefonuesi ka nevojë shumëgjuhësisht, kryen detyrën në sistemet tuaja dhe i kalon bisedat e vështira ekipit tuaj me një përmbledhje të plotë.",
     "heroCta": "Dëgjojeni në thirrjet tuaja",
     "heroCtaSecondary": "Shifrat reale",
-    "stat1Value": "499$",
+    "stat1Value": "299€",
     "stat1Label": "për muaj, gjithçka e përfshirë",
     "stat2Value": "14 ditë",
     "stat2Label": "nga fillimi në gati",
@@ -66,14 +66,14 @@
     "processTitle": "Gati në katërmbëdhjetë ditë, me asgjë për t'u lënë rastësisë",
     "processLede": "Ju miratoni çdo sjellje në modalitetin hijë përpara se një klient i vetëm të dëgjojë AI-në.",
     "pricingEyebrow": "Çmimet",
-    "pricingTitle": "499$ në muaj. Më pak se një pranimës me kohë të plotë.",
-    "pricingLede": "Pa tarifë vendosje. Pa surpriza me faturim për minutë në planin bazë. Muaj për muaj, sepse rezultatet duhet t'ju mbajnë, jo kontrata.",
+    "pricingTitle": "Nga 299€ në muaj. Më pak se një pranimës me kohë të plotë.",
+    "pricingLede": "Pa tarifë vendosje. Planet që rriten me ju. Muaj për muaj, sepse rezultatet duhet t'ju mbajnë, jo kontrata.",
     "pricingCta": "Shikoni çfarë përfshihet",
     "pricingDemo": "Rezervoni një demonstrim",
     "receptionPlan": "Plani i Pranimit",
     "pricingFeatures": [
-      "Përgjigjje 24/7, 5 gjuhë",
-      "1,000 biseda të përfshira",
+      "Përgjigjje 24/7, shumëgjuhëshe — flet gjuhën e klientëve tuaj",
+      "Deri në 1,000 minuta / muaj",
       "Rezervim + konfirmim SMS",
       "Integrim CRM & kalendar",
       "Transkripte dhe regjistrime",
@@ -109,8 +109,8 @@
       },
       {
         "stat": "24/7",
-        "label": "Mbulim në 5 gjuhë",
-        "note": "Shqip, anglisht, serbisht, gjermanisht dhe turqisht në një numër."
+        "label": "Mbulim shumëgjuhësh",
+        "note": "Shumëgjuhëshe — flet gjuhën e klientëve tuaj në çdo thirrje."
       }
     ],
     "BeforeAfter": {
@@ -124,7 +124,7 @@
       "after": [
         "100% e thirrjeve të ofruara të përgjigjura në 0.4s",
         "Mbulim 24/7/365 duke përfshirë pushimet",
-        "Pesë gjuhë, bashkëkohësi e pakufizuar",
+        "Shumëgjuhëshe, bashkëkohësi e pakufizuar",
         "Çdo bisedë e transkriptuar dhe vlerësuar",
         "Kapaciteti shkallëzohet sapo vëllimi bie"
       ]
@@ -167,7 +167,7 @@
     "hours": "Orari"
   },
   "Footer": {
-    "description": "Pranimësja AI e ndërtuar për qendrat e thirrjeve në Kosovë — duke u përgjigjur në shqip, anglisht, serbisht, gjermanisht dhe turqisht, 24 orë në ditë.",
+    "description": "Pranimësja AI e ndërtuar për qendrat e thirrjeve në Kosovë — duke u përgjigjur shumëgjuhësisht, 24 orë në ditë.",
     "product": "Produkti",
     "solutions": "Zgjidhjet",
     "company": "Kompania",
@@ -177,7 +177,7 @@
     "copyright": "Të gjitha të drejtat e rezervuara.",
     "gdpr": "Përpunim në përputhje me GDPR",
     "euResidency": "Rezidenca e të dhënave BE në dispozicion",
-    "fromPrice": "Nga 499$/muaj"
+    "fromPrice": "Nga 299€/muaj"
   },
   "Platform": {
     "eyebrow": "Platforma",
@@ -277,22 +277,22 @@
     "title": "Një tarifë mujore. Gjëja që e bën atë të funksionojë është brenda.",
     "description": "Pa faturë implementimi, pa linjë shërbimesh profesionale, pa faturim për minutë në planin bazë. Nisja, integrimi, trajnimi dhe përmirësimi mujor janë pjesë e abonimit, sepse ato janë gjëja që bën diferencën midis një demonstrimi dhe një rezultati.",
     "mostChosen": "Më i zgjedhuri",
-    "extraConversations": "Çmimet në USD, faturuar mujorisht. Bisedat shtesë përtej planit tuaj janë 0.28$ secila — ne gjithmonë do t'ju njoftojmë para se të kaloni vijën.",
+    "extraConversations": "Çmimet në euro, faturuar mujorisht. Përtej lejes së planit: 0.20€ për minutë — ne gjithmonë do t'ju njoftojmë para se të kaloni vijën.",
     "includedEyebrow": "E përfshirë në çdo plan",
     "includedTitle": "Puna që me të vërtetë prodhon rezultatin",
     "includedLede": "Këto nuk janë shtesa. Asgjë këtu nuk shfaqet në një faturë të veçantë.",
     "compareEyebrow": "Krahasoni",
-    "compareTitle": "Plan për plan",
+    "compareTitle": "Plan për plan — katër nivele",
     "contextEyebrow": "Konteksti",
-    "contextTitle": "Çfarë blen 499$ gjetkë",
-    "contextLede": "Një pranimës me kohë të plotë që mbulon njëzet orë në javë, një gjuhë, një telefonues në një kohë — mepushime, ditë të sëmura dhe një proces rekrutimi bashkë.",
+    "contextTitle": "Çfarë blen 499€ gjetkë",
+    "contextLede": "Një pranimës me kohë të plotë që mbulon njëzet orë në javë, një gjuhë, një telefonues në një kohë — me pushime, ditë të sëmura dhe një proces rekrutimi bashkë.",
     "questionsEyebrow": "Pyetje për çmimet",
     "questionsTitle": "Para se t'i pyesni ekipin tuaj financiar",
     "cta": "Rezervoni një demonstrim",
     "ctaSecondary": "Modeloni ROI-në tuaj",
     "features": {
       "conversations": "Biseda të përgjigjura / muaj",
-      "languages": "Gjuhë",
+      "languages": "Gjuhë e konfigurueshme",
       "voiceChannel": "Kanali zanor",
       "messaging": "WhatsApp, Viber, chat & email",
       "outbound": "Fushata dalëse",
@@ -441,7 +441,7 @@
       "slug": "clinics",
       "name": "Klinikat & dentistët",
       "headline": "Ndaloni të humbisni pacientë për shkak të sinjalit të zënë",
-      "body": "Pranimi po përgjigjet personit para tyre. Agjent038 përgjigjet telefonin, rezervon në kalendarin tuaj, konfirmon me SMS dhe thërret mungesat — në shqip, pa skript që tingëllon robotik.",
+      "body": "Pranimi po përgjigjet personit para tyre. Agjent038 përgjigjet telefonin, rezervon në kalendarin tuaj, konfirmon me SMS dhe thërret mungesat — shumëgjuhësisht, pa skript që tingëllon robotik.",
       "wins": [
         "Rezervime të kapura pas orës 17:00 dhe në fundjavë",
         "Kujtime automatike që reduktojnë mungesat",
@@ -452,7 +452,7 @@
       "slug": "hospitality",
       "name": "Hotelieria & restorantet",
       "headline": "Çdo kërkesë për rezervim e përgjigjur në gjuhën e mysafirit",
-      "body": "Mysafirët telefonojnë nga Gjermania, Zvicra, Turqia dhe Serbia. Agjent038 trajton rezervimet, disponueshmërinë, drejtimet dhe kërkesat speciale në pesë gjuhë, pastaj shkruan në PMS-në tuaj.",
+      "body": "Mysafirët telefonojnë nga vende të ndryshme. Agjent038 trajton rezervimet, disponueshmërinë, drejtimet dhe kërkesat speciale shumëgjuhësisht, pastaj shkruan në PMS-në tuaj.",
       "wins": [
         "Rezervime shumëgjuhëshe pa staf shumëgjuhësh",
         "Përmirësime të ofruara në mënyrë të qëndrueshme në çdo thirrje",
@@ -557,14 +557,32 @@
   ],
   "Plans": [
     {
-      "name": "Pranimi",
-      "price": "499$",
+      "name": "Overflow",
+      "price": "299€",
       "cadence": "për muaj",
-      "meta": "Deri në 1,000 biseda të përgjigjura",
+      "meta": "Natët/fundjavat + tejmbushje, 400 min, 1 gjuhë",
+      "summary": "Mbushni boshllëqet jashtë orarit dhe pikët e trafikut pa shtuar staf. Filloni menjëherë.",
+      "includes": [
+        "Mbulim netësh, fundjavash dhe pushimesh",
+        "Deri në 400 minuta / muaj",
+        "1 gjuhë e konfigurueshme",
+        "Transfer i ngrohtë te ekipi juaj me përmbledhje",
+        "Rezervim + konfirmim SMS",
+        "Transkripte dhe regjistrime",
+        "Panel i gjallë në kohë reale",
+        "Pa tarifë vendosje"
+      ],
+      "cta": "Filloni me Overflow"
+    },
+    {
+      "name": "Pranimi",
+      "price": "499€",
+      "cadence": "për muaj",
+      "meta": "Deri në 1,000 min, shumëgjuhëshe, CRM, transfer i ngrohtë, transkripte",
       "summary": "Pranimësi i plotë AI për një vendndodhje ose një radhë të fokusuar hyrëse. Gati në dy javë.",
       "includes": [
-        "Përgjigjje 24/7 në 5 gjuhë",
-        "Deri në 1,000 biseda të përgjigjura / muaj",
+        "Përgjigjje 24/7, shumëgjuhëshe — flet gjuhën e klientëve tuaj",
+        "Deri në 1,000 minuta / muaj",
         "Rezervim takimesh + konfirmime SMS",
         "Integrim kalendari, email dhe CRM",
         "Panel i gjallë, transkripte dhe regjistrime",
@@ -576,19 +594,19 @@
     },
     {
       "name": "Operacionet",
-      "price": "1,290$",
+      "price": "899€",
       "cadence": "për muaj",
-      "meta": "Deri në 4,000 biseda të përgjigjura",
+      "meta": "Deri në 2,500 min, ndjekje dalëse, panel vlerësimi cilësie, prioritet",
       "summary": "Për qendra thirrjesh dhe operatorë të shumë-faqeve që ekzekutojnë vëllim të vërtetë në zë dhe mesazhe.",
       "includes": [
         "Gjithçka në Pranim",
-        "Deri në 4,000 biseda të përgjigjura / muaj",
-        "Agjent WhatsApp, Viber, bisedë web dhe email",
+        "Deri në 2,500 minuta / muaj",
         "Thirrje prapë dhe fushata ndjekjeje dalëse",
-        "Integrim API dhe bazash të personalizuara",
-        "Vlerësim AA i automatizuar në 100% të thirrjeve",
+        "AA e automatizuar në 100% të thirrjeve",
         "Specialist suksesi i emëruar + përmirësim mujor",
-        "Mbështetje prioritare, SLA përgjigjeje 4 orë"
+        "Mbështetje prioritare, SLA përgjigjeje 4 orë",
+        "Integrim API dhe bazash të personalizuara",
+        "Vlerësim cilësie në 12 dimensione"
       ],
       "cta": "Shkallëzoni me Operacionet"
     },
@@ -599,7 +617,7 @@
       "summary": "Kapacitet i dedikuar, zë i personalizuar dhe SLA kontraktuale për operacionet e rregulluara dhe me vëllim të lartë.",
       "includes": [
         "Gjithçka në Operacione",
-        "Vëllim i pakufizuar bisedash",
+        "Vëllim i pakufizuar minutash",
         "Instancë e dedikuar dhe rezidenca e të dhënave BE",
         "Zë dhe personazh i personalizuar",
         "SLA 99.9% kohë pune me gjoba",
@@ -613,7 +631,7 @@
   "FAQs": [
     {
       "q": "A flet AI shqisht të vërtetë natyrore?",
-      "a": "Po. Agjent038 është përshtatur në shqipen e Kosovës, duke përfshirë shqiptimin Gheg dhe kodin e përzier që njerëzit përdorin me të vërtetë në telefon. Gjithashtu trajton anglisht, serbisht, gjermanisht dhe turqisht dhe ndryshon gjuhë brenda thirrjes kur telefonuesi e bën këtë. Mund të dëgjoni mostra të regjistrimit real në thirrjen tuaj të zbulimit përpara se të angazoheni për ndonjë gjë."
+      "a": "Po. Agjent038 është përshtatur në shqipen e Kosovës, duke përfshirë shqiptimin Gheg dhe kodin e përzier që njerëzit përdorin me të vërtetë në telefon. Gjithashtu trajton shumë gjuhë të tjera dhe ndryshon gjuhë brenda thirrjes kur telefonuesi e bën këtë. Mund të dëgjoni mostra të regjistrimit real në thirrjen tuaj të zbulimit përpara se të angazoheni për ndonjë gjë."
     },
     {
       "q": "Çfarë ndodh kur AI nuk mund të trajtojë diçka?",
@@ -628,8 +646,8 @@
       "a": "Dy javë nga fillimi për planin Pranimi. Ditët 1-3 janë zbulim dhe auditim thirrjesh, ditët 4-10 janë ndërtim dhe trajnim, ditët 11-14 janë modalitet hije ku AI përgjigjet në një numër testi dhe ju miratoni çdo sjellje. Integrimet komplekse mund të shtojnë një javë."
     },
     {
-      "q": "Çfarë përfshin 499$ në muaj me të vërtetë?",
-      "a": "Produkti i plotë: përgjigjje 24/7 në pesë gjuhë, deri në 1,000 biseda të përgjigjura, rezervim, integrim CRM dhe kalendar, transkripte, regjistrime, paneli i gjallë, transfer i ngroftë, nisja dhe modaliteti hije. Nuk ka tarifë vendosje dhe nuk ka faturim surprizë për minutë në planin bazë."
+      "q": "Çfarë përfshin çmimi në muaj me të vërtetë?",
+      "a": "Produkti i plotë: përgjigjje 24/7 shumëgjuhëshe, deri në 1,000 minuta, rezervim, integrim CRM dhe kalendar, transkripte, regjistrime, paneli i gjallë, transfer i ngrohtë, nisja dhe modaliteti hije. Nuk ka tarifë vendosje dhe nuk ka faturim surprizë për minutë në planin bazë."
     },
     {
       "q": "Si krahasohet kjo me punësimin e një pranimesi?",
@@ -667,7 +685,7 @@
     "submit": "Kërkoni një demonstrim",
     "privacy": "Ne përgjigjemi brenda një dite pune. Detajet tuaja qëndrojnë tek ne — pa rishitje, pa buletine që nuk keni kërkuar.",
     "callRanges": ["Nën 500", "500 – 1,000", "1,000 – 4,000", "4,000 – 10,000", "10,000+"],
-    "planOptions": ["Pranimi — 499$/muaj", "Operacionet — 1,290$/muaj", "Enterprise", " ende nuk e di"],
+    "planOptions": ["Overflow — 299€/muaj", "Pranimi — 499€/muaj", "Operacionet — 899€/muaj", "Enterprise", " ende nuk e di"],
     "placeholderMessage": "Rezervime pas orarit, thirrje statusi porosie, rezervim takimesh…"
   },
   "Roi": {
@@ -778,24 +796,24 @@
   ],
   "CompanyFacts": [
     ["2024", "Themeluar në Prishtinë"],
-    ["5", "Gjuhë të mbështetura"],
+    ["5+", "Gjuhë të mbështetura"],
     ["<600ms", "Vonesa mesatare përgjigjeje"],
     ["BE", "Rajoni i përpunimit të të dhënave"]
   ],
   "CompanyLimits": "Ne jemi po aq të drejtë për kufizimet. Agjent038 nuk negocion kontrata, nuk trajton dhimbje, dhe nuk improvizon politika. Ata thirrje i takojnë një personi, dhe puna jonë është të sigurohemi që ai person t'i marrë me kontekst të plotë dhe kohë të mjaftueshme për ta bërë si duhet.",
   "PricingCompare": [
-    ["Biseda të përgjigjura / muaj", "1,000", "4,000", "Të pakufizuara"],
-    ["Gjuhë", "5", "5", "5 + e personalizuar"],
-    ["Kanali zanor", "I përfshirë", "I përfshirë", "I përfshirë"],
-    ["WhatsApp, Viber, chat & email", "—", "I përfshirë", "I përfshirë"],
-    ["Fushata dalëse", "—", "I përfshirë", "I përfshirë"],
-    ["Integrim API të personalizuara", "Vetëm standard", "I përfshirë", "Të pakufizuara"],
-    ["AA e automatizuar në 100% të thirrjeve", "—", "I përfshirë", "I përfshirë"],
-    ["Instanca e dedikuar & rezidenca BE", "—", "—", "I përfshirë"],
-    ["Zë i personalizuar", "—", "—", "I përfshirë"],
-    ["SLA e kohës së punimit", "Më e mira e mundshme", "99.5%", "99.9% kontraktuale"],
-    ["Përgjigja e mbështetjes", "Dita e ardhshme e punës", "4 orë", "1 orë + në thirrje"],
-    ["Tarifa e vendosjes", "Asnjë", "Asnjë", "Asnjë"]
+    ["Biseda të përgjigjura / muaj", "400 min", "1,000 min", "2,500 min", "Të pakufizuara"],
+    ["Gjuhë", "1", "Shumëgjuhëshe", "Shumëgjuhëshe", "Shumëgjuhëshe + e personalizuar"],
+    ["Kanali zanor", "I përfshirë", "I përfshirë", "I përfshirë", "I përfshirë"],
+    ["WhatsApp, Viber, chat & email", "—", "—", "I përfshirë", "I përfshirë"],
+    ["Fushata dalëse", "—", "—", "I përfshirë", "I përfshirë"],
+    ["Integrim API të personalizuara", "—", "Vetëm standard", "I përfshirë", "Të pakufizuara"],
+    ["AA e automatizuar në 100% të thirrjeve", "—", "—", "I përfshirë", "I përfshirë"],
+    ["Instanca e dedikuar & rezidenca BE", "—", "—", "—", "I përfshirë"],
+    ["Zë i personalizuar", "—", "—", "—", "I përfshirë"],
+    ["SLA e kohës së punimit", "—", "Më e mira e mundshme", "99.5%", "99.9% kontraktuale"],
+    ["Përgjigja e mbështetjes", "—", "Dita e ardhshme e punës", "4 orë", "1 orë + në thirrje"],
+    ["Tarifa e vendosjes", "Asnjë", "Asnjë", "Asnjë", "Asnjë"]
   ],
   "PricingContext": [
     ["168 orë/javë", "Mbulim Agjent038"],
@@ -805,7 +823,7 @@
   ],
   "Layout": {
     "skipToContent": "Kaloni te përmbajtja",
-    "jsonLdDescription": "Agjent038 ndërton pranimës dhe agjentë mbështetjeje klienti AI për qendra thirrjesh dhe biznese shërbimesh në Kosovë, duke përgjigjur 24/7 në shqip, anglisht, serbisht, gjermanisht dhe turqisht.",
+    "jsonLdDescription": "Agjent038 ndërton pranimës dhe agjentë mbështetjeje klienti AI për qendra thirrjesh dhe biznese shërbimesh në Kosovë, duke përgjigjur 24/7 shumëgjuhësisht.",
     "jsonLdServiceType": "Pranimës AI dhe agjent mbështetjeje klienti",
     "jsonLdAudienceType": "Qendra thirrjesh, BPO, klinika, hotele dhe biznese shërbimesh"
   },
@@ -822,7 +840,7 @@
       "title": "Zë vendor shqip, jo një shtresë përkthimi",
       "description": "Trajnuar në dialektet e Kosovës, shqiptimin Gheg dhe transkriptet reale të qendrave të thirrjeve, kështu që telefonuesit nuk kërkojnë të transferohen te një njeri sepse u keqkuptuan.",
       "detail": [
-        "Shqip Gheg dhe standarde, plus anglisht, serbisht, gjermanisht, turqisht",
+        "Shumëgjuhëshe — flet gjuhën e klientëve tuaj",
         "Vonesa përgjigjjeje nën 600ms në transportuesit lokalë",
         "Mbështetje ndërprerjeje: telefonuesit mund të ndërpresin natyrshëm"
       ]

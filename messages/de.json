@@ -2,7 +2,7 @@
   "Meta": {
     "title": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
     "titleTemplate": "%s | Agjent038",
-    "description": "Agjent038 beantwortet jeden Anruf auf Albanisch, Englisch, Serbisch, Deutsch und Türkisch — 24/7. Gebaut für Kosovo-Callcenter, Kliniken und BPOs. Live in zwei Wochen ab 499$/Monat.",
+    "description": "Agjent038 beantwortet jeden Anruf mehrsprachig — 24/7. Gebaut für Kosovo-Callcenter, Kliniken und BPOs. Live in zwei Wochen, ab €299/Monat.",
     "keywords": [
       "KI-Rezeptionist Kosovo",
       "KI-Callcenter Kosovo",
@@ -14,9 +14,9 @@
       "BPO-KI-Automatisierung"
     ],
     "ogTitle": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
-    "ogDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, in fünf Sprachen, rund um die Uhr. Ab 499$ pro Monat.",
+    "ogDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, mehrsprachig, rund um die Uhr. Ab €299 pro Monat.",
     "twitterTitle": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
-    "twitterDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, in fünf Sprachen, rund um die Uhr. Ab 499$ pro Monat."
+    "twitterDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, mehrsprachig, rund um die Uhr. Ab €299 pro Monat."
   },
   "Site": {
     "name": "Agjent038",
@@ -35,10 +35,10 @@
     "heroEyebrow": "Gebaut in Pristina für Kosovo-Betreiber",
     "heroTitle1": "Jeder Anruf beantwortet.",
     "heroTitle2": "Jede Stunde. In der Sprache des Anrufers.",
-    "heroDescription": "Agjent038 ist ein KI-Rezeptionist für Kosovo-Callcenter und Servicounternehmen. Es nimmt am ersten Klingeln ab, versteht, was der Anrufer auf Albanisch, Englisch, Serbisch, Deutsch oder Türkisch benötigt, führt die Aufgabe in Ihren Systemen aus und übergibt die schwierigen Gespräche an Ihr Team mit einer vollständigen Zusammenfassung.",
+    "heroDescription": "Agjent038 ist ein KI-Rezeptionist für Kosovo-Callcenter und Servicounternehmen. Es nimmt am ersten Klingeln ab, versteht, was der Anrufer benötigt, führt die Aufgabe in Ihren Systemen aus und übergibt die schwierigen Gespräche an Ihr Team mit einer vollständigen Zusammenfassung.",
     "heroCta": "Hören Sie es bei Ihren Anrufen",
     "heroCtaSecondary": "Die Zahlen sehen",
-    "stat1Value": "499$",
+    "stat1Value": "Ab €299",
     "stat1Label": "pro Monat, alles inklusive",
     "stat2Value": "14 Tage",
     "stat2Label": "vom Start bis live",
@@ -66,14 +66,14 @@
     "processTitle": "Live in vierzehn Tagen, nichts dem Zufall überlassen",
     "processLede": "Sie genehmigen jedes Verhalten im Schattenmodus, bevor ein einziger Kunde die KI hört.",
     "pricingEyebrow": "Preise",
-    "pricingTitle": "499$ pro Monat. Weniger als ein Teilzeit-Rezeptionist.",
+    "pricingTitle": "Von €299 bis zur Enterprise-Lösung. Wählen Sie Ihren Startpunkt.",
     "pricingLede": "Keine Einrichtungsgebühr. Keine Überraschungen bei der Minutenabrechnung im Basistarif. Monatlich kündbar, weil die Ergebnisse Sie halten sollten, nicht der Vertrag.",
     "pricingCta": "Sehen Sie, was enthalten ist",
     "pricingDemo": "Demo buchen",
     "receptionPlan": "Empfangsplan",
     "pricingFeatures": [
-      "24/7 Beantwortung, 5 Sprachen",
-      "1.000 Gespräche inklusive",
+      "24/7 Beantwortung, mehrsprachig",
+      "Bis zu 1.000 Gespräche inklusive",
       "Buchung + SMS-Bestätigung",
       "CRM- & Kalenderintegration",
       "Transkripte und Aufzeichnungen",
@@ -109,8 +109,8 @@
       },
       {
         "stat": "24/7",
-        "label": "Abdeckung in 5 Sprachen",
-        "note": "Albanisch, Englisch, Serbisch, Deutsch und Türkisch auf einer Nummer."
+        "label": "Mehrsprachige Abdeckung",
+        "note": "Spricht die Sprache Ihrer Kunden — konfigurierbare Sprachunterstützung."
       }
     ],
     "BeforeAfter": {
@@ -124,7 +124,7 @@
       "after": [
         "100% der angebotenen Anrufe in 0,4s beantwortet",
         "24/7/365-Abdeckung einschließlich Feiertage",
-        "Fünf Sprachen, unbegrenzte Gleichzeitigkeit",
+        "Mehrsprachig, unbegrenzte Gleichzeitigkeit",
         "Jedes Gespräch transkribiert und bewertet",
         "Kapazität skaliert, sobald das Volumen steigt"
       ]
@@ -167,7 +167,7 @@
     "hours": "Öffnungszeiten"
   },
   "Footer": {
-    "description": "Der KI-Rezeptionist, gebaut für Kosovo-Callcenter — antwortet auf Albanisch, Englisch, Serbisch, Deutsch und Türkisch, 24 Stunden am Tag.",
+    "description": "Der KI-Rezeptionist, gebaut für Kosovo-Callcenter — antwortet mehrsprachig, 24 Stunden am Tag.",
     "product": "Produkt",
     "solutions": "Lösungen",
     "company": "Unternehmen",
@@ -177,7 +177,7 @@
     "copyright": "Alle Rechte vorbehalten.",
     "gdpr": "DSGVO-konforme Verarbeitung",
     "euResidency": "EU-Datenresidenz verfügbar",
-    "fromPrice": "Ab 499$/Monat"
+    "fromPrice": "Ab €299/Monat"
   },
   "Platform": {
     "eyebrow": "Plattform",
@@ -277,22 +277,22 @@
     "title": "Eine monatliche Gebühr. Alles, was es zum Funktionieren bringt, ist darin enthalten.",
     "description": "Keine Implementierungsrechnung, keine Professional-Services-Zeile, keine Minutenabrechnung im Basistarif. Einführung, Integration, Schulung und monatliche Optimierung sind Teil des Abonnements, weil sie das ausmachen, was einen Unterschied zwischen einer Demo und einem Ergebnis macht.",
     "mostChosen": "Am häufigsten gewählt",
-    "extraConversations": "Preise in USD, monatlich abgerechnet. Zusätzliche Gespräche über Ihren Plan hinaus kosten 0,28$ each — wir werden Sie immer warnen, bevor Sie die Linie überschreiten.",
+    "extraConversations": "Preise in EUR, monatlich abgerechnet. Zusätzliche Minuten über Ihren Plan hinaus kosten €0,20/Min — wir werden Sie immer warnen, bevor Sie die Linie überschreiten.",
     "includedEyebrow": "In jedem Plan enthalten",
     "includedTitle": "Die Arbeit, die tatsächlich das Ergebnis liefert",
     "includedLede": "Das sind keine Zusätze. Nichts davon erscheint auf einer separaten Rechnung.",
     "compareEyebrow": "Vergleichen",
     "compareTitle": "Plan für Plan",
     "contextEyebrow": "Kontext",
-    "contextTitle": "Was 499$ wo anders kaufen",
-    "contextLede": "Ein Teilzeit-Rezeptionist, der zwanzig Stunden pro Woche abdeckt, eine Sprache, einen Anrufer gleichzeitig — mit Feiertagen, Krankheitstagen und einem Einstellungsprozess.",
+    "contextTitle": "Was €499 wo anders kaufen",
+    "contextLede": "Ein Teilzeit-Rezeptionist, der zwanzig Stunden pro Woche abdeckt, konfigurierbare Sprachunterstützung, einen Anrufer gleichzeitig — mit Feiertagen, Krankheitstagen und einem Einstellungsprozess.",
     "questionsEyebrow": "Preisfragen",
     "questionsTitle": "Bevor Sie Ihr Finanzteam fragen",
     "cta": "Demo buchen",
     "ctaSecondary": "Ihre ROI modellieren",
     "features": {
-      "conversations": "Beantwortete Gespräche / Monat",
-      "languages": "Sprachen",
+      "conversations": "Minuten / Monat",
+      "languages": "Sprachunterstützung",
       "voiceChannel": "Sprachkanal",
       "messaging": "WhatsApp, Viber, Chat & E-Mail",
       "outbound": "Outbound-Kampagnen",
@@ -452,7 +452,7 @@
       "slug": "hospitality",
       "name": "Hotels & Restaurants",
       "headline": "Jede Reservierungsanfrage in der Sprache des Gastes beantwortet",
-      "body": "Gäste rufen aus Deutschland, der Schweiz, der Türkei und Serbien an. Agjent038 behandelt Reservierungen, Verfügbarkeit, Wegbeschreibungen und besondere Wünsche in fünf Sprachen und schreibt sie in Ihr PMS.",
+      "body": "Gäste rufen aus Deutschland, der Schweiz, der Türkei und Serbien an. Agjent038 behandelt Reservierungen, Verfügbarkeit, Wegbeschreibungen und besondere Wünsche mehrsprachig und schreibt sie in Ihr PMS.",
       "wins": [
         "Mehrsprachige Reservierungen ohne mehrsprachiges Personal",
         "Upsells werden bei jedem Anruf konsistent angeboten",
@@ -557,14 +557,33 @@
   ],
   "Plans": [
     {
-      "name": "Empfang",
-      "price": "499$",
+      "name": "Overflow",
+      "price": "€299",
       "cadence": "pro Monat",
-      "meta": "Bis zu 1.000 beantwortete Gespräche",
-      "summary": "Der vollständige KI-Rezeptionist für einen Standort oder eine fokussierte Eingangswarteschlange. Live in zwei Wochen.",
+      "meta": "400 Minuten, 1 Sprache",
+      "summary": "Für Nächte, Wochenenden und Spitzenlast — fängt die Anrufe ab, die sonst verloren gehen.",
       "includes": [
-        "24/7-Eingangsannahme in 5 Sprachen",
-        "Bis zu 1.000 beantwortete Gespräche / Monat",
+        "Abend- und Wochenendbeantwortung",
+        "Bis zu 400 Minuten / Monat",
+        "1 konfigurierbare Sprache",
+        "Buchung + SMS-Bestätigungen",
+        "Live-Dashboard und Transkripte",
+        "Warmer Transfer an Ihr Team",
+        "14-Tage-Schattenmodus",
+        "Keine Einrichtungsgebühr"
+      ],
+      "cta": "Mit Overflow starten"
+    },
+    {
+      "name": "Empfang",
+      "price": "€499",
+      "cadence": "pro Monat",
+      "meta": "1.000 Minuten, mehrsprachig",
+      "summary": "Der vollständige KI-Rezeptionist für einen Standort oder eine fokussierte Eingangswarteschlange. Live in zwei Wochen.",
+      "mostChosen": true,
+      "includes": [
+        "24/7-Eingangsannahme, mehrsprachig",
+        "Bis zu 1.000 Minuten / Monat",
         "Terminbuchung + SMS-Bestätigungen",
         "Kalender-, E-Mail- und CRM-Integration",
         "Live-Dashboard, Transkripte und Aufzeichnungen",
@@ -576,19 +595,19 @@
     },
     {
       "name": "Operationen",
-      "price": "1.290$",
+      "price": "€899",
       "cadence": "pro Monat",
-      "meta": "Bis zu 4.000 beantwortete Gespräche",
+      "meta": "2.500 Minuten, Outbound, QA, Priorität",
       "summary": "Für Callcenter und Multi-Site-Betreiber mit echtem Volumen über Sprache und Nachrichten.",
       "includes": [
         "Alles im Empfang",
-        "Bis zu 4.000 beantwortete Gespräche / Monat",
+        "Bis zu 2.500 Minuten / Monat",
+        "Outbound-Folgeaktionen und Kampagnen",
+        "Automatisierte QA-Bewertung bei 100% der Anrufe",
         "WhatsApp-, Viber-, Webchat- und E-Mail-Agent",
-        "Outbound-Rückrufe und Folgekampagnen",
-        "Benutzerdefinierte API- und Datenbankintegrationen",
-        "Automatisierte QS-Bewertung bei 100% der Anrufe",
+        "Prioritätssupport, 4-Stunden-Antwort-SLA",
         "Benannter Erfolgsspezialist + monatliche Optimierung",
-        "Priority-Support, 4-Stunden-Antwort-SLA"
+        "Benutzerdefinierte API-Integrationen"
       ],
       "cta": "Mit Operationen skalieren"
     },
@@ -613,7 +632,7 @@
   "FAQs": [
     {
       "q": "Spricht die KI tatsächlich natürliches Albanisch?",
-      "a": "Ja. Agjent038 ist auf Kosovo-Albanisch abgestimmt, einschließlich Gheg-Aussprache und dem Code-Switching, das Menschen tatsächlich am Telefon verwenden. Es behandelt auch Englisch, Serbisch, Deutsch und Türkisch und wechselt die Sprache mitten im Anruf, wenn der Anrufer das tut. Sie können echte Aufnahmen bei Ihrem Entdeckungsgespräch hören, bevor Sie sich zu etwas verpflichten."
+      "a": "Ja. Agjent038 ist auf Kosovo-Albanisch abgestimmt, einschließlich Gheg-Aussprache und dem Code-Switching, das Menschen tatsächlich am Telefon verwenden. Sie kann auch weitere Sprachen nach Bedarf bedienen. Sie können echte Aufnahmen bei Ihrem Entdeckungsgespräch hören, bevor Sie sich zu etwas verpflichten."
     },
     {
       "q": "Was passiert, wenn die KI etwas nicht handhaben kann?",
@@ -628,8 +647,8 @@
       "a": "Zwei Wochen ab Kickoff für den Empfangsplan. Tage 1–3 sind Entdeckung und Call-Audit, Tage 4–10 sind Aufbau und Schulung, Tage 11–14 sind Schattenmodus, in dem die KI auf einer Testleitung antwortet und Sie jedes Verhalten genehmigen. Komplexe Integrationen können eine Woche hinzufügen."
     },
     {
-      "q": "Was beinhaltet 499$ pro Monat wirklich?",
-      "a": "Das vollständige Produkt: 24/7-Beantwortung in fünf Sprachen, bis zu 1.000 beantwortete Gespräche, Buchung, CRM- und Kalenderintegration, Transkripte, Aufzeichnungen, das Live-Dashboard, Warmentransfer, Einführung und Schattenmodus. Es gibt keine Einrichtungsgebühr und keine Überraschungen bei der Minutenabrechnung im Basistarif."
+      "q": "Was beinhaltet der Plan wirklich?",
+      "a": "Das vollständige Produkt: 24/7-Beantwortung in mehreren Sprachen, bis zu 1.000 Minuten, Buchung, CRM- und Kalenderintegration, Transkripte, Aufzeichnungen, das Live-Dashboard, Warmentransfer, Einführung und Schattenmodus. Es gibt keine Einrichtungsgebühr und keine Überraschungen bei der Minutenabrechnung im Basistarif."
     },
     {
       "q": "Wie vergleicht sich das mit der Einstellung eines Rezeptionisten?",
@@ -667,7 +686,7 @@
     "submit": "Live-Demo anfordern",
     "privacy": "Wir antworten innerhalb eines Werktages. Ihre Daten bleiben bei uns — kein Weiterverkauf, keine Newsletter, die Sie nicht angefordert haben.",
     "callRanges": ["Unter 500", "500 – 1.000", "1.000 – 4.000", "4.000 – 10.000", "10.000+"],
-    "planOptions": ["Empfang — 499$/Monat", "Operationen — 1.290$/Monat", "Enterprise", "Noch nicht sicher"],
+    "planOptions": ["Overflow — €299/Monat", "Empfang — €499/Monat", "Operationen — €899/Monat", "Enterprise", "Noch nicht sicher"],
     "placeholderMessage": "Feierabend-Reservierungen, Bestellstatus-Anrufe, Terminvereinbarung…"
   },
   "Roi": {
@@ -778,24 +797,25 @@
   ],
   "CompanyFacts": [
     ["2024", "Gegründet in Pristina"],
-    ["5", "Unterstützte Sprachen"],
+    ["Mehrsprachig", "Konfigurierbare Sprachunterstützung"],
     ["<600ms", "Median-Antwortlatenz"],
     ["EU", "Datenverarbeitungsregion"]
   ],
   "CompanyLimits": "Wir sind ebenso direkt über Grenzen. Agjent038 verhandelt nicht über Verträge, behandelt nicht Trauer oder improvisiert Richtlinien. Diese Anrufe gehören einer Person, und unsere Aufgabe ist es, sicherzustellen, dass diese Person sie mit vollem Kontext und genügend Zeit erhält, um sie ordnungsgemäß zu erledigen.",
   "PricingCompare": [
-    ["Beantwortete Gespräche / Monat", "1.000", "4.000", "Unbegrenzt"],
-    ["Sprachen", "5", "5", "5 + benutzerdefiniert"],
-    ["Sprachkanal", "Inklusive", "Inklusive", "Inklusive"],
-    ["WhatsApp, Viber, Chat & E-Mail", "—", "Inklusive", "Inklusive"],
-    ["Outbound-Kampagnen", "—", "Inklusive", "Inklusive"],
-    ["Benutzerdefinierte API-Integrationen", "Nur Standard", "Inklusive", "Unbegrenzt"],
-    ["Automatisierte QA bei 100% der Anrufe", "—", "Inklusive", "Inklusive"],
-    ["Dedizierte Instanz & EU-Residenz", "—", "—", "Inklusive"],
-    ["Benutzerdefinierte Markenstimme", "—", "—", "Inklusive"],
-    ["Uptime-SLA", "Best effort", "99,5%", "99,9% vertraglich"],
-    ["Support-Reaktion", "Nächster Werktag", "4 Stunden", "1 Stunde + Rufbereitschaft"],
-    ["Einrichtungsgebühr", "Keine", "Keine", "Keine"]
+    ["Minuten / Monat", "400", "1.000", "2.500", "Unbegrenzt"],
+    ["Sprachen", "1", "Mehrsprachig", "Mehrsprachig", "Mehrsprachig + benutzerdefiniert"],
+    ["Sprachkanal", "Inklusive", "Inklusive", "Inklusive", "Inklusive"],
+    ["WhatsApp, Viber, Chat & E-Mail", "—", "—", "Inklusive", "Inklusive"],
+    ["Outbound-Kampagnen", "—", "—", "Inklusive", "Inklusive"],
+    ["Benutzerdefinierte API-Integrationen", "—", "Nur Standard", "Inklusive", "Unbegrenzt"],
+    ["Automatisierte QA bei 100% der Anrufe", "—", "—", "Inklusive", "Inklusive"],
+    ["Dedizierte Instanz & EU-Residenz", "—", "—", "—", "Inklusive"],
+    ["Benutzerdefinierte Markenstimme", "—", "—", "—", "Inklusive"],
+    ["Uptime-SLA", "Best effort", "Best effort", "99,5%", "99,9% vertraglich"],
+    ["Support-Reaktion", "Nächster Werktag", "Nächster Werktag", "4 Stunden", "1 Stunde + Rufbereitschaft"],
+    ["Einrichtungsgebühr", "Keine", "Keine", "Keine", "Keine"],
+    ["Overage-Kosten", "€0,20/Min", "€0,20/Min", "€0,20/Min", "N/A"]
   ],
   "PricingContext": [
     ["168 h/Woche", "Agjent038-Abdeckung"],
@@ -805,7 +825,7 @@
   ],
   "Layout": {
     "skipToContent": "Zum Inhalt springen",
-    "jsonLdDescription": "Agjent038 baut KI-Rezeptionisten und KI-Kundensupport-Agenten für Callcenter und Servicounternehmen in Kosovo, die 24/7 auf Albanisch, Englisch, Serbisch, Deutsch und Türkisch antworten.",
+    "jsonLdDescription": "Agjent038 baut KI-Rezeptionisten und KI-Kundensupport-Agenten für Callcenter und Servicounternehmen in Kosovo, die 24/7 mehrsprachig antworten.",
     "jsonLdServiceType": "KI-Rezeptionist und KI-Kundensupport-Agent",
     "jsonLdAudienceType": "Callcenter, BPOs, Kliniken, Hotels und Servicounternehmen"
   },
@@ -819,10 +839,10 @@
   "PlatformPillars": [
     {
       "glyph": "◆",
-      "title": "Native albanische Stimme, keine Übersetzungsschicht",
-      "description": "Trainiert auf Kosovo-Dialekten, Gheg-Aussprache und echten Callcenter-Transkripten, sodass Anrufer nie darum bitten, zu einem Menschen weitergeleitet zu werden, weil sie missverstanden wurden.",
+      "title": "Konfigurierbare Sprachunterstützung, keine Übersetzungsschicht",
+      "description": "Trainiert auf lokalen Dialekten und echten Callcenter-Transkripten, sodass Anrufer nie darum bitten, zu einem Menschen weitergeleitet zu werden, weil sie missverstanden wurden.",
       "detail": [
-        "Gheg und Standard-Albanisch, plus Englisch, Serbisch, Deutsch, Türkisch",
+        "Ihre Standardsprache, plus weitere auf Anfrage",
         "Antwortlatenz unter 600ms bei lokalen Carriern",
         "Unterbrechungsunterstützung: Anrufer können natürlich unterbrechen"
       ]

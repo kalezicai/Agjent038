@@ -34,7 +34,7 @@ export default async function LocaleLayout({
     email: site.email,
     telephone: site.phone,
     description: layoutMessages.jsonLdDescription ?? "",
-    areaServed: ["Kosovo", "Albania", "North Macedonia", "Switzerland", "Germany"],
+    areaServed: ["Kosovo"],
     knowsLanguage: site.languages,
     address: {
       "@type": "PostalAddress",
