@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { articles } from "@/lib/content";
+import { articleSlugs } from "@/lib/content";
 import { absoluteUrl } from "@/lib/site";
 import { locales, defaultLocale } from "@/i18n/config";
 
@@ -43,16 +43,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  for (const article of articles) {
+  for (const slug of articleSlugs) {
     for (const locale of locales) {
       entries.push({
-        url: absoluteUrl(`/${locale}/insights/${article.slug}`),
-        lastModified: new Date(article.date),
+        url: absoluteUrl(`/${locale}/insights/${slug}`),
+        lastModified: new Date(),
         changeFrequency: "yearly",
         priority: 0.6,
         alternates: {
           languages: Object.fromEntries(
-            locales.map((l) => [l, absoluteUrl(`/${l}/insights/${article.slug}`)])
+            locales.map((l) => [l, absoluteUrl(`/${l}/insights/${slug}`)])
           ),
         },
       });

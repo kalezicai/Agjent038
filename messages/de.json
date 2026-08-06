@@ -258,7 +258,9 @@
     "notListedEyebrow": "Nicht aufgeführt?",
     "notListedTitle": "Wenn das Telefon klingelt und jemand antworten muss, kann Agjent038 den ersten Durchgang übernehmen.",
     "notListedLede": "Logistikversand, kommunale Dienste, Bildungsaufnahme, Versorger, rechtliche Aufnahme — das Muster ist dasselbe: hochvolumige repetitive Anfragen vor einer kleineren Zahl wirklich komplexer.",
-    "auditDescription": "Schicken Sie uns zwanzig aufgezeichnete Anrufe aus Ihrer Warteschlange. Innerhalb einer Woche erhalten Sie eine schriftliche Aufschlüsselung der Top-Intents, des Anteils, den Agjent038 heute enthalten würde, und des Anteils, der noch einen Menschen benötigen würde. Keine Kosten, keine Verpflichtung."
+    "auditDescription": "Schicken Sie uns zwanzig aufgezeichnete Anrufe aus Ihrer Warteschlange. Innerhalb einer Woche erhalten Sie eine schriftliche Aufschlüsselung der Top-Intents, des Anteils, den Agjent038 heute enthalten würde, und des Anteils, der noch einen Menschen benötigen würde. Keine Kosten, keine Verpflichtung.",
+    "winsTitle": "Was das bringt",
+    "allSolutions": "Alle Lösungen"
   },
   "Results": {
     "eyebrow": "Ergebnisse",
@@ -504,22 +506,156 @@
     {
       "slug": "cost-of-missed-calls-kosovo-call-centers",
       "title": "Die wahren Kosten eines verpassten Anrufs in einem Kosovo-Callcenter",
-      "description": "Ein praktisches Modell zur Berechnung, was unbeantwortete Anrufe Ihren Betrieb pro Monat kosten — und warum die Zahl normalerweise größer ist als die Payroll, die Sie schützen."
+      "description": "Ein praktisches Modell zur Berechnung, was nicht beantwortete Anrufe Ihren Betrieb jeden Monat kosten — und warum die Zahl normalerweise größer ist als die Gehaltsliste, die Sie schützen.",
+      "date": "2026-01-14",
+      "readingTime": "7 Min. Lesezeit",
+      "category": "Betrieb",
+      "body": [
+        {
+          "heading": "Verpasste Anrufe sind ein lehrer Posten",
+          "paragraphs": [
+            "Jedes Contact-Center verfolgt durchschnittliche Behandlungszeit und Auslastung. Sehr wenige verfolgen die Anrufe, die auf bedeutungsvolle, finanzielle Weise nie in die Warteschlange gelangten. Doch abgebrochene und nicht beantwortete Anrufe sind dort, wo die größte wiederherstellbare Marge normalerweise steckt.",
+            "In einem typischen Kosovo-Betrieb mit acht bis zwanzig Sitzen gehen zwischen 20% und 45% der angebotenen Anrufe in der Spitze unbeantwortet ein. Anrufer hinterlassen keine Voicemails. Sie rufen die nächste Nummer auf der Liste an."
+          ]
+        },
+        {
+          "heading": "Ein Modell, das Sie in fünf Minuten durchlaufen können",
+          "paragraphs": [
+            "Nehmen Sie Ihre monatlich angebotenen Anrufe, multiplizieren Sie mit Ihrer unbeantworteten Rate, um verlorene Kontakte zu erhalten. Multiplizieren Sie verlorene Kontakte mit dem Anteil, der konvertiert oder gehalten worden wäre, dann mit dem Durchschnittswert. Das ist Ihre monatliche Leckage."
+          ],
+          "list": [
+            "6.000 angebotene Anrufe pro Monat",
+            "28% unbeantwortet = 1.680 verlorene Kontakte",
+            "12% hätten konvertiert = 202 verlorene Ergebnisse",
+            "€45 Durchschnittswert = rund €9.000 pro Monat verloren"
+          ]
+        },
+        {
+          "heading": "Warum Einstellen die teure Lösung ist",
+          "paragraphs": [
+            "Die Spitzennachfrage ist nicht flach. Um den 09:00–11:00-Anstieg zu beantworten, müssen Sie für den AnstiegPersonal einstellen, was bedeutet, für leere Kapazitäten den Rest des Tages zu bezahlen. Addieren Sie Rekrutierung, Training, Fluktuation und Überwachung, und die effektiven Kosten der Abdeckung steigen weit über die Gehaltslinie.",
+            "Automatisierung des Traffic erster Stufe ändert die Form des Problems. Gleichzeitigkeit ist praktisch unbegrenzt, sodass der Anstieg aufhört eine Personalfrage zu werden und zu einer Routing-Frage wird."
+          ]
+        },
+        {
+          "heading": "Was Sie nach der Automatisierung messen sollten",
+          "paragraphs": [
+            "Aufschlussrate ist die Schlagzeilennummer, aber sie ist allein nicht ausreichend. Verfolgen Sie Lösungsqualität, Eskalationsrate, Kundenstimmung und — am wichtigsten — den Umsatz oder die Bindung, die Gesprächen zugeschrieben werden können, die zuvor überhaupt nicht beantwortet worden wären."
+          ]
+        }
+      ]
     },
     {
       "slug": "ai-receptionist-vs-hiring-receptionist",
-      "title": "KI-Rezeptionist vs. Einstellung: ein ehrlicher Vergleich",
-      "description": "Wo ein KI-Rezeptionist klar gewinnt, wo ein Mensch noch die richtige Antwort ist und wie die meisten Betreiber am Ende beide betreiben."
+      "title": "KI-Rezeptionist vs. Einstellen: ein ehrlicher Vergleich",
+      "description": "Wo ein KI-Rezeptionist klar gewinnt, wo ein Mensch immer noch die richtige Antwort ist und wie die meisten Betreiber am Ende beide betreiben.",
+      "date": "2026-01-28",
+      "readingTime": "6 Min. Lesezeit",
+      "category": "Strategie",
+      "body": [
+        {
+          "heading": "Abdeckung ist kein fairer Kampf",
+          "paragraphs": [
+            "Ein Rezeptionist deckt etwa 40 Stunden pro Woche und ein Gespräch gleichzeitig ab. Ein KI-Rezeptionist deckt alle 168 Stunden ab und behandelt gleichzeitige Anrufe ohne Warteschlange. Für jedes Unternehmen, bei dem Anfragen außerhalb der Geschäftszeiten eingehen, allein verändert dies die Ökonomie."
+          ]
+        },
+        {
+          "heading": "Konsistenz und Qualitätskontrolle",
+          "paragraphs": [
+            "Menschen haben gute und schlechte Tage. Ein KI-Rezeptionist liefert dasselbe Begrüßung, dieselben Qualifizierungsfragen und dieselben Compliance-Offenlegungen beim tausenden Anruf wie beim ersten. Jedes Gespräch wird transkribiert und bewertet, sodass Qualitätskontrolle von einer 2% Stichprobe zur vollständigen Abdeckung wechselt."
+          ]
+        },
+        {
+          "heading": "Wo Menschen immer noch gewinnen",
+          "paragraphs": [
+            "Emotionale Komplexität, Verhandlung, hochwertige Bindung und wirklich neue Probleme bleiben menschliches Terrain. Der Fehler ist, einen qualifizierten Agenten sechs Stunden am Tag damit zu verbringen, Bestellstatus aloud vorzulesen.",
+            "Die stärksten Betriebe, mit denen wir arbeiten, verwenden KI als Hintertür und Menschen als Spezialisten dahinter — mit einer sauberen, klar definierten Eskalationspolitik dazwischen."
+          ]
+        },
+        {
+          "heading": "Die praktische Empfehlung",
+          "paragraphs": [
+            "Leiten Sie Überfluss und Feierabend zuerst an KI weiter. Messen Sie die Aufschlussrate dreißig Tage lang. Entscheiden Sie dann, ob Sie die Automatisierung auf Ihre Hauptwarteschlange ausweiten sollten. Fast niemand bereut es, mit den Anrufen zu beginnen, die Sie bereits verloren haben."
+          ]
+        }
+      ]
     },
     {
-      "slug": "albanische-sprache-ki-stimmanentrainer",
-      "title": "Was es braucht, um einen KI-Stimmanentrainer zu bauen, der echtes Albanisch spricht",
-      "description": "Dialekt, Latenz, Unterbrechung und Code-Switching: Die technischen Details, die einen brauchbaren albanischen KI-Stimmanentrainer von einer Demo trennen."
+      "slug": "albanian-language-ai-voice-agents",
+      "title": "Was es braucht, um einen KI-Stimmagenten zu bauen, der echtes Albanisch spricht",
+      "description": "Dialekt, Latenz, Barge-in und Code-Switching: Die technischen Details, die einen brauchbaren albanischen Sprachagenten von einer Demo trennen.",
+      "date": "2026-02-09",
+      "readingTime": "8 Min. Lesezeit",
+      "category": "Technologie",
+      "body": [
+        {
+          "heading": "Generische Modelle reichen nicht aus",
+          "paragraphs": [
+            "Große Sprachmodelle behandeln Albanisch, aber sie sind typischerweise auf standardmäßige Tosk beeinflusste Aussprache und formales Register gewichtet. Echte Anrufer in Kosovo sprechen Gheg, kürzen Wörter ab und mischen englische und deutsche Lehnwörter ohne Warnung ein.",
+            "Ohne Domänenanpassung an echte Gesprächsaudio sinkt die Erkennungsgenauigkeit genau dort, wo es am wichtigsten ist: Namen, Adressen und Zahlen."
+          ]
+        },
+        {
+          "heading": "Latenz ist eine Produktfunktion",
+          "paragraphs": [
+            "Alles über etwa 800 Millisekunden Antwortverzögerung lässt einen Sprachagenten kaputt wirken. Sub-600ms zu erreichen erfordert Streaming-Erkennung, spekulative Antwortgenerierung und Text-to-Speech, das beginnt, bevor die vollständige Antwort komponiert ist."
+          ]
+        },
+        {
+          "heading": "Barge-in und Turn-Taking",
+          "paragraphs": [
+            "Echte Unterhaltungen unterbrechen einander. Ein Agent, der mitten im Satz nicht unterbrochen werden kann, fühlt sich wie ein IVR an, und Anrufer fangen sofort an, Null zu drücken. Zuverlässige Barge-in-Erkennung, kombiniert mit Graceful Recovery, wenn Anrufer und Agent gleichzeitig sprechen, ist das, was die Interaktion menschlich fühlen lässt."
+          ],
+          "list": [
+            "Streaming-ASR mit Endpointing auf albanische Prosodie abgestimmt",
+            "Untbrechungsbehandlung, die die laufende Antwort verwirft",
+            "Zahlen-, Datums- und Adressnormalisierung für lokale Formate",
+            "Rückgriff auf einen Menschen, wenn das Vertrauen unterhalb des Schwellenwerts sinkt"
+          ]
+        },
+        {
+          "heading": "Bewertung, kontinuierlich",
+          "paragraphs": [
+            "Ein Sprachagent ist nie fertig. Wir bewertetes Gespräch, überprüfen wöchentlich low-confidence Turns und trainieren auf den Fehlern nach. Diese Schleife — nicht der anfängliche Bau — ist es, die die Aufschlussrate von 40% auf 70% in einem Quartal bewegt."
+          ]
+        }
+      ]
     },
     {
-      "slug": "gdpr-anrufaufzeichnung-kosovo",
-      "title": "DSGVO, Anrufaufzeichnung und KI: Was Kosovo-Betreiber richtig machen müssen",
-      "description": "Eine checkliste in einfacher Sprache zum Umgang mit Aufzeichnungen, Transkripten und KI-Verarbeitung ohne Compliance-Risiken zu schaffen."
+      "slug": "gdpr-call-recording-kosovo",
+      "title": "DSGVO, Aufzeichnung von Anrufen und KI: Was Kosovo-Betreiber richtig machen müssen",
+      "description": "Eine Checkliste in einfacher Sprache für den Umgang mit Aufzeichnungen, Transkripten und KI-Verarbeitung ohne Compliance-Exposition zu schaffen.",
+      "date": "2026-02-22",
+      "readingTime": "5 Min. Lesezeit",
+      "category": "Compliance",
+      "body": [
+        {
+          "heading": "Das Kosovo-Gesetz folgt der DSGVO genau",
+          "paragraphs": [
+            "Das Gesetz zum Schutz personenener Daten spiegelt die meisten DSGVO-Prinzipien wider: Rechtsgrundlage, Zweckbindung, Datenminimierung und die Rechte der Betroffenen. Wenn Sie EU-Kunden bedienen, unterliegen Sie fast sicher der DSGVO selbst als Verarbeiter."
+          ]
+        },
+        {
+          "heading": "Praktische Checkliste",
+          "paragraphs": [
+            "Die meisten Expositionen entstehen durch das Auslassen der Grundlagen statt durch etwas Exotisches."
+          ],
+          "list": [
+            "Kündigen Sie die Aufzeichnung zu Beginn des Anrufs in der Sprache des Anrufers an",
+            "Definieren und setzen Sie eine Aufbewahrungsfrist für Audio und Transkripte",
+            "Unterzeichnen Sie eine Auftragsverarbeitungsvereinbarung mit jedem KI-Anbieter",
+            "Halten Sie die Verarbeitung innerhalb der EU, wo Ihre Kunden es verlangen",
+            "Seien Sie in der Lage, die Daten eines bestimmten Anrufers auf Anfrage zu finden und zu löschen",
+            "Schwärzen Sie Zahlungs- und Identitätsdaten aus gespeicherten Transkripten"
+          ]
+        },
+        {
+          "heading": "Fragen Sie Ihren Anbieter diese Fragen",
+          "paragraphs": [
+            "Wo werden Audio verarbeitet und gespeichert? Werden Ihre Daten zum Training gemeinsamer Modelle verwendet? Kann die Aufbewahrung pro Klient konfiguriert werden? Ist eine dedizierte Instanz verfügbar? Ein Anbieter, der diese Fragen nicht schnell beantworten kann, ist ein Anbieter, der nicht darüber nachgedacht hat."
+          ]
+        }
+      ]
     }
   ],
   "TechnicalFAQ": [

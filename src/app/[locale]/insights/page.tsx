@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import { ButtonLink, Eyebrow, JsonLd, Section } from "@/components/ui";
-import { articles } from "@/lib/content";
 import { absoluteUrl, buildMetadata } from "@/lib/site";
 import { locales } from "@/i18n/config";
+
+type Article = {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  readingTime: string;
+  category: string;
+};
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -38,8 +46,10 @@ async function InsightsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Insights" });
-  const tArt = await getTranslations({ locale, namespace: "Articles" });
   const tCommon = await getTranslations({ locale, namespace: "Common" });
+
+  const messages = await getMessages({ locale });
+  const articles = (messages.Articles ?? []) as Article[];
 
   const listLd = {
     "@context": "https://schema.org",

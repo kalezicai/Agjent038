@@ -258,7 +258,9 @@
     "notListedEyebrow": "Nuk është në listë?",
     "notListedTitle": "Nëse telefoni bie dhe dikush duhet të përgjigjet, Agjent038 mund të marrë kalimin e parë.",
     "notListedLede": "Logjistika e shpërndarjes, shërbimet komunale, pranimet arsimore, shërbimet publike, marrja ligjore — modeli i njëjtë: pyetje të përsëritura me vëllim të lartë përpara një numri më të vogël të vërtetë të komplikuar.",
-    "auditDescription": "Na dërgoni njëzet thirrje të regjistruara nga radha juaj. Brenda një jave do të kthejmë një përshkrim me shkrim të qëllimeve kryesore, pjesën që Agjent038 do të përmbante sot dhe pjesën që do të kishte ende nevojë për një njeri. Pa kosto, pa detyrim."
+    "auditDescription": "Na dërgoni njëzet thirrje të regjistruara nga radha juaj. Brenda një jave do të kthejmë një përshkrim me shkrim të qëllimeve kryesore, pjesën që Agjent038 do të përmbante sot dhe pjesën që do të kishte ende nevojë për një njeri. Pa kosto, pa detyrim.",
+    "winsTitle": "Çfarë sjell kjo",
+    "allSolutions": "Të gjitha zgjidhjet"
   },
   "Results": {
     "eyebrow": "Rezultatet",
@@ -502,24 +504,158 @@
   ],
   "Articles": [
     {
-      "slug": "kostoja-e-thirrjeve-te-humbura-qendra-thirrjesh-kosove",
+      "slug": "cost-of-missed-calls-kosovo-call-centers",
       "title": "Kostoja reale e një thirrje të humbur në një qendër thirrjesh kosovare",
-      "description": "Një model praktik për llogaritjen se sa kushtojnë thirrjet e papërgjigjura operacionit tuaj çdo muaj — dhe pse numri zakonisht është më i madh se rroga që po mbroni."
+      "description": "Një model praktik për llogaritjen se sa kushtojnë thirrjet e papërgjigjura operacionit tuaj çdo muaj — dhe pse numri zakonisht është më i madh se rroga që po mbroni.",
+      "date": "2026-01-14",
+      "readingTime": "7 min lexim",
+      "category": "Operacionet",
+      "body": [
+        {
+          "heading": "Thirrjet e humbura janë një artikuj i heshtur",
+          "paragraphs": [
+            "Çdo qendër thirrjesh ndjek kohën mesatare të trajtimit dhe zënë. Shumica nuk ndjekin thirrjet që nuk hynë në radhë në një mënyrë domethënëse, financiare. Megjithatë, thirrjet e braktisura dhe të papërgjigjura janë aty ku fshihet margina më e madhe e rikuperueshme.",
+            "Në një operacion tipik kosovar me tetë deri në njëzet vende, midis 20% dhe 45% e thirrjeve të ofruara shkojnë të papërgjigjura në pikë. Telefonuesit nuk lënë mesazhe telefonike. Atë telefonojnë numrin e radhës në listë."
+          ]
+        },
+        {
+          "heading": "Një model që mund ta ekzekutoni në pesë minuta",
+          "paragraphs": [
+            "Merrni thirrjet tuaja të ofruara mujore, shumëzojeni me normën e papërgjigjur për të marrë kontaktet e humbura. Shumëzoni kontaktet e humbura me pjesën që do të kishte konvertuar ose mbajtur, pastaj me vlerën mesatare. Kjo është rrjedhja juaj mujore."
+          ],
+          "list": [
+            "6,000 thirrje të ofruara në muaj",
+            "28% të papërgjigjura = 1,680 kontakte të humbura",
+            "12% do të kishin konvertuar = 202 rezultate të humbura",
+            "€45 vlerë mesatare = rreth €9,000 të humbura në muaj"
+          ]
+        },
+        {
+          "heading": "Pse punësimi është zgjidhja e shtrenjtë",
+          "paragraphs": [
+            "Kërkesa për pikë nuk është e sheshtë. Për t'iu përgjigjur pikës 09:00–11:00 duhet të stafoni për pikën, që do të thotë të paguani për kapacitet bosh për pjesën tjetër të ditës. Shtoni rekrutimin, trajnimin, largimin dhe supervizimin dhe kostoja efektive e mbulimit ngjitet mirë përtej vijës së rrogës.",
+            "Automatizimi i vëllimit të nivelit të parë ndryshon formën e problemit. Bashkëkohësia është praktikisht e pakufizuar, kështu që pika ndalon të jetë një pyetje e stafit dhe bëhet një pyetje e rrugëtimit."
+          ]
+        },
+        {
+          "heading": "Çfarë të masni pasi të automatizoni",
+          "paragraphs": [
+            "Norma e përmbajtjes është numri kryesor, por nuk është i mjaftueshëm në vetvete. Ndjekni cilësinë e zgjidhjes, normën e eskalimit, ndjenjën e klientit dhe — më e rëndësishmja — të ardhurat ose mbajtjen e atribueshme bisedave që paraprakisht nuk do të ishin përgjigjur asnjëherë."
+          ]
+        }
+      ]
     },
     {
-      "slug": "pranimes-ai-vs-punesim",
+      "slug": "ai-receptionist-vs-hiring-receptionist",
       "title": "Pranimës AI vs punësim: një krahasim i sinqertë",
-      "description": "Ku një pranimës AI fiton qartë, ku një njeri është ende përgjigja e duhur dhe si shumica e operatorëve përfundojnë duke ekzekutuar të dy."
+      "description": "Ku një pranimës AI fiton qartë, ku një njeri është ende përgjigja e duhur dhe si shumica e operatorëve përfundojnë duke ekzekutuar të dy.",
+      "date": "2026-01-28",
+      "readingTime": "6 min lexim",
+      "category": "Strategjia",
+      "body": [
+        {
+          "heading": "Mbulimi nuk është një luftë e drejtë",
+          "paragraphs": [
+            "Një pranimës mbulon rreth 40 orë në javë dhe një bisedë në të njëjtën kohë. Një pranimës AI mbulon të gjitha 168 orët dhe trajton thirrje bashkëkohëse pa radhë. Për çdo biznes ku pyetjet mbërrijnë jashtë orarit të punës, kjo vetëm ndryshon ekonominë."
+          ]
+        },
+        {
+          "heading": "Qëndrueshmëria dhe garantimi i cilësisë",
+          "paragraphs": [
+            "Njerëzit kanë ditë të mira dhe të këqija. Një pranimës AI jep të njëjtin përshëndetje, të njëjtat pyetje kualifikuese dhe të njëjtat zbulime përputhjeje në thirrjen njëmijë si në thirrjen e parë. Çdo bisedë transkriptohet dhe vlerësohet, kështu që garantimi i cilësisë kalon nga një mostër 2% në mbulim të plotë."
+          ]
+        },
+        {
+          "heading": "Ku njerëzit ende fitojnë",
+          "paragraphs": [
+            "Kompleksiteti emocional, negociata, mbajtja me vlerë të lartë dhe problemet vërtet të reja mbeten territor njerëzor. Gabimi është të kërkosh nga një agjent i kualifikuar të kalojë gjashtë orë në ditë duke lexuar statuse porosish me zë të lartë.",
+            "Operacionet më të forta me të cilat punojmë përdorin AI si derën e përparme dhe njerëzit si specialistet pas saj — me një politikë eskalimi të pastër dhe të përcaktuar midis tyre."
+          ]
+        },
+        {
+          "heading": "Rekomandimi praktik",
+          "paragraphs": [
+            "Rrugëtoni tejmbushjen dhe pas orarit tek AI së pari. Masni përmbajtjen për tridhjetë ditë. Pastaj vendosni nëse do të zgjeroni automatizimin në radhën tuaj kryesore. Pothuajse askush nuk pendohet të fillojë me thirrjet që tashmë po i humbiste."
+          ]
+        }
+      ]
     },
     {
-      "slug": "agjente-zanore-ai-gjuhe-shqipe",
-      "title": "Çfarë duhet për të ndërtuar një agjent zanor AI që flet shqisht të vërtetë",
-      "description": "Dialekti, vonesa, ndërprerja dhe ndryshimi i kodit: detajet inxhinierike që ndajnë një agjent zanor shqip të përdorueshëm nga një demonstrim."
+      "slug": "albanian-language-ai-voice-agents",
+      "title": "Çfarë duhet për të ndërtuar një agjent zanor AI që flet shqip të vërtetë",
+      "description": "Dialekti, vonesa, ndërprerja dhe ndryshimi i kodit: detajet inxhinierike që ndajnë një agjent zanor shqip të përdorueshëm nga një demonstrim.",
+      "date": "2026-02-09",
+      "readingTime": "8 min lexim",
+      "category": "Teknologjia",
+      "body": [
+        {
+          "heading": "Modelet e përgjithshme nuk mjaftojnë",
+          "paragraphs": [
+            "Modelet e mëdha të të folurit trajtojnë shqipen, por ato janë tipikisht të peshuara drejt pronunciationit standarde të influencuar Tosk dhe regjistrit formal. Telefonuesit e vërtetë në Kosovë flasin Gheg, shkurtojnë fjalët dhe përzienin hua angleshte dhe gjermane pa paralajmërim.",
+            "Pa përshtatje domaini në audio të vërtetë thirrjeje, saktësia e njohjes bie pikërisht aty ku ka më shumë rëndësi: emra, adresa dhe numra."
+          ]
+        },
+        {
+          "heading": "Vonesa është një veçori e produktit",
+          "paragraphs": [
+            "Çdo gjë mbi rreth 800 milisekonda vonesë përgjigjeje bën që një agjent zanor të ndihet i prishur. Arritja e nën-600ms kërkon njohje streaming, gjenerim përgjigjeje spekuluese dhe text-to-speech që fillon përpara se përgjigja e plotë të përfundojë."
+          ]
+        },
+        {
+          "heading": "Ndërprerja dhe marrja e radhës",
+          "paragraphs": [
+            "Bisedat e vërteta ndërpriten njëra-tjetrën. Një agjent që nuk mund të ndërpritet në mes të një fjale ndihet si një IVR, dhe telefonuesit fillojnë menjëherë të shtypin zero. Zbulimi i besueshëm i ndërprerjes, i kombinuar me rimëkëmbje të butë kur telefonuesi dhe agjenti flasin njëkohësisht, është ajo që bën ndërveprimin të ndihet njerëzor."
+          ],
+          "list": [
+            "ASR streaming me endpointing të përshtatur për prosodinë shqipe",
+            "Trajtim ndërprerjeje që hedh përgjigjen në fluturim",
+            "Normalizim numrash, datash dhe adresash për formate lokale",
+            "Kthim tek njeriu kur besueshmëria bie nën prag"
+          ]
+        },
+        {
+          "heading": "Vlerësimi, vazhdimisht",
+          "paragraphs": [
+            "Një agjent zanor nuk përfundon kurrë. Ne vlerësojmë çdo bisedë, shqyrtojmë radhët me besueshmëri të ulët çdo javë dhe ripërshtatemi nga dështimet. Ai buçka — jo ndërtimi fillestar — është ajo që çon përmbajtjen nga 40% në 70% gjatë një tremujori."
+          ]
+        }
+      ]
     },
     {
-      "slug": "gdpr-regjistrim-thirrjesh-kosove",
+      "slug": "gdpr-call-recording-kosovo",
       "title": "GDPR, regjistrimi i thirrjeve dhe AI: çfarë operatorët kosovarë duhet të bëjnë mirë",
-      "description": "Një listë kontrolli në gjuhën e thjeshtë për trajtimin e regjistrimeve, transkripteve dhe përpunimit AI pa krijuar ekspozim përputhjeje."
+      "description": "Një listë kontrolli në gjuhën e thjeshtë për trajtimin e regjistrimeve, transkripteve dhe përpunimit AI pa krijuar ekspozim përputhjeje.",
+      "date": "2026-02-22",
+      "readingTime": "5 min lexim",
+      "category": "Përputhja",
+      "body": [
+        {
+          "heading": "Ligji i Kosovës ndjek nga afër GDPR-në",
+          "paragraphs": [
+            "Ligji për Mbrojtjen e të Dhënave Personale pasqyron shumicën e parimeve të GDPR-së: bazë ligjore, kufizim qëllimi, minimizim të dhënash dhe të drejtat e subjekteve të të dhënave. Nëse shërbeni klientë BE, ju jeni pothuajse sigurisht në fushë veprimi të GDPR-së vetë si përpunues."
+          ]
+        },
+        {
+          "heading": "Lista praktike e kontrollit",
+          "paragraphs": [
+            "Shumica e ekspozimit vjen nga bazat e kaluara pa u kontrolluar dhe jo nga gjërat ekzotike."
+          ],
+          "list": [
+            "Shpallni regjistrimin në fillim të thirrjes, në gjuhën e telefonuesit",
+            "Përcaktoni dhe zbatoni një periudhë ruajtjeje për audio dhe transkripte",
+            "Nënshkruani një marrëveshje përpunimi të dhënash me çdo furnizues AI",
+            "Mbani përpunimin brenda BE-së ku klientët tuaj e kërkojnë",
+            "Jeni në gjendje të gjeni dhe fshini të dhënat e një telefonuesi të veçantë në kërkesë",
+            "Redaktoni të dhënat e pagesës dhe identitetit nga transkriptet e ruajtura"
+          ]
+        },
+        {
+          "heading": "Pyetni furnizuesin tuaj këto pyetje",
+          "paragraphs": [
+            "Ku përpunohen dhe ruhen audio? A përdoren të dhënat tuaja për të trajnuar modele të përbashkëta? A mund të konfigurohet ruajtja për klient? A është i disponueshëm një instancë e dedikuar? Një furnizues që nuk mund t'i përgjigjet këtyre shpejt është një furnizues që nuk ka menduar për to."
+          ]
+        }
+      ]
     }
   ],
   "TechnicalFAQ": [

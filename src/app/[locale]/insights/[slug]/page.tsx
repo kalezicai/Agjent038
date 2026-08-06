@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import { JsonLd, Section } from "@/components/ui";
-import { articles } from "@/lib/content";
+import { articleSlugs } from "@/lib/content";
 import { absoluteUrl, buildMetadata } from "@/lib/site";
 import { locales } from "@/i18n/config";
+
+type Article = {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  readingTime: string;
+  category: string;
+  body: { heading: string; paragraphs: string[]; list?: string[] }[];
+};
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -14,12 +24,14 @@ type Props = {
 
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
-    articles.map((a) => ({ locale, slug: a.slug }))
+    articleSlugs.map((slug) => ({ locale, slug }))
   );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
+  const messages = await getMessages({ locale });
+  const articles = (messages.Articles ?? []) as Article[];
   const article = articles.find((a) => a.slug === slug);
   if (!article) return {};
   return buildMetadata({
@@ -33,6 +45,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function ArticlePage({ params }: Props) {
   const { locale, slug } = await params;
+  const messages = await getMessages({ locale });
+  const articles = (messages.Articles ?? []) as Article[];
   const article = articles.find((a) => a.slug === slug);
   if (!article) notFound();
 

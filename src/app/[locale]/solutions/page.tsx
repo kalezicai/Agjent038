@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import {
   ButtonLink,
@@ -11,6 +12,14 @@ import {
 } from "@/components/ui";
 import { absoluteUrl, buildMetadata } from "@/lib/site";
 import { locales } from "@/i18n/config";
+
+type Solution = {
+  slug: string;
+  name: string;
+  headline: string;
+  body: string;
+  wins: string[];
+};
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -44,7 +53,7 @@ async function SolutionsPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Solutions" });
   const messages = await getMessages({ locale });
-  const solutionsData = (messages.SolutionsList ?? []) as Array<{ slug: string; name: string; headline: string; body: string; wins: string[] }>;
+  const solutionsData = (messages.SolutionsList ?? []) as Solution[];
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -54,9 +63,6 @@ async function SolutionsPage({ params }: Props) {
       { "@type": "ListItem", position: 2, name: "Solutions", item: absoluteUrl("/solutions") },
     ],
   };
-
-  const slugs = ["call-centers", "clinics", "hospitality", "radhë-logjistika", "shërbime-financiare", "pasuria-e-paluajtshme"];
-  const solutionsMap = new Map(solutionsData.map((s) => [s.slug, s]));
 
   return (
     <>
@@ -79,36 +85,39 @@ async function SolutionsPage({ params }: Props) {
 
       <Section tone="paper">
         <div className="space-y-4">
-          {slugs.map((slug, i) => (
-            <Reveal key={slug} delay={(i % 3) * 80}>
-              <article
-                id={slug}
-                className="scroll-mt-28 rounded-2xl border border-line bg-canvas/50 p-8 transition-all duration-500 hover:border-navy/15 hover:bg-paper hover:shadow-soft md:p-10"
+          {solutionsData.map((solution, i) => (
+            <Reveal key={solution.slug} delay={(i % 3) * 80}>
+              <Link
+                href={`/solutions/${solution.slug}`}
+                className="group block rounded-2xl border border-line bg-canvas/50 p-8 transition-all duration-500 hover:border-navy/15 hover:bg-paper hover:shadow-soft md:p-10"
               >
                 <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
                   <div>
                     <span className="text-[11px] uppercase tracking-[0.22em] text-gold">
-                      {String(i + 1).padStart(2, "0")} — {solutionsMap.get(slug)?.name ?? slug}
+                      {String(i + 1).padStart(2, "0")} — {solution.name}
                     </span>
                     <h2 className="font-display mt-5 text-2xl leading-snug md:text-[1.75rem]">
-                      {solutionsMap.get(slug)?.headline ?? ""}
+                      {solution.headline}
                     </h2>
                   </div>
                   <div>
                     <p className="text-[15px] leading-relaxed text-ink-soft">
-                      {solutionsMap.get(slug)?.body ?? ""}
+                      {solution.body}
                     </p>
                     <ul className="mt-7 grid gap-3 border-t border-line pt-6">
-                      {(solutionsMap.get(slug)?.wins ?? []).map((w) => (
+                      {solution.wins.map((w) => (
                         <li key={w} className="flex gap-3 text-sm text-ink-mute">
                           <span className="text-gold">◆</span>
                           {w}
                         </li>
                       ))}
                     </ul>
+                    <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-navy">
+                      {t("allSolutions")} →
+                    </span>
                   </div>
                 </div>
-              </article>
+              </Link>
             </Reveal>
           ))}
         </div>
