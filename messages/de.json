@@ -1065,5 +1065,42 @@
     "Zendesk",
     "Shopify",
     "Benutzerdefiniertes REST API"
-  ]
+  ],
+  "HowItWorks": {
+    "headline": "Vom Anruf in Sekunden zur Erledigung",
+    "subtitle": "Ein KI-Agent. Jeder Anruf. Keine Wartezeit.",
+    "steps": [
+      { "num": "01", "label": "Empfangen", "title": "Eingehender Anruf", "desc": "In 0,4 Sekunden verbunden" },
+      { "num": "02", "label": "Verarbeiten", "title": "KI Übernimmt", "desc": "Versteht die Absicht, handelt in Ihren Systemen" },
+      { "num": "03", "label": "Lösen", "title": "Aufgabe Erledigt", "desc": "Protokolliert, bestätigt, nichts verpasst" }
+    ],
+    "callerMessage": "Hallo, ich möchte einen Termin für Dienstag vereinbaren",
+    "aiMessage": "Erledigt! Bestätigt für Di 10 Uhr. SMS gesendet.",
+    "dashboard": {
+      "live": "Live",
+      "title": "Agjent038 Konsole",
+      "kpis": [
+        { "label": "Anrufe", "value": "1.284", "delta": "+18%" },
+        { "label": "Eingehalten", "value": "68%", "delta": "+11 Punkte" },
+        { "label": "Geschwindigkeit", "value": "0,4s", "delta": "-6,1s" },
+        { "label": "Verpasst", "value": "0", "delta": "waren 412" }
+      ],
+      "chartLabel": "Heute — stündliches Volumen"
+    },
+    "toast": {
+      "title": "Termin Bestätigt",
+      "sub": "Di 10:00 Uhr · SMS gesendet"
+    },
+    "tablet": {
+      "success": "Aufgabe Erledigt",
+      "successDesc": "Termin gebucht SMS gesendet · CRM aktualisiert",
+      "stats": [
+        { "label": "Dauer", "value": "42s" },
+        { "label": "Stimmung", "value": "Positiv" },
+        { "label": "CSAT", "value": "5 / 5" }
+      ],
+      "summaryTitle": "Anrufzusammenfassung",
+      "summaryBody": "Kunde beantragte Terminverschiebung auf Dienstag 10 Uhr. Bestätigungs-SMS versendet. CRM-Eintrag aktualisiert."
+    }
+  }
 }

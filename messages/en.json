@@ -1064,5 +1064,42 @@
     "Zendesk",
     "Shopify",
     "Custom REST API"
-  ]
+  ],
+  "HowItWorks": {
+    "headline": "From Call to Done in Seconds",
+    "subtitle": "One AI agent. Every call. Zero wait.",
+    "steps": [
+      { "num": "01", "label": "Receive", "title": "Incoming Call", "desc": "Picked up in 0.4 seconds" },
+      { "num": "02", "label": "Process", "title": "AI Handles It", "desc": "Understands intent, acts in your systems" },
+      { "num": "03", "label": "Resolve", "title": "Task Done", "desc": "Logged, confirmed, zero missed" }
+    ],
+    "callerMessage": "Hi, I need to book an appointment for Tuesday",
+    "aiMessage": "Done! Confirmed for Tue 10 AM. SMS sent.",
+    "dashboard": {
+      "live": "Live",
+      "title": "Agjent038 Console",
+      "kpis": [
+        { "label": "Calls", "value": "1,284", "delta": "+18%" },
+        { "label": "Contain", "value": "68%", "delta": "+11 pts" },
+        { "label": "Speed", "value": "0.4s", "delta": "-6.1s" },
+        { "label": "Missed", "value": "0", "delta": "was 412" }
+      ],
+      "chartLabel": "Today — hourly volume"
+    },
+    "toast": {
+      "title": "Appointment Confirmed",
+      "sub": "Tue 10:00 AM · SMS sent"
+    },
+    "tablet": {
+      "success": "Task Complete",
+      "successDesc": "Appointment booked SMS sent · CRM updated",
+      "stats": [
+        { "label": "Duration", "value": "42s" },
+        { "label": "Sentiment", "value": "Positive" },
+        { "label": "CSAT", "value": "5 / 5" }
+      ],
+      "summaryTitle": "Call Summary",
+      "summaryBody": "Customer requested appointment reschedule to Tuesday 10 AM. Confirmation SMS dispatched. CRM record updated."
+    }
+  }
 }

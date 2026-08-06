@@ -1,93 +1,454 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agjent038 — How It Works</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{background:#f8f8f6;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;font-family:ui-sans-serif,system-ui,sans-serif;color:#0b1220}
-    h1{font-size:1.4rem;margin-bottom:1.2rem;font-weight:600}
-    .wrap{position:relative;width:100%;max-width:960px;aspect-ratio:16/9;background:#f8f8f6;border-radius:16px;overflow:hidden;box-shadow:0 28px 60px -24px rgba(11,18,32,0.22)}
-    .wrap *{position:absolute;box-sizing:border-box}
-    .info{margin-top:1rem;font-size:0.8rem;color:#6b7488}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agjent038 — How It Works</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0e2440;--navy-s:#1d3c63;--navy-ss:#2a5280;
+  --gold:#b28a4c;--gold-l:#c9a35e;
+  --mint:#0f766e;--mint-l:#14a39a;
+  --canvas:#f8f8f6;--paper:#fff;--ink:#0b1220;--ink-s:#3a4356;--ink-m:#6b7488;--line:#e6e5e0;
+  --font-d:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,"Times New Roman",Georgia,serif;
+  --font-s:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+body{background:var(--canvas);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;font-family:var(--font-s);color:var(--ink);-webkit-font-smoothing:antialiased;overflow:hidden}
 
-    /* ── Animations ── */
-    .run .pop{animation:pop .5s cubic-bezier(.2,.8,.3,1.2) both}
-    .run .fade{animation:fade .35s ease both}
-    .run .bounce{animation:bounce .55s cubic-bezier(.2,.8,.3,1.3) both}
-    .run .slide{animation:slide .4s ease both}
-    .run .pulse{animation:pulse 2s ease-in-out infinite}
-    .run .check-draw{animation:check-draw .4s ease both}
+/* ── Scene ── */
+.scene{position:relative;width:1040px;height:580px;background:var(--canvas);border-radius:24px;overflow:hidden;box-shadow:0 32px 70px -24px rgba(11,18,32,0.22)}
 
-    @keyframes pop{0%{transform:var(--t) scale(0);opacity:0}60%{transform:var(--t) scale(1.1)}100%{transform:var(--t) scale(1);opacity:1}}
-    @keyframes fade{0%{opacity:0}100%{opacity:1}}
-    @keyframes bounce{0%{transform:var(--t,translate(-50%,-50%)) translateY(20px) scale(0);opacity:0}60%{transform:var(--t,translate(-50%,-50%)) translateY(-4px) scale(1.06)}100%{transform:var(--t,translate(-50%,-50%)) translateY(0) scale(1);opacity:1}}
-    @keyframes slide{0%{opacity:0;transform:translateY(-50%) translateX(-14px)}100%{opacity:1;transform:translateY(-50%) translateX(0)}}
-    @keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.25}50%{transform:translate(-50%,-50%) scale(1.35);opacity:0}}
-    @keyframes check-draw{0%{stroke-dashoffset:40;opacity:0}100%{stroke-dashoffset:0;opacity:1}}
-  </style>
+/* ── Grid paper ── */
+.scene::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,#d6d5d0 0.5px,transparent 0.5px);background-size:24px 24px;opacity:.22;pointer-events:none}
+
+/* ── Gradient mesh blobs ── */
+.mesh{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;opacity:0}
+.mesh-1{left:-40px;top:100px;width:260px;height:260px;background:linear-gradient(135deg,rgba(14,36,64,0.09),rgba(14,36,64,0.02))}
+.mesh-2{left:380px;top:-40px;width:300px;height:300px;background:linear-gradient(135deg,rgba(15,118,110,0.07),rgba(15,118,110,0.01))}
+.mesh-3{right:-30px;top:120px;width:240px;height:240px;background:linear-gradient(135deg,rgba(178,138,76,0.08),rgba(178,138,76,0.02))}
+
+/* ── Floating particles ── */
+.particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.p{position:absolute;width:2px;height:2px;border-radius:50%;opacity:0}
+.p-n{background:var(--navy)}
+.p-m{background:var(--mint)}
+.p-g{background:var(--gold)}
+
+/* ── Headline ── */
+.headline{position:absolute;top:28px;left:50%;transform:translateX(-50%);text-align:center;z-index:10}
+.headline-t{font-family:var(--font-d);font-size:26px;font-weight:700;letter-spacing:-.03em;color:var(--ink);white-space:nowrap;overflow:hidden}
+.headline-s{font-size:11px;color:var(--ink-m);margin-top:6px;font-weight:500;opacity:0;letter-spacing:.01em}
+
+/* ── Step numbers ── */
+.steps{position:absolute;top:72px;left:50%;transform:translateX(-50%);display:flex;gap:180px;z-index:10}
+.step{display:flex;align-items:center;gap:6px;opacity:0}
+.step-n{font-family:var(--font-d);font-size:11px;font-weight:700;color:var(--line);transition:color .5s ease}
+.step-n.active{color:var(--navy)}
+.step-n.done{color:var(--navy)}
+.step-l{font-size:9px;color:var(--ink-m);font-weight:500;text-transform:uppercase;letter-spacing:.06em}
+
+/* ── Grid ── */
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;height:100%;padding:0 52px;padding-top:96px}
+
+/* ── Columns ── */
+.col{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+
+/* ── Phone ── */
+.phone-frame{width:120px;height:228px;background:var(--ink);border-radius:24px;position:relative;box-shadow:0 24px 56px rgba(11,18,32,0.3),0 0 0 1px rgba(255,255,255,0.04) inset}
+.phone-screen{position:absolute;top:8px;left:5px;right:5px;bottom:8px;background:var(--paper);border-radius:18px;overflow:hidden}
+.phone-notch{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:34px;height:4px;background:var(--ink);border-radius:2px;z-index:2}
+.phone-bar{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:28px;height:28px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.06)}
+
+/* ── Waveform ── */
+.waveform{display:flex;align-items:center;justify-content:center;gap:2px;height:28px;padding:0 12px}
+.wave-bar{width:3px;border-radius:2px;background:var(--mint);transform-origin:center}
+.wave-bar.active{animation:wave 1.2s ease-in-out infinite}
+@keyframes wave{0%,100%{height:4px;opacity:.4}50%{height:22px;opacity:1}}
+
+/* ── Mic pulse ── */
+.mic-wrap{position:relative;display:flex;align-items:center;justify-content:center;margin-top:8px}
+.mic-pulse{position:absolute;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--mint);opacity:0}
+.mic-pulse.on{animation:mic-pulse 2s ease-out infinite}
+@keyframes mic-pulse{0%{transform:scale(.8);opacity:.6}100%{transform:scale(1.8);opacity:0}}
+
+/* ── Laptop ── */
+.laptop-frame{width:290px;height:200px;position:relative}
+.laptop-lid{width:100%;height:176px;background:var(--ink);border-radius:10px 10px 0 0;padding:7px;position:relative;box-shadow:0 12px 40px rgba(11,18,32,0.25)}
+.laptop-screen{width:100%;height:100%;background:var(--canvas);border-radius:4px;overflow:hidden}
+.laptop-cam{position:absolute;top:3px;left:50%;transform:translateX(-50%);width:4px;height:4px;background:#333;border-radius:50%}
+.laptop-base-el{position:absolute;bottom:0;left:-12px;right:-12px;height:9px;background:linear-gradient(#c8c8c8,#aaa);border-radius:0 0 6px 6px}
+.laptop-base-el::after{content:'';position:absolute;top:2px;left:50%;transform:translateX(-50%);width:44px;height:2.5px;background:rgba(0,0,0,0.06);border-radius:1px}
+
+/* ── Dashboard ── */
+.d-bar{height:16px;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:3.5px;padding:0 6px}
+.d-dot{width:4px;height:4px;border-radius:50%}
+.d-live{margin-left:auto;font-size:5px;color:var(--mint);font-weight:700;text-transform:uppercase;letter-spacing:.08em;display:flex;align-items:center;gap:2.5px}
+.d-live-dot{width:3px;height:3px;background:var(--mint);border-radius:50%;animation:blink 1.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.d-kpis{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:6px}
+.d-kpi{background:var(--paper);border-radius:6px;padding:6px 7px;box-shadow:0 1px 3px rgba(11,18,32,0.04)}
+.d-kpi-l{font-size:5px;color:var(--ink-m);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.d-kpi-v{font-size:12px;font-weight:800;color:var(--navy);margin-top:2px;font-family:var(--font-d)}
+.d-kpi-d{font-size:5px;font-weight:700;color:var(--mint)}
+.d-chart{margin:0 6px;background:var(--paper);border-radius:6px;padding:6px;box-shadow:0 1px 3px rgba(11,18,32,0.04)}
+.d-chart-l{font-size:5px;color:var(--ink-m);text-transform:uppercase;letter-spacing:.05em;font-weight:600;margin-bottom:5px}
+.d-bars{display:flex;align-items:flex-end;gap:2.5px;height:40px}
+.d-b{flex:1;border-radius:2px 2px 0 0;transform-origin:bottom}
+
+/* ── Tablet ── */
+.tab-frame{width:138px;height:192px;background:var(--ink);border-radius:16px;position:relative;box-shadow:0 24px 56px rgba(11,18,32,0.25),0 0 0 1px rgba(255,255,255,0.04) inset;padding:7px}
+.tab-screen{width:100%;height:100%;background:var(--paper);border-radius:11px;overflow:hidden;position:relative}
+
+/* ── Connectors ── */
+.conn{position:absolute;top:50%;display:flex;align-items:center;transform:translateY(-50%)}
+.conn-line{height:1.5px;background:var(--line);border-radius:1px;position:relative;overflow:visible}
+.conn-dash{position:absolute;inset:0;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 12px);opacity:0}
+.conn-dash.on{animation:dash-draw .8s ease both}
+@keyframes dash-draw{0%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0 0 0 0)}}
+.conn-arr{width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid var(--line);opacity:0}
+.conn-arr.on{animation:arr-in .3s ease .6s both}
+@keyframes arr-in{0%{opacity:0;transform:translateX(-6px)}100%{opacity:1;transform:translateX(0)}}
+
+/* ── Flow dots ── */
+.flow-dot{position:absolute;width:5px;height:5px;border-radius:50%;top:50%;transform:translateY(-50%);opacity:0}
+.flow-dot.on{animation:flow 2.5s linear infinite}
+@keyframes flow{0%{left:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:calc(100% - 5px);opacity:0}}
+
+/* ── Chat bubbles ── */
+.bub{position:absolute;padding:11px 17px;border-radius:12px;font-size:10.5px;font-weight:500;line-height:1.55;max-width:165px;box-shadow:0 10px 28px -6px rgba(11,18,32,0.12);font-family:var(--font-s);opacity:0}
+.bub-user{background:var(--navy);color:#fff;border-bottom-left-radius:4px}
+.bub-ai{background:var(--mint);color:#fff;border-bottom-right-radius:4px}
+
+/* ── Typing indicator ── */
+.typing{display:flex;gap:3px;align-items:center;padding:2px 0}
+.typing-dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,0.6)}
+.typing-dot.on{animation:typing-bounce .6s ease-in-out infinite}
+.typing-dot:nth-child(2).on{animation-delay:.15s}
+.typing-dot:nth-child(3).on{animation-delay:.3s}
+@keyframes typing-bounce{0%,100%{transform:translateY(0);opacity:.4}50%{transform:translateY(-4px);opacity:1}}
+
+/* ── Notification toast ── */
+.toast{position:absolute;top:14px;right:14px;left:14px;background:var(--paper);border-radius:8px;padding:8px 10px;box-shadow:0 4px 16px rgba(11,18,32,0.1);border-left:3px solid var(--mint);display:flex;align-items:center;gap:7px;opacity:0;transform:translateX(20px)}
+.toast.on{animation:toast-in .5s cubic-bezier(.22,1,.36,1) both}
+@keyframes toast-in{0%{opacity:0;transform:translateX(20px)}100%{opacity:1;transform:translateX(0)}}
+.toast-icon{width:20px;height:20px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.toast-text{font-size:5.5px;color:var(--ink);font-weight:600;line-height:1.4}
+.toast-sub{font-size:4.5px;color:var(--ink-m);font-weight:400;margin-top:1px}
+
+/* ── Labels ── */
+.lbl{text-align:center;position:absolute;left:50%;transform:translateX(-50%);opacity:0}
+.lbl-t{font-size:15px;font-weight:700;letter-spacing:-.025em;font-family:var(--font-d);color:var(--ink)}
+.lbl-s{font-size:8.5px;color:var(--ink-m);margin-top:4px;font-weight:500;line-height:1.4}
+
+/* ── Run state ── */
+.run .x{opacity:0}
+.run .x-pop{animation:x-pop .65s cubic-bezier(.175,.885,.32,1.275) both}
+.run .x-up{animation:x-up .55s cubic-bezier(.22,1,.36,1) both}
+.run .x-right{animation:x-right .5s cubic-bezier(.22,1,.36,1) both}
+.run .x-left{animation:x-left .5s cubic-bezier(.22,1,.36,1) both}
+.run .x-fade{animation:x-fade .5s ease both}
+.run .x-bar{animation:x-bar .8s cubic-bezier(.22,1,.36,1) both}
+.run .x-type{animation:x-type 1.2s steps(30,end) both}
+.run .x-pulse{animation:x-pulse 3s ease-in-out infinite}
+@keyframes x-pop{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes x-up{0%{transform:translateY(22px);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes x-right{0%{transform:translateX(-28px);opacity:0}100%{transform:translateX(0);opacity:1}}
+@keyframes x-left{0%{transform:translateX(28px);opacity:0}100%{transform:translateX(0);opacity:1}}
+@keyframes x-fade{0%{opacity:0}100%{opacity:1}}
+@keyframes x-bar{0%{transform:scaleY(0)}100%{transform:scaleY(1)}}
+@keyframes x-type{0%{width:0}100%{width:100%}}
+@keyframes x-pulse{0%,100%{opacity:.1;transform:scale(1)}50%{opacity:0;transform:scale(1.5)}}
+@keyframes particle-float{0%{transform:translate(0,0);opacity:0}15%{opacity:.5}85%{opacity:.5}100%{transform:translate(var(--dx),var(--dy));opacity:0}}
+</style>
 </head>
 <body>
-  <h1>How Agjent038 Works</h1>
-  <div class="wrap" id="w">
-    <!-- Phase 1: Incoming call -->
-    <div class="pop" style="--t:translate(-50%,-50%);left:12%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:#0e2440;opacity:0;animation-delay:0s"></div>
-    <div class="fade" style="left:12%;top:50%;transform:translate(-50%,-50%);width:2.5%;height:5.5%;border-radius:5px;background:#fff;opacity:0;animation-delay:.3s"></div>
-    <div class="fade" style="left:12%;top:calc(50% + 1.2%);transform:translate(-50%,-50%);width:1.8%;height:3.2%;border-radius:2px;background:#b8dbe8;opacity:0;animation-delay:.3s"></div>
-    <div class="pulse" style="left:12%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;border:2px solid #0e2440;opacity:0;animation-delay:.1s"></div>
+<div class="scene" id="s">
 
-    <!-- Arrow 1 -->
-    <div class="fade" style="left:24%;top:50%;transform:translateY(-50%);display:flex;align-items:center;opacity:0;animation-delay:.8s">
-      <div style="width:3.5vw;max-width:40px;height:2px;background:#b8dbe8;border-radius:1px"></div>
-      <div style="width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid #b8dbe8"></div>
-    </div>
+  <!-- Gradient mesh -->
+  <div class="mesh mesh-1 x-fade" style="opacity:0;animation-delay:0s"></div>
+  <div class="mesh mesh-2 x-fade" style="opacity:0;animation-delay:.5s"></div>
+  <div class="mesh mesh-3 x-fade" style="opacity:0;animation-delay:1s"></div>
 
-    <!-- Phase 2: AI processes -->
-    <div class="bounce" style="--t:translate(-50%,-50%);left:48%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:#0f766e;opacity:0;animation-delay:1.5s"></div>
-    <div class="fade" style="left:48%;top:50%;transform:translate(-50%,-50%);width:6%;aspect-ratio:1;border-radius:6px;background:#fff;opacity:0;animation-delay:1.7s"></div>
-    <div class="pulse" style="left:48%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;border:2px solid #0f766e;opacity:0;animation-delay:1.8s"></div>
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
 
-    <!-- Chat bubble: caller -->
-    <div class="slide" style="left:40%;top:22%;width:11%;height:5%;border-radius:10px;background:#0e2440;opacity:0;animation-delay:2.2s"></div>
-    <div class="fade" style="left:43.5%;top:22%;transform:translateY(-50%);display:flex;gap:3px;opacity:0;animation-delay:2.5s">
-      <div style="width:4px;height:4px;border-radius:50%;background:#fff"></div>
-      <div style="width:4px;height:4px;border-radius:50%;background:#fff;animation:fade .3s ease 2.65s both"></div>
-      <div style="width:4px;height:4px;border-radius:50%;background:#fff;animation:fade .3s ease 2.8s both"></div>
-    </div>
-
-    <!-- Chat bubble: AI response -->
-    <div class="slide" style="left:40%;top:78%;width:11%;height:5%;border-radius:10px;background:#0f766e;opacity:0;animation-delay:2.8s"></div>
-    <div class="fade" style="left:42.5%;top:76.5%;width:7%;height:1.5px;border-radius:1px;background:rgba(255,255,255,0.5);opacity:0;animation-delay:3s"></div>
-    <div class="fade" style="left:42.5%;top:79.5%;width:5%;height:1.5px;border-radius:1px;background:rgba(255,255,255,0.5);opacity:0;animation-delay:3.1s"></div>
-
-    <!-- Arrow 2 -->
-    <div class="fade" style="left:60%;top:50%;transform:translateY(-50%);display:flex;align-items:center;opacity:0;animation-delay:3.5s">
-      <div style="width:3.5vw;max-width:40px;height:2px;background:#b8dbe8;border-radius:1px"></div>
-      <div style="width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid #b8dbe8"></div>
-    </div>
-
-    <!-- Phase 3: Task complete -->
-    <div class="bounce" style="--t:translate(-50%,-50%);left:84%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:#b28a4c;opacity:0;animation-delay:4.2s"></div>
-    <div class="fade" style="left:84%;top:50%;transform:translate(-50%,-50%);opacity:0;animation-delay:4.5s">
-      <svg width="28" height="22" viewBox="0 0 28 22" fill="none">
-        <path class="check-draw" d="M3 11L10 18L25 4" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:40;stroke-dashoffset:40;opacity:0;animation-delay:4.5s"/>
-      </svg>
-    </div>
-    <div class="pulse" style="left:84%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:rgba(178,138,76,0.2);opacity:0;animation-delay:4.6s"></div>
-
-    <!-- Labels -->
-    <div class="fade" style="left:12%;top:84%;transform:translateX(-50%);padding:3px 12px;border-radius:11px;background:rgba(14,36,64,0.8);color:#fff;font-size:clamp(8px,1.1vw,11px);font-weight:500;letter-spacing:.05em;white-space:nowrap;opacity:0;animation-delay:.2s">Incoming</div>
-    <div class="fade" style="left:48%;top:84%;transform:translateX(-50%);padding:3px 12px;border-radius:11px;background:rgba(15,118,110,0.8);color:#fff;font-size:clamp(8px,1.1vw,11px);font-weight:500;letter-spacing:.05em;white-space:nowrap;opacity:0;animation-delay:1.6s">AI handles</div>
-    <div class="fade" style="left:84%;top:84%;transform:translateX(-50%);padding:3px 12px;border-radius:11px;background:rgba(178,138,76,0.8);color:#fff;font-size:clamp(8px,1.1vw,11px);font-weight:500;letter-spacing:.05em;white-space:nowrap;opacity:0;animation-delay:4.3s">Done</div>
+  <!-- Headline -->
+  <div class="headline">
+    <div class="headline-t x-fade" id="hl-t" style="opacity:0;animation-delay:.2s">From Call to Done in Seconds</div>
+    <div class="headline-s" id="hl-s">One AI agent. Every call. Zero wait.</div>
   </div>
-  <p class="info">5.5s per cycle · pure CSS · brand palette</p>
-  <script>
-    /* Loop: restart every 6.5s */
-    var w=document.getElementById('w');
-    function restart(){w.classList.remove('run');void w.offsetWidth;w.classList.add('run')}
-    restart();
-    setInterval(restart,6500);
-  </script>
+
+  <!-- Step numbers -->
+  <div class="steps" id="steps">
+    <div class="step x-fade" style="opacity:0;animation-delay:0s"><span class="step-n" id="sn1">01</span><span class="step-l">Receive</span></div>
+    <div class="step x-fade" style="opacity:0;animation-delay:1.8s"><span class="step-n" id="sn2">02</span><span class="step-l">Process</span></div>
+    <div class="step x-fade" style="opacity:0;animation-delay:4.2s"><span class="step-n" id="sn3">03</span><span class="step-l">Resolve</span></div>
+  </div>
+
+  <div class="grid">
+
+    <!-- ── Col 1: Phone ── -->
+    <div class="col">
+      <div class="phone-frame x-pop" style="opacity:0;animation-delay:0s">
+        <div class="phone-screen">
+          <div class="phone-notch"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;padding-top:22px">
+            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-s));display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(14,36,64,0.25)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div style="font-size:8.5px;font-weight:700;color:var(--navy);margin-top:8px;font-family:var(--font-d)">+383 49 123 456</div>
+            <div style="font-size:6px;color:var(--ink-m);margin-top:2px;font-weight:500">Incoming call</div>
+          </div>
+          <!-- Waveform -->
+          <div class="waveform x-fade" style="opacity:0;animation-delay:.8s">
+            <div class="wave-bar active" style="height:4px;animation-delay:0s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.1s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.2s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.3s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.15s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.25s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.05s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.35s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.12s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.22s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.08s"></div>
+            <div class="wave-bar active" style="height:4px;animation-delay:.28s"></div>
+          </div>
+          <!-- Mic pulse -->
+          <div class="mic-wrap x-fade" style="opacity:0;animation-delay:.8s;position:absolute;bottom:40px;left:50%;transform:translateX(-50%)">
+            <div class="mic-pulse on"></div>
+            <div style="width:30px;height:30px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;position:relative;z-index:1">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+            </div>
+          </div>
+          <!-- Call controls -->
+          <div style="position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:20px">
+            <div style="width:26px;height:26px;border-radius:50%;background:#dc2626;display:flex;align-items:center;justify-content:center">
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="#fff"><path d="M12 9c-1.6 0-3.15.25-4.6.72v3.1c0 .39-.23.74-.56.9-.98.49-1.87 1.12-2.66 1.85-.18.18-.43.28-.7.28-.28 0-.53-.11-.71-.29L.29 13.08a.956.956 0 01-.29-.7c0-.28.11-.53.29-.71C3.34 8.78 7.46 7 12 7s8.66 1.78 11.71 4.67c.18.18.29.43.29.71 0 .28-.11.53-.29.71l-2.48 2.48c-.18.18-.43.29-.71.29-.27 0-.52-.11-.7-.28a11.27 11.27 0 00-2.67-1.85.996.996 0 01-.56-.9v-3.1C15.15 9.25 13.6 9 12 9z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="phone-bar"></div>
+      </div>
+      <div class="x-pulse" style="position:absolute;width:140px;height:140px;border-radius:50%;border:1.5px solid rgba(14,36,64,0.07);top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:0s;pointer-events:none"></div>
+      <div class="lbl x-up" style="bottom:-32px;opacity:0;animation-delay:.4s">
+        <div class="lbl-t">Incoming Call</div>
+        <div class="lbl-s">Picked up in 0.4 seconds</div>
+      </div>
+    </div>
+
+    <!-- ── Col 2: Laptop ── -->
+    <div class="col">
+      <div class="laptop-frame x-pop" style="opacity:0;animation-delay:1.8s">
+        <div class="laptop-lid">
+          <div class="laptop-cam"></div>
+          <div class="laptop-screen">
+            <div class="d-bar">
+              <div class="d-dot" style="background:#ff5f57"></div>
+              <div class="d-dot" style="background:#febc2e"></div>
+              <div class="d-dot" style="background:#28c840"></div>
+              <span style="font-size:5px;color:var(--ink-m);margin-left:6px;font-weight:600">Agjent038 Console</span>
+              <div class="d-live"><div class="d-live-dot"></div>Live</div>
+            </div>
+            <div class="d-kpis">
+              <div class="d-kpi">
+                <div class="d-kpi-l">Calls</div>
+                <div class="d-kpi-v"><span class="counter" data-target="1284" data-prefix="" data-suffix="">0</span></div>
+                <div class="d-kpi-d">+18%</div>
+              </div>
+              <div class="d-kpi">
+                <div class="d-kpi-l">Contain</div>
+                <div class="d-kpi-v"><span class="counter" data-target="68" data-prefix="" data-suffix="%">0</span></div>
+                <div class="d-kpi-d">+11 pts</div>
+              </div>
+              <div class="d-kpi">
+                <div class="d-kpi-l">Speed</div>
+                <div class="d-kpi-v">0.4s</div>
+                <div class="d-kpi-d">-6.1s</div>
+              </div>
+              <div class="d-kpi">
+                <div class="d-kpi-l">Missed</div>
+                <div class="d-kpi-v"><span class="counter" data-target="0" data-prefix="" data-suffix="">412</span></div>
+                <div class="d-kpi-d">was 412</div>
+              </div>
+            </div>
+            <div class="d-chart">
+              <div class="d-chart-l">Today &mdash; hourly volume</div>
+              <div class="d-bars">
+                <div class="d-b x-bar" style="height:30%;opacity:0;background:var(--navy);animation-delay:2.4s"></div>
+                <div class="d-b x-bar" style="height:45%;opacity:0;background:var(--navy);animation-delay:2.48s"></div>
+                <div class="d-b x-bar" style="height:38%;opacity:0;background:var(--navy);animation-delay:2.56s"></div>
+                <div class="d-b x-bar" style="height:60%;opacity:0;background:var(--navy);animation-delay:2.64s"></div>
+                <div class="d-b x-bar" style="height:52%;opacity:0;background:var(--navy);animation-delay:2.72s"></div>
+                <div class="d-b x-bar" style="height:72%;opacity:0;background:var(--navy);animation-delay:2.8s"></div>
+                <div class="d-b x-bar" style="height:65%;opacity:0;background:var(--navy);animation-delay:2.88s"></div>
+                <div class="d-b x-bar" style="height:82%;opacity:0;background:var(--mint);animation-delay:2.96s"></div>
+                <div class="d-b x-bar" style="height:76%;opacity:0;background:var(--mint);animation-delay:3.04s"></div>
+                <div class="d-b x-bar" style="height:92%;opacity:0;background:var(--mint);animation-delay:3.12s"></div>
+                <div class="d-b x-bar" style="height:86%;opacity:0;background:var(--mint);animation-delay:3.2s"></div>
+                <div class="d-b x-bar" style="height:96%;opacity:0;background:var(--gold);animation-delay:3.28s"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="laptop-base-el"></div>
+      </div>
+      <div class="lbl x-up" style="bottom:-32px;opacity:0;animation-delay:2s">
+        <div class="lbl-t">AI Handles It</div>
+        <div class="lbl-s">Understands intent, acts in your systems</div>
+      </div>
+    </div>
+
+    <!-- ── Col 3: Tablet ── -->
+    <div class="col">
+      <div class="tab-frame x-pop" style="opacity:0;animation-delay:4.2s">
+        <div class="tab-screen">
+          <!-- Notification toast -->
+          <div class="toast" id="toast">
+            <div class="toast-icon">
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="#fff"><path d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <div class="toast-text">Appointment Confirmed</div>
+              <div class="toast-sub">Tue 10:00 AM &middot; SMS sent</div>
+            </div>
+          </div>
+          <!-- Success -->
+          <div style="display:flex;flex-direction:column;align-items:center;padding-top:28px">
+            <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-l));display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(178,138,76,0.3)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div style="font-size:12px;font-weight:700;color:var(--ink);margin-top:12px;font-family:var(--font-d)">Task Complete</div>
+            <div style="font-size:6.5px;color:var(--ink-m);margin-top:4px;text-align:center;line-height:1.6">Appointment booked<br/>SMS sent &middot; CRM updated</div>
+          </div>
+          <!-- Stats -->
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;padding:14px 12px 0">
+            <div style="text-align:center"><div style="font-size:5px;color:var(--ink-m);text-transform:uppercase;letter-spacing:.05em;font-weight:600">Duration</div><div style="font-size:12px;font-weight:800;color:var(--navy);margin-top:3px;font-family:var(--font-d)">42s</div></div>
+            <div style="text-align:center;border-left:1px solid var(--line);border-right:1px solid var(--line)"><div style="font-size:5px;color:var(--ink-m);text-transform:uppercase;letter-spacing:.05em;font-weight:600">Sentiment</div><div style="font-size:12px;font-weight:800;color:var(--mint);margin-top:3px;font-family:var(--font-d)">Positive</div></div>
+            <div style="text-align:center"><div style="font-size:5px;color:var(--ink-m);text-transform:uppercase;letter-spacing:.05em;font-weight:600">CSAT</div><div style="font-size:12px;font-weight:800;color:var(--gold);margin-top:3px;font-family:var(--font-d)">5 / 5</div></div>
+          </div>
+          <!-- Call summary -->
+          <div style="margin:12px 10px 0;background:var(--canvas);border-radius:6px;padding:8px 10px">
+            <div style="font-size:5px;color:var(--ink-m);text-transform:uppercase;letter-spacing:.05em;font-weight:600;margin-bottom:5px">Call Summary</div>
+            <div style="font-size:6px;color:var(--ink-s);line-height:1.6">Customer requested appointment reschedule to Tuesday 10 AM. Confirmation SMS dispatched. CRM record updated.</div>
+          </div>
+        </div>
+      </div>
+      <div class="lbl x-up" style="bottom:-32px;opacity:0;animation-delay:4.4s">
+        <div class="lbl-t">Task Done</div>
+        <div class="lbl-s">Logged, confirmed, zero missed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connectors -->
+  <div class="conn x-fade" style="left:318px;opacity:0;animation-delay:1.4s">
+    <div class="conn-line" style="width:56px"><div class="conn-dash on"></div><div class="flow-dot on p-m" style="animation-delay:2s"></div></div>
+    <div class="conn-arr on"></div>
+  </div>
+  <div class="conn x-fade" style="left:668px;opacity:0;animation-delay:3.8s">
+    <div class="conn-line" style="width:56px"><div class="conn-dash on"></div><div class="flow-dot on p-g" style="animation-delay:4.4s"></div></div>
+    <div class="conn-arr on"></div>
+  </div>
+
+  <!-- Chat bubbles -->
+  <div class="bub bub-user x-right" style="left:280px;top:130px;opacity:0;animation-delay:2.8s">
+    Hi, I need to book an appointment for Tuesday
+  </div>
+  <div class="bub bub-ai x-left" style="left:520px;top:310px;opacity:0;animation-delay:3.6s">
+    <div class="typing" id="typing-ai" style="margin-bottom:4px">
+      <div class="typing-dot on"></div><div class="typing-dot on"></div><div class="typing-dot on"></div>
+    </div>
+    <span id="ai-msg" style="display:none">Done! Confirmed for Tue 10 AM. SMS sent.</span>
+  </div>
+</div>
+
+<p style="margin-top:1rem;font-size:0.75rem;color:#999;letter-spacing:.02em">8s loop &middot; brand palette &middot; premium</p>
+
+<script>
+// ── Particles ──
+(function(){
+  var c=document.getElementById('particles');
+  var colors=['p-n','p-m','p-g'];
+  for(var i=0;i<18;i++){
+    var d=document.createElement('div');
+    d.className='p '+colors[i%3];
+    d.style.left=Math.random()*100+'%';
+    d.style.top=Math.random()*100+'%';
+    d.style.setProperty('--dx',(Math.random()*60-30)+'px');
+    d.style.setProperty('--dy',(Math.random()*60-30)+'px');
+    d.style.animation='particle-float '+(6+Math.random()*6)+'s ease-in-out '+(Math.random()*4)+'s infinite';
+    c.appendChild(d);
+  }
+})();
+
+// ── Counter animation ──
+function animateCounters(){
+  var els=document.querySelectorAll('.counter');
+  els.forEach(function(el){
+    var target=parseInt(el.dataset.target);
+    var prefix=el.dataset.prefix||'';
+    var suffix=el.dataset.suffix||'';
+    var duration=1200;
+    var start=performance.now();
+    var initial=parseInt(el.textContent)||0;
+    function tick(now){
+      var p=Math.min((now-start)/duration,1);
+      var ease=1-Math.pow(1-p,3);
+      var val=Math.round(initial+(target-initial)*ease);
+      if(target>=1000) el.textContent=prefix+val.toLocaleString()+suffix;
+      else el.textContent=prefix+val+suffix;
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}
+
+// ── Typing → message ──
+function showAIMessage(){
+  var typing=document.getElementById('typing-ai');
+  var msg=document.getElementById('ai-msg');
+  if(typing&&msg){typing.style.display='none';msg.style.display='inline'}
+}
+
+// ── Step highlights ──
+function activateStep(n){
+  for(var i=1;i<=n;i++){
+    var el=document.getElementById('sn'+i);
+    if(el){el.classList.add('done');if(i===n)el.classList.add('active')}
+  }
+}
+
+// ── Timeline ──
+var timeline=[
+  {t:2400,fn:function(){activateStep(1)}},
+  {t:3200,fn:function(){activateStep(2);animateCounters()}},
+  {t:3600,fn:function(){showAIMessage()}},
+  {t:4600,fn:function(){activateStep(3);var t=document.getElementById('toast');if(t)t.classList.add('on')}},
+];
+var timers=[];
+function runTimeline(){
+  timeline.forEach(function(e){timers.push(setTimeout(e.fn,e.t))});
+}
+
+// ── Restart loop ──
+var s=document.getElementById('s');
+function restart(){
+  s.classList.remove('run');
+  timers.forEach(clearTimeout);timers=[];
+  // reset dynamic elements
+  var t=document.getElementById('toast');if(t)t.classList.remove('on');
+  var typing=document.getElementById('typing-ai');if(typing)typing.style.display='';
+  var msg=document.getElementById('ai-msg');if(msg)msg.style.display='none';
+  document.querySelectorAll('.step-n').forEach(function(el){el.classList.remove('active','done')});
+  document.querySelectorAll('.counter').forEach(function(el){var s=el.dataset.suffix||'';el.textContent='412'});
+  void s.offsetWidth;
+  s.classList.add('run');
+  runTimeline();
+}
+restart();
+setInterval(restart,9200);
+</script>
 </body>
 </html>

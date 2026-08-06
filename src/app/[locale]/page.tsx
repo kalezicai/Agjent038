@@ -6,6 +6,7 @@ import Dashboard from "@/components/dashboard";
 import OrbScene from "@/components/orb-scene";
 import Reveal from "@/components/reveal";
 import Accordion from "@/components/accordion";
+import HowItWorksAnimation from "@/components/how-it-works-animation";
 import { ButtonLink, Card, Eyebrow, JsonLd, Section, SectionHead } from "@/components/ui";
 import { absoluteUrl, buildMetadata, site } from "@/lib/site";
 import { locales, type Locale } from "@/i18n/config";
@@ -63,6 +64,7 @@ async function HomePage({ params }: Props) {
   }>;
   const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
   const integrations = (messages.Integrations ?? []) as string[];
+  const howItWorks = (messages.HowItWorks ?? {}) as Record<string, unknown>;
 
   const faqLd = {
     "@context": "https://schema.org",
@@ -196,6 +198,13 @@ async function HomePage({ params }: Props) {
             </Reveal>
           ))}
         </div>
+      </Section>
+
+      {/* HOW IT WORKS */}
+      <Section>
+        <Reveal>
+          <HowItWorksAnimation translations={howItWorks as any} />
+        </Reveal>
       </Section>
 
       {/* BEFORE / AFTER */}

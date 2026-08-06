@@ -1063,5 +1063,42 @@
     "Zendesk",
     "Shopify",
     "REST API i personalizuar"
-  ]
+  ],
+  "HowItWorks": {
+    "headline": "Nga Thirrja deri te Përfundimi në Sekonda",
+    "subtitle": "Një agjent AI. Çdo thirrje. Zero prisje.",
+    "steps": [
+      { "num": "01", "label": "Prano", "title": "Thirrje Hyrëse", "desc": "Përgjigjet në 0.4 sekonda" },
+      { "num": "02", "label": "Përpuno", "title": "AI e Trajton", "desc": "Kupton qëllimin, vepron në sistemet tuaja" },
+      { "num": "03", "label": "Zgjidh", "title": "Detyra Kryer", "desc": "Regjistruar, konfirmuar, zero të humbura" }
+    ],
+    "callerMessage": "Përshëndetje, dëroj të rezervoj një takim për të martën",
+    "aiMessage": "Kryer! Konfirmuar për të martën në 10:00. SMS dërguar.",
+    "dashboard": {
+      "live": "Live",
+      "title": "Konsola Agjent038",
+      "kpis": [
+        { "label": "Thirrje", "value": "1.284", "delta": "+18%" },
+        { "label": "Përmbajtje", "value": "68%", "delta": "+11 pikë" },
+        { "label": "Shpejtësi", "value": "0.4s", "delta": "-6.1s" },
+        { "label": "Të humbura", "value": "0", "delta": "ishin 412" }
+      ],
+      "chartLabel": "Sot — vëllimi orar"
+    },
+    "toast": {
+      "title": "Takimi u Konfirmua",
+      "sub": "E martë 10:00 · SMS dërguar"
+    },
+    "tablet": {
+      "success": "Detyra Kryer",
+      "successDesc": "Takimi u rezervua SMS dërguar · CRM përditësuar",
+      "stats": [
+        { "label": "Kohëzgjatja", "value": "42s" },
+        { "label": "Sentimenti", "value": "Pozitiv" },
+        { "label": "CSAT", "value": "5 / 5" }
+      ],
+      "summaryTitle": "Përmbledhja e Thirrjes",
+      "summaryBody": "Klienti kërkoi ndryshimin e takimit për të martën në 10:00. SMS konfirmimi dërguar. Regjistri në CRM u përditësua."
+    }
+  }
 }
