@@ -253,9 +253,11 @@
   },
   "Solutions": {
     "eyebrow": "Zgjidhjet",
+    "home": "Ballina",
     "title": "I njëjti pranimës. Gjashtë punë shumë të ndryshme.",
     "description": "Agjent038 konfigurohet kundër qëllimeve tuaja, sistemeve tuaja dhe rregullave tuaja të eskalimit. Ja si duket kjo në industritë me të cilat punojmë më shumë në Kosovë dhe rajon.",
     "cta": "Kërkoni një auditim thirrjesh",
+    "cta2": "Shihni si funksionon",
     "notListedEyebrow": "Nuk është në listë?",
     "notListedTitle": "Nëse telefoni bie dhe dikush duhet të përgjigjet, Agjent038 mund të marrë kalimin e parë.",
     "notListedLede": "Logjistika e shpërndarjes, shërbimet komunale, pranimet arsimore, shërbimet publike, marrja ligjore — modeli i njëjtë: pyetje të përsëritura me vëllim të lartë përpara një numri më të vogël të vërtetë të komplikuar.",
@@ -265,6 +267,9 @@
   },
   "Results": {
     "eyebrow": "Rezultatet",
+    "home": "Ballina",
+    "cta1": "Kërkoni një demonstrim të drejtpërdrejtë",
+    "cta2": "Shikoni çmimet",
     "roiModelEyebrow": "Modeli i ROI",
     "title": "Rasti është aritmetik, jo entuziazëm.",
     "description": "Më poshtë është një model që mund të ekzekutoni kundër numrave tuaj, i ndjekur nga çfarë ndodhi në tre zbatime reale. Ne përdorim supozime të konservuara qëllimisht — pika është një vendim që mund të mbrohet brenda.",
@@ -279,6 +284,9 @@
   },
   "Pricing": {
     "eyebrow": "Çmimet",
+    "home": "Ballina",
+    "cta1": "Kërkoni një demonstrim të drejtpërdrejtë",
+    "cta2": "Shihni si funksionon",
     "title": "Një tarifë mujore. Gjëja që e bën atë të funksionojë është brenda.",
     "description": "Pa faturë implementimi, pa linjë shërbimesh profesionale, pa faturim për minutë në planin bazë. Nisja, integrimi, trajnimi dhe përmirësimi mujor janë pjesë e abonimit, sepse ato janë gjëja që bën diferencën midis një demonstrimi dhe një rezultati.",
     "mostChosen": "Më i zgjedhuri",
@@ -317,6 +325,7 @@
   },
   "Company": {
     "eyebrow": "Kompania",
+    "home": "Ballina",
     "title": "Ne e ndërtuam këtë sepse dëgjuam të njëjtën sinjal të zënë.",
     "description": "Kosova ka një nga forcat më të afta të punësimit në Evropë dhe një sektor shërbimesh që rritet më shpejt se sa mund të stafohet. Kufizimi nuk është talenti — është se telefoni bie më shpejt se sa mund të përgjigjet dikush. Agjent038 ekziston për të hequr atë kufizim pa kërkuar nga askujt të humbasë punën.",
     "howWeWorkEyebrow": "Si punojmë",
@@ -329,6 +338,9 @@
   },
   "FAQ": {
     "eyebrow": "Pyetje",
+    "home": "Ballina",
+    "cta1": "Kërkoni një demonstrim të drejtpërdrejtë",
+    "cta2": "Shihni si funksionon",
     "title": "Gjërat që operatorët pyesin, u përgjigjemi qartë.",
     "description": "Nëse diçka mungon këtu, shkruani dhe ne do t'ju përgjigjemi drejtpërdrejt — duke përfshirë pjesët ku një pranimës AI nuk është përshtatja e duhur.",
     "generalEyebrow": "I përgjithshëm",
@@ -342,6 +354,9 @@
   },
   "Insights": {
     "eyebrow": "Njohuritë",
+    "home": "Ballina",
+    "cta1": "Kërkoni një demonstrim të drejtpërdrejtë",
+    "cta2": "Shihni si funksionon",
     "title": "Çfarë kemi mësuar duke ekzekutuar AI në radhët reale të thirrjeve në Kosovë.",
     "description": "Shkrim operational për njerëzit përgjegjës për një radhë telefoni — ekonomi, detaje teknike dhe përputhja, pa glossy-n e furnizuesit.",
     "featured": "E veçanta",
@@ -378,6 +393,7 @@
   },
   "Contact": {
     "eyebrow": "Rezervoni një demonstrim",
+    "home": "Ballina",
     "title": "Na sillni njëzet thirrje reale. Do t'ju tregojmë saktësisht çfarë ndryshon.",
     "description": "Pa presion dhe pa teatër prokurimi. Do të dëgjoni Agjent038 duke u përgjigjur në gjuhën tuaj dhe kontekstin tuaj përpara se çdo biseda për kontrata.",
     "expectations": [

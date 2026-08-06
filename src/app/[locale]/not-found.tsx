@@ -8,7 +8,7 @@ export default function NotFound() {
 
   return (
     <section className="relative overflow-hidden bg-canvas">
-      <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
+      <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
       <div className="shell relative flex min-h-[60vh] flex-col items-center justify-center py-24 text-center">
         <Eyebrow>404</Eyebrow>
         <h1 className="font-display mt-6 max-w-xl text-3xl leading-tight md:text-5xl">

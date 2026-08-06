@@ -58,8 +58,21 @@ async function CompanyPage({ params }: Props) {
     <>
       <JsonLd data={breadcrumbLd} />
 
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
+        <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
+          <li>
+            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+          </li>
+          <li aria-hidden="true" className="text-line">/</li>
+          <li aria-current="page" className="font-medium text-ink">
+            {t("eyebrow")}
+          </li>
+        </ol>
+      </nav>
+
       <section className="relative overflow-hidden border-b border-line bg-canvas">
-        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
+        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
             <Eyebrow>{t("eyebrow")}</Eyebrow>

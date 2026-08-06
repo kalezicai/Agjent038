@@ -80,7 +80,7 @@ async function ArticlePage({ params }: Props) {
       <JsonLd data={breadcrumbLd} />
 
       <section className="relative overflow-hidden border-b border-line bg-canvas">
-        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
+        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
             <Link

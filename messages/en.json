@@ -253,9 +253,11 @@
   },
   "Solutions": {
     "eyebrow": "Solutions",
+    "home": "Home",
     "title": "The same receptionist. Six very different jobs.",
     "description": "Agjent038 is configured against your intents, your systems and your escalation rules. What follows is what that looks like in the industries we work with most across Kosovo and the region.",
     "cta": "Request a call audit",
+    "cta2": "See how it works",
     "notListedEyebrow": "Not listed?",
     "notListedTitle": "If the phone rings and someone has to answer it, Agjent038 can take the first pass.",
     "notListedLede": "Logistics dispatch, municipal services, education admissions, utilities, legal intake — the pattern is the same: high-volume repetitive enquiries in front of a smaller number of genuinely complex ones.",
@@ -265,6 +267,9 @@
   },
   "Results": {
     "eyebrow": "Results",
+    "home": "Home",
+    "cta1": "Request a live demo",
+    "cta2": "See pricing",
     "roiModelEyebrow": "ROI model",
     "title": "The case is arithmetic, not enthusiasm.",
     "description": "Below is a model you can run against your own numbers, followed by what happened in three real deployments. We use conservative assumptions on purpose — the point is a decision you can defend internally.",
@@ -279,6 +284,9 @@
   },
   "Pricing": {
     "eyebrow": "Pricing",
+    "home": "Home",
+    "cta1": "Request a live demo",
+    "cta2": "See how it works",
     "title": "One monthly fee. Everything that makes it work is inside it.",
     "description": "No implementation invoice, no professional-services line, no per-minute billing on the base plan. Onboarding, integration, training and monthly tuning are part of the subscription, because they are what make the difference between a demo and a result.",
     "mostChosen": "Most chosen",
@@ -317,6 +325,7 @@
   },
   "Company": {
     "eyebrow": "Company",
+    "home": "Home",
     "title": "We built this because we kept hearing the same busy signal.",
     "description": "Kosovo has one of the most capable outsourcing workforces in Europe and a service sector growing faster than it can staff. The constraint is not talent — it is that the phone rings faster than anyone can pick it up. Agjent038 exists to remove that constraint without asking anyone to lose their job.",
     "howWeWorkEyebrow": "How we work",
@@ -329,6 +338,9 @@
   },
   "FAQ": {
     "eyebrow": "Questions",
+    "home": "Home",
+    "cta1": "Request a live demo",
+    "cta2": "See how it works",
     "title": "Everything operators ask, answered plainly.",
     "description": "If something is missing here, write to us and we will answer directly — including the parts where an AI receptionist is not the right fit.",
     "generalEyebrow": "General",
@@ -342,6 +354,9 @@
   },
   "Insights": {
     "eyebrow": "Insights",
+    "home": "Home",
+    "cta1": "Request a live demo",
+    "cta2": "See how it works",
     "title": "What we have learned running AI on real Kosovo call queues.",
     "description": "Operational writing for people responsible for a phone queue — economics, engineering detail and compliance, without the vendor gloss.",
     "featured": "Featured",
@@ -378,6 +393,7 @@
   },
   "Contact": {
     "eyebrow": "Book a demo",
+    "home": "Home",
     "title": "Bring us twenty real calls. We will tell you exactly what changes.",
     "description": "No pressure and no procurement theatre. You will hear Agjent038 answering in your own language and your own context before any conversation about contracts.",
     "expectations": [

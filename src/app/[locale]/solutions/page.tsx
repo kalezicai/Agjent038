@@ -68,8 +68,21 @@ async function SolutionsPage({ params }: Props) {
     <>
       <JsonLd data={breadcrumbLd} />
 
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
+        <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
+          <li>
+            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+          </li>
+          <li aria-hidden="true" className="text-line">/</li>
+          <li aria-current="page" className="font-medium text-ink">
+            {t("eyebrow")}
+          </li>
+        </ol>
+      </nav>
+
       <section className="relative overflow-hidden border-b border-line bg-canvas">
-        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
+        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
             <Eyebrow>{t("eyebrow")}</Eyebrow>
@@ -79,6 +92,10 @@ async function SolutionsPage({ params }: Props) {
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
               {t("description")}
             </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <ButtonLink href="/contact">{t("cta")}</ButtonLink>
+              <ButtonLink href="/platform" variant="ghost">{t("cta2")}</ButtonLink>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -107,7 +124,7 @@ async function SolutionsPage({ params }: Props) {
                     <ul className="mt-7 grid gap-3 border-t border-line pt-6">
                       {solution.wins.map((w) => (
                         <li key={w} className="flex gap-3 text-sm text-ink-mute">
-                          <span className="text-gold">◆</span>
+                           <span className="text-gold" aria-hidden="true">◆</span>
                           {w}
                         </li>
                       ))}

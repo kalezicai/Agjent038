@@ -135,7 +135,7 @@ async function SolutionPage({ params }: Props) {
       <JsonLd data={serviceLd} />
 
       <section className="relative overflow-hidden border-b border-line bg-canvas">
-        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
+        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
             <Eyebrow>{t("eyebrow")}</Eyebrow>
@@ -171,7 +171,7 @@ async function SolutionPage({ params }: Props) {
               <ul className="mt-6 space-y-4">
                 {solution.wins.map((w) => (
                   <li key={w} className="flex gap-3 text-[13px] leading-relaxed text-white/80">
-                    <span className="mt-1 text-gold">◆</span>
+                     <span className="mt-1 text-gold" aria-hidden="true">◆</span>
                     {w}
                   </li>
                 ))}

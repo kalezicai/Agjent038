@@ -94,7 +94,7 @@ async function HomePage({ params }: Props) {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-canvas">
-        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
+        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative pb-16 pt-14 md:pb-24 md:pt-20">
           <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_1fr]">
             <div>
@@ -441,7 +441,7 @@ async function HomePage({ params }: Props) {
 
       {/* CTA */}
       <section className="relative overflow-hidden border-t border-line bg-paper">
-        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
+        <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-24 text-center md:py-32">
           <Reveal>
             <Eyebrow>{t("processEyebrow")}</Eyebrow>

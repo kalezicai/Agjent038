@@ -253,9 +253,11 @@
   },
   "Solutions": {
     "eyebrow": "Lösungen",
+    "home": "Startseite",
     "title": "Derselbe Rezeptionist. Sehr unterschiedliche Aufgaben.",
     "description": "Agjent038 wird gegen Ihre Intents, Ihre Systeme und Ihre Eskalationsregeln konfiguriert. Was folgt, ist, wie das in den Branchen aussieht, mit denen wir am häufigsten in Kosovo und der Region arbeiten.",
     "cta": "Call-Audit anfordern",
+    "cta2": "So funktioniert es",
     "notListedEyebrow": "Nicht aufgeführt?",
     "notListedTitle": "Wenn das Telefon klingelt und jemand antworten muss, kann Agjent038 den ersten Durchgang übernehmen.",
     "notListedLede": "Logistikversand, kommunale Dienste, Bildungsaufnahme, Versorger, rechtliche Aufnahme — das Muster ist dasselbe: hochvolumige repetitive Anfragen vor einer kleineren Zahl wirklich komplexer.",
@@ -265,6 +267,9 @@
   },
   "Results": {
     "eyebrow": "Ergebnisse",
+    "home": "Startseite",
+    "cta1": "Live-Demo anfordern",
+    "cta2": "Preise ansehen",
     "roiModelEyebrow": "ROI-Modell",
     "title": "Der Fall ist Arithmetik, nicht Begeisterung.",
     "description": "Unten ist ein Modell, das Sie gegen Ihre eigenen Zahlen laufen lassen können, gefolgt von dem, was in drei realen Bereitstellungen passiert ist. Wir verwenden absichtlich konservative Annahmen — der Punkt ist eine Entscheidung, die Sie intern verteidigen können.",
@@ -279,6 +284,9 @@
   },
   "Pricing": {
     "eyebrow": "Preise",
+    "home": "Startseite",
+    "cta1": "Live-Demo anfordern",
+    "cta2": "So funktioniert es",
     "title": "Eine monatliche Gebühr. Alles, was es zum Funktionieren bringt, ist darin enthalten.",
     "description": "Keine Implementierungsrechnung, keine Professional-Services-Zeile, keine Minutenabrechnung im Basistarif. Einführung, Integration, Schulung und monatliche Optimierung sind Teil des Abonnements, weil sie das ausmachen, was einen Unterschied zwischen einer Demo und einem Ergebnis macht.",
     "mostChosen": "Am häufigsten gewählt",
@@ -317,6 +325,7 @@
   },
   "Company": {
     "eyebrow": "Unternehmen",
+    "home": "Startseite",
     "title": "Wir haben das gebaut, weil wir immer dasselbe Besetzt-Signal gehört haben.",
     "description": "Kosovo hat eine der fähigsten Outsourcing-Workforces in Europa und einen Service-Sektor, der schneller wächst, als er besetzt werden kann. Die Einschränkung ist nicht das Talent — es ist, dass das Telefon schneller klingelt, als jemand abnehmen kann. Agjent038 existiert, um diese Einschränkung zu beseitigen, ohne jemanden seinen Job verlieren zu lassen.",
     "howWeWorkEyebrow": "Wie wir arbeiten",
@@ -329,6 +338,9 @@
   },
   "FAQ": {
     "eyebrow": "Fragen",
+    "home": "Startseite",
+    "cta1": "Live-Demo anfordern",
+    "cta2": "So funktioniert es",
     "title": "Alles, was Betreiber fragen, klar beantwortet.",
     "description": "Wenn hier etwas fehlt, schreiben Sie uns und wir antworten direkt — einschließlich der Teile, in denen ein KI-Rezeptionist nicht die richtige Lösung ist.",
     "generalEyebrow": "Allgemein",
@@ -342,6 +354,9 @@
   },
   "Insights": {
     "eyebrow": "Einblicke",
+    "home": "Startseite",
+    "cta1": "Live-Demo anfordern",
+    "cta2": "So funktioniert es",
     "title": "Was wir gelernt haben, als wir KI auf echten Kosovo-Anrufwarteschlangen eingesetzt haben.",
     "description": "Operatives Schreiben für Menschen, die für eine Telefonwarteschlange verantwortlich sind — Ökonomie, technische Details und Compliance, ohne den Anbieter-Glanz.",
     "featured": "Hervorgehoben",
@@ -378,6 +393,7 @@
   },
   "Contact": {
     "eyebrow": "Demo buchen",
+    "home": "Startseite",
     "title": "Bringen Sie uns zwanzig echte Anrufe. Wir sagen Ihnen genau, was sich ändert.",
     "description": "Kein Druck und kein Beschaffungstheater. Sie hören Agjent038 in Ihrer eigenen Sprache und Ihrem eigenen Kontext antworten, bevor es irgendein Gespräch über Verträge gibt.",
     "expectations": [
