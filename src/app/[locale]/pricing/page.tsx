@@ -133,17 +133,17 @@ async function PricingPage({ params }: Props) {
               <thead>
                 <tr className="bg-canvas/70">
                   <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute"></th>
-                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">Human agent</th>
-                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-navy">Agjent038</th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">{t("humanAgent")}</th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-navy">{t("aiAgent")}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  [t("anchorCost"), "€1,000+/mo", "From €299/mo"],
-                  [t("anchorHours"), "40 h/week", "168 h/week"],
-                  [t("anchorConcurrency"), "1 call at a time", "Unlimited"],
-                  [t("anchorAvailability"), "Shifts, breaks, PTO", "24/7/365"],
-                  [t("anchorRamp"), "Weeks of hiring", "Live in 2 weeks"],
+                  [t("anchorCost"), t("humanCost"), t("aiCost")],
+                  [t("anchorHours"), t("humanHours"), t("aiHours")],
+                  [t("anchorConcurrency"), t("humanConcurrency"), t("aiConcurrency")],
+                  [t("anchorAvailability"), t("humanAvailability"), t("aiAvailability")],
+                  [t("anchorRamp"), t("humanRamp"), t("aiRamp")],
                 ].map(([label, human, ai], i) => (
                   <tr key={label} className={`border-t border-line ${i % 2 ? "bg-paper" : "bg-canvas/30"}`}>
                     <td className="px-6 py-4 font-medium text-ink">{label}</td>
@@ -250,7 +250,7 @@ async function PricingPage({ params }: Props) {
             <table className="w-full min-w-[640px] border-collapse text-left text-sm">
               <thead>
                 <tr className="bg-canvas/70">
-                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">Feature</th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">{t("comparisonHeader")}</th>
                   {plans.map((p) => (
                     <th key={p.name} className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink">{p.name}</th>
                   ))}
@@ -258,7 +258,7 @@ async function PricingPage({ params }: Props) {
               </thead>
               <tbody>
                 {comparisonData.map((row, i) => (
-                  <tr key={row[0]} className={`border-t border-line transition-colors duration-300 hover:bg-canvas/60 ${i % 2 ? "bg-paper" : "bg-paper"}`}>
+                  <tr key={row[0]} className={`border-t border-line transition-colors duration-300 hover:bg-canvas/60 ${i % 2 ? "bg-paper" : "bg-canvas/30"}`}>
                     <td className="px-6 py-4 text-ink-soft">{row[0]}</td>
                     <td className="px-6 py-4 text-ink">{row[1]}</td>
                     <td className="px-6 py-4 text-ink">{row[2]}</td>
