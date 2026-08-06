@@ -182,6 +182,7 @@
   },
   "Platform": {
     "eyebrow": "Platforma",
+    "home": "Ballina",
     "title": "Një pranimës që kupton, vepron dhe raporton — në infrastrukturën që zotëroni tashmë.",
     "description": "Agjent038 nuk është një pemë telefoni me zë miqësor. Është një agjent bisedor me akses në sistemet tuaja, një politikë eskalimi të shkruar dhe një shtresë matëse që provon çfarë bëri. Ja saktësisht si është ndërtuar.",
     "cta1": "Kërkoni një demonstrim të drejtpërdrejtë",
@@ -356,6 +357,10 @@
   },
   "Console": {
     "eyebrow": "Portali i klientit",
+    "home": "Ballina",
+    "seeHow": "Shihni si funksionon",
+    "previewEyebrow": "Parapamje live",
+    "previewTitle": "Një pamje në kohë reale e çdo thirrje",
     "title": "Paneli që tregon se çfarë agjenti po bën me të vërtetë",
     "description": "Pasi të jetë live, çdo klient merr një pamje të thjeshtë të vëllimit të thirrjeve, normës së përmbajtjes dhe qëllimit të telefonuesit — pa pritur për një raport mujor.",
     "dashboardEyebrow": "Çfarë shihni",
@@ -1066,7 +1071,6 @@
   ],
   "HowItWorks": {
     "headline": "Nga Thirrja deri te Përfundimi në Sekonda",
-    "subtitle": "Një agjent AI. Çdo thirrje. Zero prisje.",
     "steps": [
       { "num": "01", "label": "Prano", "title": "Thirrje Hyrëse", "desc": "Përgjigjet në 0.4 sekonda" },
       { "num": "02", "label": "Përpuno", "title": "AI e Trajton", "desc": "Kupton qëllimin, vepron në sistemet tuaja" },

@@ -1,43 +1,57 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+
+const VOLUME = [42, 55, 48, 71, 66, 84, 78, 92, 88, 96, 90, 100];
+const LABELS = ["08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
 
 export default function Dashboard({ compact = false }: { compact?: boolean }) {
   const t = useTranslations("Dashboard");
   const [tick, setTick] = useState(0);
+  const tickRef = useRef(0);
 
-  const kpis = [
+  const kpis = useMemo(() => [
     { label: t("callsAnswered"), value: "1,284", delta: "+18%", good: true },
     { label: t("containment"), value: "68%", delta: "+11 pts", good: true },
     { label: t("avgAnswer"), value: "0.4s", delta: "-6.1s", good: true },
     { label: t("missedCalls"), value: "0", delta: "-412", good: true },
-  ];
+  ], [t]);
 
-  const feed = t.raw("feed") as Array<{
+  const feed = useMemo(() => t.raw("feed") as Array<{
     lang: string;
     intent: string;
     outcome: string;
     dur: string;
     tone: string;
-  }>;
+  }>, [t]);
 
-  const languages = t.raw("languages") as Array<{ code: string; pct: number }>;
+  const languages = useMemo(() => t.raw("languages") as Array<{ code: string; pct: number }>, [t]);
 
-  const volume = [42, 55, 48, 71, 66, 84, 78, 92, 88, 96, 90, 100];
-  const labels = ["08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
+  const prefersReducedMotion = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }, []);
 
   useEffect(() => {
-    const id = setInterval(() => setTick((t) => (t + 1) % feed.length), 2600);
+    if (prefersReducedMotion) return;
+    const id = setInterval(() => {
+      tickRef.current = (tickRef.current + 1) % feed.length;
+      setTick(tickRef.current);
+    }, 2600);
     return () => clearInterval(id);
-  }, [feed.length]);
+  }, [feed.length, prefersReducedMotion]);
 
-  const points = volume
-    .map((v, i) => `${(i / (volume.length - 1)) * 100},${100 - v * 0.85}`)
-    .join(" ");
+  const points = useMemo(() =>
+    VOLUME.map((v, i) => `${(i / (VOLUME.length - 1)) * 100},${100 - v * 0.85}`).join(" "),
+  []);
 
   return (
-    <div className="tilt-card overflow-hidden rounded-2xl border border-line bg-paper shadow-lift">
+    <div
+      className="tilt-card overflow-hidden rounded-2xl border border-line bg-paper shadow-lift"
+      role="region"
+      aria-label={t("consoleName")}
+    >
       {/* chrome */}
       <div className="flex items-center justify-between border-b border-line bg-canvas/70 px-5 py-3.5">
         <div className="flex items-center gap-2.5">
@@ -58,23 +72,23 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
 
       <div className="p-5 md:p-6">
         {/* KPI row */}
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <dl className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {kpis.map((k, i) => (
             <div
               key={k.label}
               className="rounded-xl border border-line bg-canvas/60 p-4 transition-colors duration-300 hover:border-navy/15"
               style={{ animationDelay: `${i * 90}ms` }}
             >
-              <p className="text-[11px] uppercase tracking-[0.14em] text-ink-mute">
+              <dt className="text-[11px] uppercase tracking-[0.14em] text-ink-mute">
                 {k.label}
-              </p>
-              <p className="font-display mt-2 text-2xl text-navy">{k.value}</p>
-              <p className="mt-1 text-[11px] font-medium text-mint">
+              </dt>
+              <dd className="font-display mt-2 text-2xl text-navy">{k.value}</dd>
+              <dd className="mt-1 text-[11px] font-medium text-mint">
                 {k.delta}
-              </p>
+              </dd>
             </div>
           ))}
-        </div>
+        </dl>
 
         <div
           className={`mt-4 grid gap-4 ${
@@ -94,7 +108,10 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
                 className="h-full w-full"
+                role="img"
+                aria-label={t("conversationsHandled")}
               >
+                <title>{t("conversationsHandled")}</title>
                 <defs>
                   <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#1d3c63" stopOpacity="0.18" />
@@ -128,7 +145,7 @@ export default function Dashboard({ compact = false }: { compact?: boolean }) {
                 />
               </svg>
               <div className="pointer-events-none absolute inset-x-0 -bottom-5 flex justify-between text-[10px] text-ink-mute">
-                {labels.map((l, i) => (
+                {LABELS.map((l, i) => (
                   <span key={l} className={i % 2 ? "opacity-0 md:opacity-100" : ""}>
                     {l}
                   </span>

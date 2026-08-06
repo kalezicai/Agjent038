@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
+import Dashboard from "@/components/dashboard";
 import Reveal from "@/components/reveal";
-import { ButtonLink, Eyebrow, Section, SectionHead } from "@/components/ui";
-import { buildMetadata } from "@/lib/site";
+import { ButtonLink, Eyebrow, JsonLd, Section, SectionHead } from "@/components/ui";
+import { absoluteUrl, buildMetadata } from "@/lib/site";
 import { locales } from "@/i18n/config";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -35,8 +36,32 @@ async function ConsolePage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "Console" });
   const tCommon = await getTranslations({ locale, namespace: "Common" });
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+      { "@type": "ListItem", position: 2, name: "Console", item: absoluteUrl("/console") },
+    ],
+  };
+
   return (
     <>
+      <JsonLd data={breadcrumbLd} />
+
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
+        <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
+          <li>
+            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+          </li>
+          <li aria-hidden="true" className="text-line">/</li>
+          <li aria-current="page" className="font-medium text-ink">
+            {t("eyebrow")}
+          </li>
+        </ol>
+      </nav>
+
       <section className="relative overflow-hidden border-b border-line bg-canvas">
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
         <div className="shell relative py-20 md:py-28">
@@ -48,9 +73,30 @@ async function ConsolePage({ params }: Props) {
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
               {t("description")}
             </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <ButtonLink href="/contact">{tCommon("requestAudit")}</ButtonLink>
+              <ButtonLink href="/platform" variant="ghost">{t("seeHow")}</ButtonLink>
+            </div>
           </Reveal>
         </div>
       </section>
+
+      {/* Live Dashboard preview */}
+      <Section tone="paper">
+        <SectionHead
+          align="center"
+          eyebrow={t("previewEyebrow")}
+          title={t("previewTitle")}
+        />
+        <Reveal delay={100}>
+          <div className="scene-3d mt-14">
+            <Dashboard compact />
+          </div>
+        </Reveal>
+        <div className="mt-10 flex justify-center gap-3">
+          <ButtonLink href="/contact">{tCommon("requestAudit")}</ButtonLink>
+        </div>
+      </Section>
 
       <Section tone="paper">
         <SectionHead
@@ -78,8 +124,9 @@ async function ConsolePage({ params }: Props) {
           <h2 className="font-display mx-auto max-w-2xl text-2xl leading-snug md:text-3xl">
             {t("cta")}
           </h2>
-          <div className="mt-9 flex justify-center">
+          <div className="mt-9 flex justify-center gap-3">
             <ButtonLink href="/contact">{tCommon("requestAudit")}</ButtonLink>
+            <ButtonLink href="/pricing" variant="ghost">{tCommon("seePricing")}</ButtonLink>
           </div>
         </div>
       </Section>

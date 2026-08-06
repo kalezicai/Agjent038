@@ -182,6 +182,7 @@
   },
   "Platform": {
     "eyebrow": "Platform",
+    "home": "Home",
     "title": "A receptionist that understands, acts and reports — on infrastructure you already own.",
     "description": "Agjent038 is not a phone tree with a friendlier voice. It is a conversational agent with access to your systems, a written escalation policy, and a measurement layer that proves what it did. Here is exactly how it is put together.",
     "cta1": "Request a live demo",
@@ -356,6 +357,10 @@
   },
   "Console": {
     "eyebrow": "Client portal",
+    "home": "Home",
+    "seeHow": "See how it works",
+    "previewEyebrow": "Live preview",
+    "previewTitle": "A real-time view into every call",
     "title": "The dashboard that shows what the agent is actually doing",
     "description": "Once live, every client gets a simple view into call volume, containment rate and caller intent — without waiting for a monthly report.",
     "dashboardEyebrow": "What you see",
@@ -1067,7 +1072,6 @@
   ],
   "HowItWorks": {
     "headline": "From Call to Done in Seconds",
-    "subtitle": "One AI agent. Every call. Zero wait.",
     "steps": [
       { "num": "01", "label": "Receive", "title": "Incoming Call", "desc": "Picked up in 0.4 seconds" },
       { "num": "02", "label": "Process", "title": "AI Handles It", "desc": "Understands intent, acts in your systems" },

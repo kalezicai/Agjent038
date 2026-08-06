@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
     <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.22em] text-ink-mute">
-      <span className="h-px w-6 bg-gold" />
+      <span className="h-px w-6 bg-gold" aria-hidden="true" />
       {children}
     </span>
   );
@@ -28,7 +28,7 @@ export function Section({
   } as const;
   return (
     <section id={id} className={`${tones[tone]} ${className}`}>
-      <div className="shell py-20 md:py-28">{children}</div>
+      <div className="shell py-16 md:py-22">{children}</div>
     </section>
   );
 }
@@ -87,7 +87,7 @@ export function ButtonLink({
   className?: string;
 }) {
   const base =
-    "group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 will-change-transform";
+    "group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300";
   const variants = {
     primary:
       "bg-navy text-white shadow-soft hover:bg-ink hover:shadow-lift hover:-translate-y-0.5",

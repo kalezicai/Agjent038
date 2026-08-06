@@ -40,6 +40,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
+const GUARDRAIL_ICONS = ["◆", "◇", "○", "☆"];
+
+const INTEGRATION_CATEGORIES: Record<string, string[]> = {
+  telephony: ["3CX", "Asterisk", "FreePBX", "Twilio", "SIP Trunk"],
+  crm: ["HubSpot", "Salesforce", "Zoho", "Pipedrive", "Freshsales"],
+  calendar: ["Google Calendar", "Outlook", "Calendly", "Acuity"],
+  helpdesk: ["Zendesk", "Freshdesk", "Intercom", "Jira Service"],
+};
+
 async function PlatformPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -53,7 +62,6 @@ async function PlatformPage({ params }: Props) {
     detail?: string[];
   }>;
   const capabilities = (messages.Capabilities ?? []) as Array<{
-    glyph: string;
     title: string;
     description: string;
   }>;
@@ -81,6 +89,22 @@ async function PlatformPage({ params }: Props) {
     <>
       <JsonLd data={breadcrumbLd} />
 
+      {/* Breadcrumbs */}
+      <nav
+        aria-label="Breadcrumb"
+        className="bg-paper border-b border-line"
+      >
+        <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
+          <li>
+            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+          </li>
+          <li aria-hidden="true" className="text-line">/</li>
+          <li aria-current="page" className="font-medium text-ink">
+            {t("title")}
+          </li>
+        </ol>
+      </nav>
+
       <section className="relative overflow-hidden border-b border-line bg-canvas">
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" />
         <div className="shell relative py-20 md:py-28">
@@ -100,22 +124,28 @@ async function PlatformPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Architecture — visual stack with connecting arrows */}
       <Section tone="paper">
         <SectionHead
           eyebrow={t("architectureEyebrow")}
           title={t("architectureTitle")}
           lede={t("architectureLede")}
         />
-        <div className="mt-14 space-y-3">
-          {stack.map((s, i) => (
-            <Reveal key={s.title} delay={i * 80}>
-              <div className="group grid gap-4 rounded-2xl border border-line bg-canvas/50 p-7 transition-all duration-500 hover:-translate-y-0.5 hover:border-navy/15 hover:bg-paper hover:shadow-soft md:grid-cols-[160px_200px_1fr] md:items-baseline">
-                <span className="text-[11px] uppercase tracking-[0.22em] text-gold">{s.layer}</span>
-                <h3 className="font-display text-xl">{s.title}</h3>
-                <p className="text-sm leading-relaxed text-ink-soft">{s.body}</p>
-              </div>
-            </Reveal>
-          ))}
+        <div className="mt-14 relative">
+          <div className="absolute left-[calc(1rem+0.5rem)] top-0 bottom-0 hidden w-px bg-line md:block" aria-hidden="true" />
+          <div className="space-y-3">
+            {stack.map((s, i) => (
+              <Reveal key={s.title} delay={i * 80}>
+                <div className="group relative grid gap-4 rounded-2xl border border-line bg-canvas/50 p-7 transition-all duration-500 hover:-translate-y-0.5 hover:border-navy/15 hover:bg-paper hover:shadow-soft md:grid-cols-[160px_200px_1fr] md:items-baseline">
+                  {/* Connection dot */}
+                  <div className="absolute -left-3 top-7 hidden h-3 w-3 rounded-full border-2 border-navy bg-paper md:block" aria-hidden="true" />
+                  <span className="text-[11px] uppercase tracking-[0.22em] text-gold">{s.layer}</span>
+                  <h3 className="font-display text-xl">{s.title}</h3>
+                  <p className="text-sm leading-relaxed text-ink-soft">{s.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </Section>
 
@@ -128,14 +158,14 @@ async function PlatformPage({ params }: Props) {
           {platformPillars.map((p, i) => (
             <Reveal key={p.title} delay={i * 90}>
               <Card className="h-full">
-                <span className="font-display text-2xl text-gold">{p.glyph}</span>
+                <span className="font-display text-2xl text-gold" aria-hidden="true">{p.glyph}</span>
                 <h3 className="font-display mt-5 text-xl leading-snug">{p.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink-soft">{p.description}</p>
                 {p.detail ? (
                   <ul className="mt-5 space-y-2 border-t border-line pt-5">
                     {p.detail.map((d) => (
                       <li key={d} className="flex gap-2.5 text-[13px] text-ink-mute">
-                        <span className="text-gold">·</span>
+                        <span className="text-gold" aria-hidden="true">·</span>
                         {d}
                       </li>
                     ))}
@@ -147,6 +177,7 @@ async function PlatformPage({ params }: Props) {
         </div>
       </Section>
 
+      {/* Console preview with CTA */}
       <Section tone="paper">
         <SectionHead
           align="center"
@@ -159,8 +190,13 @@ async function PlatformPage({ params }: Props) {
             <Dashboard />
           </div>
         </Reveal>
+        <div className="mt-10 flex justify-center gap-3">
+          <ButtonLink href="/console">{t("cta1")}</ButtonLink>
+          <ButtonLink href="/pricing" variant="ghost">{t("cta2")}</ButtonLink>
+        </div>
       </Section>
 
+      {/* Guardrails with icons */}
       <Section>
         <SectionHead
           eyebrow={t("guardrailsEyebrow")}
@@ -171,7 +207,10 @@ async function PlatformPage({ params }: Props) {
           {guardrailsData.map((g, i) => (
             <Reveal key={g.title} delay={i * 80}>
               <div className="h-full bg-paper p-8 transition-colors duration-500 hover:bg-canvas">
-                <h3 className="font-display text-lg">{g.title}</h3>
+                <span className="font-display text-xl text-gold" aria-hidden="true">
+                  {GUARDRAIL_ICONS[i] ?? GUARDRAIL_ICONS[0]}
+                </span>
+                <h3 className="font-display mt-4 text-lg">{g.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink-mute">{g.body}</p>
               </div>
             </Reveal>
@@ -190,8 +229,7 @@ async function PlatformPage({ params }: Props) {
           {capabilities.map((c, i) => (
             <Reveal key={c.title} delay={(i % 4) * 80}>
               <div className="h-full rounded-xl border border-white/10 bg-white/[0.04] p-6 transition-colors duration-500 hover:bg-white/[0.08]">
-                <span className="text-[11px] tracking-[0.22em] text-gold">{c.glyph}</span>
-                <h3 className="font-display mt-4 text-base leading-snug text-white">{c.title}</h3>
+                <h3 className="font-display text-base leading-snug text-white">{c.title}</h3>
                 <p className="mt-2.5 text-[13px] leading-relaxed text-white/60">{c.description}</p>
               </div>
             </Reveal>
@@ -199,6 +237,7 @@ async function PlatformPage({ params }: Props) {
         </div>
       </Section>
 
+      {/* Categorized integrations */}
       <Section tone="paper">
         <div className="grid gap-14 lg:grid-cols-[1fr_1fr]">
           <div>
@@ -208,18 +247,28 @@ async function PlatformPage({ params }: Props) {
               lede={t("integrationsLede")}
             />
           </div>
-          <div className="flex flex-wrap gap-2.5 self-center">
-            {integrations.map((name, i) => (
-              <Reveal key={name} delay={i * 30} as="span">
-                <span className="inline-block rounded-full border border-line bg-canvas px-4 py-2 text-sm text-ink-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-navy/20 hover:bg-paper hover:shadow-soft">
-                  {name}
-                </span>
-              </Reveal>
+          <div className="space-y-6 self-center">
+            {Object.entries(INTEGRATION_CATEGORIES).map(([category, items]) => (
+              <div key={category}>
+                <p className="mb-2.5 text-[10px] uppercase tracking-[0.18em] font-medium text-ink-mute">
+                  {category}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {items.map((name, i) => (
+                    <Reveal key={name} delay={i * 20} as="span">
+                      <span className="inline-block rounded-full border border-line bg-canvas px-4 py-2 text-sm text-ink-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-navy/20 hover:bg-paper hover:shadow-soft">
+                        {name}
+                      </span>
+                    </Reveal>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </Section>
 
+      {/* Deployment flow with arrows */}
       <Section>
         <SectionHead
           eyebrow={t("deploymentEyebrow")}
@@ -228,9 +277,20 @@ async function PlatformPage({ params }: Props) {
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
             <Reveal key={s.step} delay={i * 90}>
-              <div className="h-full rounded-2xl border border-line bg-paper p-7">
+              <div className="relative h-full rounded-2xl border border-line bg-paper p-7">
+                {/* Flow arrow (hidden on last step) */}
+                {i < steps.length - 1 && (
+                  <span
+                    className="absolute -right-3 top-1/2 z-10 hidden h-6 w-6 -translate-y-1/2 text-line lg:block"
+                    aria-hidden="true"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M9 18l6-6-6-6" />
+                    </svg>
+                  </span>
+                )}
                 <div className="flex items-center justify-between">
-                  <span className="font-display text-3xl text-line">{s.step}</span>
+                  <span className="font-display text-3xl text-navy">{s.step}</span>
                   <span className="rounded-full bg-canvas px-3 py-1 text-[10px] uppercase tracking-[0.14em] text-ink-mute">{s.days}</span>
                 </div>
                 <h3 className="font-display mt-6 text-lg">{s.title}</h3>

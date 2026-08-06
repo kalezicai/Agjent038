@@ -182,6 +182,7 @@
   },
   "Platform": {
     "eyebrow": "Plattform",
+    "home": "Startseite",
     "title": "Ein Rezeptionist, der versteht, handelt und berichtet — auf Infrastruktur, die Sie bereits besitzen.",
     "description": "Agjent038 ist kein Telefonbaum mit einer freundlicheren Stimme. Es ist ein Konversationsagent mit Zugang zu Ihren Systemen, einer schriftlichen Eskalationsrichtlinie und einer Messschicht, die beweist, was es getan hat. Hier ist genau, wie es zusammengesetzt ist.",
     "cta1": "Live-Demo anfordern",
@@ -356,6 +357,10 @@
   },
   "Console": {
     "eyebrow": "Kundenportal",
+    "home": "Startseite",
+    "seeHow": "So funktioniert es",
+    "previewEyebrow": "Live-Vorschau",
+    "previewTitle": "Echtzeit-Einblick in jeden Anruf",
     "title": "Das Dashboard, das zeigt, was der Agent tatsächlich tut",
     "description": "Sobald es live ist, bekommt jeder Kunde einen einfachen Einblick in Anrufvolumen, Aufschlussrate und Anruferabsicht — ohne auf einen monatlichen Bericht warten zu müssen.",
     "dashboardEyebrow": "Was Sie sehen",
@@ -1068,7 +1073,6 @@
   ],
   "HowItWorks": {
     "headline": "Vom Anruf in Sekunden zur Erledigung",
-    "subtitle": "Ein KI-Agent. Jeder Anruf. Keine Wartezeit.",
     "steps": [
       { "num": "01", "label": "Empfangen", "title": "Eingehender Anruf", "desc": "In 0,4 Sekunden verbunden" },
       { "num": "02", "label": "Verarbeiten", "title": "KI Übernimmt", "desc": "Versteht die Absicht, handelt in Ihren Systemen" },

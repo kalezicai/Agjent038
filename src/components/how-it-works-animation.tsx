@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 
 interface HowItWorksTranslations {
   headline: string;
-  subtitle: string;
   steps: Array<{ num: string; label: string; title: string; desc: string }>;
   callerMessage: string;
   aiMessage: string;
@@ -112,7 +111,6 @@ export default function HowItWorksAnimation({
         .hiw *{box-sizing:border-box}
         .hiw-headline{position:absolute;top:24px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;max-width:80%;overflow:hidden}
         .hiw-headline-t{font-family:var(--font-d,"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif);font-size:clamp(16px,2.5vw,26px);font-weight:700;letter-spacing:-.03em;color:var(--ink,#0b1220)}
-        .hiw-headline-s{font-size:clamp(8px,1.1vw,11px);color:var(--ink-m,#6b7488);margin-top:4px;font-weight:500}
         .hiw-steps{position:absolute;top:76px;left:50%;transform:translateX(-50%);display:flex;gap:clamp(80px,17vw,180px);z-index:10;pointer-events:none}
         .hiw-step{display:flex;align-items:center;gap:6px;opacity:0;transition:opacity .5s ease}
         .hiw-step.vis{opacity:1}
@@ -218,7 +216,6 @@ export default function HowItWorksAnimation({
         {/* Headline */}
         <div className="hiw-headline" style={{ opacity: run ? 1 : 0, transition: "opacity .5s ease .2s" }}>
           <div className="hiw-headline-t">{t.headline}</div>
-          <div className="hiw-headline-s">{t.subtitle}</div>
         </div>
 
         {/* Step numbers */}
