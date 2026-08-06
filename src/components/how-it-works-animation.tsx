@@ -110,10 +110,10 @@ export default function HowItWorksAnimation({
         .hiw{position:relative;width:100%;aspect-ratio:1040/580;background:var(--canvas,#f8f8f6);border-radius:24px;overflow:hidden;font-family:var(--font-s,ui-sans-serif,system-ui,sans-serif)}
         .hiw::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,#d6d5d0 0.5px,transparent 0.5px);background-size:24px 24px;opacity:.22;pointer-events:none}
         .hiw *{box-sizing:border-box}
-        .hiw-headline{position:absolute;top:28px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;white-space:nowrap}
+        .hiw-headline{position:absolute;top:24px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;max-width:80%;overflow:hidden}
         .hiw-headline-t{font-family:var(--font-d,"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif);font-size:clamp(16px,2.5vw,26px);font-weight:700;letter-spacing:-.03em;color:var(--ink,#0b1220)}
-        .hiw-headline-s{font-size:clamp(8px,1.1vw,11px);color:var(--ink-m,#6b7488);margin-top:6px;font-weight:500}
-        .hiw-steps{position:absolute;top:72px;left:50%;transform:translateX(-50%);display:flex;gap:clamp(80px,17vw,180px);z-index:10}
+        .hiw-headline-s{font-size:clamp(8px,1.1vw,11px);color:var(--ink-m,#6b7488);margin-top:4px;font-weight:500}
+        .hiw-steps{position:absolute;top:76px;left:50%;transform:translateX(-50%);display:flex;gap:clamp(80px,17vw,180px);z-index:10;pointer-events:none}
         .hiw-step{display:flex;align-items:center;gap:6px;opacity:0;transition:opacity .5s ease}
         .hiw-step.vis{opacity:1}
         .hiw-step-n{font-family:var(--font-d,"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif);font-size:clamp(9px,1.1vw,11px);font-weight:700;color:var(--line,#e6e5e0);transition:color .5s ease}
@@ -159,7 +159,7 @@ export default function HowItWorksAnimation({
         .hiw-d-bars{display:flex;align-items:flex-end;gap:2.5px;height:40px}
         .hiw-d-b{flex:1;border-radius:2px 2px 0 0;transform-origin:bottom;transform:scaleY(0);transition:transform .8s cubic-bezier(.22,1,.36,1)}
         .hiw-d-b.vis{transform:scaleY(1)}
-        .hiw-tab{width:clamp(80px,13.3vw,138px);aspect-ratio:138/192;background:var(--ink,#0b1220);border-radius:clamp(10px,1.5vw,16px);position:relative;box-shadow:0 24px 56px rgba(11,18,32,0.25);padding:clamp(4px,0.65vw,7px);opacity:0;transform:scale(0);transition:all .65s cubic-bezier(.175,.885,.32,1.275) 4.2s}
+        .hiw-tab{width:clamp(100px,17vw,180px);aspect-ratio:180/240;background:var(--ink,#0b1220);border-radius:clamp(10px,1.5vw,16px);position:relative;box-shadow:0 24px 56px rgba(11,18,32,0.25);padding:clamp(4px,0.65vw,7px);opacity:0;transform:scale(0);transition:all .65s cubic-bezier(.175,.885,.32,1.275) 4.2s}
         .hiw-tab.vis{opacity:1;transform:scale(1)}
         .hiw-tab-screen{width:100%;height:100%;background:var(--paper,#fff);border-radius:clamp(6px,1vw,11px);overflow:hidden;position:relative}
         .hiw-toast{position:absolute;top:14px;right:14px;left:14px;background:var(--paper,#fff);border-radius:8px;padding:8px 10px;box-shadow:0 4px 16px rgba(11,18,32,0.1);border-left:3px solid var(--mint,#0f766e);display:flex;align-items:center;gap:7px;opacity:0;transform:translateX(20px);transition:all .5s cubic-bezier(.22,1,.36,1)}
@@ -181,10 +181,6 @@ export default function HowItWorksAnimation({
         .hiw-typing-dot:nth-child(2).on{animation-delay:.15s}
         .hiw-typing-dot:nth-child(3).on{animation-delay:.3s}
         @keyframes hiw-typing-bounce{0%,100%{transform:translateY(0);opacity:.4}50%{transform:translateY(-4px);opacity:1}}
-        .hiw-lbl{text-align:center;position:absolute;left:50%;transform:translateX(-50%);opacity:0;transition:all .55s cubic-bezier(.22,1,.36,1)}
-        .hiw-lbl.vis{opacity:1;transform:translateX(-50%) translateY(0)}
-        .hiw-lbl-t{font-size:clamp(10px,1.45vw,15px);font-weight:700;letter-spacing:-.025em;font-family:var(--font-d,"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif);color:var(--ink,#0b1220)}
-        .hiw-lbl-s{font-size:clamp(6px,0.82vw,8.5px);color:var(--ink-m,#6b7488);margin-top:4px;font-weight:500;line-height:1.4}
         .hiw-mesh{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;opacity:0;transition:opacity 1s ease}
         .hiw-mesh.vis{opacity:1}
         .hiw-mesh-1{left:-40px;top:100px;width:260px;height:260px;background:linear-gradient(135deg,rgba(14,36,64,0.09),rgba(14,36,64,0.02))}
@@ -267,10 +263,6 @@ export default function HowItWorksAnimation({
               </div>
               <div className="hiw-phone-bar" />
             </div>
-            <div className={`hiw-lbl ${run ? "vis" : ""}`} style={{ bottom: "-32px", transitionDelay: ".4s" }}>
-              <div className="hiw-lbl-t">{t.steps[0].title}</div>
-              <div className="hiw-lbl-s">{t.steps[0].desc}</div>
-            </div>
           </div>
 
           {/* Col 2: Laptop */}
@@ -317,10 +309,6 @@ export default function HowItWorksAnimation({
               </div>
               <div className="hiw-laptop-base" />
             </div>
-            <div className={`hiw-lbl ${run ? "vis" : ""}`} style={{ bottom: "-32px", transitionDelay: "2s" }}>
-              <div className="hiw-lbl-t">{t.steps[1].title}</div>
-              <div className="hiw-lbl-s">{t.steps[1].desc}</div>
-            </div>
           </div>
 
           {/* Col 3: Tablet */}
@@ -356,10 +344,6 @@ export default function HowItWorksAnimation({
                   <div style={{ fontSize: "clamp(4px,0.57vw,6px)", color: "var(--ink-s,#3a4356)", lineHeight: 1.6 }}>{t.tablet.summaryBody}</div>
                 </div>
               </div>
-            </div>
-            <div className={`hiw-lbl ${run ? "vis" : ""}`} style={{ bottom: "-32px", transitionDelay: "4.4s" }}>
-              <div className="hiw-lbl-t">{t.steps[2].title}</div>
-              <div className="hiw-lbl-s">{t.steps[2].desc}</div>
             </div>
           </div>
         </div>
