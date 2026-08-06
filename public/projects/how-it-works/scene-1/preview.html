@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agjent038 — How It Works</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:#f8f8f6;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;font-family:ui-sans-serif,system-ui,sans-serif;color:#0b1220}
+    h1{font-size:1.4rem;margin-bottom:1.2rem;font-weight:600}
+    .wrap{position:relative;width:100%;max-width:960px;aspect-ratio:16/9;background:#f8f8f6;border-radius:16px;overflow:hidden;box-shadow:0 28px 60px -24px rgba(11,18,32,0.22)}
+    .wrap *{position:absolute;box-sizing:border-box}
+    .info{margin-top:1rem;font-size:0.8rem;color:#6b7488}
+
+    /* ── Animations ── */
+    .run .pop{animation:pop .5s cubic-bezier(.2,.8,.3,1.2) both}
+    .run .fade{animation:fade .35s ease both}
+    .run .bounce{animation:bounce .55s cubic-bezier(.2,.8,.3,1.3) both}
+    .run .slide{animation:slide .4s ease both}
+    .run .pulse{animation:pulse 2s ease-in-out infinite}
+    .run .check-draw{animation:check-draw .4s ease both}
+
+    @keyframes pop{0%{transform:var(--t) scale(0);opacity:0}60%{transform:var(--t) scale(1.1)}100%{transform:var(--t) scale(1);opacity:1}}
+    @keyframes fade{0%{opacity:0}100%{opacity:1}}
+    @keyframes bounce{0%{transform:var(--t,translate(-50%,-50%)) translateY(20px) scale(0);opacity:0}60%{transform:var(--t,translate(-50%,-50%)) translateY(-4px) scale(1.06)}100%{transform:var(--t,translate(-50%,-50%)) translateY(0) scale(1);opacity:1}}
+    @keyframes slide{0%{opacity:0;transform:translateY(-50%) translateX(-14px)}100%{opacity:1;transform:translateY(-50%) translateX(0)}}
+    @keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.25}50%{transform:translate(-50%,-50%) scale(1.35);opacity:0}}
+    @keyframes check-draw{0%{stroke-dashoffset:40;opacity:0}100%{stroke-dashoffset:0;opacity:1}}
+  </style>
+</head>
+<body>
+  <h1>How Agjent038 Works</h1>
+  <div class="wrap" id="w">
+    <!-- Phase 1: Incoming call -->
+    <div class="pop" style="--t:translate(-50%,-50%);left:12%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:#0e2440;opacity:0;animation-delay:0s"></div>
+    <div class="fade" style="left:12%;top:50%;transform:translate(-50%,-50%);width:2.5%;height:5.5%;border-radius:5px;background:#fff;opacity:0;animation-delay:.3s"></div>
+    <div class="fade" style="left:12%;top:calc(50% + 1.2%);transform:translate(-50%,-50%);width:1.8%;height:3.2%;border-radius:2px;background:#b8dbe8;opacity:0;animation-delay:.3s"></div>
+    <div class="pulse" style="left:12%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;border:2px solid #0e2440;opacity:0;animation-delay:.1s"></div>
+
+    <!-- Arrow 1 -->
+    <div class="fade" style="left:24%;top:50%;transform:translateY(-50%);display:flex;align-items:center;opacity:0;animation-delay:.8s">
+      <div style="width:3.5vw;max-width:40px;height:2px;background:#b8dbe8;border-radius:1px"></div>
+      <div style="width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid #b8dbe8"></div>
+    </div>
+
+    <!-- Phase 2: AI processes -->
+    <div class="bounce" style="--t:translate(-50%,-50%);left:48%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:#0f766e;opacity:0;animation-delay:1.5s"></div>
+    <div class="fade" style="left:48%;top:50%;transform:translate(-50%,-50%);width:6%;aspect-ratio:1;border-radius:6px;background:#fff;opacity:0;animation-delay:1.7s"></div>
+    <div class="pulse" style="left:48%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;border:2px solid #0f766e;opacity:0;animation-delay:1.8s"></div>
+
+    <!-- Chat bubble: caller -->
+    <div class="slide" style="left:40%;top:22%;width:11%;height:5%;border-radius:10px;background:#0e2440;opacity:0;animation-delay:2.2s"></div>
+    <div class="fade" style="left:43.5%;top:22%;transform:translateY(-50%);display:flex;gap:3px;opacity:0;animation-delay:2.5s">
+      <div style="width:4px;height:4px;border-radius:50%;background:#fff"></div>
+      <div style="width:4px;height:4px;border-radius:50%;background:#fff;animation:fade .3s ease 2.65s both"></div>
+      <div style="width:4px;height:4px;border-radius:50%;background:#fff;animation:fade .3s ease 2.8s both"></div>
+    </div>
+
+    <!-- Chat bubble: AI response -->
+    <div class="slide" style="left:40%;top:78%;width:11%;height:5%;border-radius:10px;background:#0f766e;opacity:0;animation-delay:2.8s"></div>
+    <div class="fade" style="left:42.5%;top:76.5%;width:7%;height:1.5px;border-radius:1px;background:rgba(255,255,255,0.5);opacity:0;animation-delay:3s"></div>
+    <div class="fade" style="left:42.5%;top:79.5%;width:5%;height:1.5px;border-radius:1px;background:rgba(255,255,255,0.5);opacity:0;animation-delay:3.1s"></div>
+
+    <!-- Arrow 2 -->
+    <div class="fade" style="left:60%;top:50%;transform:translateY(-50%);display:flex;align-items:center;opacity:0;animation-delay:3.5s">
+      <div style="width:3.5vw;max-width:40px;height:2px;background:#b8dbe8;border-radius:1px"></div>
+      <div style="width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid #b8dbe8"></div>
+    </div>
+
+    <!-- Phase 3: Task complete -->
+    <div class="bounce" style="--t:translate(-50%,-50%);left:84%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:#b28a4c;opacity:0;animation-delay:4.2s"></div>
+    <div class="fade" style="left:84%;top:50%;transform:translate(-50%,-50%);opacity:0;animation-delay:4.5s">
+      <svg width="28" height="22" viewBox="0 0 28 22" fill="none">
+        <path class="check-draw" d="M3 11L10 18L25 4" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:40;stroke-dashoffset:40;opacity:0;animation-delay:4.5s"/>
+      </svg>
+    </div>
+    <div class="pulse" style="left:84%;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:rgba(178,138,76,0.2);opacity:0;animation-delay:4.6s"></div>
+
+    <!-- Labels -->
+    <div class="fade" style="left:12%;top:84%;transform:translateX(-50%);padding:3px 12px;border-radius:11px;background:rgba(14,36,64,0.8);color:#fff;font-size:clamp(8px,1.1vw,11px);font-weight:500;letter-spacing:.05em;white-space:nowrap;opacity:0;animation-delay:.2s">Incoming</div>
+    <div class="fade" style="left:48%;top:84%;transform:translateX(-50%);padding:3px 12px;border-radius:11px;background:rgba(15,118,110,0.8);color:#fff;font-size:clamp(8px,1.1vw,11px);font-weight:500;letter-spacing:.05em;white-space:nowrap;opacity:0;animation-delay:1.6s">AI handles</div>
+    <div class="fade" style="left:84%;top:84%;transform:translateX(-50%);padding:3px 12px;border-radius:11px;background:rgba(178,138,76,0.8);color:#fff;font-size:clamp(8px,1.1vw,11px);font-weight:500;letter-spacing:.05em;white-space:nowrap;opacity:0;animation-delay:4.3s">Done</div>
+  </div>
+  <p class="info">5.5s per cycle · pure CSS · brand palette</p>
+  <script>
+    /* Loop: restart every 6.5s */
+    var w=document.getElementById('w');
+    function restart(){w.classList.remove('run');void w.offsetWidth;w.classList.add('run')}
+    restart();
+    setInterval(restart,6500);
+  </script>
+</body>
+</html>
