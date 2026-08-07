@@ -20,36 +20,52 @@ export default function ExplainerAnimation({
         const doc = iframe.contentDocument;
         if (!doc) return;
 
-        // Hide the PlaybackBar (data-omelette-chrome)
-        const els = doc.querySelectorAll("[data-omelette-chrome]");
-        els.forEach((el) => {
+        // Hide the PlaybackBar
+        doc.querySelectorAll("[data-omelette-chrome]").forEach((el) => {
           (el as HTMLElement).style.display = "none";
         });
 
-        // Remove box-shadow from SVG canvas
+        // Fix the root container: remove dark background frame
+        const root = doc.querySelector("[data-om-starter]");
+        if (root) {
+          (root as HTMLElement).style.background = "transparent";
+        }
+
+        // Fix the canvas wrapper: remove padding, border-radius, background
+        const canvasWrap =
+          root?.querySelector(":scope > div:first-child") as HTMLElement | null;
+        if (canvasWrap) {
+          canvasWrap.style.padding = "0";
+          canvasWrap.style.borderRadius = "0";
+          canvasWrap.style.background = "transparent";
+        }
+
+        // Remove SVG box-shadow and border
         const svg = doc.querySelector(
           "svg[data-om-exportable-video-with-duration-secs]"
         );
         if (svg) {
           (svg as HTMLElement).style.boxShadow = "none";
           (svg as HTMLElement).style.border = "none";
+          (svg as HTMLElement).style.borderRadius = "0";
         }
 
-        // Hide loading indicator
+        // Hide loading / thumbnail overlays
         const loading = doc.getElementById("__bundler_loading");
         if (loading) loading.style.display = "none";
-
-        // Hide thumbnail
         const thumb = doc.getElementById("__bundler_thumbnail");
         if (thumb) thumb.style.display = "none";
 
-        // Inject a style tag for anything else
+        // Catch-all stylesheet
         const style = doc.createElement("style");
         style.textContent = `
+          html, body { margin: 0 !important; padding: 0 !important; background: #0a0a0a !important; overflow: hidden !important; }
           [data-omelette-chrome] { display: none !important; }
-          svg[data-om-exportable-video-with-duration-secs] { box-shadow: none !important; border: none !important; }
-          #__bundler_loading { display: none !important; }
-          #__bundler_thumbnail { display: none !important; }
+          [data-om-starter] { background: transparent !important; }
+          [data-om-starter] > div:first-child { padding: 0 !important; border-radius: 0 !important; background: transparent !important; }
+          svg[data-om-exportable-video-with-duration-secs] { box-shadow: none !important; border: none !important; border-radius: 0 !important; }
+          #__bundler_loading, #__bundler_thumbnail { display: none !important; }
+          x-dc, helmet, x-import { display: contents !important; }
         `;
         doc.head.appendChild(style);
       } catch {
