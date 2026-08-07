@@ -19,55 +19,58 @@ export default function ExplainerAnimation({
     const iframe = iframeRef.current;
     if (!iframe) return;
 
+    let patchTimer: ReturnType<typeof setInterval> | null = null;
+
     const patchDocument = () => {
       try {
         const doc = iframe.contentDocument;
         if (!doc) return;
 
-        // Set the lang attribute on the iframe's html element
         doc.documentElement.setAttribute("lang", localeRef.current);
 
-        // Hide the PlaybackBar
+        // Kill PlaybackBar completely
         doc.querySelectorAll("[data-omelette-chrome]").forEach((el) => {
-          (el as HTMLElement).style.display = "none";
+          const s = (el as HTMLElement).style;
+          s.cssText = "display:none!important;visibility:hidden!important;height:0!important;overflow:hidden!important;";
         });
 
-        // Fix the root container
+        // Strip every element down to zero padding/border/margin/shadow
+        doc.querySelectorAll("*").forEach((el) => {
+          const s = (el as HTMLElement).style;
+          if (!s) return;
+          if (s.borderRadius) s.borderRadius = "0";
+          if (s.boxShadow && s.boxShadow !== "none") s.boxShadow = "none";
+          if (s.borderColor && s.borderColor !== "transparent") s.borderColor = "transparent";
+        });
+
+        // Root: transparent, no padding
         const root = doc.querySelector("[data-om-starter]");
         if (root) {
-          (root as HTMLElement).style.background = "transparent";
+          (root as HTMLElement).style.cssText += ";background:transparent!important;padding:0!important;margin:0!important;inset:0!important;";
         }
 
-        // Fix the canvas wrapper
-        const canvasWrap =
-          root?.querySelector(":scope > div:first-child") as HTMLElement | null;
+        // Canvas wrapper
+        const canvasWrap = root?.querySelector(":scope > div:first-child") as HTMLElement | null;
         if (canvasWrap) {
-          canvasWrap.style.padding = "0";
-          canvasWrap.style.borderRadius = "0";
-          canvasWrap.style.background = "transparent";
+          canvasWrap.style.cssText += ";padding:0!important;border-radius:0!important;background:transparent!important;border:none!important;box-shadow:none!important;";
         }
 
-        // Remove SVG box-shadow and border
-        const svg = doc.querySelector(
-          "svg[data-om-exportable-video-with-duration-secs]"
-        );
+        // SVG
+        const svg = doc.querySelector("svg[data-om-exportable-video-with-duration-secs]");
         if (svg) {
-          (svg as HTMLElement).style.boxShadow = "none";
-          (svg as HTMLElement).style.border = "none";
-          (svg as HTMLElement).style.borderRadius = "0";
+          (svg as HTMLElement).style.cssText += ";box-shadow:none!important;border:none!important;border-radius:0!important;";
         }
 
-        // Hide loading / thumbnail overlays
+        // Loading/thumbnail
         const loading = doc.getElementById("__bundler_loading");
         if (loading) loading.style.display = "none";
         const thumb = doc.getElementById("__bundler_thumbnail");
         if (thumb) thumb.style.display = "none";
 
-        // Catch-all stylesheet
-        const existing = doc.getElementById("agjent038-patches");
-        if (!existing) {
+        // Inject stylesheet
+        if (!doc.getElementById("agjent038-patch")) {
           const style = doc.createElement("style");
-          style.id = "agjent038-patches";
+          style.id = "agjent038-patch";
           style.textContent = `
             html, body { margin: 0 !important; padding: 0 !important; background: #0a0a0a !important; overflow: hidden !important; }
             [data-omelette-chrome] { display: none !important; }
@@ -80,67 +83,64 @@ export default function ExplainerAnimation({
           doc.head.appendChild(style);
         }
 
-        // Post locale message to the animation engine
+        // Post locale
         iframe.contentWindow?.postMessage(
           { type: "agjent038:locale", locale: localeRef.current },
           "*"
         );
       } catch {
-        // cross-origin — cannot access
+        // cross-origin
       }
     };
 
     const handleLoad = () => {
       patchDocument();
-      setTimeout(patchDocument, 500);
+      setTimeout(patchDocument, 300);
+      setTimeout(patchDocument, 800);
       setTimeout(patchDocument, 1500);
+      setTimeout(patchDocument, 3000);
+
+      let count = 0;
+      patchTimer = setInterval(() => {
+        patchDocument();
+        count++;
+        if (count > 10) {
+          clearInterval(patchTimer!);
+          patchTimer = null;
+        }
+      }, 2000);
     };
 
     iframe.addEventListener("load", handleLoad);
 
-    // IntersectionObserver for play/pause
-    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (iframe.contentWindow) {
-          if (entry.isIntersecting) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (iframe.contentWindow) {
             iframe.contentWindow.postMessage(
-              { type: "explainer:play" },
-              "*"
-            );
-          } else {
-            iframe.contentWindow.postMessage(
-              { type: "explainer:pause" },
+              { type: entry.isIntersecting ? "explainer:play" : "explainer:pause" },
               "*"
             );
           }
-        }
-      });
-    };
+        });
+      },
+      { threshold: 0.3 }
+    );
+    io.observe(iframe);
 
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.3,
-    });
-
-    observer.observe(iframe);
     return () => {
       iframe.removeEventListener("load", handleLoad);
-      observer.unobserve(iframe);
+      io.unobserve(iframe);
+      if (patchTimer) clearInterval(patchTimer);
     };
   }, []);
 
-  // Re-patch locale when it changes (without re-mounting iframe)
   useEffect(() => {
     const iframe = iframeRef.current;
     if (!iframe) return;
-
     try {
-      // Set lang attribute
       iframe.contentDocument?.documentElement.setAttribute("lang", locale);
-      // Post message to animation engine
-      iframe.contentWindow?.postMessage(
-        { type: "agjent038:locale", locale },
-        "*"
-      );
+      iframe.contentWindow?.postMessage({ type: "agjent038:locale", locale }, "*");
     } catch {
       // cross-origin
     }
@@ -152,13 +152,13 @@ export default function ExplainerAnimation({
       role="img"
       aria-label="Agjent038 explainer — animated walkthrough showing how the AI voice agent works"
     >
-      <div className="relative w-full overflow-hidden" style={{ background: "transparent" }}>
+      <div className="relative w-full" style={{ borderRadius: 0, overflow: "hidden" }}>
         <div className="relative w-full" style={{ paddingBottom: "60%" }}>
           <iframe
             ref={iframeRef}
             src="/explainer.html"
             className="absolute inset-0 h-full w-full"
-            style={{ border: "none", outline: "none", boxShadow: "none" }}
+            style={{ border: "none", outline: "none", boxShadow: "none", borderRadius: 0 }}
             loading="lazy"
             allow="autoplay"
             sandbox="allow-scripts allow-same-origin"
