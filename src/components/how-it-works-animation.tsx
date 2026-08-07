@@ -110,7 +110,7 @@ export default function HowItWorksAnimation({
         .hiw::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,#d6d5d0 0.5px,transparent 0.5px);background-size:24px 24px;opacity:.22;pointer-events:none}
         .hiw *{box-sizing:border-box}
         .hiw-headline{position:absolute;top:24px;left:50%;transform:translateX(-50%);text-align:center;z-index:10;max-width:80%;overflow:hidden}
-        .hiw-headline-t{font-family:var(--font-d,"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif);font-size:clamp(16px,2.5vw,26px);font-weight:700;letter-spacing:-.03em;color:var(--ink,#0b1220)}
+        .hiw-headline-t{font-family:var(--font-d,"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif);font-size:clamp(16px,2.5vw,26px);font-weight:400;letter-spacing:-.03em;color:var(--ink,#0b1220)}
         .hiw-steps{position:absolute;top:76px;left:50%;transform:translateX(-50%);display:flex;gap:clamp(80px,17vw,180px);z-index:10;pointer-events:none}
         .hiw-step{display:flex;align-items:center;gap:6px;opacity:0;transition:opacity .5s ease}
         .hiw-step.vis{opacity:1}

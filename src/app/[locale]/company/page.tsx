@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import Reveal from "@/components/reveal";
 import {
   ButtonLink,
@@ -27,20 +26,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Company — Built in Prishtina for Kosovo Operators",
     description: isAlb
       ? "Agjent038 është një ekip i bazuar në Pristinë që ndërton pranimës AI me zë shqip natyror për qendra thirrjesh, klinika dhe biznese shërbimesh në Kosovë dhe rajon."
-      : "Agjent038 is a Prishtina-based team building Albanian-native AI receptionists for call centres, clinics and service businesses across Kosovo and the region.",
+      : "Agjent038 is a Prishtina-based team building AI receptionists for call centres, clinics and service businesses across Kosovo and the region.",
     path: "/company",
-    keywords: ["AI company Kosovo", "Prishtina AI startup", "Albanian AI team"],
+    keywords: ["AI company Kosovo", "Prishtina AI startup"],
     locale,
   });
 }
 
 async function CompanyPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Company" });
-  const tCommon = await getTranslations({ locale, namespace: "Common" });
+  const messages = await getStaticMessages(locale);
+  const companyNs = (messages.Company ?? {}) as Record<string, string>;
+  const commonNs = (messages.Common ?? {}) as Record<string, string>;
 
-  const messages = await getMessages({ locale });
   const principles = (messages.CompanyPrinciples ?? []) as Array<{ title: string; body: string }>;
   const facts = (messages.CompanyFacts ?? []) as Array<[string, string]>;
   const limitsBody = (messages.CompanyLimits ?? "") as string;
@@ -62,11 +60,11 @@ async function CompanyPage({ params }: Props) {
       <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{companyNs.home}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("eyebrow")}
+            {companyNs.eyebrow}
           </li>
         </ol>
       </nav>
@@ -75,12 +73,12 @@ async function CompanyPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{companyNs.eyebrow}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
-              {t("title")}
+              {companyNs.title}
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("description")}
+              {companyNs.description}
             </p>
           </Reveal>
 
@@ -100,8 +98,8 @@ async function CompanyPage({ params }: Props) {
       <Section tone="paper">
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <SectionHead
-            eyebrow={t("howWeWorkEyebrow")}
-            title={t("howWeWorkTitle")}
+            eyebrow={companyNs.howWeWorkEyebrow}
+            title={companyNs.howWeWorkTitle}
           />
           <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
             {principles.map((p, i) => (
@@ -121,31 +119,31 @@ async function CompanyPage({ params }: Props) {
         <div className="grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <SectionHead
-              eyebrow={t("responsibilityEyebrow")}
-              title={t("responsibilityTitle")}
-              lede={t("responsibilityLede")}
+              eyebrow={companyNs.responsibilityEyebrow}
+              title={companyNs.responsibilityTitle}
+              lede={companyNs.responsibilityLede}
             />
             <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-ink-soft">
               {limitsBody}
             </p>
             <div className="mt-9">
-              <ButtonLink href="/contact">{tCommon("contactUs")}</ButtonLink>
+              <ButtonLink href="/contact">{commonNs.contactUs}</ButtonLink>
             </div>
           </div>
 
           <Reveal delay={100}>
             <div className="rounded-2xl border border-line bg-paper p-8">
-              <h3 className="font-display text-xl">{t("contactTitle")}</h3>
+              <h3 className="font-display text-xl">{companyNs.contactTitle}</h3>
               <dl className="mt-6 space-y-5 text-sm">
                 <div>
-                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{tCommon("office")}</dt>
+                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{commonNs.office}</dt>
                   <dd className="mt-1.5 text-ink-soft">
                     {site.address.street}<br />
                     {site.address.postalCode} {site.address.city}, {site.address.countryName}
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{tCommon("email")}</dt>
+                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{commonNs.email}</dt>
                   <dd className="mt-1.5">
                     <a className="text-ink-soft transition-colors hover:text-navy" href={`mailto:${site.email}`}>
                       {site.email}
@@ -153,7 +151,7 @@ async function CompanyPage({ params }: Props) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{tCommon("phone")}</dt>
+                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{commonNs.phone}</dt>
                   <dd className="mt-1.5">
                     <a className="text-ink-soft transition-colors hover:text-navy" href={`tel:${site.phone.replace(/\s/g, "")}`}>
                       {site.phone}
@@ -161,9 +159,9 @@ async function CompanyPage({ params }: Props) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{tCommon("hours")}</dt>
+                  <dt className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{commonNs.hours}</dt>
                   <dd className="mt-1.5 text-ink-soft">
-                    {t("hoursDescription")}
+                    {companyNs.hoursDescription}
                   </dd>
                 </div>
               </dl>

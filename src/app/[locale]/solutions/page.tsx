@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import {
@@ -41,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: [
       "AI support for BPO Kosovo",
       "clinic answering service Prishtina",
-      "hotel AI reservations Albanian",
+      "hotel AI reservations",
       "AI order status support",
     ],
     locale,
@@ -50,9 +49,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function SolutionsPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Solutions" });
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
+  const solutionsNs = (messages.Solutions ?? {}) as Record<string, string>;
   const solutionsData = (messages.SolutionsList ?? []) as Solution[];
 
   const breadcrumbLd = {
@@ -72,11 +70,11 @@ async function SolutionsPage({ params }: Props) {
       <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{solutionsNs.home}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("eyebrow")}
+            {solutionsNs.eyebrow}
           </li>
         </ol>
       </nav>
@@ -85,16 +83,16 @@ async function SolutionsPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{solutionsNs.eyebrow}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
-              {t("title")}
+              {solutionsNs.title}
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("description")}
+              {solutionsNs.description}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">{t("cta")}</ButtonLink>
-              <ButtonLink href="/platform" variant="ghost">{t("cta2")}</ButtonLink>
+              <ButtonLink href="/contact">{solutionsNs.cta}</ButtonLink>
+              <ButtonLink href="/platform" variant="ghost">{solutionsNs.cta2}</ButtonLink>
             </div>
           </Reveal>
         </div>
@@ -130,7 +128,7 @@ async function SolutionsPage({ params }: Props) {
                       ))}
                     </ul>
                     <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-navy">
-                      {t("allSolutions")} →
+                      {solutionsNs.allSolutions} →
                     </span>
                   </div>
                 </div>
@@ -143,17 +141,17 @@ async function SolutionsPage({ params }: Props) {
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
           <SectionHead
-            eyebrow={t("notListedEyebrow")}
-            title={t("notListedTitle")}
-            lede={t("notListedLede")}
+            eyebrow={solutionsNs.notListedEyebrow}
+            title={solutionsNs.notListedTitle}
+            lede={solutionsNs.notListedLede}
           />
           <Reveal delay={100}>
             <div className="rounded-2xl border border-line bg-paper p-8">
               <p className="text-sm leading-relaxed text-ink-soft">
-                {t("auditDescription")}
+                {solutionsNs.auditDescription}
               </p>
               <div className="mt-7">
-                <ButtonLink href="/contact">{t("cta")}</ButtonLink>
+                <ButtonLink href="/contact">{solutionsNs.cta}</ButtonLink>
               </div>
             </div>
           </Reveal>

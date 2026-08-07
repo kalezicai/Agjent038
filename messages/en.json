@@ -4,13 +4,13 @@
     "titleTemplate": "%s | Agjent038",
     "description": "Agjent038 answers every call with multilingual support — 24/7. Built for Kosovo call centres, clinics and BPOs. Live in two weeks from €499/month.",
     "keywords": [
-      "AI receptionist Kosovo",
+      "AI voice agent Kosovo",
       "AI call center Kosovo",
       "AI customer support Kosovo",
       "AI voice agent multilingual",
-      "virtual receptionist Prishtina",
+      "AI call answering Prishtina",
       "call center automation Kosovo",
-      "AI answering service Albania",
+      "AI answering service Kosovo",
       "BPO AI automation"
     ],
     "ogTitle": "Agjent038 — AI Voice Agents for Kosovo Call Centres",
@@ -20,7 +20,7 @@
   },
   "Site": {
     "name": "Agjent038",
-    "tagline": "AI receptionist for Kosovo call centers",
+    "tagline": "AI voice agent for Kosovo call centers",
     "location": "Prishtina"
   },
   "Nav": {
@@ -36,7 +36,7 @@
     "heroSubhead": "The AI voice agent built for Kosovo call centres",
     "heroTitle1": "Every call answered.",
     "heroTitle2": "Every hour. In their language.",
-    "heroDescription": "Agjent038 is an AI receptionist for Kosovo call centres and service businesses. It picks up on the first ring, understands what the caller needs, speaks your customers' language, completes the task in your systems, and hands the hard conversations to your team with a full summary.",
+    "heroDescription": "Agjent038 fills the capacity gaps Kosovo call centres cannot staff for — nights, weekends and peak overflow. It picks up on the first ring, understands what the caller needs, speaks your customers' language, completes the task in your systems, and hands the hard conversations to your team with a full summary.",
     "heroCta": "Hear it on your calls",
     "heroCtaSecondary": "See the numbers",
     "stat1Value": "€499",
@@ -46,7 +46,7 @@
     "stat3Value": "0",
     "stat3Label": "missed calls",
     "outcomesEyebrow": "The result",
-    "outcomesTitle": "You are not buying software. You are buying a queue that never overflows.",
+    "outcomesTitle": "You are not buying software. You are filling the gaps your team cannot cover.",
     "outcomesLede": "These are the numbers our clients see within the first ninety days of running Agjent038 on their inbound traffic.",
     "shiftEyebrow": "The shift",
     "shiftTitle": "The calls you are losing are the cheapest revenue you will ever recover.",
@@ -61,13 +61,13 @@
     "pillarsEyebrow": "Why it works here",
     "pillarsTitle": "Most AI agents fail in Kosovo for the same four reasons. We fixed all of them.",
     "capabilitiesEyebrow": "What it does",
-    "capabilitiesTitle": "Eight jobs, one receptionist, no rota",
+    "capabilitiesTitle": "Eight jobs, one voice agent, no rota",
     "capabilitiesLede": "Each of these runs from the same brain, on the same number, with the same knowledge of your business.",
     "processEyebrow": "Onboarding",
     "processTitle": "Live in fourteen days, with nothing left to chance",
     "processLede": "You approve every behaviour in shadow mode before a single customer hears the AI.",
     "pricingEyebrow": "Pricing",
-    "pricingTitle": "From €299 a month. Less than one part-time receptionist.",
+    "pricingTitle": "From €499 a month. Fill the gaps your team cannot staff for.",
     "pricingLede": "No setup fee. No per-minute surprises on the base plan. Month-to-month, because the results should keep you, not the contract.",
     "pricingCta": "See what is included",
     "pricingDemo": "Book a demo",
@@ -125,7 +125,7 @@
       "after": [
         "100% of offered calls answered in 0.4s",
         "24/7/365 coverage including holidays",
-        "Multilingual, unlimited concurrency",
+        "Multilingual, dozens of concurrent calls",
         "Every conversation transcribed and scored",
         "Capacity scales the moment volume does"
       ]
@@ -168,7 +168,7 @@
     "hours": "Hours"
   },
   "Footer": {
-    "description": "The AI receptionist built for Kosovo call centres — with multilingual support, 24 hours a day.",
+    "description": "The AI voice agent built for Kosovo call centres — with multilingual support, 24 hours a day.",
     "product": "Product",
     "solutions": "Solutions",
     "company": "Company",
@@ -178,12 +178,12 @@
     "copyright": "All rights reserved.",
     "gdpr": "GDPR-aligned processing",
     "euResidency": "EU data residency available",
-    "fromPrice": "From €299/month"
+    "fromPrice": "From €499/month"
   },
   "Platform": {
     "eyebrow": "Platform",
     "home": "Home",
-    "title": "A receptionist that understands, acts and reports — on infrastructure you already own.",
+    "title": "A voice agent that understands, acts and reports — on infrastructure you already own.",
     "description": "Agjent038 is not a phone tree with a friendlier voice. It is a conversational agent with access to your systems, a written escalation policy, and a measurement layer that proves what it did. Here is exactly how it is put together.",
     "cta1": "Request a live demo",
     "cta2": "See pricing",
@@ -195,7 +195,7 @@
     "consoleLede": "Containment, sentiment, language mix, escalation reasons and outcome attribution — updated live and exportable.",
     "guardrailsEyebrow": "Guardrails",
     "guardrailsTitle": "Confidence comes from constraints",
-    "guardrailsLede": "An AI receptionist is only trustworthy if you can predict what it will never do.",
+    "guardrailsLede": "An AI voice agent is only trustworthy if you can predict what it will never do.",
     "capabilitiesEyebrow": "Capabilities",
     "capabilitiesTitle": "Everything running from one brain",
     "pillarsEyebrow": "Engineered for Kosovo",
@@ -254,7 +254,7 @@
   "Solutions": {
     "eyebrow": "Solutions",
     "home": "Home",
-    "title": "The same receptionist. Six very different jobs.",
+    "title": "The same voice agent. Six very different jobs.",
     "description": "Agjent038 is configured against your intents, your systems and your escalation rules. What follows is what that looks like in the industries we work with most across Kosovo and the region.",
     "cta": "Request a call audit",
     "cta2": "See how it works",
@@ -297,8 +297,8 @@
     "compareEyebrow": "Compare",
     "compareTitle": "Plan by plan",
     "contextEyebrow": "Context",
-    "contextTitle": "What €299 buys elsewhere",
-    "contextLede": "A part-time receptionist covering twenty hours a week, one language, one caller at a time — with holidays, sick days and a recruitment process attached.",
+    "contextTitle": "What €499 buys elsewhere",
+    "contextLede": "A part-time voice agent covering twenty hours a week, one language, one caller at a time — with holidays, sick days and a recruitment process attached.",
     "questionsEyebrow": "Pricing questions",
     "questionsTitle": "Before you ask your finance team",
     "cta": "Book a demo",
@@ -312,11 +312,11 @@
     "aiAgent": "Agjent038",
     "comparisonHeader": "Feature",
     "humanCost": "€1,000+/mo",
-    "aiCost": "From €299/mo",
+    "aiCost": "From €499/mo",
     "humanHours": "40 h/week",
     "aiHours": "168 h/week",
     "humanConcurrency": "1 call at a time",
-    "aiConcurrency": "Unlimited",
+    "aiConcurrency": "Dozens",
     "humanAvailability": "Shifts, breaks, PTO",
     "aiAvailability": "24/7/365",
     "humanRamp": "Weeks of hiring",
@@ -355,7 +355,7 @@
     "cta1": "Request a live demo",
     "cta2": "See how it works",
     "title": "Everything operators ask, answered plainly.",
-    "description": "If something is missing here, write to us and we will answer directly — including the parts where an AI receptionist is not the right fit.",
+    "description": "If something is missing here, write to us and we will answer directly — including the parts where an AI voice agent is not the right fit.",
     "generalEyebrow": "General",
     "generalTitle": "The service",
     "technicalEyebrow": "Technical",
@@ -379,7 +379,7 @@
   },
   "NotFound": {
     "title": "This line is not connected.",
-    "description": "The page you were looking for does not exist. Our receptionist, however, always answers.",
+    "description": "The page you were looking for does not exist. Our voice agent, however, always answers.",
     "home": "Back to home",
     "contact": "Contact us"
   },
@@ -472,8 +472,8 @@
     {
       "slug": "call-centers",
       "name": "Call centres & BPOs",
-      "headline": "Take on more seats without hiring more seats",
-      "body": "Agjent038 absorbs tier-1 volume so your agents handle the conversations that actually need judgement. Margins improve, SLAs stop slipping, and you can bid on contracts your headcount could not previously support.",
+      "headline": "Fill the overflow and after-hours gaps your seats cannot cover",
+      "body": "Agjent038 absorbs overflow and after-hours tier-1 volume so your agents handle the conversations that actually need judgement. Margins improve, SLAs stop slipping, and you can bid on contracts your headcount could not previously support.",
       "wins": [
         "Answer 100% of offered calls, even at 09:00 Monday peak",
         "Cut average handling time by summarising before transfer",
@@ -568,7 +568,7 @@
           "heading": "Why hiring is the expensive fix",
           "paragraphs": [
             "Peak demand is not flat. To answer the 09:00–11:00 spike you must staff for the spike, which means paying for idle capacity for the rest of the day. Add recruitment, training, attrition and supervision and the effective cost of coverage climbs well beyond the salary line.",
-            "Automation of tier-1 volume changes the shape of the problem. Concurrency is effectively unlimited, so the peak stops being a staffing question and becomes a routing question."
+            "Automation of tier-1 volume changes the shape of the problem. Concurrency scales to dozens, so the peak stops being a staffing question and becomes a routing question."
           ]
         },
         {
@@ -580,9 +580,9 @@
       ]
     },
     {
-      "slug": "ai-receptionist-vs-hiring-receptionist",
-      "title": "AI receptionist vs hiring: an honest comparison",
-      "description": "Where an AI receptionist clearly wins, where a human is still the right answer, and how most operators end up running both.",
+      "slug": "ai-voice-agent-vs-hiring-voice-agent",
+      "title": "AI voice agent vs hiring: an honest comparison",
+      "description": "Where an AI voice agent clearly wins, where a human is still the right answer, and how most operators end up running both.",
       "date": "2026-01-28",
       "readingTime": "6 min read",
       "category": "Strategy",
@@ -590,13 +590,13 @@
         {
           "heading": "Coverage is not a fair fight",
           "paragraphs": [
-            "One receptionist covers about 40 hours per week and one conversation at a time. An AI receptionist covers all 168 hours and handles concurrent calls without a queue. For any business where enquiries arrive outside office hours, this alone changes the economics."
+            "One human agent covers about 40 hours per week and one conversation at a time. An AI voice agent covers all 168 hours and handles dozens of concurrent calls without a queue. For any business where enquiries arrive outside office hours, this alone changes the economics."
           ]
         },
         {
           "heading": "Consistency and quality assurance",
           "paragraphs": [
-            "Humans have good days and bad days. An AI receptionist delivers the same greeting, the same qualifying questions and the same compliance disclosures on call one thousand as on call one. Every conversation is transcribed and scored, so quality assurance moves from a 2% sample to complete coverage."
+            "Humans have good days and bad days. An AI voice agent delivers the same greeting, the same qualifying questions and the same compliance disclosures on call one thousand as on call one. Every conversation is transcribed and scored, so quality assurance moves from a 2% sample to complete coverage."
           ]
         },
         {
@@ -699,7 +699,7 @@
     },
     {
       "q": "How many calls can it handle at once?",
-      "a": "Concurrency is effectively unlimited — the platform scales horizontally, so a spike from three simultaneous calls to eighty does not create a queue. This is the structural advantage over headcount: peak demand stops being a staffing problem."
+      "a": "Concurrency is scales to dozens of simultaneous calls — the platform scales horizontally, so a spike from three calls to twenty does not create a queue. This is the structural advantage over headcount: peak demand stops being a staffing problem."
     },
     {
       "q": "Can it write into our CRM and calendar?",
@@ -735,10 +735,10 @@
   "Plans": [
     {
       "name": "Overflow",
-      "price": "€299",
+      "price": "€499",
       "cadence": "per month",
       "meta": "Nights/weekends + peak overflow, 400 min",
-      "summary": "Catch the calls you are already losing after hours and at peak. Live in days, not weeks.",
+      "summary": "Covers nights, weekends and peak overflow plus your primary queue.",
       "includes": [
         "Nights, weekends and peak overflow answering",
         "Up to 400 minutes / month",
@@ -756,7 +756,7 @@
       "price": "€499",
       "cadence": "per month",
       "meta": "24/7, 1,000 min, multilingual, CRM, warm transfer",
-      "summary": "The full AI receptionist for a single location or a focused inbound queue. Live in two weeks.",
+      "summary": "The full AI voice agent for a single location or a focused inbound queue. Live in two weeks.",
       "featured": true,
       "includes": [
         "24/7 inbound answering",
@@ -776,7 +776,7 @@
       "price": "€899",
       "cadence": "per month",
       "meta": "2,500 min, outbound follow-ups, QA dashboard",
-      "summary": "For call centres and multi-site operators running real volume across voice and messaging.",
+      "summary": "Absorbs overflow and after-hours at scale, plus outbound follow-ups.",
       "includes": [
         "Everything in Reception",
         "Up to 2,500 answered minutes / month",
@@ -792,11 +792,11 @@
     {
       "name": "Enterprise",
       "cadence": "annual agreement",
-      "meta": "Unlimited volume, dedicated infrastructure",
+      "meta": "High-volume, dedicated infrastructure",
       "summary": "Dedicated capacity, custom voice, and contractual SLAs for regulated and high-volume operations.",
       "includes": [
         "Everything in Operations",
-        "Unlimited conversation volume",
+        "High conversation volume",
         "Dedicated instance and EU data residency",
         "Custom branded voice and persona",
         "99.9% uptime SLA with penalties",
@@ -817,8 +817,8 @@
       "a": "It escalates. You define the rules — refund thresholds, complaint keywords, detected frustration, VIP accounts — and Agjent038 transfers the caller to the right human with a written summary already in their screen. Nothing is left in limbo, and no caller is trapped in a loop."
     },
     {
-      "q": "Will this replace my agents?",
-      "a": "It replaces the queue, not the people. Most operators keep their team and redeploy them onto retention, complex cases and outbound revenue work, while Agjent038 absorbs the repetitive tier-1 volume that burns agents out and inflates cost per contact."
+      "q": "Does this mean we need fewer agents?",
+      "a": "No. It eliminates the gaps your team cannot staff for — nights, weekends, and peak overflow — so your agents focus on the conversations that need judgement. Most operators keep their team and redeploy them onto retention, complex cases and outbound revenue work, while Agjent038 absorbs the repetitive tier-1 volume that burns agents out and inflates cost per contact."
     },
     {
       "q": "How long does it take to go live?",
@@ -829,8 +829,8 @@
       "a": "The full product: 24/7 answering in multilingual, up to 1,000 answered minutes, booking, CRM and calendar integration, transcripts, recordings, the live dashboard, warm transfer, onboarding and shadow mode. There is no setup fee and no per-minute surprise billing on the base plan."
     },
     {
-      "q": "How does this compare with hiring a receptionist?",
-      "a": "One full-time agent in Kosovo covers roughly 40 hours a week and answers one call at a time. Agjent038 covers 168 hours a week, answers unlimited concurrent calls, never has a bad day, and costs less than a single salary — while producing a transcript and quality score for every conversation."
+      "q": "How does this compare with hiring a voice agent?",
+      "a": "One full-time agent in Kosovo covers roughly 40 hours a week and answers one call at a time. Agjent038 covers 168 hours a week, answers dozens of concurrent calls, never has a bad day, and costs less than a single salary — while producing a transcript and quality score for every conversation."
     },
     {
       "q": "Is our customer data safe?",
@@ -846,9 +846,10 @@
     }
   ],
   "Languages": {
-    "sq": "Shqip",
     "en": "English",
-    "de": "Deutsch"
+    "de": "Deutsch",
+    "fr": "Français",
+    "it": "Italiano"
   },
   "LeadForm": {
     "successTitle": "Request received",
@@ -864,7 +865,7 @@
     "submit": "Request a demo",
     "privacy": "We reply within one business day. Your details stay with us — no reselling, no newsletters you did not ask for.",
     "callRanges": ["Under 500", "500 – 1,000", "1,000 – 4,000", "4,000 – 10,000", "10,000+"],
-    "planOptions": ["Overflow — €299/mo", "Reception — €499/mo", "Operations — €899/mo", "Enterprise", "Not sure yet"],
+    "planOptions": ["Overflow — €499/mo", "Reception — €499/mo", "Operations — €899/mo", "Enterprise", "Not sure yet"],
     "placeholderMessage": "After-hours reservations, order status calls, appointment booking…"
   },
   "Roi": {
@@ -981,12 +982,12 @@
   ],
   "CompanyLimits": "We are equally direct about limits. Agjent038 does not negotiate contracts, handle grief, or improvise policy. Those calls belong to a person, and our job is to make sure that person receives them with full context and enough time to do it properly.",
   "PricingCompare": [
-    ["Answered minutes / month", "400", "1,000", "2,500", "Unlimited"],
+    ["Answered minutes / month", "400", "1,000", "2,500", "Custom"],
     ["Languages", "1", "Multilingual", "Multilingual", "Custom"],
     ["Voice channel", "Included", "Included", "Included", "Included"],
     ["WhatsApp, Viber, chat & email", "—", "—", "Included", "Included"],
     ["Outbound campaigns", "—", "—", "Included", "Included"],
-    ["Custom API integrations", "—", "Standard only", "Included", "Unlimited"],
+    ["Custom API integrations", "—", "Standard only", "Included", "Custom"],
     ["Automated QA on 100% of calls", "—", "—", "Included", "Included"],
     ["Dedicated instance & EU residency", "—", "—", "—", "Included"],
     ["Custom branded voice", "—", "—", "—", "Included"],
@@ -997,13 +998,13 @@
   "PricingContext": [
     ["168 h/week", "Agjent038 coverage"],
     ["40 h/week", "One full-time agent"],
-    ["Unlimited", "Concurrent calls with Agjent038"],
+    ["Dozens", "Concurrent calls with Agjent038"],
     ["1", "Concurrent calls per agent"]
   ],
   "Layout": {
     "skipToContent": "Skip to content",
-    "jsonLdDescription": "Agjent038 builds AI receptionists and customer support agents for call centres and service businesses in Kosovo, answering 24/7 with multilingual support.",
-    "jsonLdServiceType": "AI receptionist and customer support agent",
+    "jsonLdDescription": "Agjent038 builds AI voice agents and customer support agents for call centres and service businesses in Kosovo, answering 24/7 with multilingual support.",
+    "jsonLdServiceType": "AI voice agent and customer support agent",
     "jsonLdAudienceType": "Call centres, BPOs, clinics, hotels and service businesses"
   },
   "FooterProductLinks": {

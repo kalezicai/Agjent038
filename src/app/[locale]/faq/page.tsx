@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import Accordion from "@/components/accordion";
 import Reveal from "@/components/reveal";
 import { ButtonLink, Eyebrow, JsonLd, Section, SectionHead } from "@/components/ui";
@@ -31,11 +30,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function FaqPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "FAQ" });
-  const tCommon = await getTranslations({ locale, namespace: "Common" });
 
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
+  const faqNs = (messages.FAQ ?? {}) as Record<string, string>;
+  const commonNs = (messages.Common ?? {}) as Record<string, string>;
   const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
   const technical = (messages.TechnicalFAQ ?? []) as Array<{ q: string; a: string }>;
 
@@ -67,11 +65,11 @@ async function FaqPage({ params }: Props) {
       <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{faqNs.home}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("eyebrow")}
+            {faqNs.eyebrow}
           </li>
         </ol>
       </nav>
@@ -80,16 +78,16 @@ async function FaqPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{faqNs.eyebrow}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
-              {t("title")}
+              {faqNs.title}
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("description")}
+              {faqNs.description}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">{t("cta1")}</ButtonLink>
-              <ButtonLink href="/platform" variant="ghost">{t("cta2")}</ButtonLink>
+              <ButtonLink href="/contact">{faqNs.cta1}</ButtonLink>
+              <ButtonLink href="/platform" variant="ghost">{faqNs.cta2}</ButtonLink>
             </div>
           </Reveal>
         </div>
@@ -97,14 +95,14 @@ async function FaqPage({ params }: Props) {
 
       <Section tone="paper">
         <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
-          <SectionHead eyebrow={t("generalEyebrow")} title={t("generalTitle")} />
+          <SectionHead eyebrow={faqNs.generalEyebrow} title={faqNs.generalTitle} />
           <Accordion items={faqs} />
         </div>
       </Section>
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
-          <SectionHead eyebrow={t("technicalEyebrow")} title={t("technicalTitle")} />
+          <SectionHead eyebrow={faqNs.technicalEyebrow} title={faqNs.technicalTitle} />
           <Accordion items={technical} defaultOpen={-1} />
         </div>
       </Section>
@@ -114,12 +112,12 @@ async function FaqPage({ params }: Props) {
           <SectionHead
             invert
             align="center"
-            eyebrow={t("stillDecidingEyebrow")}
-            title={t("stillDecidingTitle")}
-            lede={t("stillDecidingLede")}
+            eyebrow={faqNs.stillDecidingEyebrow}
+            title={faqNs.stillDecidingTitle}
+            lede={faqNs.stillDecidingLede}
           />
           <div className="mt-10 flex justify-center">
-            <ButtonLink href="/contact" variant="light">{tCommon("contactUs")}</ButtonLink>
+            <ButtonLink href="/contact" variant="light">{commonNs.contactUs}</ButtonLink>
           </div>
         </div>
       </Section>

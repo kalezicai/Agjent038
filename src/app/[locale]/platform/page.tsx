@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import Dashboard from "@/components/dashboard";
 import Reveal from "@/components/reveal";
 import {
@@ -29,12 +28,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "The Platform — How the Agjent038 AI Receptionist Works",
     description: isAlb
       ? "Brenda Agjent038: zë shqip natyror, vonesë nën 600ms, integrim telefoni dhe CRM, politikë eskalimi, AA e automatizuar dhe një konsolë e gjallë. Ndërtuar për qendrat e thirrjeve në Kosovë."
-      : "Inside Agjent038: Albanian-native voice, sub-600ms latency, telephony and CRM integration, escalation policy, automated QA and a live console. Built for Kosovo call centres.",
+      : "Inside Agjent038: sub-600ms latency, telephony and CRM integration, escalation policy, automated QA and a live console. Built for Kosovo call centres.",
     path: "/platform",
     keywords: [
       "AI voice agent architecture",
       "AI receptionist integration 3CX Asterisk Twilio",
-      "Albanian speech recognition call center",
     ],
     locale,
   });
@@ -51,10 +49,9 @@ const INTEGRATION_CATEGORIES: Record<string, string[]> = {
 
 async function PlatformPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Platform" });
+  const messages = await getStaticMessages(locale);
+  const platformNs = (messages.Platform ?? {}) as Record<string, string>;
 
-  const messages = await getMessages({ locale });
   const platformPillars = (messages.PlatformPillars ?? []) as Array<{
     glyph: string;
     title: string;
@@ -71,7 +68,6 @@ async function PlatformPage({ params }: Props) {
     body: string;
     days: string;
   }>;
-  const integrations = (messages.Integrations ?? []) as string[];
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -82,8 +78,8 @@ async function PlatformPage({ params }: Props) {
     ],
   };
 
-  const stack = t.raw("stack") as Array<{ layer: string; title: string; body: string }>;
-  const guardrailsData = t.raw("guardrails") as Array<{ title: string; body: string }>;
+  const stack = platformNs.stack as unknown as Array<{ layer: string; title: string; body: string }>;
+  const guardrailsData = platformNs.guardrails as unknown as Array<{ title: string; body: string }>;
 
   return (
     <>
@@ -96,11 +92,11 @@ async function PlatformPage({ params }: Props) {
       >
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{platformNs.home}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("title")}
+            {platformNs.title}
           </li>
         </ol>
       </nav>
@@ -109,16 +105,16 @@ async function PlatformPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{platformNs.eyebrow}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
-              {t("title")}
+              {platformNs.title}
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("description")}
+              {platformNs.description}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">{t("cta1")}</ButtonLink>
-              <ButtonLink href="/pricing" variant="ghost">{t("cta2")}</ButtonLink>
+              <ButtonLink href="/contact">{platformNs.cta1}</ButtonLink>
+              <ButtonLink href="/pricing" variant="ghost">{platformNs.cta2}</ButtonLink>
             </div>
           </Reveal>
         </div>
@@ -127,9 +123,9 @@ async function PlatformPage({ params }: Props) {
       {/* Architecture — visual stack with connecting arrows */}
       <Section tone="paper">
         <SectionHead
-          eyebrow={t("architectureEyebrow")}
-          title={t("architectureTitle")}
-          lede={t("architectureLede")}
+          eyebrow={platformNs.architectureEyebrow}
+          title={platformNs.architectureTitle}
+          lede={platformNs.architectureLede}
         />
         <div className="mt-14 relative">
           <div className="absolute left-[calc(1rem+0.5rem)] top-0 bottom-0 hidden w-px bg-line md:block" aria-hidden="true" />
@@ -151,8 +147,8 @@ async function PlatformPage({ params }: Props) {
 
       <Section>
         <SectionHead
-          eyebrow={t("pillarsEyebrow")}
-          title={t("pillarsTitle")}
+          eyebrow={platformNs.pillarsEyebrow}
+          title={platformNs.pillarsTitle}
         />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {platformPillars.map((p, i) => (
@@ -181,9 +177,9 @@ async function PlatformPage({ params }: Props) {
       <Section tone="paper">
         <SectionHead
           align="center"
-          eyebrow={t("consoleEyebrow")}
-          title={t("consoleTitle")}
-          lede={t("consoleLede")}
+          eyebrow={platformNs.consoleEyebrow}
+          title={platformNs.consoleTitle}
+          lede={platformNs.consoleLede}
         />
         <Reveal delay={100}>
           <div className="scene-3d mt-14">
@@ -191,17 +187,17 @@ async function PlatformPage({ params }: Props) {
           </div>
         </Reveal>
         <div className="mt-10 flex justify-center gap-3">
-          <ButtonLink href="/console">{t("cta1")}</ButtonLink>
-          <ButtonLink href="/pricing" variant="ghost">{t("cta2")}</ButtonLink>
+          <ButtonLink href="/console">{platformNs.cta1}</ButtonLink>
+          <ButtonLink href="/pricing" variant="ghost">{platformNs.cta2}</ButtonLink>
         </div>
       </Section>
 
       {/* Guardrails with icons */}
       <Section>
         <SectionHead
-          eyebrow={t("guardrailsEyebrow")}
-          title={t("guardrailsTitle")}
-          lede={t("guardrailsLede")}
+          eyebrow={platformNs.guardrailsEyebrow}
+          title={platformNs.guardrailsTitle}
+          lede={platformNs.guardrailsLede}
         />
         <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-2">
           {guardrailsData.map((g, i) => (
@@ -222,8 +218,8 @@ async function PlatformPage({ params }: Props) {
         <SectionHead
           invert
           align="center"
-          eyebrow={t("capabilitiesEyebrow")}
-          title={t("capabilitiesTitle")}
+          eyebrow={platformNs.capabilitiesEyebrow}
+          title={platformNs.capabilitiesTitle}
         />
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((c, i) => (
@@ -242,9 +238,9 @@ async function PlatformPage({ params }: Props) {
         <div className="grid gap-14 lg:grid-cols-[1fr_1fr]">
           <div>
             <SectionHead
-              eyebrow={t("integrationsEyebrow")}
-              title={t("integrationsTitle")}
-              lede={t("integrationsLede")}
+              eyebrow={platformNs.integrationsEyebrow}
+              title={platformNs.integrationsTitle}
+              lede={platformNs.integrationsLede}
             />
           </div>
           <div className="space-y-6 self-center">
@@ -271,8 +267,8 @@ async function PlatformPage({ params }: Props) {
       {/* Deployment flow with arrows */}
       <Section>
         <SectionHead
-          eyebrow={t("deploymentEyebrow")}
-          title={t("deploymentTitle")}
+          eyebrow={platformNs.deploymentEyebrow}
+          title={platformNs.deploymentTitle}
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
@@ -300,7 +296,7 @@ async function PlatformPage({ params }: Props) {
           ))}
         </div>
         <div className="mt-12">
-          <ButtonLink href="/contact">{t("cta1")}</ButtonLink>
+          <ButtonLink href="/contact">{platformNs.cta1}</ButtonLink>
         </div>
       </Section>
     </>

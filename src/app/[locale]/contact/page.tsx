@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import LeadForm from "@/components/lead-form";
 import Reveal from "@/components/reveal";
 import { Eyebrow, JsonLd, Section } from "@/components/ui";
@@ -35,9 +34,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function ContactPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Contact" });
-  const tCommon = await getTranslations({ locale, namespace: "Common" });
+  const messages = await getStaticMessages(locale);
+  const contactNs = (messages.Contact ?? {}) as Record<string, string>;
+  const commonNs = (messages.Common ?? {}) as Record<string, string>;
 
   const contactLd = {
     "@context": "https://schema.org",
@@ -51,7 +50,7 @@ async function ContactPage({ params }: Props) {
     },
   };
 
-  const expectations = t.raw("expectations") as Array<{ step: string; body: string }>;
+  const expectations = contactNs.expectations as unknown as Array<{ step: string; body: string }>;
 
   return (
     <>
@@ -61,11 +60,11 @@ async function ContactPage({ params }: Props) {
       <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{contactNs.home}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("eyebrow")}
+            {contactNs.eyebrow}
           </li>
         </ol>
       </nav>
@@ -76,12 +75,12 @@ async function ContactPage({ params }: Props) {
           <div className="grid gap-14 lg:grid-cols-[1fr_1fr] lg:items-start">
             <div>
               <Reveal>
-                <Eyebrow>{t("eyebrow")}</Eyebrow>
+                <Eyebrow>{contactNs.eyebrow}</Eyebrow>
                 <h1 className="font-display mt-6 text-[2.3rem] leading-[1.08] md:text-[3.1rem]">
-                  {t("title")}
+                  {contactNs.title}
                 </h1>
                 <p className="mt-7 max-w-xl text-base leading-relaxed text-ink-soft">
-                  {t("description")}
+                  {contactNs.description}
                 </p>
               </Reveal>
 
@@ -104,13 +103,13 @@ async function ContactPage({ params }: Props) {
               <Reveal delay={200}>
                 <div className="mt-12 grid gap-4 border-t border-line pt-10 sm:grid-cols-2">
                   <div>
-                    <p className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{tCommon("email")}</p>
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{commonNs.email}</p>
                     <a href={`mailto:${site.email}`} className="mt-2 block text-sm text-ink-soft transition-colors hover:text-navy">
                       {site.email}
                     </a>
                   </div>
                   <div>
-                    <p className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{tCommon("phone")}</p>
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-ink-mute">{commonNs.phone}</p>
                     <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="mt-2 block text-sm text-ink-soft transition-colors hover:text-navy">
                       {site.phone}
                     </a>
@@ -129,9 +128,9 @@ async function ContactPage({ params }: Props) {
       <Section tone="paper">
         <div className="grid gap-8 sm:grid-cols-3">
           {[
-            [t("noSetupFee"), t("noSetupFeeDescription")],
-            [t("monthToMonth"), t("monthToMonthDescription")],
-            [t("gdpr"), t("gdprDescription")],
+            [contactNs.noSetupFee, contactNs.noSetupFeeDescription],
+            [contactNs.monthToMonth, contactNs.monthToMonthDescription],
+            [contactNs.gdpr, contactNs.gdprDescription],
           ].map(([title, desc], i) => (
             <Reveal key={title} delay={i * 90}>
               <div className="rounded-2xl border border-line bg-canvas/50 p-7">

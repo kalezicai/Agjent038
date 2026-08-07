@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import { Link } from "@/i18n/navigation";
 import Accordion from "@/components/accordion";
 import Reveal from "@/components/reveal";
@@ -25,11 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isAlb = locale === "sq";
   return buildMetadata({
     title: isAlb
-      ? "Çmimet — Pranimës AI nga 299€ në Muaj"
-      : "Pricing — AI Receptionist from €299 per Month",
+      ? "Çmimet — Pranimës AI nga 499€ në Muaj"
+      : "Pricing — AI Voice Agent from €499 per Month",
     description: isAlb
-      ? "Çmime transparente për pranimësin AI Agjent038: Overflow në 299€/muaj, Pranimi në 499€/muaj, Operacionet në 899€/muaj dhe Enterprise. Pa tarifë vendosje, muaj për muaj, gjithçka e përfshirë."
-      : "Transparent pricing for the Agjent038 AI receptionist: Overflow at €299/month, Reception at €499/month, Operations at €899/month, and Enterprise. No setup fee, month-to-month, everything included.",
+      ? "Çmime transparente për agjentin zëri AI Agjent038: Overflow në 499€/muaj, Pranimi në 499€/muaj, Operacionet në 899€/muaj dhe Enterprise. Pa tarifë vendosje, muaj për muaj, gjithçka e përfshirë."
+      : "Transparent pricing for the Agjent038 AI voice agent: Overflow at €499/month, Reception at €499/month, Operations at €899/month, and Enterprise. No setup fee, month-to-month, everything included.",
     path: "/pricing",
     keywords: [
       "AI receptionist price Kosovo",
@@ -43,10 +42,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function PricingPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Pricing" });
 
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
+  const prNs = (messages.Pricing ?? {}) as Record<string, unknown>;
   const plans = (messages.Plans ?? []) as Array<{
     name: string;
     price: string;
@@ -65,9 +63,9 @@ async function PricingPage({ params }: Props) {
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Agjent038 AI Receptionist",
+    name: "Agjent038 AI Voice Agent",
     description:
-      "AI receptionist and customer support agent for Kosovo call centres, answering 24/7 with multilingual support.",
+      "AI voice agent for call centers and customer support, answering 24/7 with multilingual support.",
     brand: { "@type": "Brand", name: site.name },
     offers: plans.slice(0, 3).map((p) => ({
       "@type": "Offer",
@@ -98,11 +96,11 @@ async function PricingPage({ params }: Props) {
       <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{prNs.home as string}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("eyebrow")}
+            {prNs.eyebrow as string}
           </li>
         </ol>
       </nav>
@@ -111,16 +109,16 @@ async function PricingPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{prNs.eyebrow as string}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
-              {t("title")}
+              {prNs.title as string}
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("description")}
+              {prNs.description as string}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">{t("cta1")}</ButtonLink>
-              <ButtonLink href="/platform" variant="ghost">{t("cta2")}</ButtonLink>
+              <ButtonLink href="/contact">{prNs.cta1 as string}</ButtonLink>
+              <ButtonLink href="/platform" variant="ghost">{prNs.cta2 as string}</ButtonLink>
             </div>
           </Reveal>
         </div>
@@ -133,17 +131,17 @@ async function PricingPage({ params }: Props) {
               <thead>
                 <tr className="bg-canvas/70">
                   <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute"></th>
-                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">{t("humanAgent")}</th>
-                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-navy">{t("aiAgent")}</th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">{prNs.humanAgent as string}</th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-navy">{prNs.aiAgent as string}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  [t("anchorCost"), t("humanCost"), t("aiCost")],
-                  [t("anchorHours"), t("humanHours"), t("aiHours")],
-                  [t("anchorConcurrency"), t("humanConcurrency"), t("aiConcurrency")],
-                  [t("anchorAvailability"), t("humanAvailability"), t("aiAvailability")],
-                  [t("anchorRamp"), t("humanRamp"), t("aiRamp")],
+                  [prNs.anchorCost as string, prNs.humanCost as string, prNs.aiCost as string],
+                  [prNs.anchorHours as string, prNs.humanHours as string, prNs.aiHours as string],
+                  [prNs.anchorConcurrency as string, prNs.humanConcurrency as string, prNs.aiConcurrency as string],
+                  [prNs.anchorAvailability as string, prNs.humanAvailability as string, prNs.aiAvailability as string],
+                  [prNs.anchorRamp as string, prNs.humanRamp as string, prNs.aiRamp as string],
                 ].map(([label, human, ai], i) => (
                   <tr key={label} className={`border-t border-line ${i % 2 ? "bg-paper" : "bg-canvas/30"}`}>
                     <td className="px-6 py-4 font-medium text-ink">{label}</td>
@@ -170,7 +168,7 @@ async function PricingPage({ params }: Props) {
               >
                 {plan.featured ? (
                   <span className="absolute -top-3 left-8 rounded-full bg-gold px-3 py-1 text-[10px] font-medium uppercase tracking-[0.18em] text-white">
-                    {t("mostChosen")}
+                    {prNs.mostChosen as string}
                   </span>
                 ) : null}
 
@@ -220,16 +218,16 @@ async function PricingPage({ params }: Props) {
 
         <Reveal delay={120}>
           <p className="mt-10 text-center text-xs text-ink-mute">
-            {t("extraConversations")}
+            {prNs.extraConversations as string}
           </p>
         </Reveal>
       </Section>
 
       <Section>
         <SectionHead
-          eyebrow={t("includedEyebrow")}
-          title={t("includedTitle")}
-          lede={t("includedLede")}
+          eyebrow={prNs.includedEyebrow as string}
+          title={prNs.includedTitle as string}
+          lede={prNs.includedLede as string}
         />
         <div className="mt-12 flex flex-wrap gap-2.5">
           {inclusions.map((item, i) => (
@@ -244,13 +242,13 @@ async function PricingPage({ params }: Props) {
       </Section>
 
       <Section tone="paper">
-        <SectionHead eyebrow={t("compareEyebrow")} title={t("compareTitle")} />
+        <SectionHead eyebrow={prNs.compareEyebrow as string} title={prNs.compareTitle as string} />
         <Reveal delay={80}>
           <div className="mt-12 overflow-x-auto rounded-2xl border border-line">
             <table className="w-full min-w-[640px] border-collapse text-left text-sm">
               <thead>
                 <tr className="bg-canvas/70">
-                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">{t("comparisonHeader")}</th>
+                  <th className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-mute">{prNs.comparisonHeader as string}</th>
                   {plans.map((p) => (
                     <th key={p.name} className="px-6 py-4 text-[11px] font-medium uppercase tracking-[0.16em] text-ink">{p.name}</th>
                   ))}
@@ -275,9 +273,9 @@ async function PricingPage({ params }: Props) {
       <Section>
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <SectionHead
-            eyebrow={t("contextEyebrow")}
-            title={t("contextTitle")}
-            lede={t("contextLede")}
+            eyebrow={prNs.contextEyebrow as string}
+            title={prNs.contextTitle as string}
+            lede={prNs.contextLede as string}
           />
           <Reveal delay={100}>
             <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
@@ -296,20 +294,20 @@ async function PricingPage({ params }: Props) {
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHead
             invert
-            eyebrow={t("questionsEyebrow")}
-            title={t("questionsTitle")}
+            eyebrow={prNs.questionsEyebrow as string}
+            title={prNs.questionsTitle as string}
           />
           <div className="rounded-2xl bg-paper p-8">
             <Accordion items={faqs.slice(3, 9)} />
           </div>
         </div>
         <div className="mt-14 flex flex-wrap gap-3">
-          <ButtonLink href="/contact" variant="light">{t("cta")}</ButtonLink>
+          <ButtonLink href="/contact" variant="light">{prNs.cta as string}</ButtonLink>
           <Link
             href="/results"
             className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm text-white transition-all duration-300 hover:border-white/60"
           >
-            {t("ctaSecondary")} →
+            {prNs.ctaSecondary as string} →
           </Link>
         </div>
       </Section>

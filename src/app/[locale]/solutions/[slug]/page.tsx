@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
@@ -45,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const isAlb = locale === "sq";
 
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
   const solutions = (messages.SolutionsList ?? []) as Solution[];
   const solution = solutions.find((s) => s.slug === slug);
 
@@ -54,18 +53,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const keywordMap: Record<string, string[]> = {
     "call-centers": [
       "AI call center Kosovo",
-      "BPO automation Albanian",
+      "BPO automation",
       "call centre AI receptionist",
       "contact center overflow Kosovo",
     ],
     clinics: [
       "clinic answering service Kosovo",
-      "dental appointment AI Albanian",
+      "dental appointment AI",
       "medical receptionist automation",
       "clinic phone AI Prishtina",
     ],
     hospitality: [
-      "hotel AI reservations Albanian",
+      "hotel AI reservations",
       "restaurant booking AI Kosovo",
       "hotel receptionist automation",
       "hospitality AI voice agent",
@@ -78,14 +77,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     "shërbime-financiare": [
       "bank AI customer service Kosovo",
-      "insurance claims automation Albanian",
+      "insurance claims automation",
       "fintech support AI",
       "financial services voice agent",
     ],
     "pasuria-e-paluajtshme": [
       "real estate AI receptionist Kosovo",
       "property enquiry automation",
-      "real estate booking AI Albanian",
+      "real estate booking AI",
       "property agent call handling",
     ],
   };
@@ -103,15 +102,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function SolutionPage({ params }: Props) {
   const { locale, slug } = await params;
-  setRequestLocale(locale);
 
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
   const solutions = (messages.SolutionsList ?? []) as Solution[];
   const solution = solutions.find((s) => s.slug === slug);
 
   if (!solution) notFound();
 
-  const t = await getTranslations({ locale, namespace: "Solutions" });
+  const solNs = (messages.Solutions ?? {}) as Record<string, string>;
 
   const serviceLd = {
     "@context": "https://schema.org",
@@ -138,7 +136,7 @@ async function SolutionPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{solNs.eyebrow}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
               {solution.name}
             </h1>
@@ -160,14 +158,14 @@ async function SolutionPage({ params }: Props) {
                 {solution.body}
               </p>
               <div className="mt-9">
-                <ButtonLink href="/contact">{t("cta")}</ButtonLink>
+                <ButtonLink href="/contact">{solNs.cta}</ButtonLink>
               </div>
             </div>
           </Reveal>
 
           <Reveal delay={100}>
             <div className="rounded-2xl border border-navy/15 bg-navy p-8 text-white">
-              <h3 className="font-display text-lg">{t("winsTitle")}</h3>
+              <h3 className="font-display text-lg">{solNs.winsTitle}</h3>
               <ul className="mt-6 space-y-4">
                 {solution.wins.map((w) => (
                   <li key={w} className="flex gap-3 text-[13px] leading-relaxed text-white/80">
@@ -183,17 +181,17 @@ async function SolutionPage({ params }: Props) {
 
       <Section tone="paper">
         <SectionHead
-          eyebrow={t("notListedEyebrow")}
-          title={t("notListedTitle")}
-          lede={t("notListedLede")}
+          eyebrow={solNs.notListedEyebrow}
+          title={solNs.notListedTitle}
+          lede={solNs.notListedLede}
         />
         <div className="mt-10 flex flex-wrap gap-3">
-          <ButtonLink href="/contact">{t("cta")}</ButtonLink>
+          <ButtonLink href="/contact">{solNs.cta}</ButtonLink>
           <Link
             href="/solutions"
             className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 text-sm text-ink transition-all duration-300 hover:border-navy/20 hover:shadow-soft"
           >
-            ← {t("allSolutions")}
+            ← {solNs.allSolutions}
           </Link>
         </div>
       </Section>

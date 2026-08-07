@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import { ButtonLink, Eyebrow, JsonLd, Section } from "@/components/ui";
@@ -31,11 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Insights — AI, Call Centres and Customer Support in Kosovo",
     description: isAlb
       ? "Shkrim operational për njerëzit përgjegjës për një radhë telefoni — ekonomi, detaje teknike dhe përputhja, pa glossy-n e furnizuesit."
-      : "Practical writing on missed-call economics, AI voice agents in Albanian, GDPR and call recording, and how automation changes contact-centre operations in Kosovo.",
+      : "Practical writing on missed-call economics, AI voice agents, GDPR and call recording, and how automation changes contact-centre operations in Kosovo.",
     path: "/insights",
     keywords: [
       "call center blog Kosovo",
-      "AI voice agent Albanian article",
+      "AI voice agent article",
       "contact centre automation insights",
     ],
     locale,
@@ -44,11 +43,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function InsightsPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Insights" });
-  const tCommon = await getTranslations({ locale, namespace: "Common" });
+  const messages = await getStaticMessages(locale);
+  const insightsNs = (messages.Insights ?? {}) as Record<string, string>;
+  const commonNs = (messages.Common ?? {}) as Record<string, string>;
 
-  const messages = await getMessages({ locale });
   const articles = (messages.Articles ?? []) as Article[];
 
   const listLd = {
@@ -75,11 +73,11 @@ async function InsightsPage({ params }: Props) {
       <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{insightsNs.home}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("eyebrow")}
+            {insightsNs.eyebrow}
           </li>
         </ol>
       </nav>
@@ -88,16 +86,16 @@ async function InsightsPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{insightsNs.eyebrow}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
-              {t("title")}
+              {insightsNs.title}
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("description")}
+              {insightsNs.description}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">{t("cta1")}</ButtonLink>
-              <ButtonLink href="/platform" variant="ghost">{t("cta2")}</ButtonLink>
+              <ButtonLink href="/contact">{insightsNs.cta1}</ButtonLink>
+              <ButtonLink href="/platform" variant="ghost">{insightsNs.cta2}</ButtonLink>
             </div>
           </Reveal>
         </div>
@@ -111,7 +109,7 @@ async function InsightsPage({ params }: Props) {
           >
             <div>
               <span className="text-[11px] uppercase tracking-[0.2em] text-gold">
-                {t("featured")} · {lead.category}
+                {insightsNs.featured} · {lead.category}
               </span>
               <h2 className="font-display mt-5 text-2xl leading-snug md:text-3xl">
                 {lead.title}
@@ -120,7 +118,7 @@ async function InsightsPage({ params }: Props) {
                 {lead.description}
               </p>
               <span className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-navy">
-                {tCommon("readArticle")}
+                {commonNs.readArticle}
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>
             </div>
@@ -162,13 +160,13 @@ async function InsightsPage({ params }: Props) {
       <Section>
         <div className="rounded-2xl border border-line bg-paper p-10 text-center md:p-14">
           <h2 className="font-display mx-auto max-w-2xl text-2xl leading-snug md:text-3xl">
-            {t("cta")}
+            {insightsNs.cta}
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-ink-soft">
-            {t("auditDescription")}
+            {insightsNs.auditDescription}
           </p>
           <div className="mt-9 flex justify-center">
-            <ButtonLink href="/contact">{tCommon("requestAudit")}</ButtonLink>
+            <ButtonLink href="/contact">{commonNs.requestAudit}</ButtonLink>
           </div>
         </div>
       </Section>

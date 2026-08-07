@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import { getLocale, getTranslations, getMessages } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import { site } from "@/lib/site";
 
 const solutionsLinks = [
@@ -10,38 +10,37 @@ const solutionsLinks = [
   { slug: "shërbime-financiare" },
 ];
 
-export default async function SiteFooter() {
-  const locale = await getLocale();
-  const t = await getTranslations({ locale, namespace: "Footer" });
-  const tProductLinks = await getTranslations({ locale, namespace: "FooterProductLinks" });
-  const messages = await getMessages({ locale });
+export default async function SiteFooter({ locale }: { locale: string }) {
+  const messages = await getStaticMessages(locale);
+  const footerNs = (messages.Footer ?? {}) as Record<string, string>;
+  const footerProdNs = (messages.FooterProductLinks ?? {}) as Record<string, string>;
   const solutionsList = (messages.SolutionsList ?? []) as Array<{ slug: string; name: string }>;
   const solutionsMap = new Map(solutionsList.map((s) => [s.slug, s.name]));
 
   const columns = [
     {
-      title: t("product"),
+      title: footerNs.product,
       links: [
-        { label: tProductLinks("platform"), href: "/platform" },
-        { label: tProductLinks("pricing"), href: "/pricing" },
-        { label: tProductLinks("results"), href: "/results" },
-        { label: tProductLinks("faq"), href: "/faq" },
+        { label: footerProdNs.platform, href: "/platform" },
+        { label: footerProdNs.pricing, href: "/pricing" },
+        { label: footerProdNs.results, href: "/results" },
+        { label: footerProdNs.faq, href: "/faq" },
       ],
     },
     {
-      title: t("solutions"),
+      title: footerNs.solutions,
       links: solutionsLinks.map((s) => ({
         label: solutionsMap.get(s.slug) ?? s.slug,
         href: `/solutions#${s.slug}`,
       })),
     },
     {
-      title: t("company"),
+      title: footerNs.company,
       links: [
-        { label: t("about"), href: "/company" },
-        { label: t("insights"), href: "/insights" },
-        { label: t("contact"), href: "/contact" },
-        { label: tProductLinks("bookDemo"), href: "/contact" },
+        { label: footerNs.about, href: "/company" },
+        { label: footerNs.insights, href: "/insights" },
+        { label: footerNs.contact, href: "/contact" },
+        { label: footerProdNs.bookDemo, href: "/contact" },
       ],
     },
   ];
@@ -62,7 +61,7 @@ export default async function SiteFooter() {
               <span className="font-display text-lg">{site.name}</span>
             </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink-mute">
-              {t("description")}
+              {footerNs.description}
             </p>
             <div className="mt-6 space-y-1 text-sm text-ink-soft">
               <p>{site.address.street}</p>
@@ -112,12 +111,12 @@ export default async function SiteFooter() {
 
         <div className="hairline mt-14 flex flex-col gap-4 pt-8 text-xs text-ink-mute md:flex-row md:items-center md:justify-between">
           <p>
-            © {new Date().getFullYear()} {site.legalName}. {t("copyright")}
+            © {new Date().getFullYear()} {site.legalName}. {footerNs.copyright}
           </p>
           <p className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <span>{t("gdpr")}</span>
-            <span>{t("euResidency")}</span>
-            <span>{t("fromPrice")}</span>
+            <span>{footerNs.gdpr}</span>
+            <span>{footerNs.euResidency}</span>
+            <span>{footerNs.fromPrice}</span>
           </p>
         </div>
       </div>

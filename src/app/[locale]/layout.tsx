@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import HtmlLang from "@/components/html-lang";
@@ -15,7 +15,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
 
   const layoutMessages = (messages.Layout ?? {}) as {
     skipToContent?: string;
@@ -85,7 +85,7 @@ export default async function LocaleLayout({
       </a>
       <SiteHeader />
       <main id="main">{children}</main>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </NextIntlClientProvider>
   );
 }

@@ -71,7 +71,7 @@ export default function OrbScene() {
           </span>
         </div>
         <p className="mt-2 text-[13px] leading-snug text-ink">
-          &ldquo;Mirëdita, si mund t&rsquo;ju ndihmoj?&rdquo;
+          &ldquo;Hello, how can I help you?&rdquo;
         </p>
         <p className="mt-1.5 text-[11px] text-ink-mute">Answered in 0.4s</p>
       </div>

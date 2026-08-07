@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import { Link } from "@/i18n/navigation";
 import Dashboard from "@/components/dashboard";
 import OrbScene from "@/components/orb-scene";
 import Reveal from "@/components/reveal";
 import Accordion from "@/components/accordion";
-import HowItWorksAnimation from "@/components/how-it-works-animation";
+import ExplainerAnimation from "@/components/explainer-animation";
 import { ButtonLink, Card, Eyebrow, JsonLd, Section, SectionHead } from "@/components/ui";
 import { absoluteUrl, buildMetadata, site } from "@/lib/site";
 import { locales, type Locale } from "@/i18n/config";
@@ -27,8 +26,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Agjentë Zanorë AI për Qendrat e Thirrjeve në Kosovë — Çdo Thirrje e Përgjigjur, 24/7"
       : "AI Voice Agents for Kosovo Call Centres — Every Call Answered, 24/7",
     description: isAlb
-      ? "Agjent038 përgjigjet çdo thirrje hyrëse me mbështetje shumëgjuhëshe, rezervon takime, zgjidh biletat e nivelit të parë dhe eskalon me kontekst. Gati në dy javë nga 299€ në muaj."
-      : "Agjent038 answers every inbound call with multilingual support, books appointments, resolves tier-1 tickets and escalates with context. Live in two weeks from €299/month.",
+      ? "Agjent038 përgjigjet çdo thirrje hyrëse me mbështetje shumëgjuhëshe, rezervon takime, zgjidh biletat e nivelit të parë dhe eskalon me kontekst. Gati në dy javë nga 499€ në muaj."
+      : "Agjent038 answers every inbound call with multilingual support, books appointments, resolves tier-1 tickets and escalates with context. Live in two weeks from €499/month.",
     path: "/",
     keywords: [
       "AI receptionist Kosovo",
@@ -41,10 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function HomePage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Home" });
 
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
+  const homeNs = (messages.Home ?? {}) as Record<string, unknown>;
   const platformPillars = (messages.PlatformPillars ?? []) as Array<{
     glyph: string;
     title: string;
@@ -64,7 +62,6 @@ async function HomePage({ params }: Props) {
   }>;
   const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
   const integrations = (messages.Integrations ?? []) as string[];
-  const howItWorks = (messages.HowItWorks ?? {}) as Record<string, unknown>;
 
   const faqLd = {
     "@context": "https://schema.org",
@@ -84,8 +81,8 @@ async function HomePage({ params }: Props) {
     publisher: { "@id": absoluteUrl("/#organization") },
   };
 
-  const beforeItems = t.raw("BeforeAfter.today") as string[];
-  const afterItems = t.raw("BeforeAfter.after") as string[];
+  const beforeItems = (homeNs.BeforeAfter as Record<string, string[]>)?.today ?? [];
+  const afterItems = (homeNs.BeforeAfter as Record<string, string[]>)?.after ?? [];
 
   return (
     <>
@@ -101,35 +98,35 @@ async function HomePage({ params }: Props) {
               <Reveal>
                 <span className="inline-flex items-center gap-2.5 rounded-full border border-line bg-paper px-3.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.16em] text-ink-soft shadow-soft">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-mint" />
-                  {t("heroEyebrow")}
+                  {homeNs.heroEyebrow as string}
                 </span>
               </Reveal>
 
               <Reveal delay={40}>
                 <h2 className="mt-5 text-sm font-medium tracking-wide text-navy-soft">
-                  {t("heroSubhead")}
+                  {homeNs.heroSubhead as string}
                 </h2>
               </Reveal>
 
               <Reveal delay={80}>
                 <h1 className="font-display mt-7 text-[2.6rem] leading-[1.05] text-ink sm:text-5xl lg:text-[3.75rem]">
-                  {t("heroTitle1")}
+                  {homeNs.heroTitle1 as string}
                   <br />
-                  <span className="text-navy-soft">{t("heroTitle2")}</span>
+                  <span className="text-navy-soft">{homeNs.heroTitle2 as string}</span>
                 </h1>
               </Reveal>
 
               <Reveal delay={160}>
                 <p className="mt-7 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
-                  {t("heroDescription")}
+                  {homeNs.heroDescription as string}
                 </p>
               </Reveal>
 
               <Reveal delay={240}>
                 <div className="mt-9 flex flex-wrap items-center gap-3">
-                  <ButtonLink href="/contact">{t("heroCta")}</ButtonLink>
+                  <ButtonLink href="/contact">{homeNs.heroCta as string}</ButtonLink>
                   <ButtonLink href="/results" variant="ghost">
-                    {t("heroCtaSecondary")}
+                    {homeNs.heroCtaSecondary as string}
                   </ButtonLink>
                 </div>
               </Reveal>
@@ -137,9 +134,9 @@ async function HomePage({ params }: Props) {
               <Reveal delay={320}>
                 <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-line pt-8">
                   {[
-                    [t("stat1Value"), t("stat1Label")],
-                    [t("stat2Value"), t("stat2Label")],
-                    [t("stat3Value"), t("stat3Label")],
+                    [homeNs.stat1Value as string, homeNs.stat1Label as string],
+                    [homeNs.stat2Value as string, homeNs.stat2Label as string],
+                    [homeNs.stat3Value as string, homeNs.stat3Label as string],
                   ].map(([v, l]) => (
                     <div key={l}>
                       <dt className="font-display text-2xl text-navy md:text-3xl">
@@ -179,12 +176,12 @@ async function HomePage({ params }: Props) {
       {/* OUTCOMES */}
       <Section tone="paper">
         <SectionHead
-          eyebrow={t("outcomesEyebrow")}
-          title={t("outcomesTitle")}
-          lede={t("outcomesLede")}
+          eyebrow={homeNs.outcomesEyebrow as string}
+          title={homeNs.outcomesTitle as string}
+          lede={homeNs.outcomesLede as string}
         />
         <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
-          {(t.raw("Outcomes") as Array<{ stat: string; label: string; note: string }>).map((o, i) => (
+          {(homeNs.Outcomes as Array<{ stat: string; label: string; note: string }> ?? []).map((o, i) => (
             <Reveal key={o.label} delay={i * 90}>
               <div className="h-full bg-paper p-8 transition-colors duration-500 hover:bg-canvas">
                 <div className="font-display text-4xl text-navy md:text-5xl">
@@ -203,7 +200,7 @@ async function HomePage({ params }: Props) {
       {/* HOW IT WORKS */}
       <Section>
         <Reveal>
-          <HowItWorksAnimation translations={howItWorks as any} />
+          <ExplainerAnimation />
         </Reveal>
       </Section>
 
@@ -212,13 +209,13 @@ async function HomePage({ params }: Props) {
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <SectionHead
-              eyebrow={t("shiftEyebrow")}
-              title={t("shiftTitle")}
-              lede={t("shiftLede")}
+              eyebrow={homeNs.shiftEyebrow as string}
+              title={homeNs.shiftTitle as string}
+              lede={homeNs.shiftLede as string}
             />
             <div className="mt-9">
               <ButtonLink href="/results" variant="ghost">
-                {t("shiftCta")}
+                {homeNs.shiftCta as string}
               </ButtonLink>
             </div>
           </div>
@@ -226,7 +223,7 @@ async function HomePage({ params }: Props) {
           <div className="grid gap-4 sm:grid-cols-2">
             <Reveal>
               <div className="h-full rounded-2xl border border-line bg-paper p-7">
-                <Eyebrow>{t("today")}</Eyebrow>
+                <Eyebrow>{homeNs.today as string}</Eyebrow>
                 <ul className="mt-6 space-y-4">
                   {beforeItems.map((b: string) => (
                     <li key={b} className="flex gap-3 text-sm leading-relaxed text-ink-mute">
@@ -241,7 +238,7 @@ async function HomePage({ params }: Props) {
               <div className="h-full rounded-2xl border border-navy/15 bg-navy p-7 text-white shadow-lift">
                 <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.22em] text-white/50">
                   <span className="h-px w-6 bg-gold" />
-                  {t("withAgjent038")}
+                  {homeNs.withAgjent038 as string}
                 </span>
                 <ul className="mt-6 space-y-4">
                   {afterItems.map((a: string) => (
@@ -261,9 +258,9 @@ async function HomePage({ params }: Props) {
       <Section tone="paper">
         <SectionHead
           align="center"
-          eyebrow={t("dashboardEyebrow")}
-          title={t("dashboardTitle")}
-          lede={t("dashboardLede")}
+          eyebrow={homeNs.dashboardEyebrow as string}
+          title={homeNs.dashboardTitle as string}
+          lede={homeNs.dashboardLede as string}
         />
         <Reveal delay={120}>
           <div className="scene-3d mt-14">
@@ -273,7 +270,7 @@ async function HomePage({ params }: Props) {
         <Reveal delay={200}>
           <div className="mt-10 flex justify-center">
             <ButtonLink href="/platform" variant="ghost">
-              {t("explorePlatform")}
+              {homeNs.explorePlatform as string}
             </ButtonLink>
           </div>
         </Reveal>
@@ -282,8 +279,8 @@ async function HomePage({ params }: Props) {
       {/* PILLARS */}
       <Section>
         <SectionHead
-          eyebrow={t("pillarsEyebrow")}
-          title={t("pillarsTitle")}
+          eyebrow={homeNs.pillarsEyebrow as string}
+          title={homeNs.pillarsTitle as string}
         />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {platformPillars.map((p, i) => (
@@ -311,9 +308,9 @@ async function HomePage({ params }: Props) {
       {/* CAPABILITIES */}
       <Section tone="paper">
         <SectionHead
-          eyebrow={t("capabilitiesEyebrow")}
-          title={t("capabilitiesTitle")}
-          lede={t("capabilitiesLede")}
+          eyebrow={homeNs.capabilitiesEyebrow as string}
+          title={homeNs.capabilitiesTitle as string}
+          lede={homeNs.capabilitiesLede as string}
         />
         <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((c, i) => (
@@ -331,9 +328,9 @@ async function HomePage({ params }: Props) {
       {/* PROCESS */}
       <Section>
         <SectionHead
-          eyebrow={t("processEyebrow")}
-          title={t("processTitle")}
-          lede={t("processLede")}
+          eyebrow={homeNs.processEyebrow as string}
+          title={homeNs.processTitle as string}
+          lede={homeNs.processLede as string}
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
@@ -357,19 +354,19 @@ async function HomePage({ params }: Props) {
           <div>
             <SectionHead
               invert
-              eyebrow={t("pricingEyebrow")}
-              title={t("pricingTitle")}
-              lede={t("pricingLede")}
+              eyebrow={homeNs.pricingEyebrow as string}
+              title={homeNs.pricingTitle as string}
+              lede={homeNs.pricingLede as string}
             />
             <div className="mt-9 flex flex-wrap gap-3">
               <ButtonLink href="/pricing" variant="light">
-                {t("pricingCta")}
+                {homeNs.pricingCta as string}
               </ButtonLink>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm text-white transition-all duration-300 hover:border-white/60"
               >
-                {t("pricingDemo")} →
+                {homeNs.pricingDemo as string} →
               </Link>
             </div>
           </div>
@@ -377,14 +374,14 @@ async function HomePage({ params }: Props) {
           <Reveal delay={120}>
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur">
               <p className="text-[11px] uppercase tracking-[0.22em] text-white/45">
-                {t("receptionPlan")}
+                {homeNs.receptionPlan as string}
               </p>
               <div className="mt-5 flex items-baseline gap-2">
                 <span className="font-display text-5xl text-white">€499</span>
-                <span className="text-sm text-white/50">{t("monthLabel")}</span>
+                <span className="text-sm text-white/50">{homeNs.monthLabel as string}</span>
               </div>
               <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-                {(t.raw("pricingFeatures") as string[]).map((f) => (
+                {(homeNs.pricingFeatures as string[] ?? []).map((f) => (
                   <li key={f} className="flex gap-2.5 text-[13px] text-white/80">
                     <span className="text-gold">◆</span>
                     {f}
@@ -400,11 +397,11 @@ async function HomePage({ params }: Props) {
       <Section tone="paper">
         <SectionHead
           align="center"
-          eyebrow={t("testimonialsEyebrow")}
-          title={t("testimonialsTitle")}
+          eyebrow={homeNs.testimonialsEyebrow as string}
+          title={homeNs.testimonialsTitle as string}
         />
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
-          {(t.raw("Testimonials") as Array<{ quote: string; name: string; role: string; org: string }>).map((testimonial, i) => (
+          {(homeNs.Testimonials as Array<{ quote: string; name: string; role: string; org: string }> ?? []).map((testimonial, i) => (
             <Reveal key={testimonial.name} delay={i * 100}>
               <figure className="flex h-full flex-col rounded-2xl border border-line bg-canvas/60 p-8">
                 <span className="font-display text-3xl leading-none text-gold">&ldquo;</span>
@@ -425,14 +422,14 @@ async function HomePage({ params }: Props) {
       <Section>
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHead
-            eyebrow={t("faqEyebrow")}
-            title={t("faqTitle")}
+            eyebrow={homeNs.faqEyebrow as string}
+            title={homeNs.faqTitle as string}
           />
           <div>
             <Accordion items={faqs.slice(0, 6)} />
             <div className="mt-8">
               <ButtonLink href="/faq" variant="ghost">
-                {t("faqCta")}
+                {homeNs.faqCta as string}
               </ButtonLink>
             </div>
           </div>
@@ -444,21 +441,21 @@ async function HomePage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-24 text-center md:py-32">
           <Reveal>
-            <Eyebrow>{t("processEyebrow")}</Eyebrow>
+            <Eyebrow>{homeNs.processEyebrow as string}</Eyebrow>
             <h2 className="font-display mx-auto mt-6 max-w-3xl text-3xl leading-[1.1] md:text-[2.9rem]">
-              {t("ctaTitle")}
+              {homeNs.ctaTitle as string}
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-ink-soft">
-              {t("ctaDescription")}
+              {homeNs.ctaDescription as string}
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-3">
-              <ButtonLink href="/contact">{t("ctaBookAudit")}</ButtonLink>
+              <ButtonLink href="/contact">{homeNs.ctaBookAudit as string}</ButtonLink>
               <ButtonLink href="/pricing" variant="ghost">
-                {t("ctaReviewPricing")}
+                {homeNs.ctaReviewPricing as string}
               </ButtonLink>
             </div>
             <p className="mt-8 text-xs text-ink-mute">
-              {t("ctaLocation")} ·{" "}
+              {homeNs.ctaLocation as string} ·{" "}
               <a className="hover:text-navy" href={`mailto:${site.email}`}>
                 {site.email}
               </a>

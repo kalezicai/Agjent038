@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import { Link } from "@/i18n/navigation";
 import Reveal from "@/components/reveal";
 import { JsonLd, Section } from "@/components/ui";
@@ -30,7 +30,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
   const articles = (messages.Articles ?? []) as Article[];
   const article = articles.find((a) => a.slug === slug);
   if (!article) return {};
@@ -38,22 +38,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: article.title,
     description: article.description,
     path: `/insights/${article.slug}`,
-    keywords: ["AI call centre Kosovo", "Albanian voice agent guide", article.title],
+    keywords: ["AI call centre Kosovo", "voice agent guide", article.title],
     locale,
   });
 }
 
 async function ArticlePage({ params }: Props) {
   const { locale, slug } = await params;
-  const messages = await getMessages({ locale });
+  const messages = await getStaticMessages(locale);
   const articles = (messages.Articles ?? []) as Article[];
   const article = articles.find((a) => a.slug === slug);
   if (!article) notFound();
 
-  setRequestLocale(locale);
-
-  const tArt = await getTranslations({ locale, namespace: "Insights" });
-  const tCommon = await getTranslations({ locale, namespace: "Common" });
+  const artNs = (messages.Insights ?? {}) as Record<string, string>;
+  const commonNs = (messages.Common ?? {}) as Record<string, string>;
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -88,7 +86,7 @@ async function ArticlePage({ params }: Props) {
               className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-ink-mute transition-colors hover:text-navy"
             >
               <span className="transition-transform duration-300">←</span>
-              {tArt("eyebrow")}
+              {artNs.eyebrow}
             </Link>
             <span className="mt-6 block text-[11px] uppercase tracking-[0.2em] text-gold">{article.category}</span>
             <h1 className="font-display mt-4 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
@@ -139,16 +137,16 @@ async function ArticlePage({ params }: Props) {
       <Section>
         <div className="flex flex-col items-center gap-6 rounded-2xl border border-line bg-paper p-10 text-center md:p-14">
           <h2 className="font-display max-w-2xl text-2xl leading-snug md:text-3xl">
-            {tArt("auditTitle")}
+            {artNs.auditTitle}
           </h2>
           <p className="max-w-xl text-sm leading-relaxed text-ink-soft">
-            {tArt("auditDescription")}
+            {artNs.auditDescription}
           </p>
           <Link
             href="/contact"
             className="rounded-full bg-navy px-7 py-3.5 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-navy/20"
           >
-            {tCommon("requestAudit")}
+            {commonNs.requestAudit}
           </Link>
         </div>
       </Section>

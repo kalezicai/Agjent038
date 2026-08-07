@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations, getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getStaticMessages } from "@/i18n/static-messages";
 import Reveal from "@/components/reveal";
 import RoiCalculator from "@/components/roi-calculator";
 import {
@@ -42,11 +41,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function ResultsPage({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "Results" });
-  const tCases = await getTranslations({ locale, namespace: "Cases" });
+  const messages = await getStaticMessages(locale);
+  const resultsNs = (messages.Results ?? {}) as Record<string, string>;
+  const casesNs = (messages.Cases ?? {}) as Record<string, string>;
 
-  const messages = await getMessages({ locale });
   const cases = (messages.Cases ?? []) as Array<{
     tag: string;
     title: string;
@@ -75,11 +73,11 @@ async function ResultsPage({ params }: Props) {
       <nav aria-label="Breadcrumb" className="bg-paper border-b border-line">
         <ol className="shell flex items-center gap-2 py-3 text-[12px] text-ink-mute">
           <li>
-            <a href="/" className="transition-colors hover:text-ink">{t("home")}</a>
+            <a href="/" className="transition-colors hover:text-ink">{resultsNs.home}</a>
           </li>
           <li aria-hidden="true" className="text-line">/</li>
           <li aria-current="page" className="font-medium text-ink">
-            {t("eyebrow")}
+            {resultsNs.eyebrow}
           </li>
         </ol>
       </nav>
@@ -88,16 +86,16 @@ async function ResultsPage({ params }: Props) {
         <div className="grid-paper radial-fade pointer-events-none absolute inset-0" aria-hidden="true" />
         <div className="shell relative py-20 md:py-28">
           <Reveal>
-            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <Eyebrow>{resultsNs.eyebrow}</Eyebrow>
             <h1 className="font-display mt-6 max-w-4xl text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
-              {t("title")}
+              {resultsNs.title}
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("description")}
+              {resultsNs.description}
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">{t("cta1")}</ButtonLink>
-              <ButtonLink href="/pricing" variant="ghost">{t("cta2")}</ButtonLink>
+              <ButtonLink href="/contact">{resultsNs.cta1}</ButtonLink>
+              <ButtonLink href="/pricing" variant="ghost">{resultsNs.cta2}</ButtonLink>
             </div>
           </Reveal>
           <Reveal delay={140}>
@@ -112,9 +110,9 @@ async function ResultsPage({ params }: Props) {
 
       <Section tone="paper" id="calculator">
         <SectionHead
-          eyebrow={t("roiModelEyebrow")}
-          title={t("roiTitle")}
-          lede={t("roiLede")}
+          eyebrow={resultsNs.roiModelEyebrow}
+          title={resultsNs.roiTitle}
+          lede={resultsNs.roiLede}
         />
         <div className="mt-14">
           <RoiCalculator />
@@ -123,8 +121,8 @@ async function ResultsPage({ params }: Props) {
 
       <Section>
         <SectionHead
-          eyebrow={t("deploymentsEyebrow")}
-          title={t("deploymentsTitle")}
+          eyebrow={resultsNs.deploymentsEyebrow}
+          title={resultsNs.deploymentsTitle}
         />
         <div className="mt-14 space-y-5">
           {cases.map((c, i) => (
@@ -152,7 +150,7 @@ async function ResultsPage({ params }: Props) {
             </Reveal>
           ))}
           <p className="text-center text-xs text-ink-mute">
-            {t("casesDisclaimer")}
+            {resultsNs.casesDisclaimer}
           </p>
         </div>
       </Section>
@@ -161,8 +159,8 @@ async function ResultsPage({ params }: Props) {
         <SectionHead
           invert
           align="center"
-          eyebrow={t("testimonialsEyebrow")}
-          title={t("testimonialsTitle")}
+          eyebrow={resultsNs.testimonialsEyebrow}
+          title={resultsNs.testimonialsTitle}
         />
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
           {testimonialData.map((testimonial, i) => (
@@ -180,7 +178,7 @@ async function ResultsPage({ params }: Props) {
           ))}
         </div>
         <div className="mt-14 flex justify-center">
-          <ButtonLink href="/contact" variant="light">{t("cta")}</ButtonLink>
+          <ButtonLink href="/contact" variant="light">{resultsNs.cta}</ButtonLink>
         </div>
       </Section>
     </>

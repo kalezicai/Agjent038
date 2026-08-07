@@ -2,25 +2,23 @@
   "Meta": {
     "title": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
     "titleTemplate": "%s | Agjent038",
-    "description": "Agjent038 beantwortet jeden Anruf mehrsprachig — 24/7. Gebaut für Kosovo-Callcenter, Kliniken und BPOs. Live in zwei Wochen, ab €299/Monat.",
+    "description": "Agjent038 beantwortet jeden Anruf mehrsprachig — 24/7. Gebaut für Kosovo-Callcenter, Kliniken und BPOs. Live in zwei Wochen, ab €499/Monat.",
     "keywords": [
-      "KI-Rezeptionist Kosovo",
+      "KI-Sprachagent Kosovo",
       "KI-Callcenter Kosovo",
       "KI-Kundensupport Kosovo",
-      "Albanischer KI-Stimmanentrainer",
-      "Virtueller Rezeptionist Pristina",
+      "Virtueller Sprachagent Pristina",
       "Callcenter-Automatisierung Kosovo",
-      "KI-Beantwortungsservice Albanien",
       "BPO-KI-Automatisierung"
     ],
     "ogTitle": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
-    "ogDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, mehrsprachig, rund um die Uhr. Ab €299 pro Monat.",
+    "ogDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, mehrsprachig, rund um die Uhr. Ab €499 pro Monat.",
     "twitterTitle": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
-    "twitterDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, mehrsprachig, rund um die Uhr. Ab €299 pro Monat."
+    "twitterDescription": "Jeder Anruf in 0,4 Sekunden beantwortet, mehrsprachig, rund um die Uhr. Ab €499 pro Monat."
   },
   "Site": {
     "name": "Agjent038",
-    "tagline": "KI-Rezeptionist für Kosovo-Callcenter",
+    "tagline": "KI-Sprachagent für Kosovo-Callcenter",
     "location": "Pristina"
   },
   "Nav": {
@@ -36,10 +34,10 @@
     "heroSubhead": "Der KI-Stimmagent für Kosovo-Callcenter",
     "heroTitle1": "Jeder Anruf beantwortet.",
     "heroTitle2": "Jede Stunde. In der Sprache des Anrufers.",
-    "heroDescription": "Agjent038 ist ein KI-Rezeptionist für Kosovo-Callcenter und Servicounternehmen. Es nimmt am ersten Klingeln ab, versteht, was der Anrufer benötigt, führt die Aufgabe in Ihren Systemen aus und übergibt die schwierigen Gespräche an Ihr Team mit einer vollständigen Zusammenfassung.",
+    "heroDescription": "Agjent038 ist ein KI-Sprachagent für Kosovo-Callcenter und Servicounternehmen. Es nimmt am ersten Klingeln ab, versteht, was der Anrufer benötigt, führt die Aufgabe in Ihren Systemen aus und übergibt die schwierigen Gespräche an Ihr Team mit einer vollständigen Zusammenfassung.",
     "heroCta": "Hören Sie es bei Ihren Anrufen",
     "heroCtaSecondary": "Die Zahlen sehen",
-    "stat1Value": "Ab €299",
+    "stat1Value": "Ab €499",
     "stat1Label": "pro Monat, alles inklusive",
     "stat2Value": "14 Tage",
     "stat2Label": "vom Start bis live",
@@ -61,13 +59,13 @@
     "pillarsEyebrow": "Warum es hier funktioniert",
     "pillarsTitle": "Die meisten KI-Agenten scheitern in Kosovo aus den gleichen vier Gründen. Wir haben alle behoben.",
     "capabilitiesEyebrow": "Was es tut",
-    "capabilitiesTitle": "Acht Aufgaben, ein Rezeptionist, kein Dienstplan",
+    "capabilitiesTitle": "Acht Aufgaben, ein Sprachagent, kein Dienstplan",
     "capabilitiesLede": "Jede davon läuft vom selben Gehirn, auf derselben Nummer, mit demselben Wissen über Ihr Geschäft.",
     "processEyebrow": "Einführung",
     "processTitle": "Live in vierzehn Tagen, nichts dem Zufall überlassen",
     "processLede": "Sie genehmigen jedes Verhalten im Schattenmodus, bevor ein einziger Kunde die KI hört.",
     "pricingEyebrow": "Preise",
-    "pricingTitle": "Von €299 bis zur Enterprise-Lösung. Wählen Sie Ihren Startpunkt.",
+    "pricingTitle": "Von €499 bis zur Enterprise-Lösung. Wählen Sie Ihren Startpunkt.",
     "pricingLede": "Keine Einrichtungsgebühr. Keine Überraschungen bei der Minutenabrechnung im Basistarif. Monatlich kündbar, weil die Ergebnisse Sie halten sollten, nicht der Vertrag.",
     "pricingCta": "Sehen Sie, was enthalten ist",
     "pricingDemo": "Demo buchen",
@@ -125,7 +123,7 @@
       "after": [
         "100% der angebotenen Anrufe in 0,4s beantwortet",
         "24/7/365-Abdeckung einschließlich Feiertage",
-        "Mehrsprachig, unbegrenzte Gleichzeitigkeit",
+        "Mehrsprachig, Dutzende gleichzeitiger Anrufe",
         "Jedes Gespräch transkribiert und bewertet",
         "Kapazität skaliert, sobald das Volumen steigt"
       ]
@@ -144,7 +142,7 @@
         "org": "BPO, Prizren"
       },
       {
-        "quote": "Die Rezeption hörte auf, ein Flaschenhals zu sein. Buchungen nach Feierabend gingen von null auf etwa sechzig pro Monat und No-Shows sanken, weil Bestätigungen tatsächlich rausgehen.",
+        "quote": "Der Sprachagent hörte auf, ein Flaschenhals zu sein. Buchungen nach Feierabend gingen von null auf etwa sechzig pro Monat und No-Shows sanken, weil Bestätigungen tatsächlich rausgehen.",
         "name": "Dr. Endrit S.",
         "role": "Klinikbesitzer",
         "org": "Zahngruppe, Ferizaj"
@@ -168,7 +166,7 @@
     "hours": "Öffnungszeiten"
   },
   "Footer": {
-    "description": "Der KI-Rezeptionist, gebaut für Kosovo-Callcenter — antwortet mehrsprachig, 24 Stunden am Tag.",
+    "description": "Der KI-Sprachagent, gebaut für Kosovo-Callcenter — antwortet mehrsprachig, 24 Stunden am Tag.",
     "product": "Produkt",
     "solutions": "Lösungen",
     "company": "Unternehmen",
@@ -178,12 +176,12 @@
     "copyright": "Alle Rechte vorbehalten.",
     "gdpr": "DSGVO-konforme Verarbeitung",
     "euResidency": "EU-Datenresidenz verfügbar",
-    "fromPrice": "Ab €299/Monat"
+    "fromPrice": "Ab €499/Monat"
   },
   "Platform": {
     "eyebrow": "Plattform",
     "home": "Startseite",
-    "title": "Ein Rezeptionist, der versteht, handelt und berichtet — auf Infrastruktur, die Sie bereits besitzen.",
+    "title": "Ein Sprachagent, der versteht, handelt und berichtet — auf Infrastruktur, die Sie bereits besitzen.",
     "description": "Agjent038 ist kein Telefonbaum mit einer freundlicheren Stimme. Es ist ein Konversationsagent mit Zugang zu Ihren Systemen, einer schriftlichen Eskalationsrichtlinie und einer Messschicht, die beweist, was es getan hat. Hier ist genau, wie es zusammengesetzt ist.",
     "cta1": "Live-Demo anfordern",
     "cta2": "Preise ansehen",
@@ -195,7 +193,7 @@
     "consoleLede": "Aufschlussrate, Stimmung, Sprachmix, Eskalationsgründe und Ergebniszuordnung — live aktualisiert und exportierbar.",
     "guardrailsEyebrow": "Sicherheitsvorkehrungen",
     "guardrailsTitle": "Vertrauen kommt durch Einschränkungen",
-    "guardrailsLede": "Ein KI-Rezeptionist ist nur vertrauenswürdig, wenn Sie vorhersagen können, was er nie tun wird.",
+    "guardrailsLede": "Ein KI-Sprachagent ist nur vertrauenswürdig, wenn Sie vorhersagen können, was er nie tun wird.",
     "capabilitiesEyebrow": "Fähigkeiten",
     "capabilitiesTitle": "Alles läuft von einem Gehirn",
     "pillarsEyebrow": "Entwickelt für Kosovo",
@@ -254,7 +252,7 @@
   "Solutions": {
     "eyebrow": "Lösungen",
     "home": "Startseite",
-    "title": "Derselbe Rezeptionist. Sehr unterschiedliche Aufgaben.",
+    "title": "Derselbe Sprachagent. Sehr unterschiedliche Aufgaben.",
     "description": "Agjent038 wird gegen Ihre Intents, Ihre Systeme und Ihre Eskalationsregeln konfiguriert. Was folgt, ist, wie das in den Branchen aussieht, mit denen wir am häufigsten in Kosovo und der Region arbeiten.",
     "cta": "Call-Audit anfordern",
     "cta2": "So funktioniert es",
@@ -312,11 +310,11 @@
     "aiAgent": "Agjent038",
     "comparisonHeader": "Funktion",
     "humanCost": "€1.000+/Monat",
-    "aiCost": "Ab €299/Monat",
+    "aiCost": "Ab €499/Monat",
     "humanHours": "40 Std./Woche",
     "aiHours": "168 Std./Woche",
     "humanConcurrency": "1 Anruf gleichzeitig",
-    "aiConcurrency": "Unbegrenzt",
+    "aiConcurrency": "Dutzende",
     "humanAvailability": "Schichten, Pausen, Urlaub",
     "aiAvailability": "24/7/365",
     "humanRamp": "Wochen der Einstellung",
@@ -355,7 +353,7 @@
     "cta1": "Live-Demo anfordern",
     "cta2": "So funktioniert es",
     "title": "Alles, was Betreiber fragen, klar beantwortet.",
-    "description": "Wenn hier etwas fehlt, schreiben Sie uns und wir antworten direkt — einschließlich der Teile, in denen ein KI-Rezeptionist nicht die richtige Lösung ist.",
+    "description": "Wenn hier etwas fehlt, schreiben Sie uns und wir antworten direkt — einschließlich der Teile, in denen ein KI-Sprachagent nicht die richtige Lösung ist.",
     "generalEyebrow": "Allgemein",
     "generalTitle": "Der Service",
     "technicalEyebrow": "Technisch",
@@ -379,7 +377,7 @@
   },
   "NotFound": {
     "title": "Diese Leitung ist nicht verbunden.",
-    "description": "Die Seite, nach der Sie suchen, existiert nicht. Unsere Empfangsstation antwortet jedoch immer.",
+    "description": "Die Seite, nach der Sie suchen, existiert nicht. Unser Sprachagent antwortet jedoch immer.",
     "home": "Zurück zur Startseite",
     "contact": "Kontaktieren Sie uns"
   },
@@ -484,7 +482,7 @@
       "slug": "clinics",
       "name": "Kliniken & Zahnärzte",
       "headline": "Hören Sie auf, Patienten an ein Besetzt-Signal zu verlieren",
-      "body": "Die Rezeption beantwortet die Person vor ihr. Agjent038 nimmt den Anruf entgegen, bucht in Ihren Kalender, bestätigt per SMS und ruft No-Shows zurück — auf Albanisch, ohne ein Skript, das roboterhaft klingt.",
+      "body": "Der Sprachagent beantwortet die Person vor ihm. Agjent038 nimmt den Anruf entgegen, bucht in Ihren Kalender, bestätigt per SMS und ruft No-Shows zurück — auf Albanisch, ohne ein Skript, das roboterhaft klingt.",
       "wins": [
         "Buchungen nach 17:00 und am Wochenende erfasst",
         "Automatische Erinnerungen, die No-Shows reduzieren",
@@ -568,7 +566,7 @@
           "heading": "Warum Einstellen die teure Lösung ist",
           "paragraphs": [
             "Die Spitzennachfrage ist nicht flach. Um den 09:00–11:00-Anstieg zu beantworten, müssen Sie für den AnstiegPersonal einstellen, was bedeutet, für leere Kapazitäten den Rest des Tages zu bezahlen. Addieren Sie Rekrutierung, Training, Fluktuation und Überwachung, und die effektiven Kosten der Abdeckung steigen weit über die Gehaltslinie.",
-            "Automatisierung des Traffic erster Stufe ändert die Form des Problems. Gleichzeitigkeit ist praktisch unbegrenzt, sodass der Anstieg aufhört eine Personalfrage zu werden und zu einer Routing-Frage wird."
+            "Automatisierung des Traffic erster Stufe ändert die Form des Problems. Gleichzeitigkeit skaliert auf Dutzende gleichzeitiger Anrufe, sodass der Anstieg aufhört eine Personalfrage zu werden und zu einer Routing-Frage wird."
           ]
         },
         {
@@ -581,8 +579,8 @@
     },
     {
       "slug": "ai-receptionist-vs-hiring-receptionist",
-      "title": "KI-Rezeptionist vs. Einstellen: ein ehrlicher Vergleich",
-      "description": "Wo ein KI-Rezeptionist klar gewinnt, wo ein Mensch immer noch die richtige Antwort ist und wie die meisten Betreiber am Ende beide betreiben.",
+      "title": "KI-Sprachagent vs. Einstellen: ein ehrlicher Vergleich",
+      "description": "Wo ein KI-Sprachagent klar gewinnt, wo ein Mensch immer noch die richtige Antwort ist und wie die meisten Betreiber am Ende beide betreiben.",
       "date": "2026-01-28",
       "readingTime": "6 Min. Lesezeit",
       "category": "Strategie",
@@ -590,13 +588,13 @@
         {
           "heading": "Abdeckung ist kein fairer Kampf",
           "paragraphs": [
-            "Ein Rezeptionist deckt etwa 40 Stunden pro Woche und ein Gespräch gleichzeitig ab. Ein KI-Rezeptionist deckt alle 168 Stunden ab und behandelt gleichzeitige Anrufe ohne Warteschlange. Für jedes Unternehmen, bei dem Anfragen außerhalb der Geschäftszeiten eingehen, allein verändert dies die Ökonomie."
+            "Ein Rezeptionist deckt etwa 40 Stunden pro Woche und ein Gespräch gleichzeitig ab. Ein KI-Sprachagent deckt alle 168 Stunden ab und behandelt gleichzeitige Anrufe ohne Warteschlange. Für jedes Unternehmen, bei dem Anfragen außerhalb der Geschäftszeiten eingehen, allein verändert dies die Ökonomie."
           ]
         },
         {
           "heading": "Konsistenz und Qualitätskontrolle",
           "paragraphs": [
-            "Menschen haben gute und schlechte Tage. Ein KI-Rezeptionist liefert dasselbe Begrüßung, dieselben Qualifizierungsfragen und dieselben Compliance-Offenlegungen beim tausenden Anruf wie beim ersten. Jedes Gespräch wird transkribiert und bewertet, sodass Qualitätskontrolle von einer 2% Stichprobe zur vollständigen Abdeckung wechselt."
+            "Menschen haben gute und schlechte Tage. Ein KI-Sprachagent liefert dasselbe Begrüßung, dieselben Qualifizierungsfragen und dieselben Compliance-Offenlegungen beim tausenden Anruf wie beim ersten. Jedes Gespräch wird transkribiert und bewertet, sodass Qualitätskontrolle von einer 2% Stichprobe zur vollständigen Abdeckung wechselt."
           ]
         },
         {
@@ -699,7 +697,7 @@
     },
     {
       "q": "Wie viele Anrufe kann es gleichzeitig bearbeiten?",
-      "a": "Gleichzeitigkeit ist praktisch unbegrenzt — die Plattform skaliert horizontal, sodass ein Spitzenanstieg von drei gleichzeitigen Anrufen auf achtzig keine Warteschlange erzeugt. Das ist der strukturelle Vorteil gegenüber Personal: Die Spitzenlast hört auf, ein Personalproblem zu sein."
+      "a": "Gleichzeitigkeit skaliert auf Dutzende gleichzeitiger Anrufe — die Plattform skaliert horizontal, sodass ein Spitzenanstieg von drei gleichzeitigen Anrufen auf achtzig keine Warteschlange erzeugt. Das ist der strukturelle Vorteil gegenüber Personal: Die Spitzenlast hört auf, ein Personalproblem zu sein."
     },
     {
       "q": "Kann es in unser CRM und unseren Kalender schreiben?",
@@ -735,7 +733,7 @@
   "Plans": [
     {
       "name": "Overflow",
-      "price": "€299",
+      "price": "€499",
       "cadence": "pro Monat",
       "meta": "400 Minuten, 1 Sprache",
       "summary": "Für Nächte, Wochenenden und Spitzenlast — fängt die Anrufe ab, die sonst verloren gehen.",
@@ -756,7 +754,7 @@
       "price": "€499",
       "cadence": "pro Monat",
       "meta": "1.000 Minuten, mehrsprachig",
-      "summary": "Der vollständige KI-Rezeptionist für einen Standort oder eine fokussierte Eingangswarteschlange. Live in zwei Wochen.",
+      "summary": "Der vollständige KI-Sprachagent für einen Standort oder eine fokussierte Eingangswarteschlange. Live in zwei Wochen.",
       "featured": true,
       "mostChosen": true,
       "includes": [
@@ -817,8 +815,8 @@
       "a": "Sie eskaliert. Sie definieren die Regeln — Rückerstattungsgrenzen, Beschwerdeschlüsselwörter, erkannte Frustration, VIP-Konten — und Agjent038 leitet den Anrufer mit einer schriftlichen Zusammenfassung an den richtigen Menschen weiter. Nichts bleibt im Limbo und kein Anrufer bleibt in einer Schleife hängen."
     },
     {
-      "q": "Wird das meine Agenten ersetzen?",
-      "a": "Es ersetzt die Warteschlange, nicht die Menschen. Die meisten Betreiber behalten ihr Team und setzen sie auf Kundenbindung, komplexe Fälle und Umsatz-Arbeit ein, während Agjent038 den repetitiven Traffic erster Stufe absorbiert, der Agenten ausbrennt und Kosten pro Kontakt aufbläht."
+      "q": "Brauchen wir dann weniger Agenten?",
+      "a": "Nein. Es beseitigt die Lücken, die Ihr Team nicht besetzen kann. Die meisten Betreiber behalten ihr Team und setzen sie auf Kundenbindung, komplexe Fälle und Umsatz-Arbeit ein, während Agjent038 den repetitiven Traffic erster Stufe absorbiert, der Agenten ausbrennt und Kosten pro Kontakt aufbläht."
     },
     {
       "q": "Wie lange dauert es, live zu gehen?",
@@ -830,7 +828,7 @@
     },
     {
       "q": "Wie vergleicht sich das mit der Einstellung eines Rezeptionisten?",
-      "a": "Ein Vollzeit-Agent in Kosovo deckt ungefähr 40 Stunden pro Woche ab und beantwortet einen Anruf gleichzeitig. Agjent038 deckt 168 Stunden pro Woche ab, beantwortet unbegrenzte gleichzeitige Anrufe, hat nie einen schlechten Tag und kostet weniger als ein einzelnes Gehalt — und produziert ein Transkript und eine Qualitätsbewertung für jedes Gespräch."
+      "a": "Ein Vollzeit-Agent in Kosovo deckt ungefähr 40 Stunden pro Woche ab und beantwortet einen Anruf gleichzeitig. Agjent038 deckt 168 Stunden pro Woche ab, beantwortet Dutzende gleichzeitiger Anrufe, hat nie einen schlechten Tag und kostet weniger als ein einzelnes Gehalt — und produziert ein Transkript und eine Qualitätsbewertung für jedes Gespräch."
     },
     {
       "q": "Sind unsere Kundendaten sicher?",
@@ -846,9 +844,10 @@
     }
   ],
   "Languages": {
-    "sq": "Shqip",
     "en": "English",
-    "de": "Deutsch"
+    "de": "Deutsch",
+    "fr": "Français",
+    "it": "Italiano"
   },
   "LeadForm": {
     "successTitle": "Anfrage erhalten",
@@ -907,13 +906,13 @@
       { "lang": "EN", "intent": "Bestellstatus", "outcome": "Gelöst", "dur": "0:48", "tone": "mint" },
       { "lang": "DE", "intent": "Beschwerde", "outcome": "Eskaliert", "dur": "2:05", "tone": "gold" },
       { "lang": "SQ", "intent": "Preisanfrage", "outcome": "Gelöst", "dur": "0:39", "tone": "mint" },
-      { "lang": "SR", "intent": "Umplanung", "outcome": "Umgeplant", "dur": "1:27", "tone": "mint" }
+      { "lang": "FR", "intent": "Umplanung", "outcome": "Umgeplant", "dur": "1:27", "tone": "mint" }
     ],
     "languages": [
-      { "code": "Albanisch", "pct": 58 },
-      { "code": "Englisch", "pct": 19 },
-      { "code": "Deutsch", "pct": 12 },
-      { "code": "Serbisch", "pct": 7 },
+      { "code": "Englisch", "pct": 58 },
+      { "code": "Deutsch", "pct": 19 },
+      { "code": "Französisch", "pct": 12 },
+      { "code": "Italienisch", "pct": 7 },
       { "code": "Türkisch", "pct": 4 }
     ]
   },
@@ -981,12 +980,12 @@
   ],
   "CompanyLimits": "Wir sind ebenso direkt über Grenzen. Agjent038 verhandelt nicht über Verträge, behandelt nicht Trauer oder improvisiert Richtlinien. Diese Anrufe gehören einer Person, und unsere Aufgabe ist es, sicherzustellen, dass diese Person sie mit vollem Kontext und genügend Zeit erhält, um sie ordnungsgemäß zu erledigen.",
   "PricingCompare": [
-    ["Minuten / Monat", "400", "1.000", "2.500", "Unbegrenzt"],
+    ["Minuten / Monat", "400", "1.000", "2.500", "Individuell"],
     ["Sprachen", "1", "Mehrsprachig", "Mehrsprachig", "Mehrsprachig + benutzerdefiniert"],
     ["Sprachkanal", "Inklusive", "Inklusive", "Inklusive", "Inklusive"],
     ["WhatsApp, Viber, Chat & E-Mail", "—", "—", "Inklusive", "Inklusive"],
     ["Outbound-Kampagnen", "—", "—", "Inklusive", "Inklusive"],
-    ["Benutzerdefinierte API-Integrationen", "—", "Nur Standard", "Inklusive", "Unbegrenzt"],
+    ["Benutzerdefinierte API-Integrationen", "—", "Nur Standard", "Inklusive", "Individuell"],
     ["Automatisierte QA bei 100% der Anrufe", "—", "—", "Inklusive", "Inklusive"],
     ["Dedizierte Instanz & EU-Residenz", "—", "—", "—", "Inklusive"],
     ["Benutzerdefinierte Markenstimme", "—", "—", "—", "Inklusive"],
@@ -998,13 +997,13 @@
   "PricingContext": [
     ["168 h/Woche", "Agjent038-Abdeckung"],
     ["40 h/Woche", "Ein Vollzeit-Agent"],
-    ["Unbegrenzt", "Gleichzeitige Anrufe mit Agjent038"],
+    ["Dutzende", "Gleichzeitige Anrufe mit Agjent038"],
     ["1", "Gleichzeitige Anrufe pro Agent"]
   ],
   "Layout": {
     "skipToContent": "Zum Inhalt springen",
-    "jsonLdDescription": "Agjent038 baut KI-Rezeptionisten und KI-Kundensupport-Agenten für Callcenter und Servicounternehmen in Kosovo, die 24/7 mehrsprachig antworten.",
-    "jsonLdServiceType": "KI-Rezeptionist und KI-Kundensupport-Agent",
+    "jsonLdDescription": "Agjent038 baut KI-Sprachagenten und KI-Kundensupport-Agenten für Callcenter und Servicounternehmen in Kosovo, die 24/7 mehrsprachig antworten.",
+    "jsonLdServiceType": "KI-Sprachagent und KI-Kundensupport-Agent",
     "jsonLdAudienceType": "Callcenter, BPOs, Kliniken, Hotels und Servicounternehmen"
   },
   "FooterProductLinks": {
