@@ -74,7 +74,7 @@ export default function ExplainerAnimation({
       role="img"
       aria-label="Agjent038 explainer — animated walkthrough showing how the AI voice agent works"
     >
-      <div className="relative w-full" style={{ background: "#0a0a0a", borderRadius: 0 }}>
+      <div className="relative w-full" style={{ background: "#f8f8f6", borderRadius: 0 }}>
         <div className="relative w-full" style={{ paddingBottom: "60%" }}>
           <iframe
             ref={iframeRef}
