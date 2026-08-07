@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Platforma — Si Funksionon Pranimësi AI Agjent038"
       : "The Platform — How the Agjent038 AI Receptionist Works",
     description: isAlb
-      ? "Brenda Agjent038: zë shqip natyror, vonesë nën 600ms, integrim telefoni dhe CRM, politikë eskalimi, AA e automatizuar dhe një konsolë e gjallë. Ndërtuar për qendrat e thirrjeve në Kosovë."
+      ? "Brenda Agjent038: vonesë nën 600ms, integrim telefoni dhe CRM, politikë eskalimi, vlerësim i automatizuar i cilësisë dhe një pamje raportimi live. Ndërtuar për qendrat e thirrjeve në Kosovë."
       : "Inside Agjent038: sub-600ms latency, telephony and CRM integration, escalation policy, automated QA and a live console. Built for Kosovo call centres.",
     path: "/platform",
     keywords: [

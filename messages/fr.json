@@ -191,7 +191,7 @@
     "architectureTitle": "Cinq couches, une conversation",
     "architectureLede": "Chaque couche est remplaçable et observable. Rien dans votre configuration actuelle n'a besoin d'être démonté.",
     "consoleEyebrow": "Console",
-    "consoleTitle": "La couche de mesure que vos clients vont réclamer",
+    "consoleTitle": "La couche de mesure qui prouve ce que l'agent a fait",
     "consoleLede": "Résolution, sentiment, répartition linguistique, raisons d'escalade et attribution des résultats — mis à jour en direct et exportables.",
     "guardrailsEyebrow": "Garde-fous",
     "guardrailsTitle": "La confiance vient des contraintes",
@@ -384,14 +384,14 @@
     "contact": "Contactez-nous"
   },
   "Console": {
-    "eyebrow": "Portail client",
+    "eyebrow": "Reporting",
     "home": "Accueil",
     "seeHow": "Voir comment ça marche",
     "previewEyebrow": "Aperçu en direct",
     "previewTitle": "Une vue en temps réel de chaque appel",
-    "title": "Le tableau de bord qui montre ce que l'agent fait réellement",
-    "description": "Une fois en ligne, chaque client dispose d'une vue simple du volume d'appels, du taux de résolution et de l'intention des appelants — sans attendre un rapport mensuel.",
-    "dashboardEyebrow": "Ce que vous voyez",
+    "title": "La vue qui montre ce que l'agent fait réellement",
+    "description": "C'est la vue derrière chaque installation : volume d'appels, taux de résolution et intention des appelants, mis à jour en direct. Chaque conversation devient un enregistrement écrit, noté et exportable — pas un échantillon de 2 %.",
+    "dashboardEyebrow": "Dans la console",
     "dashboardTitle": "Conçu pour les responsables d'exploitation, pas pour les analystes",
     "dashboardLede": "Vous n'avez pas besoin d'un outil de BI pour comprendre si cela fonctionne. Les chiffres qui comptent sont sur un seul écran.",
     "callsTitle": "Flux d'appels en direct",
@@ -402,7 +402,7 @@
     "performanceDesc": "Comprenez pourquoi les gens appellent — réservations, vérifications de statut, réclamations, transferts — pour ajuster le playbook de l'agent.",
     "settingsTitle": "Paramètres de l'agent",
     "settingsDesc": "Modifiez les horaires de travail, les règles d'escalade, les invites vocales et les créneaux de rendez-vous sans ouvrir de ticket.",
-    "cta": "Les chiffres de votre agent sur un seul écran"
+    "cta": "Chaque appel — enregistré, noté et rapporté"
   },
   "Contact": {
     "eyebrow": "Réserver une démo",
@@ -483,7 +483,7 @@
     {
       "slug": "clinics",
       "name": "Cliniques et dentaires",
-      "headline": "Cessez de perdre des patients à cause d'un signal occupé",
+      "headline": "Cessez de perdre des clients à cause d'un signal occupé",
       "body": "La réception répond à la personne devant elle. Agjent038 répond au téléphone, réserve dans votre calendrier, confirme par SMS et rappelle les absents — dans la langue de vos clients, sans script qui sonne robotique.",
       "wins": [
         "Réservations captées après 17h00 et le week-end",
@@ -580,7 +580,7 @@
       ]
     },
     {
-      "slug": "ai-voice-agent-vs-hiring-voice-agent",
+      "slug": "ai-receptionist-vs-hiring-receptionist",
       "title": "Agent vocal IA vs recrutement : une comparaison honnête",
       "description": "Là où un agent vocal IA gagne clairement, là où un humain reste la bonne réponse, et comment la plupart des opérateurs finissent par utiliser les deux.",
       "date": "2026-01-28",
@@ -615,18 +615,18 @@
       ]
     },
     {
-      "slug": "albanian-language-ai-voice-agents",
-      "title": "Ce qu'il faut pour créer un agent vocal IA qui parle un vrai albanais",
-      "description": "Dialecte, latence, interruption vocale et alternance de langues : les détails techniques qui séparent un agent vocal albanais utilisable d'une démo.",
+      "slug": "multilingual-ai-voice-agents-kosovo-call-centers",
+      "title": "Ce qu'il faut pour créer un agent vocal IA multilingue pour votre file d'appels",
+      "description": "Quatre langues, un numéro — comment un agent gère l'anglais, l'allemand, le français et l'italien dans la même file sans que les appelants se sentent incompris.",
       "date": "2026-02-09",
       "readingTime": "8 min de lecture",
       "category": "Technologie",
       "body": [
         {
-          "heading": "Les modèles génériques ne suffisent pas",
+          "heading": "Quatre langues, une seule file",
           "paragraphs": [
-            "Les grands modèles vocaux traitent l'albanais, mais ils sont généralement orientés vers une prononciation tosque standard et un registre formel. Les vrais appelants au Kosovo parlent guègue, raccourcissent les mots, et mélangent des emprunts à l'anglais et à l'allemand sans prévenir.",
-            "Sans adaptation au domaine sur de vrais enregistrements d'appels, la précision de reconnaissance chute précisément là où elle compte le plus : les noms, les adresses et les numéros."
+            "Les entreprises kosovares servent des clients en Allemagne, en Suisse, en Autriche, en France et en Italie — souvent dans la même semaine, parfois dans la même heure. Chaque appelant doit être compris dans sa propre langue, avec son propre accent, sans devoir demander à l'agent de parler plus lentement.",
+            "Ce n'est pas simplement « choisir la langue au départ ». Les appelants passent d'une langue à l'autre en pleine phrase, utilisent des noms d'entreprises et de produits en anglais et prononcent les adresses locales à leur manière. L'agent doit suivre ces changements au sein de la même conversation."
           ]
         },
         {
@@ -641,7 +641,7 @@
             "Les vraies conversations s'interrompent. Un agent qu'on ne peut pas interrompre en pleine phrase ressemble à un serveur vocal, et les appelants se mettent immédiatement à presser zéro. Une détection d'interruption fiable, combinée à une récupération élégante quand l'appelant et l'agent parlent en même temps, rend l'interaction humaine."
           ],
           "list": [
-            "ASR en continu avec détection de fin de phrase adaptée à la prosodie albanaise",
+            "ASR en continu avec détection de fin de phrase adaptée à l'anglais, l'allemand, le français et l'italien",
             "Gestion des interruptions qui abandonne la réponse en cours",
             "Normalisation des numéros, dates et adresses pour les formats locaux",
             "Repli vers un humain quand la confiance passe sous le seuil"
@@ -908,14 +908,13 @@
       { "lang": "FR", "intent": "Statut de commande", "outcome": "Résolu", "dur": "0:48", "tone": "mint" },
       { "lang": "DE", "intent": "Réclamation", "outcome": "Escaladé", "dur": "2:05", "tone": "gold" },
       { "lang": "EN", "intent": "Demande de prix", "outcome": "Résolu", "dur": "0:39", "tone": "mint" },
-      { "lang": "ES", "intent": "Report", "outcome": "Reporté", "dur": "1:27", "tone": "mint" }
+      { "lang": "IT", "intent": "Report", "outcome": "Reporté", "dur": "1:27", "tone": "mint" }
     ],
     "languages": [
       { "code": "English", "pct": 58 },
       { "code": "French", "pct": 19 },
       { "code": "German", "pct": 12 },
-      { "code": "Spanish", "pct": 7 },
-      { "code": "Italian", "pct": 4 }
+      { "code": "Italian", "pct": 11 }
     ]
   },
   "Cases": [
@@ -934,14 +933,14 @@
     {
       "tag": "Groupe dentaire · Ferizaj",
       "title": "Soixante réservations de plus par mois grâce aux appels que personne ne traitait",
-      "context": "Quatre cliniques partageant une ligne de réception. Environ un tiers des appels arrivaient pendant que le personnel était avec des patients ou après la fermeture.",
+      "context": "Quatre cliniques partageant une ligne de réception. Environ un tiers des appels arrivaient pendant que le personnel était avec des clients ou après la fermeture.",
       "metrics": [
         ["+58", "Réservations / mois"],
         ["-34%", "Taux de rendez-vous manqués"],
         ["24/7", "Couverture"],
         ["9 jours", "Pour être en ligne"]
       ],
-      "quote": "Les patients ne réalisent pas qu'ils parlent à une IA jusqu'à ce qu'on le leur dise. Ce qu'ils remarquent, c'est que quelqu'un répond enfin."
+      "quote": "Les clients ne réalisent pas qu'ils parlent à une IA jusqu'à ce qu'on le leur dise. Ce qu'ils remarquent, c'est que quelqu'un répond enfin."
     },
     {
       "tag": "E-commerce et logistique · Prishtina",

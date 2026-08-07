@@ -189,7 +189,7 @@
     "architectureTitle": "Fünf Schichten, ein Gespräch",
     "architectureLede": "Jede Schicht ist ersetzbar und beobachtbar. An Ihrem aktuellen Setup muss nichts herausgerissen werden.",
     "consoleEyebrow": "Konsole",
-    "consoleTitle": "Die Messschicht, nach Ihren Kunden fragen werden",
+    "consoleTitle": "Die Messschicht, die beweist, was der Agent getan hat",
     "consoleLede": "Aufschlussrate, Stimmung, Sprachmix, Eskalationsgründe und Ergebniszuordnung — live aktualisiert und exportierbar.",
     "guardrailsEyebrow": "Sicherheitsvorkehrungen",
     "guardrailsTitle": "Vertrauen kommt durch Einschränkungen",
@@ -212,7 +212,7 @@
       {
         "layer": "Schicht 02",
         "title": "Sprache",
-        "body": "Streaming-Erkennung, abgestimmt auf Kosovo-Albanisch, mit Unterbrechung, Endpunktlokalisierung und lokaler Normalisierung von Nummern, Daten und Adressen."
+        "body": "Streaming-Erkennung, abgestimmt auf die konfigurierte Sprache, mit Unterbrechung, Endpunktlokalisierung und lokaler Normalisierung von Nummern, Daten und Adressen."
       },
       {
         "layer": "Schicht 03",
@@ -382,14 +382,14 @@
     "contact": "Kontaktieren Sie uns"
   },
   "Console": {
-    "eyebrow": "Kundenportal",
+    "eyebrow": "Reporting",
     "home": "Startseite",
     "seeHow": "So funktioniert es",
     "previewEyebrow": "Live-Vorschau",
     "previewTitle": "Echtzeit-Einblick in jeden Anruf",
-    "title": "Das Dashboard, das zeigt, was der Agent tatsächlich tut",
-    "description": "Sobald es live ist, bekommt jeder Kunde einen einfachen Einblick in Anrufvolumen, Aufschlussrate und Anruferabsicht — ohne auf einen monatlichen Bericht warten zu müssen.",
-    "dashboardEyebrow": "Was Sie sehen",
+    "title": "Die Ansicht, die zeigt, was der Agent tatsächlich tut",
+    "description": "Dies ist die Ansicht hinter jeder Installation: Anrufvolumen, Aufschlussrate und Anruferabsicht, live aktualisiert. Jedes Gespräch wird zu einem schriftlichen, bewerteten, exportierbaren Datensatz — keine 2%-Stichprobe.",
+    "dashboardEyebrow": "In der Konsole",
     "dashboardTitle": "Für Operations-Manager gebaut, nicht für Analysten",
     "dashboardLede": "Sie brauchen kein BI-Tool, um zu verstehen, ob es funktioniert. Die Zahlen, die wichtig sind, sind auf einem Bildschirm.",
     "callsTitle": "Live-Anruf-Feed",
@@ -400,7 +400,7 @@
     "performanceDesc": "Verstehen Sie, warum Menschen anrufen — Buchungen, Statusprüfungen, Beschwerden, Weiterleitungen — damit Sie das Playbook des Agenten anpassen können.",
     "settingsTitle": "Agent-Einstellungen",
     "settingsDesc": "Bearbeiten Sie Arbeitszeiten, Eskalationsregeln, Sprachansagen und Terminfenster, ohne ein Ticket zu erstellen.",
-    "cta": "Die Zahlen Ihres Agenten auf einem Bildschirm"
+    "cta": "Jeder Anruf — aufgezeichnet, bewertet und gemeldet"
   },
   "Contact": {
     "eyebrow": "Demo buchen",
@@ -481,8 +481,8 @@
     {
       "slug": "clinics",
       "name": "Kliniken & Zahnärzte",
-      "headline": "Hören Sie auf, Patienten an ein Besetzt-Signal zu verlieren",
-      "body": "Der Sprachagent beantwortet die Person vor ihm. Agjent038 nimmt den Anruf entgegen, bucht in Ihren Kalender, bestätigt per SMS und ruft No-Shows zurück — auf Albanisch, ohne ein Skript, das roboterhaft klingt.",
+      "headline": "Hören Sie auf, Kunden an ein Besetzt-Signal zu verlieren",
+      "body": "Der Sprachagent beantwortet die Person vor ihm. Agjent038 nimmt den Anruf entgegen, bucht in Ihren Kalender, bestätigt per SMS und ruft No-Shows zurück — in der konfigurierten Sprache, ohne ein Skript, das roboterhaft klingt.",
       "wins": [
         "Buchungen nach 17:00 und am Wochenende erfasst",
         "Automatische Erinnerungen, die No-Shows reduzieren",
@@ -613,24 +613,24 @@
       ]
     },
     {
-      "slug": "albanian-language-ai-voice-agents",
-      "title": "Was es braucht, um einen KI-Stimmagenten zu bauen, der echtes Albanisch spricht",
-      "description": "Dialekt, Latenz, Barge-in und Code-Switching: Die technischen Details, die einen brauchbaren albanischen Sprachagenten von einer Demo trennen.",
+      "slug": "multilingual-ai-voice-agents-kosovo-call-centers",
+      "title": "Was es braucht, um einen mehrsprachigen KI-Sprachagenten für Ihre Anrufwarteschlange zu bauen",
+      "description": "Vier Sprachen, eine Nummer — wie ein Agent Englisch, Deutsch, Französisch und Italienisch in derselben Warteschlange verarbeitet, ohne dass sich Anrufer missverstanden fühlen.",
       "date": "2026-02-09",
       "readingTime": "8 Min. Lesezeit",
       "category": "Technologie",
       "body": [
         {
-          "heading": "Generische Modelle reichen nicht aus",
+          "heading": "Vier Sprachen, eine Warteschlange",
           "paragraphs": [
-            "Große Sprachmodelle behandeln Albanisch, aber sie sind typischerweise auf standardmäßige Tosk beeinflusste Aussprache und formales Register gewichtet. Echte Anrufer in Kosovo sprechen Gheg, kürzen Wörter ab und mischen englische und deutsche Lehnwörter ohne Warnung ein.",
-            "Ohne Domänenanpassung an echte Gesprächsaudio sinkt die Erkennungsgenauigkeit genau dort, wo es am wichtigsten ist: Namen, Adressen und Zahlen."
+            "Kosovo-Unternehmen bedienen Kunden aus Deutschland, der Schweiz, Österreich, Frankreich und Italien — oft in derselben Woche, manchmal in derselben Stunde. Jeder Anrufer muss in seiner eigenen Sprache und mit seinem eigenen Akzent verstanden werden, ohne den Agenten bitten zu müssen, langsamer zu sprechen.",
+            "Das ist nicht einfach 'Sprache am Anfang wählen'. Anrufer wechseln mitten im Satz die Sprache, verwenden englische Firmen- und Produktnamen und sprechen lokale Adressen auf ihre eigene Weise aus. Der Agent muss diese Wechsel innerhalb desselben Gesprächs verfolgen."
           ]
         },
         {
           "heading": "Latenz ist eine Produktfunktion",
           "paragraphs": [
-            "Alles über etwa 800 Millisekunden Antwortverzögerung lässt einen Sprachagenten kaputt wirken. Sub-600ms zu erreichen erfordert Streaming-Erkennung, spekulative Antwortgenerierung und Text-to-Speech, das beginnt, bevor die vollständige Antwort komponiert ist."
+            "Alles über etwa 800 Millisekunden Antwortverzögerung lässt einen Sprachagenten kaputt wirken. Unter 600 ms zu bleiben erfordert Streaming-Erkennung, spekulative Antwortgenerierung und Text-to-Speech, das beginnt, bevor die vollständige Antwort komponiert ist."
           ]
         },
         {
@@ -639,8 +639,8 @@
             "Echte Unterhaltungen unterbrechen einander. Ein Agent, der mitten im Satz nicht unterbrochen werden kann, fühlt sich wie ein IVR an, und Anrufer fangen sofort an, Null zu drücken. Zuverlässige Barge-in-Erkennung, kombiniert mit Graceful Recovery, wenn Anrufer und Agent gleichzeitig sprechen, ist das, was die Interaktion menschlich fühlen lässt."
           ],
           "list": [
-            "Streaming-ASR mit Endpointing auf albanische Prosodie abgestimmt",
-            "Untbrechungsbehandlung, die die laufende Antwort verwirft",
+            "Streaming-ASR mit Endpointing auf Englisch, Deutsch, Französisch und Italienisch abgestimmt",
+            "Unterbrechungsbehandlung, die die laufende Antwort verwirft",
             "Zahlen-, Datums- und Adressnormalisierung für lokale Formate",
             "Rückgriff auf einen Menschen, wenn das Vertrauen unterhalb des Schwellenwerts sinkt"
           ]
@@ -648,7 +648,7 @@
         {
           "heading": "Bewertung, kontinuierlich",
           "paragraphs": [
-            "Ein Sprachagent ist nie fertig. Wir bewertetes Gespräch, überprüfen wöchentlich low-confidence Turns und trainieren auf den Fehlern nach. Diese Schleife — nicht der anfängliche Bau — ist es, die die Aufschlussrate von 40% auf 70% in einem Quartal bewegt."
+            "Ein Sprachagent ist nie fertig. Wir bewerten jedes Gespräch, überprüfen wöchentlich Turns mit geringer Konfidenz und trainieren an den Fehlern nach. Diese Schleife — nicht der anfängliche Aufbau — bringt die Aufschlussrate innerhalb eines Quartals von 40% auf 70%."
           ]
         }
       ]
@@ -723,7 +723,7 @@
     "CRM- & Kalender-Synchronisation",
     "Stimmen- & Persona-Abstimmung",
     "14-Tage-Schattenmodus",
-    "Live-Analytik-Dashboard",
+    "Analytik-Berichte",
     "Anrufaufzeichnungen & Transkripte",
     "Eskalationsregeln",
     "Monatliche Optimierung",
@@ -742,7 +742,7 @@
         "Bis zu 400 Minuten / Monat",
         "1 konfigurierbare Sprache",
         "Buchung + SMS-Bestätigungen",
-        "Live-Dashboard und Transkripte",
+        "Anrufberichte und Aufzeichnungen",
         "Warmer Transfer an Ihr Team",
         "14-Tage-Schattenmodus",
         "Keine Einrichtungsgebühr"
@@ -762,7 +762,7 @@
         "Bis zu 1.000 Minuten / Monat",
         "Terminbuchung + SMS-Bestätigungen",
         "Kalender-, E-Mail- und CRM-Integration",
-        "Live-Dashboard, Transkripte und Aufzeichnungen",
+        "Berichte, Transkripte und Aufzeichnungen",
         "Warmer Transfer an Ihr Team mit Zusammenfassung",
         "Geführte Einführung + 14-Tage-Schattenmodus",
         "E-Mail-Support, Antwort am nächsten Werktag"
@@ -773,7 +773,7 @@
       "name": "Operationen",
       "price": "€899",
       "cadence": "pro Monat",
-      "meta": "2.500 Minuten, Outbound, QA, Priorität",
+      "meta": "2.500 Minuten, Outbound, automatisierte QA",
       "summary": "Für Callcenter und Multi-Site-Betreiber mit echtem Volumen über Sprache und Nachrichten.",
       "includes": [
         "Alles im Empfang",
@@ -807,8 +807,8 @@
   ],
   "FAQs": [
     {
-      "q": "Spricht die KI tatsächlich natürliches Albanisch?",
-      "a": "Ja. Agjent038 ist auf Kosovo-Albanisch abgestimmt, einschließlich Gheg-Aussprache und dem Code-Switching, das Menschen tatsächlich am Telefon verwenden. Sie kann auch weitere Sprachen nach Bedarf bedienen. Sie können echte Aufnahmen bei Ihrem Entdeckungsgespräch hören, bevor Sie sich zu etwas verpflichten."
+      "q": "Spricht die KI tatsächlich natürlich?",
+      "a": "Ja. Agjent038 ist für natürliche Gespräche in Ihrer konfigurierten Sprache abgestimmt, mit korrekter Aussprache und dem Code-Switching, das Menschen am Telefon wirklich verwenden. Sie verarbeitet mehrere Sprachen und wechselt mitten im Gespräch, wenn der Anrufer es tut. Echte Beispielaufnahmen hören Sie auf Ihrem Entdeckungsgespräch, bevor Sie sich zu irgendetwas verpflichten."
     },
     {
       "q": "Was passiert, wenn die KI etwas nicht handhaben kann?",
@@ -824,7 +824,7 @@
     },
     {
       "q": "Was beinhaltet der Plan wirklich?",
-      "a": "Das vollständige Produkt: 24/7-Beantwortung in mehreren Sprachen, bis zu 1.000 Minuten, Buchung, CRM- und Kalenderintegration, Transkripte, Aufzeichnungen, das Live-Dashboard, Warmentransfer, Einführung und Schattenmodus. Es gibt keine Einrichtungsgebühr und keine Überraschungen bei der Minutenabrechnung im Basistarif."
+      "a": "Das vollständige Produkt: 24/7-Beantwortung in mehreren Sprachen, bis zu 1.000 Minuten, Buchung, CRM- und Kalenderintegration, Transkripte, Aufzeichnungen, Berichte, Warmentransfer, Einführung und Schattenmodus. Es gibt keine Einrichtungsgebühr und keine Überraschungen bei der Minutenabrechnung im Basistarif."
     },
     {
       "q": "Wie vergleicht sich das mit der Einstellung eines Rezeptionisten?",
@@ -902,18 +902,17 @@
     "liveQueue": "Live-Warteschlange",
     "autoRefresh": "Auto-Refresh",
     "feed": [
-      { "lang": "SQ", "intent": "Terminbuchung", "outcome": "Gebucht", "dur": "1:12", "tone": "mint" },
-      { "lang": "EN", "intent": "Bestellstatus", "outcome": "Gelöst", "dur": "0:48", "tone": "mint" },
+      { "lang": "EN", "intent": "Terminbuchung", "outcome": "Gebucht", "dur": "1:12", "tone": "mint" },
+      { "lang": "FR", "intent": "Bestellstatus", "outcome": "Gelöst", "dur": "0:48", "tone": "mint" },
       { "lang": "DE", "intent": "Beschwerde", "outcome": "Eskaliert", "dur": "2:05", "tone": "gold" },
-      { "lang": "SQ", "intent": "Preisanfrage", "outcome": "Gelöst", "dur": "0:39", "tone": "mint" },
-      { "lang": "FR", "intent": "Umplanung", "outcome": "Umgeplant", "dur": "1:27", "tone": "mint" }
+      { "lang": "EN", "intent": "Preisanfrage", "outcome": "Gelöst", "dur": "0:39", "tone": "mint" },
+      { "lang": "IT", "intent": "Umplanung", "outcome": "Umgeplant", "dur": "1:27", "tone": "mint" }
     ],
     "languages": [
       { "code": "Englisch", "pct": 58 },
       { "code": "Deutsch", "pct": 19 },
       { "code": "Französisch", "pct": 12 },
-      { "code": "Italienisch", "pct": 7 },
-      { "code": "Türkisch", "pct": 4 }
+      { "code": "Italienisch", "pct": 11 }
     ]
   },
   "Cases": [
@@ -932,14 +931,14 @@
     {
       "tag": "Zahngruppe · Ferizaj",
       "title": "Sechzig zusätzliche Buchungen pro Monat von Anrufen, die niemand beantwortete",
-      "context": "Vier Kliniken teilen sich eine Empfangsleitung. Ungefähr ein Drittel der Anrufe kam, während das Personal bei Patienten war oder nach Feierabend.",
+      "context": "Vier Kliniken teilen sich eine Empfangsleitung. Ungefähr ein Drittel der Anrufe kam, während das Personal bei Kunden war oder nach Feierabend.",
       "metrics": [
         ["+58", "Buchungen / Monat"],
         ["-34%", "No-Show-Rate"],
         ["24/7", "Abdeckung"],
         ["9 Tage", "Bis zum Live-Gang"]
       ],
-      "quote": "Patienten merken nicht, dass sie mit einer KI sprechen, bis wir es ihnen sagen. Was sie bemerken, ist, dass endlich jemand antwortet."
+      "quote": "Kunden merken nicht, dass sie mit einer KI sprechen, bis wir es ihnen sagen. Was sie bemerken, ist, dass endlich jemand antwortet."
     },
     {
       "tag": "E-Commerce & Logistik · Pristina",
@@ -960,8 +959,8 @@
       "body": "Aufschlussrate, wiederhergestellte Anrufe und freigesetzte Kapazität sind die einzigen Zahlen, die zählen. Wir berichten jeden Monat, einschließlich der Monate, in denen die Kurve flacher wird."
     },
     {
-      "title": "Landessprache ist kein Feature, sie ist das Produkt",
-      "body": "Ein Agent, der den Heimatort des Anrufers falsch ausspricht, verliert den Anruf. Wir verbringen den Großteil unserer Ingenieurszeit mit den albanischen Teilen, die generische Modelle falsch machen."
+      "title": "Natürliche Sprache ist kein Feature, sie ist das Produkt",
+      "body": "Ein Agent, der den Heimatort des Anrufers falsch ausspricht, verliert den Anruf. Wir verbringen den Großteil unserer Ingenieurszeit mit den sprachlichen Teilen, die generische Modelle falsch machen."
     },
     {
       "title": "Keine Bindung als Strategie",

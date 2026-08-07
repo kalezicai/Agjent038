@@ -191,7 +191,7 @@
     "architectureTitle": "Cinque livelli, una conversazione",
     "architectureLede": "Ogni livello è sostituibile e osservabile. Nulla della vostra configurazione attuale va smantellato.",
     "consoleEyebrow": "Console",
-    "consoleTitle": "Il livello di misurazione che i vostri clienti chiederanno",
+    "consoleTitle": "Il livello di misurazione che dimostra cosa ha fatto l'agente",
     "consoleLede": "Risoluzione, sentiment, mix linguistico, motivi di escalation e attribuzione dei risultati — aggiornati in diretta ed esportabili.",
     "guardrailsEyebrow": "Garanzie",
     "guardrailsTitle": "La fiducia nasce dai vincoli",
@@ -384,14 +384,14 @@
     "contact": "Contattaci"
   },
   "Console": {
-    "eyebrow": "Portale clienti",
+    "eyebrow": "Reporting",
     "home": "Home",
-    "seeHow": "Vedi come funziona",
+    "seeHow": "Guarda come funziona",
     "previewEyebrow": "Anteprima dal vivo",
     "previewTitle": "Una vista in tempo reale di ogni chiamata",
-    "title": "La dashboard che mostra cosa fa davvero l'agente",
-    "description": "Una volta attivo, ogni cliente ha una vista semplice di volume di chiamate, tasso di risoluzione e intenzione del chiamante — senza aspettare un report mensile.",
-    "dashboardEyebrow": "Cosa vedete",
+    "title": "La vista che mostra cosa fa davvero l'agente",
+    "description": "Questa è la vista dietro ogni installazione: volume di chiamate, tasso di risoluzione e intenzione del chiamante, aggiornati in diretta. Ogni conversazione diventa una registrazione scritta, valutata ed esportabile — non un campione del 2%.",
+    "dashboardEyebrow": "Nella console",
     "dashboardTitle": "Progettata per i responsabili operativi, non per gli analisti",
     "dashboardLede": "Non serve uno strumento BI per capire se funziona. I numeri che contano sono su un unico schermo.",
     "callsTitle": "Flusso chiamate in diretta",
@@ -402,7 +402,7 @@
     "performanceDesc": "Capite perché la gente chiama — prenotazioni, controlli di stato, reclami, trasferimenti — per adattare il playbook dell'agente.",
     "settingsTitle": "Impostazioni dell'agente",
     "settingsDesc": "Modificate orari di lavoro, regole di escalation, prompt vocali e finestre di appuntamento senza aprire un ticket.",
-    "cta": "I numeri del vostro agente su un unico schermo"
+    "cta": "Ogni chiamata — registrata, valutata e riportata"
   },
   "Contact": {
     "eyebrow": "Prenota una demo",
@@ -580,7 +580,7 @@
       ]
     },
     {
-      "slug": "ai-voice-agent-vs-hiring-voice-agent",
+      "slug": "ai-receptionist-vs-hiring-receptionist",
       "title": "Agente vocale IA vs assunzione: un confronto onesto",
       "description": "Dove un agente vocale IA vince chiaramente, dove un essere umano è ancora la risposta giusta e come la maggior parte degli operatori finisce per usare entrambi.",
       "date": "2026-01-28",
@@ -615,18 +615,18 @@
       ]
     },
     {
-      "slug": "albanian-language-ai-voice-agents",
-      "title": "Cosa serve per creare un agente vocale IA che parli un vero albanese",
-      "description": "Dialetto, latenza, barge-in e code-switching: i dettagli tecnici che separano un agente vocale albanese utilizzabile da una demo.",
+      "slug": "multilingual-ai-voice-agents-kosovo-call-centers",
+      "title": "Cosa serve per creare un agente vocale IA multilingue per la vostra coda di chiamate",
+      "description": "Quattro lingue, un numero — come un agente gestisce inglese, tedesco, francese e italiano nella stessa coda senza far sentire i chiamanti fraintesi.",
       "date": "2026-02-09",
       "readingTime": "8 min di lettura",
       "category": "Tecnologia",
       "body": [
         {
-          "heading": "I modelli generici non bastano",
+          "heading": "Quattro lingue, una sola coda",
           "paragraphs": [
-            "I grandi modelli vocali gestiscono l'albanese, ma sono generalmente orientati verso la pronuncia standard tosca e il registro formale. I veri chiamanti in Kosovo parlano ghego, accorciano le parole e mescolano prestiti dall'inglese e dal tedesco senza preavviso.",
-            "Senza adattamento al dominio su vere registrazioni di chiamate, la precisione del riconoscimento crolla proprio dove conta di più: nomi, indirizzi e numeri."
+            "Le aziende kosovare servono clienti in Germania, Svizzera, Austria, Francia e Italia — spesso nella stessa settimana, a volte nella stessa ora. Ogni chiamante deve essere compreso nella propria lingua, con il proprio accento, senza dover chiedere all'agente di parlare più lentamente.",
+            "Non è semplicemente 'scegliere la lingua all'inizio'. I chiamanti passano da una lingua all'altra a metà frase, usano nomi di aziende e prodotti in inglese e pronunciano gli indirizzi locali a modo loro. L'agente deve seguire questi cambiamenti all'interno della stessa conversazione."
           ]
         },
         {
@@ -641,7 +641,7 @@
             "Le conversazioni reali si interrompono a vicenda. Un agente che non può essere interrotto a metà frase sembra un IVR, e i chiamanti iniziano subito a premere zero. Un rilevamento barge-in affidabile, combinato con un recupero elegante quando chiamante e agente parlano insieme, rende umana l'interazione."
           ],
           "list": [
-            "ASR in streaming con endpointing calibrato sulla prosodia albanese",
+            "ASR in streaming con endpointing calibrato su inglese, tedesco, francese e italiano",
             "Gestione delle interruzioni che scarta la risposta in corso",
             "Normalizzazione di numeri, date e indirizzi per i formati locali",
             "Ripiego su un umano quando la confidenza scende sotto la soglia"
@@ -725,7 +725,7 @@
     "Sincronizzazione CRM e calendario",
     "Ottimizzazione voce e persona",
     "Modalità ombra di 14 giorni",
-    "Dashboard analitica in diretta",
+    "Report analitici",
     "Registrazioni e trascrizioni delle chiamate",
     "Regole di escalation",
     "Ottimizzazione mensile",
@@ -744,7 +744,7 @@
         "Fino a 400 minuti / mese",
         "1 lingua configurabile",
         "Trasferimento caldo al team di reperibilità",
-        "Dashboard in diretta e registrazioni delle chiamate",
+        "Report delle chiamate e registrazioni",
         "Conferme SMS e richiamate",
         "Nessun costo di attivazione",
         "Mese per mese"
@@ -764,7 +764,7 @@
         "Multilingue — la vostra lingua predefinita più altre",
         "Prenotazione appuntamenti + conferme SMS",
         "Integrazione calendario, e-mail e CRM",
-        "Dashboard in diretta, trascrizioni e registrazioni",
+        "Report, trascrizioni e registrazioni",
         "Trasferimento caldo al vostro team con riepilogo",
         "Onboarding guidato + modalità ombra di 14 giorni",
         "Supporto e-mail, risposta entro il giorno lavorativo successivo"
@@ -775,7 +775,7 @@
       "name": "Operations",
       "price": "899 €",
       "cadence": "al mese",
-      "meta": "2.500 min, follow-up in uscita, dashboard QA",
+      "meta": "2.500 min, follow-up in uscita, QA automatizzata",
       "summary": "Assorbe overflow e fuori orario su larga scala, più i follow-up in uscita.",
       "includes": [
         "Tutto ciò che è in Reception",
@@ -826,7 +826,7 @@
     },
     {
       "q": "Cosa include davvero 499 € al mese?",
-      "a": "Il prodotto completo: risposta 24/7 multilingue, fino a 1.000 minuti gestiti, prenotazione, integrazione CRM e calendario, trascrizioni, registrazioni, dashboard in diretta, trasferimento caldo, onboarding e modalità ombra. Nessun costo di attivazione e nessuna fatturazione a sorpresa al minuto sul piano base."
+      "a": "Il prodotto completo: risposta 24/7 multilingue, fino a 1.000 minuti gestiti, prenotazione, integrazione CRM e calendario, trascrizioni, registrazioni, report, trasferimento caldo, onboarding e modalità ombra. Nessun costo di attivazione e nessuna fatturazione a sorpresa al minuto sul piano base."
     },
     {
       "q": "Come si confronta con l'assunzione di un agente vocale?",
@@ -908,14 +908,13 @@
       { "lang": "FR", "intent": "Stato ordine", "outcome": "Risolto", "dur": "0:48", "tone": "mint" },
       { "lang": "DE", "intent": "Reclamo", "outcome": "Escalato", "dur": "2:05", "tone": "gold" },
       { "lang": "EN", "intent": "Richiesta prezzo", "outcome": "Risolto", "dur": "0:39", "tone": "mint" },
-      { "lang": "ES", "intent": "Riprogrammazione", "outcome": "Riprogrammato", "dur": "1:27", "tone": "mint" }
+      { "lang": "IT", "intent": "Riprogrammazione", "outcome": "Riprogrammato", "dur": "1:27", "tone": "mint" }
     ],
     "languages": [
       { "code": "English", "pct": 58 },
       { "code": "French", "pct": 19 },
       { "code": "German", "pct": 12 },
-      { "code": "Spanish", "pct": 7 },
-      { "code": "Italian", "pct": 4 }
+      { "code": "Italian", "pct": 11 }
     ]
   },
   "Cases": [

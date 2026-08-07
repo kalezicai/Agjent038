@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Konsola — Kontrolloni Agjentin Tuaj AI"
       : "Console — Control Your AI Agent",
     description: isAlb
-      ? "Paneli i menaxhimit për klientët Agjent038: monitoroni thirrjet, shikoni raportet mujore dhe kontrolloni aftësitë e agjentit tuaj."
-      : "Management dashboard for Agjent038 customers: monitor calls, view monthly reports and control your agent capabilities.",
+      ? "Pamja e raportimit e Agjent038: monitoroni thirrjet live, shikoni raportet dhe kontrolloni cilësimet e agjentit tuaj."
+      : "The Agjent038 reporting view: monitor calls live, review reports and control your agent settings.",
     path: "/console",
     keywords: ["AI agent dashboard", "call centre console"],
     locale,

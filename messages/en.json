@@ -191,7 +191,7 @@
     "architectureTitle": "Five layers, one conversation",
     "architectureLede": "Each layer is replaceable and observable. Nothing about your current setup has to be torn out.",
     "consoleEyebrow": "Console",
-    "consoleTitle": "The measurement layer your clients will ask for",
+    "consoleTitle": "The measurement layer that proves what the agent did",
     "consoleLede": "Containment, sentiment, language mix, escalation reasons and outcome attribution — updated live and exportable.",
     "guardrailsEyebrow": "Guardrails",
     "guardrailsTitle": "Confidence comes from constraints",
@@ -384,14 +384,14 @@
     "contact": "Contact us"
   },
   "Console": {
-    "eyebrow": "Client portal",
+    "eyebrow": "Reporting",
     "home": "Home",
     "seeHow": "See how it works",
     "previewEyebrow": "Live preview",
     "previewTitle": "A real-time view into every call",
-    "title": "The dashboard that shows what the agent is actually doing",
-    "description": "Once live, every client gets a simple view into call volume, containment rate and caller intent — without waiting for a monthly report.",
-    "dashboardEyebrow": "What you see",
+    "title": "The view that shows what the agent is actually doing",
+    "description": "This is the view behind every deployment: call volume, containment rate and caller intent, updated live. Every conversation becomes a written, scored, exportable record — not a 2% sample.",
+    "dashboardEyebrow": "Inside the console",
     "dashboardTitle": "Built for operations managers, not analysts",
     "dashboardLede": "You do not need a BI tool to understand whether this is working. The numbers that matter are on one screen.",
     "callsTitle": "Live call feed",
@@ -402,7 +402,7 @@
     "performanceDesc": "Understand why people call — bookings, status checks, complaints, transfers — so you can adjust the agent's playbook.",
     "settingsTitle": "Agent settings",
     "settingsDesc": "Edit working hours, escalation rules, voice prompts and appointment windows without filing a ticket.",
-    "cta": "Your agent's numbers on one screen"
+    "cta": "Every call — recorded, scored and reported"
   },
   "Contact": {
     "eyebrow": "Book a demo",
@@ -483,7 +483,7 @@
     {
       "slug": "clinics",
       "name": "Clinics & dental",
-      "headline": "Stop losing patients to a busy signal",
+      "headline": "Stop losing clients to a busy signal",
       "body": "Reception is answering the person in front of them. Agjent038 answers the phone, books into your calendar, confirms by SMS and calls back no-shows — in your customers' language, without a script that sounds robotic.",
       "wins": [
         "Bookings captured after 17:00 and on weekends",
@@ -580,7 +580,7 @@
       ]
     },
     {
-      "slug": "ai-voice-agent-vs-hiring-voice-agent",
+      "slug": "ai-receptionist-vs-hiring-receptionist",
       "title": "AI voice agent vs hiring: an honest comparison",
       "description": "Where an AI voice agent clearly wins, where a human is still the right answer, and how most operators end up running both.",
       "date": "2026-01-28",
@@ -615,18 +615,18 @@
       ]
     },
     {
-      "slug": "albanian-language-ai-voice-agents",
-      "title": "What it takes to build an AI voice agent that speaks real Albanian",
-      "description": "Dialect, latency, barge-in and code-switching: the engineering details that separate a usable Albanian voice agent from a demo.",
+      "slug": "multilingual-ai-voice-agents-kosovo-call-centers",
+      "title": "What it takes to build a multilingual AI voice agent for your call queue",
+      "description": "Four languages, one number — how an agent handles English, German, French and Italian in the same queue without making callers feel misunderstood.",
       "date": "2026-02-09",
       "readingTime": "8 min read",
       "category": "Technology",
       "body": [
         {
-          "heading": "Generic models are not enough",
+          "heading": "Four languages, one queue",
           "paragraphs": [
-            "Large speech models handle Albanian, but they are typically weighted towards standard Tosk-influenced pronunciation and formal register. Real callers in Kosovo speak Gheg, shorten words, and mix in English and German loanwords without warning.",
-            "Without domain adaptation on real call audio, recognition accuracy drops precisely where it matters most: names, addresses, and numbers."
+            "Kosovo businesses serve clients from Germany, Switzerland, Austria, France and Italy — often within the same week, sometimes within the same hour. Every caller needs to be heard in their own language, with their own accent, without having to ask the agent to speak more slowly.",
+            "This is not simply 'pick the language at the start'. Callers switch between languages mid-sentence, use English company and product names, and pronounce local addresses their own way. The agent has to track those shifts within the same conversation."
           ]
         },
         {
@@ -641,7 +641,7 @@
             "Real conversations interrupt each other. An agent that cannot be interrupted mid-sentence feels like an IVR, and callers immediately start pressing zero. Reliable barge-in detection, combined with graceful recovery when the caller and the agent speak simultaneously, is what makes the interaction feel human."
           ],
           "list": [
-            "Streaming ASR with endpointing tuned for Albanian prosody",
+            "Streaming ASR with endpointing tuned for English, German, French and Italian",
             "Interruption handling that discards the in-flight response",
             "Number, date and address normalisation for local formats",
             "Fallback to a human when confidence drops below threshold"
@@ -725,7 +725,7 @@
     "CRM & calendar sync",
     "Voice + persona tuning",
     "14-day shadow mode",
-    "Live analytics dashboard",
+    "Analytics reports",
     "Call recordings & transcripts",
     "Escalation rules",
     "Monthly optimisation",
@@ -744,7 +744,7 @@
         "Up to 400 minutes / month",
         "1 configurable language",
         "Warm transfer to on-call team",
-        "Live dashboard and call recordings",
+        "Call reports and recordings",
         "SMS confirmations and callbacks",
         "No setup fee",
         "Month-to-month"
@@ -764,7 +764,7 @@
         "Multilingual — your default language plus more",
         "Appointment booking + SMS confirmations",
         "Calendar, email and CRM integration",
-        "Live dashboard, transcripts and recordings",
+        "Reports, transcripts and recordings",
         "Warm transfer to your team with summary",
         "Guided onboarding + 14-day shadow mode",
         "Email support, next-business-day response"
@@ -775,7 +775,7 @@
       "name": "Operations",
       "price": "€899",
       "cadence": "per month",
-      "meta": "2,500 min, outbound follow-ups, QA dashboard",
+      "meta": "2,500 min, outbound follow-ups, automated QA",
       "summary": "Absorbs overflow and after-hours at scale, plus outbound follow-ups.",
       "includes": [
         "Everything in Reception",
@@ -826,7 +826,7 @@
     },
     {
       "q": "What does €499 per month actually include?",
-      "a": "The full product: 24/7 answering in multilingual, up to 1,000 answered minutes, booking, CRM and calendar integration, transcripts, recordings, the live dashboard, warm transfer, onboarding and shadow mode. There is no setup fee and no per-minute surprise billing on the base plan."
+      "a": "The full product: 24/7 answering in multilingual, up to 1,000 answered minutes, booking, CRM and calendar integration, transcripts, recordings, reports, warm transfer, onboarding and shadow mode. There is no setup fee and no per-minute surprise billing on the base plan."
     },
     {
       "q": "How does this compare with hiring a voice agent?",
@@ -908,14 +908,13 @@
       { "lang": "FR", "intent": "Order status", "outcome": "Resolved", "dur": "0:48", "tone": "mint" },
       { "lang": "DE", "intent": "Complaint", "outcome": "Escalated", "dur": "2:05", "tone": "gold" },
       { "lang": "EN", "intent": "Price enquiry", "outcome": "Resolved", "dur": "0:39", "tone": "mint" },
-      { "lang": "ES", "intent": "Reschedule", "outcome": "Rescheduled", "dur": "1:27", "tone": "mint" }
+      { "lang": "IT", "intent": "Reschedule", "outcome": "Rescheduled", "dur": "1:27", "tone": "mint" }
     ],
     "languages": [
       { "code": "English", "pct": 58 },
       { "code": "French", "pct": 19 },
       { "code": "German", "pct": 12 },
-      { "code": "Spanish", "pct": 7 },
-      { "code": "Italian", "pct": 4 }
+      { "code": "Italian", "pct": 11 }
     ]
   },
   "Cases": [
@@ -934,14 +933,14 @@
     {
       "tag": "Dental group · Ferizaj",
       "title": "Sixty extra bookings a month from calls nobody was answering",
-      "context": "Four clinics sharing one reception line. Roughly a third of calls arrived while staff were with patients or after closing.",
+      "context": "Four clinics sharing one reception line. Roughly a third of calls arrived while staff were with clients or after closing.",
       "metrics": [
         ["+58", "Bookings / month"],
         ["-34%", "No-show rate"],
         ["24/7", "Coverage"],
         ["9 days", "To go live"]
       ],
-      "quote": "Patients do not realise they are speaking to an AI until we tell them. What they notice is that someone finally answers."
+      "quote": "Clients do not realise they are speaking to an AI until we tell them. What they notice is that someone finally answers."
     },
     {
       "tag": "E-commerce & logistics · Prishtina",
