@@ -19,37 +19,54 @@ export default function ExplainerAnimation({
       try {
         const doc = iframe.contentDocument;
         if (!doc) return;
+
+        // Hide the PlaybackBar (data-omelette-chrome)
+        const els = doc.querySelectorAll("[data-omelette-chrome]");
+        els.forEach((el) => {
+          (el as HTMLElement).style.display = "none";
+        });
+
+        // Remove box-shadow from SVG canvas
+        const svg = doc.querySelector(
+          "svg[data-om-exportable-video-with-duration-secs]"
+        );
+        if (svg) {
+          (svg as HTMLElement).style.boxShadow = "none";
+          (svg as HTMLElement).style.border = "none";
+        }
+
+        // Hide loading indicator
+        const loading = doc.getElementById("__bundler_loading");
+        if (loading) loading.style.display = "none";
+
+        // Hide thumbnail
+        const thumb = doc.getElementById("__bundler_thumbnail");
+        if (thumb) thumb.style.display = "none";
+
+        // Inject a style tag for anything else
         const style = doc.createElement("style");
         style.textContent = `
-          [class*="playback"], [class*="control"], [class*="timeline-bar"],
-          [class*="play-bar"], [class*="scrubber"], [class*="progress"],
-          [data-om-timeline], [class*="om-"] {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-          }
+          [data-omelette-chrome] { display: none !important; }
+          svg[data-om-exportable-video-with-duration-secs] { box-shadow: none !important; border: none !important; }
+          #__bundler_loading { display: none !important; }
+          #__bundler_thumbnail { display: none !important; }
         `;
         doc.head.appendChild(style);
       } catch {
-        // cross-origin
+        // cross-origin — cannot access
       }
     };
 
     const handleLoad = () => {
       hideControls();
-      try {
-        iframe.contentWindow?.postMessage(
-          { type: "explainer:play" },
-          "*"
-        );
-      } catch {
-        // ignore
-      }
+      // Re-run after a short delay to catch dynamically rendered elements
+      setTimeout(hideControls, 500);
+      setTimeout(hideControls, 1500);
     };
 
     iframe.addEventListener("load", handleLoad);
 
+    // IntersectionObserver for play/pause
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (iframe.contentWindow) {
