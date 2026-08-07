@@ -200,7 +200,7 @@ async function HomePage({ params }: Props) {
       {/* HOW IT WORKS */}
       <Section>
         <Reveal>
-          <ExplainerAnimation />
+          <ExplainerAnimation locale={locale} />
         </Reveal>
       </Section>
 
