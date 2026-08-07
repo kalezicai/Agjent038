@@ -1,0 +1,1139 @@
+{
+  "Meta": {
+    "title": "Agjent038 — Agenti vocali IA per i call center del Kosovo",
+    "titleTemplate": "%s | Agjent038",
+    "description": "Agjent038 risponde a ogni chiamata con supporto multilingue — 24 ore su 24. Creato per i call center, le cliniche e i BPO del Kosovo. Attivo in due settimane a partire da 499 €/mese.",
+    "keywords": [
+      "agente vocale IA Kosovo",
+      "call center IA Kosovo",
+      "assistenza clienti IA Kosovo",
+      "agente vocale IA multilingue",
+      "risposta chiamate IA Prishtina",
+      "automazione call center Kosovo",
+      "servizio di risposta IA Kosovo",
+      "automazione IA BPO"
+    ],
+    "ogTitle": "Agjent038 — Agenti vocali IA per i call center del Kosovo",
+    "ogDescription": "Ogni chiamata gestita in 0,4 secondi, multilingue, 24 ore su 24. A partire da 499 € al mese.",
+    "twitterTitle": "Agjent038 — Agenti vocali IA per i call center del Kosovo",
+    "twitterDescription": "Ogni chiamata gestita in 0,4 secondi, multilingue, 24 ore su 24. A partire da 499 € al mese."
+  },
+  "Site": {
+    "name": "Agjent038",
+    "tagline": "Agente vocale IA per i call center del Kosovo",
+    "location": "Prishtina"
+  },
+  "Nav": {
+    "platform": "Piattaforma",
+    "solutions": "Soluzioni",
+    "results": "Risultati",
+    "pricing": "Prezzi",
+    "insights": "Approfondimenti",
+    "company": "Azienda"
+  },
+  "Home": {
+    "heroEyebrow": "Costruito a Prishtina per gli operatori del Kosovo",
+    "heroSubhead": "L'agente vocale IA creato per i call center del Kosovo",
+    "heroTitle1": "Ogni chiamata riceve risposta.",
+    "heroTitle2": "Ogni ora. Nella loro lingua.",
+    "heroDescription": "Agjent038 colma i vuoti di capacità che i call center del Kosovo non possono coprire — notti, weekend e picchi di overflow. Risponde al primo squillo, capisce cosa serve al chiamante, parla la lingua dei vostri clienti, completa l'attività nei vostri sistemi e passa le conversazioni difficili al vostro team con un riepilogo completo.",
+    "heroCta": "Ascoltalo sulle vostre chiamate",
+    "heroCtaSecondary": "Vedi i numeri",
+    "stat1Value": "499 €",
+    "stat1Label": "al mese, tutto incluso",
+    "stat2Value": "14 giorni",
+    "stat2Label": "dal via alla messa in opera",
+    "stat3Value": "0",
+    "stat3Label": "chiamate perse",
+    "outcomesEyebrow": "Il risultato",
+    "outcomesTitle": "Non state comprando un software. State colmando i vuoti che il vostro team non può coprire.",
+    "outcomesLede": "Questi sono i numeri che i nostri clienti vedono entro i primi novanta giorni di utilizzo di Agjent038 sul loro traffico in entrata.",
+    "shiftEyebrow": "Il cambiamento",
+    "shiftTitle": "Le chiamate che perdete sono il ricavo più economico che recupererete mai.",
+    "shiftLede": "Nessuno lascia un messaggio in segreteria. Chiamano il numero successivo della lista. Agjent038 elimina quella perdita per sempre — senza aggiungere un solo posto in busta paga.",
+    "shiftCta": "Modellalo per la vostra operatività",
+    "today": "Oggi",
+    "withAgjent038": "Con Agjent038",
+    "dashboardEyebrow": "La console",
+    "dashboardTitle": "Visibilità completa, non una scatola nera",
+    "dashboardLede": "Osservate risoluzione, mix linguistico, escalation e risultati in tempo reale. Ogni conversazione è registrata, trascritta e valutata — il controllo qualità smette di essere un esercizio di campionamento.",
+    "explorePlatform": "Esplora la piattaforma",
+    "pillarsEyebrow": "Perché funziona qui",
+    "pillarsTitle": "La maggior parte degli agenti IA fallisce in Kosovo per le stesse quattro ragioni. Le abbiamo corrette tutte.",
+    "capabilitiesEyebrow": "Cosa fa",
+    "capabilitiesTitle": "Otto mansioni, un agente vocale, nessun turno",
+    "capabilitiesLede": "Ognuna funziona dallo stesso cervello, sullo stesso numero, con la stessa conoscenza della vostra azienda.",
+    "processEyebrow": "Onboarding",
+    "processTitle": "Attivo in quattordici giorni, senza lasciare nulla al caso",
+    "processLede": "Approvate ogni comportamento in modalità ombra prima che un solo cliente ascolti l'IA.",
+    "pricingEyebrow": "Prezzi",
+    "pricingTitle": "A partire da 499 € al mese. Colmate i vuoti che il vostro team non può coprire.",
+    "pricingLede": "Nessun costo di attivazione. Nessuna sorpresa al minuto sul piano base. Mese per mese, perché a trattenervi devono essere i risultati, non il contratto.",
+    "pricingCta": "Vedi cosa è incluso",
+    "pricingDemo": "Prenota una demo",
+    "receptionPlan": "Piano Reception",
+    "pricingFeatures": [
+      "Risposta 24/7, multilingue",
+      "1.000 minuti inclusi",
+      "Prenotazione + conferma SMS",
+      "Integrazione CRM e calendario",
+      "Trascrizioni e registrazioni",
+      "Trasferimento caldo con riepilogo",
+      "Modalità ombra di 14 giorni",
+      "Nessun costo di attivazione"
+    ],
+    "testimonialsEyebrow": "Nella pratica",
+    "testimonialsTitle": "Cosa cambia nel primo trimestre",
+    "faqEyebrow": "Domande",
+    "faqTitle": "Le cose che gli operatori ci chiedono per primi",
+    "faqCta": "Leggi tutte le domande",
+    "ctaTitle": "Inviateci venti delle vostre chiamate reali. Vi mostreremo esattamente quante Agjent038 avrebbe gestito.",
+    "ctaDescription": "Una chiamata di trenta minuti, una registrazione di Agjent038 che risponde nel vostro settore, e una stima onesta della risoluzione per la vostra coda. Se non si adatta, ve lo diremo.",
+    "ctaBookAudit": "Prenota il tuo audit delle chiamate",
+    "ctaReviewPricing": "Vedi i prezzi",
+    "ctaLocation": "Prishtina, Kosovo",
+    "Outcomes": [
+      {
+        "stat": "0s",
+        "label": "Tempo medio di risposta",
+        "note": "Ogni chiamata presa al primo squillo, incluse le 03:00 e i giorni festivi."
+      },
+      {
+        "stat": "68%",
+        "label": "Conversazioni completamente risolte",
+        "note": "Volume di livello 1 chiuso senza che un agente umano toccasse il ticket."
+      },
+      {
+        "stat": "3,4x",
+        "label": "Più prenotazioni qualificate",
+        "note": "Le chiamate perse diventano appuntamenti confermati e richiamate."
+      },
+      {
+        "stat": "24/7",
+        "label": "Copertura multilingue",
+        "note": "Parla la lingua dei vostri clienti su un unico numero."
+      }
+    ],
+    "BeforeAfter": {
+      "today": [
+        "30–45% delle chiamate senza risposta nei picchi",
+        "Nessuna risposta dopo le 17:00 o nei weekend",
+        "Capacità limitata, un chiamante alla volta",
+        "QA su un campione del 2%, se qualcuno ha tempo",
+        "Assumere è l'unico modo per aggiungere capacità"
+      ],
+      "after": [
+        "100% delle chiamate presentate gestite in 0,4s",
+        "Copertura 24/7/365 inclusi i festivi",
+        "Multilingue, decine di chiamate simultanee",
+        "Ogni conversazione trascritta e valutata",
+        "La capacità scala nel momento in cui cresce il volume"
+      ]
+    },
+    "Testimonials": [
+      {
+        "quote": "Perdevamo circa il 40% delle chiamate tra le 12:00 e le 14:00. Ora nulla resta senza risposta, e i nostri agenti passano finalmente le giornate sui casi che richiedono una persona.",
+        "name": "Arbër K.",
+        "role": "Direttore operativo",
+        "org": "Contact center in outsourcing, Prishtina"
+      },
+      {
+        "quote": "I nostri clienti chiedono QA su ogni chiamata. Prima campionavamo il 2%. Ora ogni conversazione è valutata e il reporting si scrive da solo — questo da solo ci ha fatto vincere un contratto.",
+        "name": "Vlora M.",
+        "role": "Head of Delivery",
+        "org": "BPO, Prizren"
+      },
+      {
+        "quote": "La reception ha smesso di essere un collo di bottiglia. Le prenotazioni fuori orario sono passate da zero a una sessantina al mese, e le mancate presenze sono calate perché le conferme partono davvero.",
+        "name": "Dott. Endrit S.",
+        "role": "Proprietario di clinica",
+        "org": "Gruppo odontoiatrico, Ferizaj"
+      }
+    ],
+    "monthLabel": "/ mese"
+  },
+  "Common": {
+    "bookDemo": "Prenota una demo",
+    "requestDemo": "Richiedi una demo dal vivo",
+    "seePricing": "Vedi i prezzi",
+    "startCallAudit": "Inizia con un audit delle chiamate",
+    "requestAudit": "Richiedi un audit delle chiamate",
+    "contactUs": "Contattaci",
+    "learnMore": "Scopri di più",
+    "readArticle": "Leggi l'articolo",
+    "next": "→",
+    "email": "E-mail",
+    "phone": "Telefono",
+    "office": "Ufficio",
+    "hours": "Orari"
+  },
+  "Footer": {
+    "description": "L'agente vocale IA creato per i call center del Kosovo — con supporto multilingue, 24 ore al giorno.",
+    "product": "Prodotto",
+    "solutions": "Soluzioni",
+    "company": "Azienda",
+    "about": "Chi siamo",
+    "insights": "Approfondimenti",
+    "contact": "Contatti",
+    "copyright": "Tutti i diritti riservati.",
+    "gdpr": "Trattamento conforme al GDPR",
+    "euResidency": "Residenza dati UE disponibile",
+    "fromPrice": "A partire da 499 €/mese"
+  },
+  "Platform": {
+    "eyebrow": "Piattaforma",
+    "home": "Home",
+    "title": "Un agente vocale che comprende, agisce e riferisce — su un'infrastruttura che già possedete.",
+    "description": "Agjent038 non è un menu vocale con una voce più gentile. È un agente conversazionale con accesso ai vostri sistemi, una politica di escalation scritta e un livello di misurazione che prova cosa ha fatto. Ecco esattamente com'è costruito.",
+    "cta1": "Richiedi una demo dal vivo",
+    "cta2": "Vedi i prezzi",
+    "architectureEyebrow": "Architettura",
+    "architectureTitle": "Cinque livelli, una conversazione",
+    "architectureLede": "Ogni livello è sostituibile e osservabile. Nulla della vostra configurazione attuale va smantellato.",
+    "consoleEyebrow": "Console",
+    "consoleTitle": "Il livello di misurazione che i vostri clienti chiederanno",
+    "consoleLede": "Risoluzione, sentiment, mix linguistico, motivi di escalation e attribuzione dei risultati — aggiornati in diretta ed esportabili.",
+    "guardrailsEyebrow": "Garanzie",
+    "guardrailsTitle": "La fiducia nasce dai vincoli",
+    "guardrailsLede": "Un agente vocale IA è affidabile solo se potete prevedere cosa non farà mai.",
+    "capabilitiesEyebrow": "Capacità",
+    "capabilitiesTitle": "Tutto funziona da un unico cervello",
+    "pillarsEyebrow": "Progettato per il Kosovo",
+    "pillarsTitle": "I quattro dettagli che decidono se i chiamanti accettano un'IA",
+    "integrationsEyebrow": "Integrazioni",
+    "integrationsTitle": "Connesso agli strumenti in cui il vostro team vive già",
+    "integrationsLede": "I connettori standard sono inclusi dal primo giorno. Qualsiasi cosa con un'API REST può essere collegata durante l'onboarding.",
+    "deploymentEyebrow": "Implementazione",
+    "deploymentTitle": "Quattordici giorni, quattro fasi, zero sorprese",
+    "stack": [
+      {
+        "layer": "Livello 01",
+        "title": "Telefonia",
+        "body": "I vostri numeri e tronchi esistenti. SIP, Twilio, 3CX, Asterisk, FreePBX o connessione diretta al carrier. Instradate il 10% del traffico o tutto."
+      },
+      {
+        "layer": "Livello 02",
+        "title": "Voce",
+        "body": "Riconoscimento in streaming adattato alla conversazione naturale nella lingua configurata, con barge-in, rilevamento di fine frase e normalizzazione locale di numeri, date e indirizzi."
+      },
+      {
+        "layer": "Livello 03",
+        "title": "Ragionamento",
+        "body": "Rilevamento delle intenzioni rispetto alla vostra knowledge base, chiamate di strumenti verso i vostri sistemi, verifiche delle policy e un percorso deterministico per gli script regolamentati."
+      },
+      {
+        "layer": "Livello 04",
+        "title": "Azioni",
+        "body": "Prenotazioni, ricerche, creazione di ticket, scritture CRM, conferme SMS e trasferimenti caldi — completati durante la chiamata, non accodati per dopo."
+      },
+      {
+        "layer": "Livello 05",
+        "title": "Osservabilità",
+        "body": "Registrazione, trascrizione, sentiment, valutazione QA e reporting per ogni conversazione, esportabili verso i vostri clienti e stakeholder."
+      }
+    ],
+    "guardrails": [
+      {
+        "title": "La politica di escalation la scrivete voi",
+        "body": "Limiti di rimborso, parole chiave di reclamo, frustrazione rilevata, account VIP, temi legali — ognuno attiva un trasferimento caldo immediato con un riepilogo scritto."
+      },
+      {
+        "title": "Soglie di confidenza",
+        "body": "Quando la confidenza di riconoscimento o di intento scende sotto la vostra soglia, Agjent038 conferma invece di indovinare e trasferisce invece di improvvisare."
+      },
+      {
+        "title": "Solo risposte fondate",
+        "body": "Le risposte sono limitate alla vostra knowledge base approvata e ai dati live dei sistemi. Se la risposta non c'è, Agjent038 lo dice e instrada la chiamata."
+      },
+      {
+        "title": "Traccia di audit completa",
+        "body": "Ogni turno, chiamata di strumento e decisione viene registrata. Potete ricostruire esattamente cosa è successo su qualsiasi chiamata, mesi dopo."
+      }
+    ]
+  },
+  "Solutions": {
+    "eyebrow": "Soluzioni",
+    "home": "Home",
+    "title": "Lo stesso agente vocale. Sei lavori molto diversi.",
+    "description": "Agjent038 è configurato sulle vostre intenzioni, sui vostri sistemi e sulle vostre regole di escalation. Ecco cosa significa nei settori con cui lavoriamo di più in Kosovo e nella regione.",
+    "cta": "Richiedi un audit delle chiamate",
+    "cta2": "Vedi come funziona",
+    "notListedEyebrow": "Non in elenco?",
+    "notListedTitle": "Se il telefono suona e qualcuno deve rispondere, Agjent038 può fare il primo passaggio.",
+    "notListedLede": "Spedizioni logistiche, servizi comunali, ammissioni scolastiche, utenze, accoglienza legale — lo schema è lo stesso: richieste ripetitive ad alto volume davanti a un numero minore di richieste davvero complesse.",
+    "auditDescription": "Inviateci venti chiamate registrate dalla vostra coda. Entro una settimana restituiremo un'analisi scritta delle intenzioni principali, della quota che Agjent038 risolverebbe oggi e della quota che richiederebbe ancora una persona. Senza costi, senza impegno.",
+    "winsTitle": "Cosa offre",
+    "allSolutions": "Tutte le soluzioni"
+  },
+  "Results": {
+    "eyebrow": "Risultati",
+    "home": "Home",
+    "cta1": "Richiedi una demo dal vivo",
+    "cta2": "Vedi i prezzi",
+    "roiModelEyebrow": "Modello ROI",
+    "title": "La questione è aritmetica, non entusiasmo.",
+    "description": "Qui sotto c'è un modello che potete applicare ai vostri numeri, seguito da ciò che è accaduto in tre implementazioni reali. Usiamo deliberatamente ipotesi prudenti — l'obiettivo è una decisione che possiate difendere internamente.",
+    "roiTitle": "Calcola per la vostra coda",
+    "roiLede": "Muovete i cursori per adattarli alla vostra operatività. Il modello recupera l'86% delle chiamate perse, assume una conversione del 12% sui contatti recuperati e una risoluzione del 68% sul volume di livello 1.",
+    "deploymentsEyebrow": "Implementazioni",
+    "deploymentsTitle": "Tre attività, tre problemi diversi",
+    "testimonialsEyebrow": "Con le loro parole",
+    "testimonialsTitle": "Cosa dicono gli operatori dopo novanta giorni",
+    "cta": "Ottieni la tua stima",
+    "casesDisclaimer": "Le metriche mostrate sono modellate su ipotesi di implementazione pilota. I risultati individuali dipendono da volume di chiamate, mix e contesto operativo."
+  },
+  "Pricing": {
+    "eyebrow": "Prezzi",
+    "home": "Home",
+    "cta1": "Richiedi una demo dal vivo",
+    "cta2": "Vedi come funziona",
+    "title": "Un canone mensile. Tutto ciò che lo fa funzionare è incluso.",
+    "description": "Nessuna fattura di implementazione, nessuna voce di servizi professionali, nessuna fatturazione al minuto sul piano base. Onboarding, integrazione, formazione e ottimizzazione mensile fanno parte dell'abbonamento, perché sono ciò che distingue una demo da un risultato.",
+    "mostChosen": "Il più scelto",
+    "extraConversations": "Tutti i piani includono i minuti indicati. Minuti aggiuntivi a 0,20 €/min. Nessun costo nascosto.",
+    "includedEyebrow": "Incluso in ogni piano",
+    "includedTitle": "Il lavoro che produce davvero il risultato",
+    "includedLede": "Non sono componenti aggiuntivi. Nulla di tutto questo appare su una fattura separata.",
+    "compareEyebrow": "Confronto",
+    "compareTitle": "Piano per piano",
+    "contextEyebrow": "Contesto",
+    "contextTitle": "Cosa comprano 499 € altrove",
+    "contextLede": "Un agente vocale part-time che copre venti ore a settimana, una lingua, un chiamante alla volta — con ferie, malattie e un processo di assunzione annesso.",
+    "questionsEyebrow": "Domande sui prezzi",
+    "questionsTitle": "Prima di chiedere al vostro reparto finanziario",
+    "cta": "Prenota una demo",
+    "ctaSecondary": "Modella il tuo ROI",
+    "anchorCost": "Costo mensile",
+    "anchorHours": "Copertura settimanale",
+    "anchorConcurrency": "Concorrenza",
+    "anchorAvailability": "Disponibilità",
+    "anchorRamp": "Tempo di implementazione",
+    "humanAgent": "Agente umano",
+    "aiAgent": "Agjent038",
+    "comparisonHeader": "Funzionalità",
+    "humanCost": "1.000 €+/mese",
+    "aiCost": "Da 499 €/mese",
+    "humanHours": "40 h/settimana",
+    "aiHours": "168 h/settimana",
+    "humanConcurrency": "1 chiamata alla volta",
+    "aiConcurrency": "Decine",
+    "humanAvailability": "Turni, pause, ferie",
+    "aiAvailability": "24/7/365",
+    "humanRamp": "Settimane di assunzione",
+    "aiRamp": "Attivo in 2 settimane",
+    "features": {
+      "conversations": "Minuti gestiti / mese",
+      "languages": "Lingue",
+      "voiceChannel": "Canale vocale",
+      "messaging": "WhatsApp, Viber, chat ed e-mail",
+      "outbound": "Campagne in uscita",
+      "apiIntegrations": "Integrazioni API personalizzate",
+      "automatedQA": "QA automatica sul 100% delle chiamate",
+      "dedicatedInstance": "Istanza dedicata e residenza UE",
+      "customVoice": "Voce personalizzata del brand",
+      "uptimeSLA": "SLA di disponibilità",
+      "supportResponse": "Tempo di risposta del supporto",
+      "setupFee": "Costo di attivazione"
+    }
+  },
+  "Company": {
+    "eyebrow": "Azienda",
+    "home": "Home",
+    "title": "L'abbiamo costruito perché continuavamo a sentire lo stesso segnale di occupato.",
+    "description": "Il Kosovo ha una delle forze lavoro in outsourcing più capaci d'Europa e un settore dei servizi che cresce più in fretta di quanto riesca ad assumere. Il vincolo non è il talento — è che il telefono suona più in fretta di quanto chiunque possa rispondere. Agjent038 esiste per rimuovere quel vincolo senza chiedere a nessuno di perdere il posto di lavoro.",
+    "howWeWorkEyebrow": "Come lavoriamo",
+    "howWeWorkTitle": "Quattro impegni su cui non negoziamo",
+    "responsibilityEyebrow": "Responsabilità",
+    "responsibilityTitle": "Un'automazione che ricolloca le persone invece di rimuoverle",
+    "responsibilityLede": "Ogni implementazione finora si è conclusa con lo stesso team al suo posto, impegnato in un lavoro diverso. Gli agenti passano dalla lettura ad alta voce degli stati ordine alla fidelizzazione, ai casi complessi e al ricavo in uscita — il lavoro che paga meglio e brucia più lentamente.",
+    "contactTitle": "Mettiti in contatto",
+    "hoursDescription": "Lun–Ven, 09:00–18:00 CET. La nostra linea fuori orario è gestita da Agjent038."
+  },
+  "FAQ": {
+    "eyebrow": "Domande",
+    "home": "Home",
+    "cta1": "Richiedi una demo dal vivo",
+    "cta2": "Vedi come funziona",
+    "title": "Tutto ciò che gli operatori chiedono, spiegato chiaramente.",
+    "description": "Se manca qualcosa, scriveteci e risponderemo direttamente — comprese le parti in cui un agente vocale IA non è la soluzione giusta.",
+    "generalEyebrow": "Generale",
+    "generalTitle": "Il servizio",
+    "technicalEyebrow": "Tecnico",
+    "technicalTitle": "Sistemi, dati e affidabilità",
+    "stillDecidingEyebrow": "Ancora indecisi",
+    "stillDecidingTitle": "La risposta più rapida è una registrazione delle vostre chiamate",
+    "stillDecidingLede": "Trenta minuti, nessuna presentazione. Riproduciamo ciò che Agjent038 avrebbe detto e vi diamo una stima onesta della risoluzione.",
+    "cta": "Prenota un audit delle chiamate"
+  },
+  "Insights": {
+    "eyebrow": "Approfondimenti",
+    "home": "Home",
+    "cta1": "Richiedi una demo dal vivo",
+    "cta2": "Vedi come funziona",
+    "title": "Cosa abbiamo imparato gestendo l'IA su vere code di chiamate del Kosovo.",
+    "description": "Scritti operativi per chi è responsabile di una coda telefonica — economia, dettagli tecnici e conformità, senza la patina dei vendor.",
+    "featured": "In evidenza",
+    "cta": "Richiedi un audit delle chiamate",
+    "auditDescription": "Analizzeremo venti delle vostre chiamate e scriveremo cosa l'automazione riuscirebbe realisticamente a risolvere, a costo zero.",
+    "auditTitle": "Pronti a vedere come appare la risoluzione sulla vostra vera coda?"
+  },
+  "NotFound": {
+    "title": "Questa linea non è collegata.",
+    "description": "La pagina che cercavate non esiste. Il nostro agente vocale, invece, risponde sempre.",
+    "home": "Torna alla home",
+    "contact": "Contattaci"
+  },
+  "Console": {
+    "eyebrow": "Portale clienti",
+    "home": "Home",
+    "seeHow": "Vedi come funziona",
+    "previewEyebrow": "Anteprima dal vivo",
+    "previewTitle": "Una vista in tempo reale di ogni chiamata",
+    "title": "La dashboard che mostra cosa fa davvero l'agente",
+    "description": "Una volta attivo, ogni cliente ha una vista semplice di volume di chiamate, tasso di risoluzione e intenzione del chiamante — senza aspettare un report mensile.",
+    "dashboardEyebrow": "Cosa vedete",
+    "dashboardTitle": "Progettata per i responsabili operativi, non per gli analisti",
+    "dashboardLede": "Non serve uno strumento BI per capire se funziona. I numeri che contano sono su un unico schermo.",
+    "callsTitle": "Flusso chiamate in diretta",
+    "callsDesc": "Vedete ogni chiamata in entrata mentre accade, inclusi durata, esito e se il chiamante ha fatto escalation o ha prenotato direttamente.",
+    "containmentTitle": "Tasso di risoluzione",
+    "containmentDesc": "Una vista scorrevole di quante chiamate l'agente gestisce dall'inizio alla fine, suddivisa per ora, giorno e settimana.",
+    "performanceTitle": "Suddivisione delle intenzioni",
+    "performanceDesc": "Capite perché la gente chiama — prenotazioni, controlli di stato, reclami, trasferimenti — per adattare il playbook dell'agente.",
+    "settingsTitle": "Impostazioni dell'agente",
+    "settingsDesc": "Modificate orari di lavoro, regole di escalation, prompt vocali e finestre di appuntamento senza aprire un ticket.",
+    "cta": "I numeri del vostro agente su un unico schermo"
+  },
+  "Contact": {
+    "eyebrow": "Prenota una demo",
+    "home": "Home",
+    "title": "Portateci venti chiamate reali. Vi diremo esattamente cosa cambia.",
+    "description": "Nessuna pressione e nessun teatrino degli acquisti. Sentirete Agjent038 rispondere nella vostra lingua e nel vostro contesto prima di qualsiasi conversazione sui contratti.",
+    "expectations": [
+      {
+        "step": "Entro 1 giorno lavorativo",
+        "body": "Uno specialista risponde con due orari proposti e una breve registrazione di Agjent038 che risponde a una chiamata nel vostro settore."
+      },
+      {
+        "step": "La chiamata di 30 minuti",
+        "body": "Vi chiediamo di volume, picchi e intenzioni principali. Voi ci chiedete qualsiasi cosa. Niente slide."
+      },
+      {
+        "step": "Entro una settimana",
+        "body": "Un audit scritto delle chiamate: intenzioni principali, risoluzione stimata, impatto mensile previsto e un prezzo fisso."
+      },
+      {
+        "step": "Se si adatta",
+        "body": "Avvio, poi attivi in quattordici giorni — con quattordici giorni di modalità ombra prima che un cliente senta l'IA."
+      }
+    ],
+    "noSetupFee": "Nessun costo di attivazione",
+    "noSetupFeeDescription": "Onboarding, integrazione e formazione sono inclusi nell'abbonamento.",
+    "monthToMonth": "Mese per mese",
+    "monthToMonthDescription": "I piani standard sono mensili con preavviso di 30 giorni. A trattenervi sono i risultati, non la burocrazia.",
+    "gdpr": "Conforme al GDPR",
+    "gdprDescription": "Trattamento UE, DPA firmato, conservazione configurabile e cancellazione su richiesta."
+  },
+  "Capabilities": [
+    {
+      "title": "Accoglienza chiamate in entrata",
+      "description": "Saluta, identifica il chiamante, comprende il motivo della chiamata e risolve o instrada in un solo passaggio."
+    },
+    {
+      "title": "Overflow e fuori orario",
+      "description": "Cattura il 30–60% delle chiamate senza risposta nei picchi e ogni chiamata fuori dall'orario di lavoro."
+    },
+    {
+      "title": "Pianificazione appuntamenti",
+      "description": "Legge la disponibilità live, prenota, riprogramma e invia conferme SMS per ridurre le mancate presenze."
+    },
+    {
+      "title": "Qualificazione lead",
+      "description": "Valuta l'intenzione rispetto ai vostri criteri e invia record puliti e strutturati nel vostro CRM."
+    },
+    {
+      "title": "Stato ordini e ticket",
+      "description": "Recupera i dati reali dai vostri sistemi e risponde a \"dov'è il mio ordine\" senza un umano nel loop."
+    },
+    {
+      "title": "Follow-up in uscita",
+      "description": "Richiamate, promemoria di pagamento, verifiche di soddisfazione e campagne di riattivazione in calendario."
+    },
+    {
+      "title": "Escalation con contesto",
+      "description": "Quando serve una persona, l'agente riceve un riepilogo completo prima di dire ciao."
+    },
+    {
+      "title": "Controllo qualità",
+      "description": "Il 100% delle chiamate rivisto automaticamente — non il campione del 2% che il vostro team QA può ascoltare."
+    }
+  ],
+  "SolutionsList": [
+    {
+      "slug": "call-centers",
+      "name": "Call center e BPO",
+      "headline": "Colmate i vuoti di overflow e fuori orario che i vostri posti non possono coprire",
+      "body": "Agjent038 assorbe il volume di livello 1 in overflow e fuori orario, così i vostri agenti gestiscono le conversazioni che richiedono davvero giudizio. I margini migliorano, gli SLA smettono di slittare e potete fare offerte su contratti che l'organico non avrebbe sostenuto.",
+      "wins": [
+        "Rispondere al 100% delle chiamate presentate, anche al picco del lunedì alle 09:00",
+        "Ridurre il tempo medio di gestione riassumendo prima del trasferimento",
+        "Consegnare reporting QA pronto per i clienti su ogni interazione"
+      ]
+    },
+    {
+      "slug": "clinics",
+      "name": "Cliniche e odontoiatria",
+      "headline": "Smettete di perdere pazienti per un segnale di occupato",
+      "body": "La reception risponde alla persona davanti a sé. Agjent038 risponde al telefono, prenota nel vostro calendario, conferma via SMS e richiama chi non si presenta — nella lingua dei vostri clienti, senza uno script che suona robotico.",
+      "wins": [
+        "Prenotazioni catturate dopo le 17:00 e nei weekend",
+        "Promemoria automatici che riducono le mancate presenze",
+        "Regole di triage che fanno salire di livello i casi urgenti all'istante"
+      ]
+    },
+    {
+      "slug": "hospitality",
+      "name": "Hotel e ristoranti",
+      "headline": "Ogni richiesta di prenotazione gestita nella lingua dell'ospite",
+      "body": "Gli ospiti chiamano da Germania, Svizzera, Turchia e Serbia. Agjent038 gestisce prenotazioni, disponibilità, indicazioni e richieste speciali nella lingua dei vostri clienti, poi scrive nel vostro PMS.",
+      "wins": [
+        "Prenotazioni multilingue senza personale multilingue",
+        "Upsell proposti in modo costante su ogni chiamata",
+        "Richieste di gruppi ed eventi instradate alle vendite con contesto"
+      ]
+    },
+    {
+      "slug": "radhë-logjistika",
+      "name": "Retail e logistica",
+      "headline": "Le chiamate sullo stato ordine, risolte senza una persona",
+      "body": "La chiamata più voluminosa e meno preziosa della vostra coda è \"dov'è il mio pacco\". Agjent038 recupera il record reale, risponde in secondi e apre un'eccezione quando qualcosa è davvero sbagliato.",
+      "wins": [
+        "Ricerche in tempo reale dal vostro sistema ordini",
+        "Resi e cambi avviati durante la chiamata",
+        "Volume di alta stagione assorbito senza assunzioni"
+      ]
+    },
+    {
+      "slug": "shërbime-financiare",
+      "name": "Banche, assicurazioni e fintech",
+      "headline": "Supporto di primo livello conforme, su larga scala",
+      "body": "Verifica configurabile, script di disclosure rigorosi, registrazione completa e controlli di conservazione. Agjent038 gestisce le richieste di saldo, sinistro e polizza e trasferisce tutto ciò che richiede un consulente.",
+      "wins": [
+        "Script deterministici dove la regolamentazione lo impone",
+        "Traccia di audit completa su ogni conversazione",
+        "Gestione dati conforme al GDPR e residenza dati UE"
+      ]
+    },
+    {
+      "slug": "pasuria-e-paluajtshme",
+      "name": "Immobiliare e proprietà",
+      "headline": "Non perdete mai l'acquirente che chiama una sola volta",
+      "body": "Le richieste immobiliari sono sensibili al tempo e a tentativo unico. Agjent038 risponde all'istante, qualifica budget e tempistiche, prenota la visita e notifica l'agente prima che il chiamante riagganci.",
+      "wins": [
+        "Risposta immediata alle richieste da portali e annunci",
+        "Qualificazione su budget, zona e tempistiche",
+        "Visite prenotate direttamente nei calendari degli agenti"
+      ]
+    }
+  ],
+  "Articles": [
+    {
+      "slug": "cost-of-missed-calls-kosovo-call-centers",
+      "title": "Il costo reale di una chiamata persa in un call center del Kosovo",
+      "description": "Un modello pratico per calcolare cosa costano alla vostra operatività ogni mese le chiamate senza risposta — e perché il numero è di solito più alto della busta paga che state proteggendo.",
+      "date": "2026-01-14",
+      "readingTime": "7 min di lettura",
+      "category": "Operatività",
+      "body": [
+        {
+          "heading": "Le chiamate perse sono una voce di costo silenziosa",
+          "paragraphs": [
+            "Ogni contact center monitora il tempo medio di gestione e il tasso di occupazione. Moltissimi non tracciano in modo significativo e finanziario le chiamate che non sono mai entrate in coda. Eppure è lì, tra le chiamate abbandonate e senza risposta, che di solito si nasconde il margine recuperabile più grande.",
+            "In una tipica operatività kosovara da otto a venti posti, tra il 20% e il 45% delle chiamate presentate resta senza risposta nei picchi. I chiamanti non lasciano messaggi in segreteria. Chiamano il numero successivo della lista."
+          ]
+        },
+        {
+          "heading": "Un modello che potete applicare in cinque minuti",
+          "paragraphs": [
+            "Prendete le chiamate presentate mensili, moltiplicate per il tasso di mancata risposta per ottenere i contatti persi. Moltiplicate i contatti persi per la quota che si sarebbe convertita o fidelizzata, poi per il valore medio. Quella è la vostra perdita mensile."
+          ],
+          "list": [
+            "6.000 chiamate presentate al mese",
+            "28% senza risposta = 1.680 contatti persi",
+            "Il 12% si sarebbe convertito = 202 esiti persi",
+            "Valore medio di 45 € = circa 9.000 € persi al mese"
+          ]
+        },
+        {
+          "heading": "Perché assumere è la soluzione costosa",
+          "paragraphs": [
+            "La domanda di picco non è piatta. Per rispondere al picco delle 09:00–11:00 dovete organizzare il personale per il picco, il che significa pagare capacità inattiva per il resto della giornata. Aggiungete assunzioni, formazione, turnover e supervisione e il costo effettivo della copertura supera di gran lunga la voce salariale.",
+            "L'automazione del volume di livello 1 cambia la forma del problema. La concorrenza scala a decine di chiamate, quindi il picco smette di essere una questione di organico e diventa una questione di instradamento."
+          ]
+        },
+        {
+          "heading": "Cosa misurare dopo l'automazione",
+          "paragraphs": [
+            "Il tasso di risoluzione è il numero principale, ma da solo non basta. Monitorate la qualità della risoluzione, il tasso di escalation, il sentiment dei clienti e — soprattutto — il ricavo o la fidelizzazione attribuibili a conversazioni che prima non sarebbero mai state gestite."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ai-voice-agent-vs-hiring-voice-agent",
+      "title": "Agente vocale IA vs assunzione: un confronto onesto",
+      "description": "Dove un agente vocale IA vince chiaramente, dove un essere umano è ancora la risposta giusta e come la maggior parte degli operatori finisce per usare entrambi.",
+      "date": "2026-01-28",
+      "readingTime": "6 min di lettura",
+      "category": "Strategia",
+      "body": [
+        {
+          "heading": "La copertura non è una sfida equa",
+          "paragraphs": [
+            "Un agente umano copre circa 40 ore a settimana e una conversazione alla volta. Un agente vocale IA copre tutte le 168 ore e gestisce decine di chiamate simultanee senza coda. Per qualsiasi azienda che riceve richieste fuori orario, questo da solo cambia l'economia."
+          ]
+        },
+        {
+          "heading": "Coerenza e controllo qualità",
+          "paragraphs": [
+            "Gli esseri umani hanno giorni buoni e giorni cattivi. Un agente vocale IA offre lo stesso saluto, le stesse domande di qualificazione e le stesse disclosure di conformità alla millesima chiamata come alla prima. Ogni conversazione è trascritta e valutata, quindi il controllo qualità passa da un campione del 2% a una copertura completa."
+          ]
+        },
+        {
+          "heading": "Dove vincono ancora gli esseri umani",
+          "paragraphs": [
+            "La complessità emotiva, la negoziazione, la fidelizzazione ad alto valore e i problemi davvero nuovi restano territorio umano. L'errore è chiedere a un agente qualificato di passare sei ore al giorno a leggere stati ordine ad alta voce.",
+            "Le operatività più solide con cui lavoriamo usano l'IA come porta d'ingresso e gli esseri umani come specialisti dietro — con una politica di escalation chiara e ben definita in mezzo."
+          ]
+        },
+        {
+          "heading": "La raccomandazione pratica",
+          "paragraphs": [
+            "Instradate prima overflow e fuori orario verso l'IA. Misurate la risoluzione per trenta giorni. Poi decidete se estendere l'automazione alla coda principale. Quasi nessuno si pente di aver iniziato dalle chiamate che stava già perdendo."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "albanian-language-ai-voice-agents",
+      "title": "Cosa serve per creare un agente vocale IA che parli un vero albanese",
+      "description": "Dialetto, latenza, barge-in e code-switching: i dettagli tecnici che separano un agente vocale albanese utilizzabile da una demo.",
+      "date": "2026-02-09",
+      "readingTime": "8 min di lettura",
+      "category": "Tecnologia",
+      "body": [
+        {
+          "heading": "I modelli generici non bastano",
+          "paragraphs": [
+            "I grandi modelli vocali gestiscono l'albanese, ma sono generalmente orientati verso la pronuncia standard tosca e il registro formale. I veri chiamanti in Kosovo parlano ghego, accorciano le parole e mescolano prestiti dall'inglese e dal tedesco senza preavviso.",
+            "Senza adattamento al dominio su vere registrazioni di chiamate, la precisione del riconoscimento crolla proprio dove conta di più: nomi, indirizzi e numeri."
+          ]
+        },
+        {
+          "heading": "La latenza è una caratteristica del prodotto",
+          "paragraphs": [
+            "Oltre circa 800 millisecondi di ritardo di risposta, un agente vocale sembra rotto. Raggiungere meno di 600 ms richiede riconoscimento in streaming, generazione speculativa della risposta e sintesi vocale che inizia prima che la risposta completa sia composta."
+          ]
+        },
+        {
+          "heading": "Barge-in e gestione dei turni",
+          "paragraphs": [
+            "Le conversazioni reali si interrompono a vicenda. Un agente che non può essere interrotto a metà frase sembra un IVR, e i chiamanti iniziano subito a premere zero. Un rilevamento barge-in affidabile, combinato con un recupero elegante quando chiamante e agente parlano insieme, rende umana l'interazione."
+          ],
+          "list": [
+            "ASR in streaming con endpointing calibrato sulla prosodia albanese",
+            "Gestione delle interruzioni che scarta la risposta in corso",
+            "Normalizzazione di numeri, date e indirizzi per i formati locali",
+            "Ripiego su un umano quando la confidenza scende sotto la soglia"
+          ]
+        },
+        {
+          "heading": "Valutazione, in continuo",
+          "paragraphs": [
+            "Un agente vocale non è mai finito. Valutiamo ogni conversazione, rivediamo ogni settimana i turni a bassa confidenza e riaddestriamo sugli errori. Quel ciclo — non la costruzione iniziale — porta la risoluzione dal 40% al 70% in un trimestre."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gdpr-call-recording-kosovo",
+      "title": "GDPR, registrazione delle chiamate e IA: cosa devono gestire gli operatori del Kosovo",
+      "description": "Una checklist in linguaggio semplice per gestire registrazioni, trascrizioni e trattamento IA senza creare esposizione normativa.",
+      "date": "2026-02-22",
+      "readingTime": "5 min di lettura",
+      "category": "Conformità",
+      "body": [
+        {
+          "heading": "La legge kosovara segue da vicino il GDPR",
+          "paragraphs": [
+            "La legge sulla protezione dei dati personali rispecchia la maggior parte dei principi del GDPR: base giuridica, limitazione delle finalità, minimizzazione dei dati e diritti degli interessati. Se servite clienti UE, siete quasi certamente nel perimetro del GDPR come responsabile del trattamento."
+          ]
+        },
+        {
+          "heading": "Checklist pratica",
+          "paragraphs": [
+            "La maggior parte dell'esposizione deriva dalle basi saltate, non da qualcosa di esotico."
+          ],
+          "list": [
+            "Annunciare la registrazione all'inizio della chiamata, nella lingua del chiamante",
+            "Definire e applicare un periodo di conservazione per audio e trascrizioni",
+            "Firmare un accordo sul trattamento dei dati con ogni vendor IA",
+            "Mantenere il trattamento nell'UE dove i vostri clienti lo richiedono",
+            "Sapere localizzare ed eliminare i dati di un chiamante specifico su richiesta",
+            "Oscurare i dati di pagamento e identità dalle trascrizioni archiviate"
+          ]
+        },
+        {
+          "heading": "Fate queste domande al vostro fornitore",
+          "paragraphs": [
+            "Dove viene elaborato e archiviato l'audio? I vostri dati servono ad addestrare modelli condivisi? La conservazione può essere configurata per cliente? È disponibile un'istanza dedicata? Un fornitore che non sa rispondere rapidamente a queste domande è un fornitore che non ci ha pensato."
+          ]
+        }
+      ]
+    }
+  ],
+  "TechnicalFAQ": [
+    {
+      "q": "Quali sistemi di telefonia supportate?",
+      "a": "Tronchi SIP e VoIP di qualsiasi carrier, più integrazioni native con Twilio, 3CX, Asterisk e FreePBX. Se usate un PBX ospitato, di solito possiamo connetterci via registrazione SIP o un numero inoltrato in meno di un giorno."
+    },
+    {
+      "q": "Quante chiamate può gestire in contemporanea?",
+      "a": "La concorrenza scala fino a decine di chiamate simultanee — la piattaforma si dimensiona orizzontalmente, quindi un picco da tre a venti chiamate non crea una coda. Questo è il vantaggio strutturale rispetto all'organico: la domanda di picco smette di essere un problema di personale."
+    },
+    {
+      "q": "Può scrivere nel nostro CRM e calendario?",
+      "a": "Sì. Esistono connettori standard per HubSpot, Zoho, Pipedrive, Salesforce, Google Calendar e Microsoft 365. Qualsiasi cosa con un'API REST può essere integrata durante l'onboarding, e costruiamo il mapping dei campi con voi invece di consegnarvi un modulo."
+    },
+    {
+      "q": "Cosa succede se il vostro servizio va giù?",
+      "a": "Le chiamate passano immediatamente al vostro instradamento esistente, quindi un chiamante raggiunge il vostro team come prima di Agjent038. I piani Operations hanno un obiettivo di disponibilità del 99,5% e Enterprise uno SLA contrattuale del 99,9%."
+    },
+    {
+      "q": "Usate le nostre conversazioni per addestrare modelli condivisi?",
+      "a": "No. I vostri dati servono solo a migliorare la vostra implementazione, secondo la vostra policy di conservazione. I clienti Enterprise possono operare su un'istanza completamente isolata con garanzie di residenza dati UE scritte nell'accordo."
+    },
+    {
+      "q": "Possiamo partire prima su una sola parte della nostra operatività?",
+      "a": "È proprio ciò che consigliamo. Iniziate da fuori orario e overflow — le chiamate che state già perdendo. Misurate la risoluzione per trenta giorni, poi decidete se spostare il traffico della coda principale."
+    }
+  ],
+  "Inclusions": [
+    "Audit delle chiamate di discovery",
+    "Costruzione della knowledge base",
+    "Integrazione telefonica",
+    "Sincronizzazione CRM e calendario",
+    "Ottimizzazione voce e persona",
+    "Modalità ombra di 14 giorni",
+    "Dashboard analitica in diretta",
+    "Registrazioni e trascrizioni delle chiamate",
+    "Regole di escalation",
+    "Ottimizzazione mensile",
+    "Gestione conforme al GDPR",
+    "Nessun costo di attivazione"
+  ],
+  "Plans": [
+    {
+      "name": "Overflow",
+      "price": "499 €",
+      "cadence": "al mese",
+      "meta": "Notti/weekend + overflow di picco, 400 min",
+      "summary": "Copre notti, weekend e overflow di picco più la vostra coda principale.",
+      "includes": [
+        "Risposta notte, weekend e overflow di picco",
+        "Fino a 400 minuti / mese",
+        "1 lingua configurabile",
+        "Trasferimento caldo al team di reperibilità",
+        "Dashboard in diretta e registrazioni delle chiamate",
+        "Conferme SMS e richiamate",
+        "Nessun costo di attivazione",
+        "Mese per mese"
+      ],
+      "cta": "Inizia con Overflow"
+    },
+    {
+      "name": "Reception",
+      "price": "499 €",
+      "cadence": "al mese",
+      "meta": "24/7, 1.000 min, multilingue, CRM, trasferimento caldo",
+      "summary": "L'agente vocale IA completo per una singola sede o una coda in entrata mirata. Attivo in due settimane.",
+      "featured": true,
+      "includes": [
+        "Risposta in entrata 24/7",
+        "Fino a 1.000 minuti gestiti / mese",
+        "Multilingue — la vostra lingua predefinita più altre",
+        "Prenotazione appuntamenti + conferme SMS",
+        "Integrazione calendario, e-mail e CRM",
+        "Dashboard in diretta, trascrizioni e registrazioni",
+        "Trasferimento caldo al vostro team con riepilogo",
+        "Onboarding guidato + modalità ombra di 14 giorni",
+        "Supporto e-mail, risposta entro il giorno lavorativo successivo"
+      ],
+      "cta": "Inizia con Reception"
+    },
+    {
+      "name": "Operations",
+      "price": "899 €",
+      "cadence": "al mese",
+      "meta": "2.500 min, follow-up in uscita, dashboard QA",
+      "summary": "Assorbe overflow e fuori orario su larga scala, più i follow-up in uscita.",
+      "includes": [
+        "Tutto ciò che è in Reception",
+        "Fino a 2.500 minuti gestiti / mese",
+        "Richiamate in uscita e campagne di follow-up",
+        "Valutazione QA automatica sul 100% delle chiamate",
+        "Specialista dedicato + ottimizzazione mensile",
+        "Supporto prioritario, SLA di risposta di 4 ore",
+        "Agente WhatsApp, Viber, chat web ed e-mail",
+        "Integrazioni API e database personalizzate"
+      ],
+      "cta": "Scala con Operations"
+    },
+    {
+      "name": "Enterprise",
+      "cadence": "accordo annuale",
+      "meta": "Alto volume, infrastruttura dedicata",
+      "summary": "Capacità dedicata, voce personalizzata e SLA contrattuali per operatività regolamentate e ad alto volume.",
+      "includes": [
+        "Tutto ciò che è in Operations",
+        "Alto volume di conversazioni",
+        "Istanza dedicata e residenza dati UE",
+        "Voce e persona personalizzate del brand",
+        "SLA di disponibilità 99,9% con penali",
+        "SSO, accesso basato sui ruoli, log di audit",
+        "Opzione white-label per i rivenditori BPO",
+        "Revisione aziendale trimestrale con il nostro team"
+      ],
+      "cta": "Parlaci"
+    }
+  ],
+  "FAQs": [
+    {
+      "q": "L'IA parla in modo naturale?",
+      "a": "Sì. Agjent038 è ottimizzato per la conversazione naturale nella lingua configurata, con pronuncia corretta e il code-switching che la gente usa davvero al telefono. Gestisce più lingue e cambia a metà chiamata quando lo fa il chiamante. Potete ascoltare campioni registrati reali durante la vostra chiamata di discovery prima di impegnarvi."
+    },
+    {
+      "q": "Cosa succede quando l'IA non riesce a gestire qualcosa?",
+      "a": "Fa escalation. Definite voi le regole — soglie di rimborso, parole chiave di reclamo, frustrazione rilevata, account VIP — e Agjent038 trasferisce il chiamante alla persona giusta con un riepilogo scritto già sullo schermo. Nulla resta in sospeso e nessun chiamante resta intrappolato in un loop."
+    },
+    {
+      "q": "Significa che servono meno agenti?",
+      "a": "No. Elimina i vuoti che il vostro team non può coprire — notti, weekend e overflow di picco — così i vostri agenti si concentrano sulle conversazioni che richiedono giudizio. La maggior parte degli operatori tiene il team e lo ricolloca su fidelizzazione, casi complessi e ricavo in uscita, mentre Agjent038 assorbe il volume ripetitivo di livello 1 che brucia gli agenti e gonfia il costo per contatto."
+    },
+    {
+      "q": "Quanto tempo serve per andare in produzione?",
+      "a": "Due settimane dal via per il piano Reception. Giorni 1–3: discovery e audit delle chiamate. Giorni 4–10: costruzione e formazione. Giorni 11–14: modalità ombra dove l'IA risponde su una linea di test e approvate ogni comportamento. Integrazioni complesse possono aggiungere una settimana."
+    },
+    {
+      "q": "Cosa include davvero 499 € al mese?",
+      "a": "Il prodotto completo: risposta 24/7 multilingue, fino a 1.000 minuti gestiti, prenotazione, integrazione CRM e calendario, trascrizioni, registrazioni, dashboard in diretta, trasferimento caldo, onboarding e modalità ombra. Nessun costo di attivazione e nessuna fatturazione a sorpresa al minuto sul piano base."
+    },
+    {
+      "q": "Come si confronta con l'assunzione di un agente vocale?",
+      "a": "Un agente a tempo pieno in Kosovo copre circa 40 ore a settimana e risponde a una chiamata alla volta. Agjent038 copre 168 ore a settimana, risponde a decine di chiamate simultanee, non ha mai una brutta giornata e costa meno di un singolo stipendio — producendo una trascrizione e un punteggio di qualità per ogni conversazione."
+    },
+    {
+      "q": "I dati dei nostri clienti sono al sicuro?",
+      "a": "Le conversazioni sono crittografate in transito e a riposo, elaborate su infrastruttura UE e conservate solo per quanto previsto dalla vostra policy. Firmiamo un DPA, supportiamo le richieste dei diritti degli interessati ai sensi del GDPR e i clienti Enterprise possono operare su un'istanza dedicata con garanzie rigorose di residenza."
+    },
+    {
+      "q": "Possiamo tenere il nostro numero e provider attuali?",
+      "a": "Sì. Agjent038 si posiziona sopra la vostra telefonia esistente — tronchi SIP, Twilio, 3CX, Asterisk, FreePBX o il vostro carrier. Non va smantellato nulla e potete instradare solo una percentuale del traffico mentre costruite fiducia."
+    },
+    {
+      "q": "E se non funziona per noi?",
+      "a": "Vedete le prestazioni in modalità ombra prima che un singolo cliente ne sia esposto, e i piani mensili sono mese per mese con preavviso di 30 giorni. Se la risoluzione non raggiunge l'obiettivo concordato in discovery, continuiamo a ottimizzare senza costi aggiuntivi o potete andarvene."
+    }
+  ],
+  "Languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "Français",
+    "it": "Italiano"
+  },
+  "LeadForm": {
+    "successTitle": "Richiesta ricevuta",
+    "successBody": "Uno specialista risponderà entro un giorno lavorativo con un orario proposto e una breve registrazione di Agjent038 che risponde a una chiamata nel vostro settore. Niente slide, nessun impegno.",
+    "fullName": "Nome completo",
+    "workEmail": "E-mail di lavoro",
+    "company": "Azienda",
+    "phone": "Telefono",
+    "monthlyCalls": "Chiamate in entrata mensili",
+    "planOfInterest": "Piano di interesse",
+    "message": "Cosa vorreste che Agjent038 gestisse?",
+    "sending": "Invio…",
+    "submit": "Richiedi una demo",
+    "privacy": "Rispondiamo entro un giorno lavorativo. I vostri dati restano con noi — nessuna rivendita, nessuna newsletter non richiesta.",
+    "callRanges": ["Sotto 500", "500 – 1.000", "1.000 – 4.000", "4.000 – 10.000", "10.000+"],
+    "planOptions": ["Overflow — 499 €/mese", "Reception — 499 €/mese", "Operations — 899 €/mese", "Enterprise", "Non ancora sicuro"],
+    "placeholderMessage": "Prenotazioni fuori orario, chiamate sullo stato ordine, appuntamenti…"
+  },
+  "Roi": {
+    "yourOperation": "La vostra operatività",
+    "callsPerMonth": "Chiamate in entrata al mese",
+    "shareUnanswered": "Quota attualmente senza risposta",
+    "avgCallValue": "Valore medio di una chiamata risolta",
+    "agentsTier1": "Agenti che coprono il livello 1",
+    "costPerAgent": "Costo complessivo per agente / mese",
+    "projectedImpact": "Impatto mensile previsto",
+    "netGain": "Guadagno netto mensile con Agjent038",
+    "returnOn": "ritorno su",
+    "callsRecovered": "Chiamate recuperate",
+    "revenueRecovered": "Ricavo recuperato",
+    "agentCapacity": "Capacità agente liberata",
+    "conversationsAutomated": "Conversazioni automatizzate",
+    "agjent038Plan": "Piano Agjent038",
+    "saved": "Salvato — lo porteremo alla vostra chiamata",
+    "saving": "Salvataggio…",
+    "saveEstimate": "Salva questa stima",
+    "disclaimer": "Le stime usano benchmark prudenti da implementazioni reali: 86% di chiamate perse recuperate, conversione del 12%, risoluzione di livello 1 del 68%."
+  },
+  "Dashboard": {
+    "consoleName": "Agjent038 Console · Operations",
+    "live": "Live",
+    "callsAnswered": "Chiamate gestite",
+    "containment": "Risoluzione",
+    "avgAnswer": "Risposta media",
+    "missedCalls": "Chiamate perse",
+    "conversationsHandled": "Conversazioni gestite",
+    "todayHourly": "Oggi · orario",
+    "peakConcurrency": "Concorrenza di picco",
+    "escalated": "Escalate",
+    "csat": "CSAT",
+    "languageMix": "Mix linguistico",
+    "liveQueue": "Coda in diretta",
+    "autoRefresh": "aggiornamento auto",
+    "feed": [
+      { "lang": "EN", "intent": "Prenotazione appuntamento", "outcome": "Prenotato", "dur": "1:12", "tone": "mint" },
+      { "lang": "FR", "intent": "Stato ordine", "outcome": "Risolto", "dur": "0:48", "tone": "mint" },
+      { "lang": "DE", "intent": "Reclamo", "outcome": "Escalato", "dur": "2:05", "tone": "gold" },
+      { "lang": "EN", "intent": "Richiesta prezzo", "outcome": "Risolto", "dur": "0:39", "tone": "mint" },
+      { "lang": "ES", "intent": "Riprogrammazione", "outcome": "Riprogrammato", "dur": "1:27", "tone": "mint" }
+    ],
+    "languages": [
+      { "code": "English", "pct": 58 },
+      { "code": "French", "pct": 19 },
+      { "code": "German", "pct": 12 },
+      { "code": "Spanish", "pct": 7 },
+      { "code": "Italian", "pct": 4 }
+    ]
+  },
+  "Cases": [
+    {
+      "tag": "Contact center in outsourcing · Prishtina",
+      "title": "Dal 41% di abbandono a zero chiamate perse",
+      "context": "Dodici posti che gestiscono il supporto in entrata per due clienti telecom. Gli abbandoni nei picchi costavano loro una penale SLA ogni mese.",
+      "metrics": [
+        ["0%", "Chiamate abbandonate"],
+        ["71%", "Livello 1 risolto"],
+        ["4 FTE", "Ricollocati su fidelizzazione"],
+        ["11 giorni", "Per andare in produzione"]
+      ],
+      "quote": "Le penali SLA sono cessate dal primo mese intero. Solo quello l'ha ripagato più volte."
+    },
+    {
+      "tag": "Gruppo odontoiatrico · Ferizaj",
+      "title": "Sessanta prenotazioni in più al mese dalle chiamate che nessuno rispondeva",
+      "context": "Quattro cliniche che condividono una linea di reception. Circa un terzo delle chiamate arrivava mentre il personale era con i pazienti o dopo la chiusura.",
+      "metrics": [
+        ["+58", "Prenotazioni / mese"],
+        ["-34%", "Tasso di mancate presenze"],
+        ["24/7", "Copertura"],
+        ["9 giorni", "Per andare in produzione"]
+      ],
+      "quote": "I pazienti non si accorgono di parlare con un'IA finché non glielo diciamo. Ciò che notano è che finalmente qualcuno risponde."
+    },
+    {
+      "tag": "E-commerce e logistica · Prishtina",
+      "title": "Le chiamate sullo stato ordine risolte senza una persona",
+      "context": "I picchi stagionali di volume costringevano ad assunzioni temporanee ogni trimestre, con tre settimane di formazione prima che qualcuno fosse utile.",
+      "metrics": [
+        ["82%", "Chiamate di stato automatizzate"],
+        ["0", "Assunzioni stagionali"],
+        ["-46%", "Costo per contatto"],
+        ["14 giorni", "Per andare in produzione"]
+      ],
+      "quote": "Abbiamo smesso di assumere per i picchi. La coda ora assorbe tutto, e il reporting è migliore di prima."
+    }
+  ],
+  "CompanyPrinciples": [
+    {
+      "title": "Vendi il risultato, dimostralo ogni mese",
+      "body": "Risoluzione, chiamate recuperate e capacità liberata sono gli unici numeri che contano. Li riportiamo ogni mese, compresi i mesi in cui la curva si appiattisce."
+    },
+    {
+      "title": "Il linguaggio naturale non è una funzionalità, è il prodotto",
+      "body": "Un agente che pronuncia male le parole del chiamante perde la chiamata. Dedichiamo la maggior parte del nostro tempo di ingegneria a rendere naturale la conversazione nella lingua configurata."
+    },
+    {
+      "title": "Niente lock-in come strategia",
+      "body": "Mese per mese sui nostri piani standard. Tenete i vostri numeri e i vostri dati. Se smettiamo di meritare l'abbonamento, andarsene deve essere semplice."
+    },
+    {
+      "title": "Dire di no quando non funzionerà",
+      "body": "Alcune code sono troppo complesse o a volume troppo basso per giustificare oggi l'automazione. Preferiamo dirvelo alla prima chiamata piuttosto che prendervi un anno di budget."
+    }
+  ],
+  "CompanyFacts": [
+    ["2024", "Fondata a Prishtina"],
+    ["Multilingue", "Supporto linguistico configurabile"],
+    ["<600ms", "Latenza di risposta mediana"],
+    ["UE", "Regione di elaborazione dati"]
+  ],
+  "CompanyLimits": "Siamo altrettanto diretti sui limiti. Agjent038 non negozia contratti, non gestisce lutti e non improvvisa policy. Quelle chiamate appartengono a una persona, e il nostro lavoro è garantire che quella persona le riceva con tutto il contesto e il tempo necessario per farle bene.",
+  "PricingCompare": [
+    ["Minuti gestiti / mese", "400", "1.000", "2.500", "Personalizzato"],
+    ["Lingue", "1", "Multilingue", "Multilingue", "Personalizzato"],
+    ["Canale vocale", "Incluso", "Incluso", "Incluso", "Incluso"],
+    ["WhatsApp, Viber, chat ed e-mail", "—", "—", "Incluso", "Incluso"],
+    ["Campagne in uscita", "—", "—", "Incluso", "Incluso"],
+    ["Integrazioni API personalizzate", "—", "Solo standard", "Incluso", "Personalizzato"],
+    ["QA automatica sul 100% delle chiamate", "—", "—", "Incluso", "Incluso"],
+    ["Istanza dedicata e residenza UE", "—", "—", "—", "Incluso"],
+    ["Voce personalizzata del brand", "—", "—", "—", "Incluso"],
+    ["SLA di disponibilità", "Best effort", "Best effort", "99,5%", "99,9% contrattuale"],
+    ["Risposta del supporto", "E-mail", "Giorno lavorativo successivo", "4 ore", "1 ora + reperibilità"],
+    ["Costo di attivazione", "Nessuno", "Nessuno", "Nessuno", "Nessuno"]
+  ],
+  "PricingContext": [
+    ["168 h/settimana", "Copertura Agjent038"],
+    ["40 h/settimana", "Un agente a tempo pieno"],
+    ["Decine", "Chiamate simultanee con Agjent038"],
+    ["1", "Chiamate simultanee per agente"]
+  ],
+  "Layout": {
+    "skipToContent": "Vai al contenuto",
+    "jsonLdDescription": "Agjent038 crea agenti vocali IA e agenti di assistenza clienti per call center e aziende di servizi in Kosovo, rispondendo 24/7 con supporto multilingue.",
+    "jsonLdServiceType": "Agente vocale IA e agente di assistenza clienti",
+    "jsonLdAudienceType": "Call center, BPO, cliniche, hotel e aziende di servizi"
+  },
+  "FooterProductLinks": {
+    "platform": "Piattaforma",
+    "pricing": "Prezzi",
+    "results": "Risultati e ROI",
+    "faq": "FAQ",
+    "bookDemo": "Prenota una demo"
+  },
+  "PlatformPillars": [
+    {
+      "glyph": "◆",
+      "title": "Voce naturale nella lingua configurata, non un livello di traduzione",
+      "description": "Addestrata su trascrizioni reali di call center e pronuncia naturale, così i chiamanti non chiedono mai di essere trasferiti a un umano perché sono stati fraintesi.",
+      "detail": [
+        "Supporto linguistico configurabile — la lingua predefinita più altre su richiesta",
+        "Latenza di risposta sotto i 600 ms sui carrier locali",
+        "Supporto barge-in: i chiamanti possono interrompere naturalmente"
+      ]
+    },
+    {
+      "glyph": "◇",
+      "title": "Risponde, prenota, verifica e fa escalation",
+      "description": "Agjent038 non è un albero IVR. Comprende l'intenzione, controlla i vostri sistemi, completa l'attività e instrada verso un umano solo quando lo richiedono la policy o l'emozione.",
+      "detail": [
+        "Prenotazione appuntamenti con disponibilità calendario live",
+        "Stato ordini, fatture e ricerche account via API",
+        "Verifica dell'identità con regole configurabili"
+      ]
+    },
+    {
+      "glyph": "○",
+      "title": "Si posiziona sopra il vostro stack esistente",
+      "description": "Tenete numeri, CRM e agenti. Agjent038 si collega a ciò che già gestite e inizia ad assorbire l'overflow in giorni, non in trimestri.",
+      "detail": [
+        "Tronchi SIP / VoIP, Twilio, 3CX, Asterisk, FreePBX",
+        "Sincronizzazione CRM: HubSpot, Zoho, Pipedrive, Salesforce, REST personalizzato",
+        "WhatsApp, Viber, chat web ed e-mail dallo stesso cervello"
+      ]
+    },
+    {
+      "glyph": "□",
+      "title": "Una sala di controllo, non una scatola nera",
+      "description": "Ogni conversazione è trascritta, valutata e ricercabile. Vedete risoluzione, sentiment, ricavo influenzato e dove l'IA ha trasferito — in diretta.",
+      "detail": [
+        "Coda in diretta, trascrizioni e registrazioni delle chiamate",
+        "Valutazione della qualità su 12 dimensioni per conversazione",
+        "Reporting esportabile per clienti e stakeholder"
+      ]
+    }
+  ],
+  "Steps": [
+    {
+      "step": "01",
+      "title": "Discovery e audit delle chiamate",
+      "days": "Giorno 1–3",
+      "body": "Ascoltiamo un campione delle vostre chiamate reali, mappiamo le intenzioni principali e quantifichiamo quanto vi costano ogni mese le chiamate perse e gestite male."
+    },
+    {
+      "step": "02",
+      "title": "Costruzione e formazione",
+      "days": "Giorno 4–10",
+      "body": "Scriviamo la vostra knowledge base, colleghiamo telefonia e CRM e formiamo Agjent038 su script, tono, offerte e policy di escalation."
+    },
+    {
+      "step": "03",
+      "title": "Modalità ombra",
+      "days": "Giorno 11–14",
+      "body": "Agjent038 risponde in parallelo al vostro team su un numero di test. Rivedete le trascrizioni e approvate ogni comportamento prima che un singolo cliente lo ascolti."
+    },
+    {
+      "step": "04",
+      "title": "Messa in produzione e ottimizzazione",
+      "days": "Dal giorno 15 in poi",
+      "body": "Instradiamo il traffico reale, monitoriamo la risoluzione ogni giorno e ottimizziamo ogni settimana. Avete uno specialista dedicato e una revisione mensile delle prestazioni."
+    }
+  ],
+  "Integrations": [
+    "Twilio",
+    "3CX",
+    "Asterisk",
+    "FreePBX",
+    "HubSpot",
+    "Zoho CRM",
+    "Pipedrive",
+    "Salesforce",
+    "Google Calendar",
+    "Microsoft 365",
+    "WhatsApp Business",
+    "Viber",
+    "Slack",
+    "Zendesk",
+    "Shopify",
+    "Custom REST API"
+  ],
+  "HowItWorks": {
+    "headline": "Dalla chiamata al risultato in pochi secondi",
+    "steps": [
+      { "num": "01", "label": "Ricezione", "title": "Chiamata in entrata", "desc": "Risposta in 0,4 secondi" },
+      { "num": "02", "label": "Elaborazione", "title": "La gestisce l'IA", "desc": "Comprende l'intenzione, agisce nei vostri sistemi" },
+      { "num": "03", "label": "Risoluzione", "title": "Attività completata", "desc": "Registrata, confermata, zero perse" }
+    ],
+    "callerMessage": "Salve, vorrei prenotare un appuntamento per martedì",
+    "aiMessage": "Fatto! Confermato per martedì alle 10:00. SMS inviato.",
+    "dashboard": {
+      "live": "Live",
+      "title": "Agjent038 Console",
+      "kpis": [
+        { "label": "Chiamate", "value": "1.284", "delta": "+18%" },
+        { "label": "Risoluzione", "value": "68%", "delta": "+11 pts" },
+        { "label": "Velocità", "value": "0,4s", "delta": "-6,1s" },
+        { "label": "Perse", "value": "0", "delta": "erano 412" }
+      ],
+      "chartLabel": "Oggi — volume orario"
+    },
+    "toast": {
+      "title": "Appuntamento confermato",
+      "sub": "Mar 10:00 · SMS inviato"
+    },
+    "tablet": {
+      "success": "Attività completata",
+      "successDesc": "Appuntamento prenotato SMS inviato · CRM aggiornato",
+      "stats": [
+        { "label": "Durata", "value": "42s" },
+        { "label": "Sentiment", "value": "Positivo" },
+        { "label": "CSAT", "value": "5 / 5" }
+      ],
+      "summaryTitle": "Riepilogo chiamata",
+      "summaryBody": "Il cliente ha richiesto di riprogrammare l'appuntamento a martedì alle 10:00. SMS di conferma inviato. Record CRM aggiornato."
+    }
+  }
+}
