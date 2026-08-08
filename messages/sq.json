@@ -16,6 +16,14 @@
     "micError": "Qasja në mikrofon është e bllokuar. Lejo mikrofonin dhe provo përsëri.",
     "serviceError": "Demo është përkohësisht e padisponueshme. Provo përsëri më vonë."
   },
+  "Orb": {
+    "liveCall": "Thirrje e drejtpërdrejtë",
+    "greeting": "“Përshëndetje, si mund t'ju ndihmoj?”",
+    "answeredIn": "U përgjigj në 0,4 s",
+    "outcome": "Rezultati",
+    "appointmentBooked": "Takimi u rezervua",
+    "syncedToCrm": "U sinkronizua me CRM · 1,2 s"
+  },
   "Meta": {
     "title": "Agjent038 — Agjentë Zanorë AI për Qendrat e Thirrjeve në Kosovë",
     "titleTemplate": "%s | Agjent038",
@@ -878,8 +886,20 @@
     "sending": "Duke dërguar…",
     "submit": "Kërkoni një demo",
     "privacy": "Përgjigjemi brenda një dite pune. Detajet tuaja qëndrojnë tek ne — pa rishitje, pa buletine që s'i keni kërkuar.",
-    "callRanges": ["Nën 500", "500 – 1,000", "1,000 – 4,000", "4,000 – 10,000", "10,000+"],
-    "planOptions": ["Overflow — 499€/muaj", "Pranimi — 499€/muaj", "Operacionet — 899€/muaj", "Enterprise", "Ende nuk jam i sigurt"],
+    "callRanges": [
+      "Nën 500",
+      "500 – 1,000",
+      "1,000 – 4,000",
+      "4,000 – 10,000",
+      "10,000+"
+    ],
+    "planOptions": [
+      "Overflow — 499€/muaj",
+      "Pranimi — 499€/muaj",
+      "Operacionet — 899€/muaj",
+      "Enterprise",
+      "Ende nuk jam i sigurt"
+    ],
     "placeholderMessage": "Rezervime pas orarit, thirrje për statusin e porosisë, rezervim takimesh…"
   },
   "Roi": {
@@ -918,17 +938,59 @@
     "liveQueue": "Radha live",
     "autoRefresh": "përditësim automatik",
     "feed": [
-      { "lang": "EN", "intent": "Rezervim termini", "outcome": "Rezervuar", "dur": "1:12", "tone": "mint" },
-      { "lang": "FR", "intent": "Statusi i porosisë", "outcome": "Zgjidhur", "dur": "0:48", "tone": "mint" },
-      { "lang": "DE", "intent": "Ankesë", "outcome": "Eskaluar", "dur": "2:05", "tone": "gold" },
-      { "lang": "EN", "intent": "Informacion çmimi", "outcome": "Zgjidhur", "dur": "0:39", "tone": "mint" },
-      { "lang": "IT", "intent": "Ndryshim termini", "outcome": "Riplanifikuar", "dur": "1:27", "tone": "mint" }
+      {
+        "lang": "EN",
+        "intent": "Rezervim termini",
+        "outcome": "Rezervuar",
+        "dur": "1:12",
+        "tone": "mint"
+      },
+      {
+        "lang": "FR",
+        "intent": "Statusi i porosisë",
+        "outcome": "Zgjidhur",
+        "dur": "0:48",
+        "tone": "mint"
+      },
+      {
+        "lang": "DE",
+        "intent": "Ankesë",
+        "outcome": "Eskaluar",
+        "dur": "2:05",
+        "tone": "gold"
+      },
+      {
+        "lang": "EN",
+        "intent": "Informacion çmimi",
+        "outcome": "Zgjidhur",
+        "dur": "0:39",
+        "tone": "mint"
+      },
+      {
+        "lang": "IT",
+        "intent": "Ndryshim termini",
+        "outcome": "Riplanifikuar",
+        "dur": "1:27",
+        "tone": "mint"
+      }
     ],
     "languages": [
-      { "code": "English", "pct": 41 },
-      { "code": "Deutsch", "pct": 27 },
-      { "code": "Italiano", "pct": 19 },
-      { "code": "Français", "pct": 13 }
+      {
+        "code": "English",
+        "pct": 41
+      },
+      {
+        "code": "Deutsch",
+        "pct": 27
+      },
+      {
+        "code": "Italiano",
+        "pct": 19
+      },
+      {
+        "code": "Français",
+        "pct": 13
+      }
     ]
   },
   "Cases": [
@@ -937,10 +999,22 @@
       "title": "Nga 41% braktisje në zero thirrje të humbura",
       "context": "Dymbëdhjetë vende që trajtojnë mbështetje hyrëse për dy klientë telekomi. Braktisja në orët e pikut po i kushtonte një gjobë SLA çdo muaj.",
       "metrics": [
-        ["0%", "Thirrje të braktisura"],
-        ["71%", "Niveli i parë i mbajtur"],
-        ["4 FTE", "Të ridrejtuar në mbajtje"],
-        ["11 ditë", "Për të shkuar live"]
+        [
+          "0%",
+          "Thirrje të braktisura"
+        ],
+        [
+          "71%",
+          "Niveli i parë i mbajtur"
+        ],
+        [
+          "4 FTE",
+          "Të ridrejtuar në mbajtje"
+        ],
+        [
+          "11 ditë",
+          "Për të shkuar live"
+        ]
       ],
       "quote": "Gjobat e SLA-së ndaluan që në muajin e parë të plotë. Vetëm kjo e pagoi veten shumëfish."
     },
@@ -949,10 +1023,22 @@
       "title": "Gjashtëdhjetë rezervime shtesë në muaj nga thirrje që askush nuk i përgjigjej",
       "context": "Katër klinika që ndajnë një linjë pranimi. Rreth një e treta e thirrjeve arrinte ndërsa stafi ishte me klientë ose pas mbylljes.",
       "metrics": [
-        ["+58", "Rezervime / muaj"],
-        ["-34%", "Norma e mungesave"],
-        ["24/7", "Mbulim"],
-        ["9 ditë", "Për të shkuar live"]
+        [
+          "+58",
+          "Rezervime / muaj"
+        ],
+        [
+          "-34%",
+          "Norma e mungesave"
+        ],
+        [
+          "24/7",
+          "Mbulim"
+        ],
+        [
+          "9 ditë",
+          "Për të shkuar live"
+        ]
       ],
       "quote": "Klientët nuk e vërejnë që po flasin me një AI derisa ua themi ne. Ajo që vërejnë është që dikush më në fund përgjigjet."
     },
@@ -961,10 +1047,22 @@
       "title": "Thirrjet për statusin e porosisë, të zgjidhura pa njeri",
       "context": "Volumi sezonal na detyronte të punësonim të përkohshëm çdo tremujor, me tri javë trajnim para se dikush të bëhej i dobishëm.",
       "metrics": [
-        ["82%", "Thirrje statusi të automatizuara"],
-        ["0", "Punësime sezonale"],
-        ["-46%", "Kosto për kontakt"],
-        ["14 ditë", "Për të shkuar live"]
+        [
+          "82%",
+          "Thirrje statusi të automatizuara"
+        ],
+        [
+          "0",
+          "Punësime sezonale"
+        ],
+        [
+          "-46%",
+          "Kosto për kontakt"
+        ],
+        [
+          "14 ditë",
+          "Për të shkuar live"
+        ]
       ],
       "quote": "Pushuam së punësuari për pikun. Radha e thith tash dhe raportimi është më i mirë se ai që kishim më parë."
     }
@@ -988,31 +1086,127 @@
     }
   ],
   "CompanyFacts": [
-    ["2024", "Themeluar në Prishtinë"],
-    ["Shumëgjuhësh", "Mbështetje gjuhësh e konfigurueshme"],
-    ["<600ms", "Vonesa mesatare e përgjigjes"],
-    ["BE", "Rajoni i përpunimit të të dhënave"]
+    [
+      "2024",
+      "Themeluar në Prishtinë"
+    ],
+    [
+      "Shumëgjuhësh",
+      "Mbështetje gjuhësh e konfigurueshme"
+    ],
+    [
+      "<600ms",
+      "Vonesa mesatare e përgjigjes"
+    ],
+    [
+      "BE",
+      "Rajoni i përpunimit të të dhënave"
+    ]
   ],
   "CompanyLimits": "Jemi po aq të drejtë edhe për kufizimet. Agjent038 nuk negocion kontrata, nuk merret me ankesa të vështira dhe nuk improvizon politika. Ato thirrje i takojnë një personi dhe puna jonë është të sigurohemi që ai person t'i marrë me kontekst të plotë dhe kohë të mjaftueshme.",
   "PricingCompare": [
-    ["Minuta të përgjigjura / muaj", "400 min", "1,000 min", "2,500 min", "I personalizuar"],
-    ["Gjuhët", "1", "Shumëgjuhëshe", "Shumëgjuhëshe", "I personalizuar"],
-    ["Kanali zanor", "I përfshirë", "I përfshirë", "I përfshirë", "I përfshirë"],
-    ["WhatsApp, Viber, chat & email", "—", "—", "I përfshirë", "I përfshirë"],
-    ["Fushata dalëse", "—", "—", "I përfshirë", "I përfshirë"],
-    ["Integrime API të personalizuara", "—", "Vetëm standarde", "I përfshirë", "I personalizuar"],
-    ["Vlerësim i automatizuar i cilësisë në 100% të thirrjeve", "—", "—", "I përfshirë", "I përfshirë"],
-    ["Instancë e dedikuar & rezidenca BE", "—", "—", "—", "I përfshirë"],
-    ["Zë i personalizuar i markës", "—", "—", "—", "I përfshirë"],
-    ["SLA e disponueshmërisë", "Më e mira e mundshme", "Më e mira e mundshme", "99.5%", "99.9% kontraktuale"],
-    ["Përgjigja e mbështetjes", "Email", "Dita e ardhshme e punës", "4 orë", "1 orë + në thirrje"],
-    ["Tarifa e konfigurimit", "Asnjë", "Asnjë", "Asnjë", "Asnjë"]
+    [
+      "Minuta të përgjigjura / muaj",
+      "400 min",
+      "1,000 min",
+      "2,500 min",
+      "I personalizuar"
+    ],
+    [
+      "Gjuhët",
+      "1",
+      "Shumëgjuhëshe",
+      "Shumëgjuhëshe",
+      "I personalizuar"
+    ],
+    [
+      "Kanali zanor",
+      "I përfshirë",
+      "I përfshirë",
+      "I përfshirë",
+      "I përfshirë"
+    ],
+    [
+      "WhatsApp, Viber, chat & email",
+      "—",
+      "—",
+      "I përfshirë",
+      "I përfshirë"
+    ],
+    [
+      "Fushata dalëse",
+      "—",
+      "—",
+      "I përfshirë",
+      "I përfshirë"
+    ],
+    [
+      "Integrime API të personalizuara",
+      "—",
+      "Vetëm standarde",
+      "I përfshirë",
+      "I personalizuar"
+    ],
+    [
+      "Vlerësim i automatizuar i cilësisë në 100% të thirrjeve",
+      "—",
+      "—",
+      "I përfshirë",
+      "I përfshirë"
+    ],
+    [
+      "Instancë e dedikuar & rezidenca BE",
+      "—",
+      "—",
+      "—",
+      "I përfshirë"
+    ],
+    [
+      "Zë i personalizuar i markës",
+      "—",
+      "—",
+      "—",
+      "I përfshirë"
+    ],
+    [
+      "SLA e disponueshmërisë",
+      "Më e mira e mundshme",
+      "Më e mira e mundshme",
+      "99.5%",
+      "99.9% kontraktuale"
+    ],
+    [
+      "Përgjigja e mbështetjes",
+      "Email",
+      "Dita e ardhshme e punës",
+      "4 orë",
+      "1 orë + në thirrje"
+    ],
+    [
+      "Tarifa e konfigurimit",
+      "Asnjë",
+      "Asnjë",
+      "Asnjë",
+      "Asnjë"
+    ]
   ],
   "PricingContext": [
-    ["168 orë/javë", "Mbulim i Agjent038"],
-    ["40 orë/javë", "Një agjent me kohë të plotë"],
-    ["Dhjetëra", "Thirrje njëkohësisht me Agjent038"],
-    ["1", "Thirrje njëkohësisht për agjent"]
+    [
+      "168 orë/javë",
+      "Mbulim i Agjent038"
+    ],
+    [
+      "40 orë/javë",
+      "Një agjent me kohë të plotë"
+    ],
+    [
+      "Dhjetëra",
+      "Thirrje njëkohësisht me Agjent038"
+    ],
+    [
+      "1",
+      "Thirrje njëkohësisht për agjent"
+    ]
   ],
   "Layout": {
     "skipToContent": "Kaloni te përmbajtja",
@@ -1116,9 +1310,24 @@
   "HowItWorks": {
     "headline": "Nga Thirrja te Përfundimi në Sekonda",
     "steps": [
-      { "num": "01", "label": "Prano", "title": "Thirrje Hyrëse", "desc": "Përgjigjet në 0.4 sekonda" },
-      { "num": "02", "label": "Përpuno", "title": "AI e Trajton", "desc": "E kupton qëllimin, vepron në sistemet tuaja" },
-      { "num": "03", "label": "Zgjidh", "title": "Detyra Kryer", "desc": "E regjistruar, e konfirmuar, zero të humbura" }
+      {
+        "num": "01",
+        "label": "Prano",
+        "title": "Thirrje Hyrëse",
+        "desc": "Përgjigjet në 0.4 sekonda"
+      },
+      {
+        "num": "02",
+        "label": "Përpuno",
+        "title": "AI e Trajton",
+        "desc": "E kupton qëllimin, vepron në sistemet tuaja"
+      },
+      {
+        "num": "03",
+        "label": "Zgjidh",
+        "title": "Detyra Kryer",
+        "desc": "E regjistruar, e konfirmuar, zero të humbura"
+      }
     ],
     "callerMessage": "Përshëndetje, dëshiroj të rezervoj një takim për të martën",
     "aiMessage": "Kryer! Konfirmuar për të martën në 10:00. SMS dërguar.",
@@ -1126,10 +1335,26 @@
       "live": "Live",
       "title": "Konsola Agjent038",
       "kpis": [
-        { "label": "Thirrje", "value": "1,284", "delta": "+18%" },
-        { "label": "Containment", "value": "68%", "delta": "+11 pikë" },
-        { "label": "Shpejtësi", "value": "0.4s", "delta": "-6.1s" },
-        { "label": "Të humbura", "value": "0", "delta": "ishin 412" }
+        {
+          "label": "Thirrje",
+          "value": "1,284",
+          "delta": "+18%"
+        },
+        {
+          "label": "Containment",
+          "value": "68%",
+          "delta": "+11 pikë"
+        },
+        {
+          "label": "Shpejtësi",
+          "value": "0.4s",
+          "delta": "-6.1s"
+        },
+        {
+          "label": "Të humbura",
+          "value": "0",
+          "delta": "ishin 412"
+        }
       ],
       "chartLabel": "Sot — vëllimi orar"
     },
@@ -1141,9 +1366,18 @@
       "success": "Detyra Kryer",
       "successDesc": "Takimi u rezervua, SMS dërguar · CRM u përditësua",
       "stats": [
-        { "label": "Kohëzgjatja", "value": "42s" },
-        { "label": "Sentimenti", "value": "Pozitiv" },
-        { "label": "CSAT", "value": "5 / 5" }
+        {
+          "label": "Kohëzgjatja",
+          "value": "42s"
+        },
+        {
+          "label": "Sentimenti",
+          "value": "Pozitiv"
+        },
+        {
+          "label": "CSAT",
+          "value": "5 / 5"
+        }
       ],
       "summaryTitle": "Përmbledhja e Thirrjes",
       "summaryBody": "Klienti kërkoi ta ndryshonte takimin për të martën në 10:00. SMS-i i konfirmimit u dërgua. Regjistri në CRM u përditësua."

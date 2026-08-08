@@ -3,6 +3,7 @@ import { getStaticMessages } from "@/i18n/static-messages";
 import { Link } from "@/i18n/navigation";
 import Dashboard from "@/components/dashboard";
 import AgentDemo, { type AgentDemoDict } from "@/components/agent-demo";
+import { type OrbDict } from "@/components/orb-scene";
 import Reveal from "@/components/reveal";
 import Accordion from "@/components/accordion";
 import ExplainerAnimation from "@/components/explainer-animation";
@@ -63,6 +64,7 @@ async function HomePage({ params }: Props) {
   const faqs = (messages.FAQs ?? []) as Array<{ q: string; a: string }>;
   const integrations = (messages.Integrations ?? []) as string[];
   const agentDemo = (messages.AgentDemo ?? {}) as AgentDemoDict;
+  const orb = (messages.Orb ?? {}) as OrbDict;
 
   const faqLd = {
     "@context": "https://schema.org",
@@ -153,7 +155,7 @@ async function HomePage({ params }: Props) {
             </div>
 
             <Reveal delay={200}>
-              <AgentDemo dict={agentDemo} />
+              <AgentDemo dict={agentDemo} orbDict={orb} />
             </Reveal>
           </div>
         </div>

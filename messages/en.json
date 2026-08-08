@@ -16,6 +16,14 @@
     "micError": "Microphone access is blocked. Please allow mic access and try again.",
     "serviceError": "The demo is temporarily unavailable. Please try again later."
   },
+  "Orb": {
+    "liveCall": "Live call",
+    "greeting": "“Hello, how can I help you?”",
+    "answeredIn": "Answered in 0.4s",
+    "outcome": "Outcome",
+    "appointmentBooked": "Appointment booked",
+    "syncedToCrm": "Synced to CRM · 1.2s"
+  },
   "Meta": {
     "title": "Agjent038 — AI Voice Agents for Kosovo Call Centres",
     "titleTemplate": "%s | Agjent038",
@@ -881,8 +889,20 @@
     "sending": "Sending…",
     "submit": "Request a demo",
     "privacy": "We reply within one business day. Your details stay with us — no reselling, no newsletters you did not ask for.",
-    "callRanges": ["Under 500", "500 – 1,000", "1,000 – 4,000", "4,000 – 10,000", "10,000+"],
-    "planOptions": ["Overflow — €499/mo", "Reception — €499/mo", "Operations — €899/mo", "Enterprise", "Not sure yet"],
+    "callRanges": [
+      "Under 500",
+      "500 – 1,000",
+      "1,000 – 4,000",
+      "4,000 – 10,000",
+      "10,000+"
+    ],
+    "planOptions": [
+      "Overflow — €499/mo",
+      "Reception — €499/mo",
+      "Operations — €899/mo",
+      "Enterprise",
+      "Not sure yet"
+    ],
     "placeholderMessage": "After-hours reservations, order status calls, appointment booking…"
   },
   "Roi": {
@@ -921,17 +941,59 @@
     "liveQueue": "Live queue",
     "autoRefresh": "auto-refresh",
     "feed": [
-      { "lang": "EN", "intent": "Appointment booking", "outcome": "Booked", "dur": "1:12", "tone": "mint" },
-      { "lang": "FR", "intent": "Order status", "outcome": "Resolved", "dur": "0:48", "tone": "mint" },
-      { "lang": "DE", "intent": "Complaint", "outcome": "Escalated", "dur": "2:05", "tone": "gold" },
-      { "lang": "EN", "intent": "Price enquiry", "outcome": "Resolved", "dur": "0:39", "tone": "mint" },
-      { "lang": "IT", "intent": "Reschedule", "outcome": "Rescheduled", "dur": "1:27", "tone": "mint" }
+      {
+        "lang": "EN",
+        "intent": "Appointment booking",
+        "outcome": "Booked",
+        "dur": "1:12",
+        "tone": "mint"
+      },
+      {
+        "lang": "FR",
+        "intent": "Order status",
+        "outcome": "Resolved",
+        "dur": "0:48",
+        "tone": "mint"
+      },
+      {
+        "lang": "DE",
+        "intent": "Complaint",
+        "outcome": "Escalated",
+        "dur": "2:05",
+        "tone": "gold"
+      },
+      {
+        "lang": "EN",
+        "intent": "Price enquiry",
+        "outcome": "Resolved",
+        "dur": "0:39",
+        "tone": "mint"
+      },
+      {
+        "lang": "IT",
+        "intent": "Reschedule",
+        "outcome": "Rescheduled",
+        "dur": "1:27",
+        "tone": "mint"
+      }
     ],
     "languages": [
-      { "code": "English", "pct": 58 },
-      { "code": "French", "pct": 19 },
-      { "code": "German", "pct": 12 },
-      { "code": "Italian", "pct": 11 }
+      {
+        "code": "English",
+        "pct": 58
+      },
+      {
+        "code": "French",
+        "pct": 19
+      },
+      {
+        "code": "German",
+        "pct": 12
+      },
+      {
+        "code": "Italian",
+        "pct": 11
+      }
     ]
   },
   "Cases": [
@@ -940,10 +1002,22 @@
       "title": "From 41% abandonment to zero missed calls",
       "context": "Twelve seats handling inbound support for two telecom clients. Peak-hour abandonment was costing them an SLA penalty every month.",
       "metrics": [
-        ["0%", "Abandoned calls"],
-        ["71%", "Tier-1 contained"],
-        ["4 FTE", "Redeployed to retention"],
-        ["11 days", "To go live"]
+        [
+          "0%",
+          "Abandoned calls"
+        ],
+        [
+          "71%",
+          "Tier-1 contained"
+        ],
+        [
+          "4 FTE",
+          "Redeployed to retention"
+        ],
+        [
+          "11 days",
+          "To go live"
+        ]
       ],
       "quote": "The SLA penalties stopped in the first full month. That alone paid for it several times over."
     },
@@ -952,10 +1026,22 @@
       "title": "Sixty extra bookings a month from calls nobody was answering",
       "context": "Four clinics sharing one reception line. Roughly a third of calls arrived while staff were with clients or after closing.",
       "metrics": [
-        ["+58", "Bookings / month"],
-        ["-34%", "No-show rate"],
-        ["24/7", "Coverage"],
-        ["9 days", "To go live"]
+        [
+          "+58",
+          "Bookings / month"
+        ],
+        [
+          "-34%",
+          "No-show rate"
+        ],
+        [
+          "24/7",
+          "Coverage"
+        ],
+        [
+          "9 days",
+          "To go live"
+        ]
       ],
       "quote": "Clients do not realise they are speaking to an AI until we tell them. What they notice is that someone finally answers."
     },
@@ -964,10 +1050,22 @@
       "title": "Order status calls resolved without a human",
       "context": "Seasonal volume spikes were forcing temporary hiring every quarter, with three weeks of training before anyone was useful.",
       "metrics": [
-        ["82%", "Status calls automated"],
-        ["0", "Seasonal hires"],
-        ["-46%", "Cost per contact"],
-        ["14 days", "To go live"]
+        [
+          "82%",
+          "Status calls automated"
+        ],
+        [
+          "0",
+          "Seasonal hires"
+        ],
+        [
+          "-46%",
+          "Cost per contact"
+        ],
+        [
+          "14 days",
+          "To go live"
+        ]
       ],
       "quote": "We stopped hiring for peak. The queue just absorbs it now, and the reporting is better than what we had before."
     }
@@ -991,31 +1089,127 @@
     }
   ],
   "CompanyFacts": [
-    ["2024", "Founded in Prishtina"],
-    ["Multilingual", "Configurable language support"],
-    ["<600ms", "Median response latency"],
-    ["EU", "Data processing region"]
+    [
+      "2024",
+      "Founded in Prishtina"
+    ],
+    [
+      "Multilingual",
+      "Configurable language support"
+    ],
+    [
+      "<600ms",
+      "Median response latency"
+    ],
+    [
+      "EU",
+      "Data processing region"
+    ]
   ],
   "CompanyLimits": "We are equally direct about limits. Agjent038 does not negotiate contracts, handle grief, or improvise policy. Those calls belong to a person, and our job is to make sure that person receives them with full context and enough time to do it properly.",
   "PricingCompare": [
-    ["Answered minutes / month", "400", "1,000", "2,500", "Custom"],
-    ["Languages", "1", "Multilingual", "Multilingual", "Custom"],
-    ["Voice channel", "Included", "Included", "Included", "Included"],
-    ["WhatsApp, Viber, chat & email", "—", "—", "Included", "Included"],
-    ["Outbound campaigns", "—", "—", "Included", "Included"],
-    ["Custom API integrations", "—", "Standard only", "Included", "Custom"],
-    ["Automated QA on 100% of calls", "—", "—", "Included", "Included"],
-    ["Dedicated instance & EU residency", "—", "—", "—", "Included"],
-    ["Custom branded voice", "—", "—", "—", "Included"],
-    ["Uptime SLA", "Best effort", "Best effort", "99.5%", "99.9% contractual"],
-    ["Support response", "Email", "Next business day", "4 hours", "1 hour + on-call"],
-    ["Setup fee", "None", "None", "None", "None"]
+    [
+      "Answered minutes / month",
+      "400",
+      "1,000",
+      "2,500",
+      "Custom"
+    ],
+    [
+      "Languages",
+      "1",
+      "Multilingual",
+      "Multilingual",
+      "Custom"
+    ],
+    [
+      "Voice channel",
+      "Included",
+      "Included",
+      "Included",
+      "Included"
+    ],
+    [
+      "WhatsApp, Viber, chat & email",
+      "—",
+      "—",
+      "Included",
+      "Included"
+    ],
+    [
+      "Outbound campaigns",
+      "—",
+      "—",
+      "Included",
+      "Included"
+    ],
+    [
+      "Custom API integrations",
+      "—",
+      "Standard only",
+      "Included",
+      "Custom"
+    ],
+    [
+      "Automated QA on 100% of calls",
+      "—",
+      "—",
+      "Included",
+      "Included"
+    ],
+    [
+      "Dedicated instance & EU residency",
+      "—",
+      "—",
+      "—",
+      "Included"
+    ],
+    [
+      "Custom branded voice",
+      "—",
+      "—",
+      "—",
+      "Included"
+    ],
+    [
+      "Uptime SLA",
+      "Best effort",
+      "Best effort",
+      "99.5%",
+      "99.9% contractual"
+    ],
+    [
+      "Support response",
+      "Email",
+      "Next business day",
+      "4 hours",
+      "1 hour + on-call"
+    ],
+    [
+      "Setup fee",
+      "None",
+      "None",
+      "None",
+      "None"
+    ]
   ],
   "PricingContext": [
-    ["168 h/week", "Agjent038 coverage"],
-    ["40 h/week", "One full-time agent"],
-    ["Dozens", "Concurrent calls with Agjent038"],
-    ["1", "Concurrent calls per agent"]
+    [
+      "168 h/week",
+      "Agjent038 coverage"
+    ],
+    [
+      "40 h/week",
+      "One full-time agent"
+    ],
+    [
+      "Dozens",
+      "Concurrent calls with Agjent038"
+    ],
+    [
+      "1",
+      "Concurrent calls per agent"
+    ]
   ],
   "Layout": {
     "skipToContent": "Skip to content",
@@ -1119,9 +1313,24 @@
   "HowItWorks": {
     "headline": "From Call to Done in Seconds",
     "steps": [
-      { "num": "01", "label": "Receive", "title": "Incoming Call", "desc": "Picked up in 0.4 seconds" },
-      { "num": "02", "label": "Process", "title": "AI Handles It", "desc": "Understands intent, acts in your systems" },
-      { "num": "03", "label": "Resolve", "title": "Task Done", "desc": "Logged, confirmed, zero missed" }
+      {
+        "num": "01",
+        "label": "Receive",
+        "title": "Incoming Call",
+        "desc": "Picked up in 0.4 seconds"
+      },
+      {
+        "num": "02",
+        "label": "Process",
+        "title": "AI Handles It",
+        "desc": "Understands intent, acts in your systems"
+      },
+      {
+        "num": "03",
+        "label": "Resolve",
+        "title": "Task Done",
+        "desc": "Logged, confirmed, zero missed"
+      }
     ],
     "callerMessage": "Hi, I need to book an appointment for Tuesday",
     "aiMessage": "Done! Confirmed for Tue 10 AM. SMS sent.",
@@ -1129,10 +1338,26 @@
       "live": "Live",
       "title": "Agjent038 Console",
       "kpis": [
-        { "label": "Calls", "value": "1,284", "delta": "+18%" },
-        { "label": "Contain", "value": "68%", "delta": "+11 pts" },
-        { "label": "Speed", "value": "0.4s", "delta": "-6.1s" },
-        { "label": "Missed", "value": "0", "delta": "was 412" }
+        {
+          "label": "Calls",
+          "value": "1,284",
+          "delta": "+18%"
+        },
+        {
+          "label": "Contain",
+          "value": "68%",
+          "delta": "+11 pts"
+        },
+        {
+          "label": "Speed",
+          "value": "0.4s",
+          "delta": "-6.1s"
+        },
+        {
+          "label": "Missed",
+          "value": "0",
+          "delta": "was 412"
+        }
       ],
       "chartLabel": "Today — hourly volume"
     },
@@ -1144,9 +1369,18 @@
       "success": "Task Complete",
       "successDesc": "Appointment booked SMS sent · CRM updated",
       "stats": [
-        { "label": "Duration", "value": "42s" },
-        { "label": "Sentiment", "value": "Positive" },
-        { "label": "CSAT", "value": "5 / 5" }
+        {
+          "label": "Duration",
+          "value": "42s"
+        },
+        {
+          "label": "Sentiment",
+          "value": "Positive"
+        },
+        {
+          "label": "CSAT",
+          "value": "5 / 5"
+        }
       ],
       "summaryTitle": "Call Summary",
       "summaryBody": "Customer requested appointment reschedule to Tuesday 10 AM. Confirmation SMS dispatched. CRM record updated."

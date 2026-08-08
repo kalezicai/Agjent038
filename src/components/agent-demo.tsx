@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { RetellWebClient } from "retell-client-js-sdk";
-import OrbScene from "@/components/orb-scene";
+import OrbScene, { type OrbDict } from "@/components/orb-scene";
 
 export type AgentDemoDict = {
   aria: string;
@@ -35,7 +35,13 @@ function formatTime(totalSeconds: number): string {
   return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
 
-export default function AgentDemo({ dict }: { dict: AgentDemoDict }) {
+export default function AgentDemo({
+  dict,
+  orbDict,
+}: {
+  dict: AgentDemoDict;
+  orbDict: OrbDict;
+}) {
   const [status, setStatus] = useState<Status>("idle");
   const [remaining, setRemaining] = useState<number | null>(null);
   const [secondsLeft, setSecondsLeft] = useState(MAX_CALL_SECONDS);
@@ -208,7 +214,7 @@ export default function AgentDemo({ dict }: { dict: AgentDemoDict }) {
           }
         }}
       >
-        <OrbScene />
+        <OrbScene dict={orbDict} />
 
         <div
           className={`pointer-events-none absolute inset-[8%] rounded-full transition-opacity duration-300 ${

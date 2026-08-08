@@ -16,6 +16,14 @@
     "micError": "Der Mikrofonzugriff ist blockiert. Bitte erlauben Sie den Zugriff und versuchen Sie es erneut.",
     "serviceError": "Die Demo ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut."
   },
+  "Orb": {
+    "liveCall": "Live-Anruf",
+    "greeting": "„Hallo, wie kann ich Ihnen helfen?“",
+    "answeredIn": "In 0,4 s beantwortet",
+    "outcome": "Ergebnis",
+    "appointmentBooked": "Termin gebucht",
+    "syncedToCrm": "Mit CRM synchronisiert · 1,2 s"
+  },
   "Meta": {
     "title": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
     "titleTemplate": "%s | Agjent038",
@@ -879,8 +887,20 @@
     "sending": "Wird gesendet…",
     "submit": "Live-Demo anfordern",
     "privacy": "Wir antworten innerhalb eines Werktages. Ihre Daten bleiben bei uns — kein Weiterverkauf, keine Newsletter, die Sie nicht angefordert haben.",
-    "callRanges": ["Unter 500", "500 – 1.000", "1.000 – 4.000", "4.000 – 10.000", "10.000+"],
-    "planOptions": ["Overflow — €299/Monat", "Empfang — €499/Monat", "Operationen — €899/Monat", "Enterprise", "Noch nicht sicher"],
+    "callRanges": [
+      "Unter 500",
+      "500 – 1.000",
+      "1.000 – 4.000",
+      "4.000 – 10.000",
+      "10.000+"
+    ],
+    "planOptions": [
+      "Overflow — €299/Monat",
+      "Empfang — €499/Monat",
+      "Operationen — €899/Monat",
+      "Enterprise",
+      "Noch nicht sicher"
+    ],
     "placeholderMessage": "Feierabend-Reservierungen, Bestellstatus-Anrufe, Terminvereinbarung…"
   },
   "Roi": {
@@ -919,17 +939,59 @@
     "liveQueue": "Live-Warteschlange",
     "autoRefresh": "Auto-Refresh",
     "feed": [
-      { "lang": "EN", "intent": "Terminbuchung", "outcome": "Gebucht", "dur": "1:12", "tone": "mint" },
-      { "lang": "FR", "intent": "Bestellstatus", "outcome": "Gelöst", "dur": "0:48", "tone": "mint" },
-      { "lang": "DE", "intent": "Beschwerde", "outcome": "Eskaliert", "dur": "2:05", "tone": "gold" },
-      { "lang": "EN", "intent": "Preisanfrage", "outcome": "Gelöst", "dur": "0:39", "tone": "mint" },
-      { "lang": "IT", "intent": "Umplanung", "outcome": "Umgeplant", "dur": "1:27", "tone": "mint" }
+      {
+        "lang": "EN",
+        "intent": "Terminbuchung",
+        "outcome": "Gebucht",
+        "dur": "1:12",
+        "tone": "mint"
+      },
+      {
+        "lang": "FR",
+        "intent": "Bestellstatus",
+        "outcome": "Gelöst",
+        "dur": "0:48",
+        "tone": "mint"
+      },
+      {
+        "lang": "DE",
+        "intent": "Beschwerde",
+        "outcome": "Eskaliert",
+        "dur": "2:05",
+        "tone": "gold"
+      },
+      {
+        "lang": "EN",
+        "intent": "Preisanfrage",
+        "outcome": "Gelöst",
+        "dur": "0:39",
+        "tone": "mint"
+      },
+      {
+        "lang": "IT",
+        "intent": "Umplanung",
+        "outcome": "Umgeplant",
+        "dur": "1:27",
+        "tone": "mint"
+      }
     ],
     "languages": [
-      { "code": "Englisch", "pct": 58 },
-      { "code": "Deutsch", "pct": 19 },
-      { "code": "Französisch", "pct": 12 },
-      { "code": "Italienisch", "pct": 11 }
+      {
+        "code": "Englisch",
+        "pct": 58
+      },
+      {
+        "code": "Deutsch",
+        "pct": 19
+      },
+      {
+        "code": "Französisch",
+        "pct": 12
+      },
+      {
+        "code": "Italienisch",
+        "pct": 11
+      }
     ]
   },
   "Cases": [
@@ -938,10 +1000,22 @@
       "title": "Von 41% Abbruchrate zu null verpassten Anrufen",
       "context": "Zwölf Sitze, die eingehenden Support für zwei Telecom-Kunden bearbeiten. Die Abbruchrate in der Spitze kostete sie jeden Monat eine SLA-Strafe.",
       "metrics": [
-        ["0%", "Abgebrochene Anrufe"],
-        ["71%", "Erster Stufe aufgefangen"],
-        ["4 FTE", "Auf Kundenbindung umgesetzt"],
-        ["11 Tage", "Bis zum Live-Gang"]
+        [
+          "0%",
+          "Abgebrochene Anrufe"
+        ],
+        [
+          "71%",
+          "Erster Stufe aufgefangen"
+        ],
+        [
+          "4 FTE",
+          "Auf Kundenbindung umgesetzt"
+        ],
+        [
+          "11 Tage",
+          "Bis zum Live-Gang"
+        ]
       ],
       "quote": "Die SLA-Strafen hörten im ersten vollen Monat auf. Das allein hat es mehrfach bezahlt."
     },
@@ -950,10 +1024,22 @@
       "title": "Sechzig zusätzliche Buchungen pro Monat von Anrufen, die niemand beantwortete",
       "context": "Vier Kliniken teilen sich eine Empfangsleitung. Ungefähr ein Drittel der Anrufe kam, während das Personal bei Kunden war oder nach Feierabend.",
       "metrics": [
-        ["+58", "Buchungen / Monat"],
-        ["-34%", "No-Show-Rate"],
-        ["24/7", "Abdeckung"],
-        ["9 Tage", "Bis zum Live-Gang"]
+        [
+          "+58",
+          "Buchungen / Monat"
+        ],
+        [
+          "-34%",
+          "No-Show-Rate"
+        ],
+        [
+          "24/7",
+          "Abdeckung"
+        ],
+        [
+          "9 Tage",
+          "Bis zum Live-Gang"
+        ]
       ],
       "quote": "Kunden merken nicht, dass sie mit einer KI sprechen, bis wir es ihnen sagen. Was sie bemerken, ist, dass endlich jemand antwortet."
     },
@@ -962,10 +1048,22 @@
       "title": "Bestellstatus-Anrufe ohne Menschen gelöst",
       "context": "Saisonale Volumenspitzen erzwangen jedes Quartal befristete Einstellungen, mit drei Wochen Training, bevor jemand nützlich war.",
       "metrics": [
-        ["82%", "Status-Anrufe automatisiert"],
-        ["0", "Saisonale Einstellungen"],
-        ["-46%", "Kosten pro Kontakt"],
-        ["14 Tage", "Bis zum Live-Gang"]
+        [
+          "82%",
+          "Status-Anrufe automatisiert"
+        ],
+        [
+          "0",
+          "Saisonale Einstellungen"
+        ],
+        [
+          "-46%",
+          "Kosten pro Kontakt"
+        ],
+        [
+          "14 Tage",
+          "Bis zum Live-Gang"
+        ]
       ],
       "quote": "Wir haben aufgehört, für die Spitze einzustellen. Die Warteschlange absorbiert es jetzt, und die Berichterstattung ist besser als das, was wir vorher hatten."
     }
@@ -989,32 +1087,134 @@
     }
   ],
   "CompanyFacts": [
-    ["2024", "Gegründet in Pristina"],
-    ["Mehrsprachig", "Konfigurierbare Sprachunterstützung"],
-    ["<600ms", "Median-Antwortlatenz"],
-    ["EU", "Datenverarbeitungsregion"]
+    [
+      "2024",
+      "Gegründet in Pristina"
+    ],
+    [
+      "Mehrsprachig",
+      "Konfigurierbare Sprachunterstützung"
+    ],
+    [
+      "<600ms",
+      "Median-Antwortlatenz"
+    ],
+    [
+      "EU",
+      "Datenverarbeitungsregion"
+    ]
   ],
   "CompanyLimits": "Wir sind ebenso direkt über Grenzen. Agjent038 verhandelt nicht über Verträge, behandelt nicht Trauer oder improvisiert Richtlinien. Diese Anrufe gehören einer Person, und unsere Aufgabe ist es, sicherzustellen, dass diese Person sie mit vollem Kontext und genügend Zeit erhält, um sie ordnungsgemäß zu erledigen.",
   "PricingCompare": [
-    ["Minuten / Monat", "400", "1.000", "2.500", "Individuell"],
-    ["Sprachen", "1", "Mehrsprachig", "Mehrsprachig", "Mehrsprachig + benutzerdefiniert"],
-    ["Sprachkanal", "Inklusive", "Inklusive", "Inklusive", "Inklusive"],
-    ["WhatsApp, Viber, Chat & E-Mail", "—", "—", "Inklusive", "Inklusive"],
-    ["Outbound-Kampagnen", "—", "—", "Inklusive", "Inklusive"],
-    ["Benutzerdefinierte API-Integrationen", "—", "Nur Standard", "Inklusive", "Individuell"],
-    ["Automatisierte QA bei 100% der Anrufe", "—", "—", "Inklusive", "Inklusive"],
-    ["Dedizierte Instanz & EU-Residenz", "—", "—", "—", "Inklusive"],
-    ["Benutzerdefinierte Markenstimme", "—", "—", "—", "Inklusive"],
-    ["Uptime-SLA", "Best effort", "Best effort", "99,5%", "99,9% vertraglich"],
-    ["Support-Reaktion", "Nächster Werktag", "Nächster Werktag", "4 Stunden", "1 Stunde + Rufbereitschaft"],
-    ["Einrichtungsgebühr", "Keine", "Keine", "Keine", "Keine"],
-    ["Overage-Kosten", "€0,20/Min", "€0,20/Min", "€0,20/Min", "N/A"]
+    [
+      "Minuten / Monat",
+      "400",
+      "1.000",
+      "2.500",
+      "Individuell"
+    ],
+    [
+      "Sprachen",
+      "1",
+      "Mehrsprachig",
+      "Mehrsprachig",
+      "Mehrsprachig + benutzerdefiniert"
+    ],
+    [
+      "Sprachkanal",
+      "Inklusive",
+      "Inklusive",
+      "Inklusive",
+      "Inklusive"
+    ],
+    [
+      "WhatsApp, Viber, Chat & E-Mail",
+      "—",
+      "—",
+      "Inklusive",
+      "Inklusive"
+    ],
+    [
+      "Outbound-Kampagnen",
+      "—",
+      "—",
+      "Inklusive",
+      "Inklusive"
+    ],
+    [
+      "Benutzerdefinierte API-Integrationen",
+      "—",
+      "Nur Standard",
+      "Inklusive",
+      "Individuell"
+    ],
+    [
+      "Automatisierte QA bei 100% der Anrufe",
+      "—",
+      "—",
+      "Inklusive",
+      "Inklusive"
+    ],
+    [
+      "Dedizierte Instanz & EU-Residenz",
+      "—",
+      "—",
+      "—",
+      "Inklusive"
+    ],
+    [
+      "Benutzerdefinierte Markenstimme",
+      "—",
+      "—",
+      "—",
+      "Inklusive"
+    ],
+    [
+      "Uptime-SLA",
+      "Best effort",
+      "Best effort",
+      "99,5%",
+      "99,9% vertraglich"
+    ],
+    [
+      "Support-Reaktion",
+      "Nächster Werktag",
+      "Nächster Werktag",
+      "4 Stunden",
+      "1 Stunde + Rufbereitschaft"
+    ],
+    [
+      "Einrichtungsgebühr",
+      "Keine",
+      "Keine",
+      "Keine",
+      "Keine"
+    ],
+    [
+      "Overage-Kosten",
+      "€0,20/Min",
+      "€0,20/Min",
+      "€0,20/Min",
+      "N/A"
+    ]
   ],
   "PricingContext": [
-    ["168 h/Woche", "Agjent038-Abdeckung"],
-    ["40 h/Woche", "Ein Vollzeit-Agent"],
-    ["Dutzende", "Gleichzeitige Anrufe mit Agjent038"],
-    ["1", "Gleichzeitige Anrufe pro Agent"]
+    [
+      "168 h/Woche",
+      "Agjent038-Abdeckung"
+    ],
+    [
+      "40 h/Woche",
+      "Ein Vollzeit-Agent"
+    ],
+    [
+      "Dutzende",
+      "Gleichzeitige Anrufe mit Agjent038"
+    ],
+    [
+      "1",
+      "Gleichzeitige Anrufe pro Agent"
+    ]
   ],
   "Layout": {
     "skipToContent": "Zum Inhalt springen",
@@ -1118,9 +1318,24 @@
   "HowItWorks": {
     "headline": "Vom Anruf in Sekunden zur Erledigung",
     "steps": [
-      { "num": "01", "label": "Empfangen", "title": "Eingehender Anruf", "desc": "In 0,4 Sekunden verbunden" },
-      { "num": "02", "label": "Verarbeiten", "title": "KI Übernimmt", "desc": "Versteht die Absicht, handelt in Ihren Systemen" },
-      { "num": "03", "label": "Lösen", "title": "Aufgabe Erledigt", "desc": "Protokolliert, bestätigt, nichts verpasst" }
+      {
+        "num": "01",
+        "label": "Empfangen",
+        "title": "Eingehender Anruf",
+        "desc": "In 0,4 Sekunden verbunden"
+      },
+      {
+        "num": "02",
+        "label": "Verarbeiten",
+        "title": "KI Übernimmt",
+        "desc": "Versteht die Absicht, handelt in Ihren Systemen"
+      },
+      {
+        "num": "03",
+        "label": "Lösen",
+        "title": "Aufgabe Erledigt",
+        "desc": "Protokolliert, bestätigt, nichts verpasst"
+      }
     ],
     "callerMessage": "Hallo, ich möchte einen Termin für Dienstag vereinbaren",
     "aiMessage": "Erledigt! Bestätigt für Di 10 Uhr. SMS gesendet.",
@@ -1128,10 +1343,26 @@
       "live": "Live",
       "title": "Agjent038 Konsole",
       "kpis": [
-        { "label": "Anrufe", "value": "1.284", "delta": "+18%" },
-        { "label": "Eingehalten", "value": "68%", "delta": "+11 Punkte" },
-        { "label": "Geschwindigkeit", "value": "0,4s", "delta": "-6,1s" },
-        { "label": "Verpasst", "value": "0", "delta": "waren 412" }
+        {
+          "label": "Anrufe",
+          "value": "1.284",
+          "delta": "+18%"
+        },
+        {
+          "label": "Eingehalten",
+          "value": "68%",
+          "delta": "+11 Punkte"
+        },
+        {
+          "label": "Geschwindigkeit",
+          "value": "0,4s",
+          "delta": "-6,1s"
+        },
+        {
+          "label": "Verpasst",
+          "value": "0",
+          "delta": "waren 412"
+        }
       ],
       "chartLabel": "Heute — stündliches Volumen"
     },
@@ -1143,9 +1374,18 @@
       "success": "Aufgabe Erledigt",
       "successDesc": "Termin gebucht SMS gesendet · CRM aktualisiert",
       "stats": [
-        { "label": "Dauer", "value": "42s" },
-        { "label": "Stimmung", "value": "Positiv" },
-        { "label": "CSAT", "value": "5 / 5" }
+        {
+          "label": "Dauer",
+          "value": "42s"
+        },
+        {
+          "label": "Stimmung",
+          "value": "Positiv"
+        },
+        {
+          "label": "CSAT",
+          "value": "5 / 5"
+        }
       ],
       "summaryTitle": "Anrufzusammenfassung",
       "summaryBody": "Kunde beantragte Terminverschiebung auf Dienstag 10 Uhr. Bestätigungs-SMS versendet. CRM-Eintrag aktualisiert."

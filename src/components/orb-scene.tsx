@@ -1,6 +1,15 @@
 const bars = [0.35, 0.6, 0.9, 0.5, 1, 0.7, 0.42, 0.85, 0.55, 0.3];
 
-export default function OrbScene() {
+export type OrbDict = {
+  liveCall: string;
+  greeting: string;
+  answeredIn: string;
+  outcome: string;
+  appointmentBooked: string;
+  syncedToCrm: string;
+};
+
+export default function OrbScene({ dict }: { dict: OrbDict }) {
   return (
     <div className="scene-3d relative mx-auto aspect-square w-full max-w-[520px]">
       {/* soft ground shadow */}
@@ -67,13 +76,13 @@ export default function OrbScene() {
         <div className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-mint" />
           <span className="text-[10px] uppercase tracking-[0.18em] text-ink-mute">
-            Live call
+            {dict.liveCall}
           </span>
         </div>
         <p className="mt-2 text-[13px] leading-snug text-ink">
-          &ldquo;Hello, how can I help you?&rdquo;
+          {dict.greeting}
         </p>
-        <p className="mt-1.5 text-[11px] text-ink-mute">Answered in 0.4s</p>
+        <p className="mt-1.5 text-[11px] text-ink-mute">{dict.answeredIn}</p>
       </div>
 
       <div
@@ -81,16 +90,16 @@ export default function OrbScene() {
         style={{ animationDelay: "1.4s" }}
       >
         <p className="text-[10px] uppercase tracking-[0.18em] text-ink-mute">
-          Outcome
+          {dict.outcome}
         </p>
         <p className="mt-2 text-[13px] font-medium text-ink">
-          Appointment booked
+          {dict.appointmentBooked}
         </p>
         <div className="mt-2.5 h-1 w-full overflow-hidden rounded-full bg-line">
           <div className="h-full w-[82%] rounded-full bg-navy" />
         </div>
         <p className="mt-1.5 text-[11px] text-ink-mute">
-          Synced to CRM · 1.2s
+          {dict.syncedToCrm}
         </p>
       </div>
 
@@ -98,7 +107,7 @@ export default function OrbScene() {
         className="float-slower absolute right-[6%] top-[4%] rounded-full border border-line bg-white/85 px-3.5 py-2 shadow-soft backdrop-blur"
         style={{ animationDelay: "0.7s" }}
       >
-        <span className="text-[11px] font-medium text-navy">SQ · EN · DE</span>
+        <span className="text-[11px] font-medium text-navy">EN · DE · FR · IT</span>
       </div>
     </div>
   );

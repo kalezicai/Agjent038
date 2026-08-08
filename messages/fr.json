@@ -16,6 +16,14 @@
     "micError": "L'accès au microphone est bloqué. Autorisez le micro et réessayez.",
     "serviceError": "La démo est temporairement indisponible. Réessayez plus tard."
   },
+  "Orb": {
+    "liveCall": "Appel en direct",
+    "greeting": "« Bonjour, comment puis-je vous aider ? »",
+    "answeredIn": "Répondu en 0,4 s",
+    "outcome": "Résultat",
+    "appointmentBooked": "Rendez-vous réservé",
+    "syncedToCrm": "Synchronisé avec le CRM · 1,2 s"
+  },
   "Meta": {
     "title": "Agjent038 — Agents vocaux IA pour les centres d'appels du Kosovo",
     "titleTemplate": "%s | Agjent038",
@@ -881,8 +889,20 @@
     "sending": "Envoi…",
     "submit": "Demander une démo",
     "privacy": "Nous répondons sous un jour ouvré. Vos informations restent chez nous — pas de revente, pas de newsletters non demandées.",
-    "callRanges": ["Moins de 500", "500 – 1 000", "1 000 – 4 000", "4 000 – 10 000", "10 000+"],
-    "planOptions": ["Overflow — 499 €/mois", "Reception — 499 €/mois", "Operations — 899 €/mois", "Enterprise", "Pas encore sûr"],
+    "callRanges": [
+      "Moins de 500",
+      "500 – 1 000",
+      "1 000 – 4 000",
+      "4 000 – 10 000",
+      "10 000+"
+    ],
+    "planOptions": [
+      "Overflow — 499 €/mois",
+      "Reception — 499 €/mois",
+      "Operations — 899 €/mois",
+      "Enterprise",
+      "Pas encore sûr"
+    ],
     "placeholderMessage": "Réservations hors horaires, statuts de commande, prise de rendez-vous…"
   },
   "Roi": {
@@ -921,17 +941,59 @@
     "liveQueue": "File en direct",
     "autoRefresh": "actualisation auto",
     "feed": [
-      { "lang": "EN", "intent": "Prise de rendez-vous", "outcome": "Réservé", "dur": "1:12", "tone": "mint" },
-      { "lang": "FR", "intent": "Statut de commande", "outcome": "Résolu", "dur": "0:48", "tone": "mint" },
-      { "lang": "DE", "intent": "Réclamation", "outcome": "Escaladé", "dur": "2:05", "tone": "gold" },
-      { "lang": "EN", "intent": "Demande de prix", "outcome": "Résolu", "dur": "0:39", "tone": "mint" },
-      { "lang": "IT", "intent": "Report", "outcome": "Reporté", "dur": "1:27", "tone": "mint" }
+      {
+        "lang": "EN",
+        "intent": "Prise de rendez-vous",
+        "outcome": "Réservé",
+        "dur": "1:12",
+        "tone": "mint"
+      },
+      {
+        "lang": "FR",
+        "intent": "Statut de commande",
+        "outcome": "Résolu",
+        "dur": "0:48",
+        "tone": "mint"
+      },
+      {
+        "lang": "DE",
+        "intent": "Réclamation",
+        "outcome": "Escaladé",
+        "dur": "2:05",
+        "tone": "gold"
+      },
+      {
+        "lang": "EN",
+        "intent": "Demande de prix",
+        "outcome": "Résolu",
+        "dur": "0:39",
+        "tone": "mint"
+      },
+      {
+        "lang": "IT",
+        "intent": "Report",
+        "outcome": "Reporté",
+        "dur": "1:27",
+        "tone": "mint"
+      }
     ],
     "languages": [
-      { "code": "English", "pct": 58 },
-      { "code": "French", "pct": 19 },
-      { "code": "German", "pct": 12 },
-      { "code": "Italian", "pct": 11 }
+      {
+        "code": "English",
+        "pct": 58
+      },
+      {
+        "code": "French",
+        "pct": 19
+      },
+      {
+        "code": "German",
+        "pct": 12
+      },
+      {
+        "code": "Italian",
+        "pct": 11
+      }
     ]
   },
   "Cases": [
@@ -940,10 +1002,22 @@
       "title": "De 41 % d'abandon à zéro appel manqué",
       "context": "Douze postes gérant le support entrant de deux clients télécoms. Les abandons aux heures de pointe leur coûtaient une pénalité SLA chaque mois.",
       "metrics": [
-        ["0%", "Appels abandonnés"],
-        ["71%", "Niveau 1 résolu"],
-        ["4 ETP", "Redéployés en fidélisation"],
-        ["11 jours", "Pour être en ligne"]
+        [
+          "0%",
+          "Appels abandonnés"
+        ],
+        [
+          "71%",
+          "Niveau 1 résolu"
+        ],
+        [
+          "4 ETP",
+          "Redéployés en fidélisation"
+        ],
+        [
+          "11 jours",
+          "Pour être en ligne"
+        ]
       ],
       "quote": "Les pénalités SLA ont cessé dès le premier mois complet. Cela seul l'a remboursé plusieurs fois."
     },
@@ -952,10 +1026,22 @@
       "title": "Soixante réservations de plus par mois grâce aux appels que personne ne traitait",
       "context": "Quatre cliniques partageant une ligne de réception. Environ un tiers des appels arrivaient pendant que le personnel était avec des clients ou après la fermeture.",
       "metrics": [
-        ["+58", "Réservations / mois"],
-        ["-34%", "Taux de rendez-vous manqués"],
-        ["24/7", "Couverture"],
-        ["9 jours", "Pour être en ligne"]
+        [
+          "+58",
+          "Réservations / mois"
+        ],
+        [
+          "-34%",
+          "Taux de rendez-vous manqués"
+        ],
+        [
+          "24/7",
+          "Couverture"
+        ],
+        [
+          "9 jours",
+          "Pour être en ligne"
+        ]
       ],
       "quote": "Les clients ne réalisent pas qu'ils parlent à une IA jusqu'à ce qu'on le leur dise. Ce qu'ils remarquent, c'est que quelqu'un répond enfin."
     },
@@ -964,10 +1050,22 @@
       "title": "Les appels de statut de commande résolus sans humain",
       "context": "Les pics de volume saisonniers forçaient des recrutements temporaires chaque trimestre, avec trois semaines de formation avant que quiconque soit utile.",
       "metrics": [
-        ["82%", "Appels de statut automatisés"],
-        ["0", "Recrutements saisonniers"],
-        ["-46%", "Coût par contact"],
-        ["14 jours", "Pour être en ligne"]
+        [
+          "82%",
+          "Appels de statut automatisés"
+        ],
+        [
+          "0",
+          "Recrutements saisonniers"
+        ],
+        [
+          "-46%",
+          "Coût par contact"
+        ],
+        [
+          "14 jours",
+          "Pour être en ligne"
+        ]
       ],
       "quote": "Nous avons arrêté de recruter pour les pics. La file absorbe maintenant, et le reporting est meilleur qu'avant."
     }
@@ -991,31 +1089,127 @@
     }
   ],
   "CompanyFacts": [
-    ["2024", "Fondé à Prishtina"],
-    ["Multilingue", "Support linguistique configurable"],
-    ["<600ms", "Latence médiane de réponse"],
-    ["UE", "Région de traitement des données"]
+    [
+      "2024",
+      "Fondé à Prishtina"
+    ],
+    [
+      "Multilingue",
+      "Support linguistique configurable"
+    ],
+    [
+      "<600ms",
+      "Latence médiane de réponse"
+    ],
+    [
+      "UE",
+      "Région de traitement des données"
+    ]
   ],
   "CompanyLimits": "Nous sommes aussi directs sur les limites. Agjent038 ne négocie pas les contrats, ne gère pas le deuil et n'improvise pas de politique. Ces appels appartiennent à une personne, et notre travail est de garantir que cette personne les reçoive avec tout le contexte et assez de temps pour bien faire.",
   "PricingCompare": [
-    ["Minutes traitées / mois", "400", "1 000", "2 500", "Sur mesure"],
-    ["Langues", "1", "Multilingue", "Multilingue", "Sur mesure"],
-    ["Canal vocal", "Inclus", "Inclus", "Inclus", "Inclus"],
-    ["WhatsApp, Viber, chat et e-mail", "—", "—", "Inclus", "Inclus"],
-    ["Campagnes sortantes", "—", "—", "Inclus", "Inclus"],
-    ["Intégrations API personnalisées", "—", "Standard uniquement", "Inclus", "Sur mesure"],
-    ["AQ automatisée sur 100 % des appels", "—", "—", "Inclus", "Inclus"],
-    ["Instance dédiée et résidence UE", "—", "—", "—", "Inclus"],
-    ["Voix de marque personnalisée", "—", "—", "—", "Inclus"],
-    ["SLA de disponibilité", "Meilleur effort", "Meilleur effort", "99,5 %", "99,9 % contractuel"],
-    ["Délai de réponse du support", "E-mail", "Jour ouvré suivant", "4 heures", "1 heure + astreinte"],
-    ["Frais d'installation", "Aucun", "Aucun", "Aucun", "Aucun"]
+    [
+      "Minutes traitées / mois",
+      "400",
+      "1 000",
+      "2 500",
+      "Sur mesure"
+    ],
+    [
+      "Langues",
+      "1",
+      "Multilingue",
+      "Multilingue",
+      "Sur mesure"
+    ],
+    [
+      "Canal vocal",
+      "Inclus",
+      "Inclus",
+      "Inclus",
+      "Inclus"
+    ],
+    [
+      "WhatsApp, Viber, chat et e-mail",
+      "—",
+      "—",
+      "Inclus",
+      "Inclus"
+    ],
+    [
+      "Campagnes sortantes",
+      "—",
+      "—",
+      "Inclus",
+      "Inclus"
+    ],
+    [
+      "Intégrations API personnalisées",
+      "—",
+      "Standard uniquement",
+      "Inclus",
+      "Sur mesure"
+    ],
+    [
+      "AQ automatisée sur 100 % des appels",
+      "—",
+      "—",
+      "Inclus",
+      "Inclus"
+    ],
+    [
+      "Instance dédiée et résidence UE",
+      "—",
+      "—",
+      "—",
+      "Inclus"
+    ],
+    [
+      "Voix de marque personnalisée",
+      "—",
+      "—",
+      "—",
+      "Inclus"
+    ],
+    [
+      "SLA de disponibilité",
+      "Meilleur effort",
+      "Meilleur effort",
+      "99,5 %",
+      "99,9 % contractuel"
+    ],
+    [
+      "Délai de réponse du support",
+      "E-mail",
+      "Jour ouvré suivant",
+      "4 heures",
+      "1 heure + astreinte"
+    ],
+    [
+      "Frais d'installation",
+      "Aucun",
+      "Aucun",
+      "Aucun",
+      "Aucun"
+    ]
   ],
   "PricingContext": [
-    ["168 h/semaine", "Couverture Agjent038"],
-    ["40 h/semaine", "Un agent à temps plein"],
-    ["Des dizaines", "Appels simultanés avec Agjent038"],
-    ["1", "Appel simultané par agent"]
+    [
+      "168 h/semaine",
+      "Couverture Agjent038"
+    ],
+    [
+      "40 h/semaine",
+      "Un agent à temps plein"
+    ],
+    [
+      "Des dizaines",
+      "Appels simultanés avec Agjent038"
+    ],
+    [
+      "1",
+      "Appel simultané par agent"
+    ]
   ],
   "Layout": {
     "skipToContent": "Aller au contenu",
@@ -1119,9 +1313,24 @@
   "HowItWorks": {
     "headline": "De l'appel au résultat en quelques secondes",
     "steps": [
-      { "num": "01", "label": "Réception", "title": "Appel entrant", "desc": "Décroché en 0,4 seconde" },
-      { "num": "02", "label": "Traitement", "title": "L'IA le gère", "desc": "Comprend l'intention, agit dans vos systèmes" },
-      { "num": "03", "label": "Résolution", "title": "Tâche terminée", "desc": "Journalisée, confirmée, zéro manqué" }
+      {
+        "num": "01",
+        "label": "Réception",
+        "title": "Appel entrant",
+        "desc": "Décroché en 0,4 seconde"
+      },
+      {
+        "num": "02",
+        "label": "Traitement",
+        "title": "L'IA le gère",
+        "desc": "Comprend l'intention, agit dans vos systèmes"
+      },
+      {
+        "num": "03",
+        "label": "Résolution",
+        "title": "Tâche terminée",
+        "desc": "Journalisée, confirmée, zéro manqué"
+      }
     ],
     "callerMessage": "Bonjour, je souhaite réserver un rendez-vous pour mardi",
     "aiMessage": "C'est fait ! Confirmé pour mardi 10h. SMS envoyé.",
@@ -1129,10 +1338,26 @@
       "live": "En direct",
       "title": "Agjent038 Console",
       "kpis": [
-        { "label": "Appels", "value": "1 284", "delta": "+18 %" },
-        { "label": "Résolution", "value": "68 %", "delta": "+11 pts" },
-        { "label": "Vitesse", "value": "0,4 s", "delta": "-6,1 s" },
-        { "label": "Manqués", "value": "0", "delta": "était 412" }
+        {
+          "label": "Appels",
+          "value": "1 284",
+          "delta": "+18 %"
+        },
+        {
+          "label": "Résolution",
+          "value": "68 %",
+          "delta": "+11 pts"
+        },
+        {
+          "label": "Vitesse",
+          "value": "0,4 s",
+          "delta": "-6,1 s"
+        },
+        {
+          "label": "Manqués",
+          "value": "0",
+          "delta": "était 412"
+        }
       ],
       "chartLabel": "Aujourd'hui — volume horaire"
     },
@@ -1144,9 +1369,18 @@
       "success": "Tâche terminée",
       "successDesc": "Rendez-vous réservé, SMS envoyé · CRM mis à jour",
       "stats": [
-        { "label": "Durée", "value": "42s" },
-        { "label": "Sentiment", "value": "Positif" },
-        { "label": "CSAT", "value": "5 / 5" }
+        {
+          "label": "Durée",
+          "value": "42s"
+        },
+        {
+          "label": "Sentiment",
+          "value": "Positif"
+        },
+        {
+          "label": "CSAT",
+          "value": "5 / 5"
+        }
       ],
       "summaryTitle": "Résumé de l'appel",
       "summaryBody": "Le client a demandé à reporter le rendez-vous à mardi 10h. SMS de confirmation envoyé. Fiche CRM mise à jour."
