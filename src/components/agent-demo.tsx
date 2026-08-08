@@ -24,7 +24,8 @@ export type AgentDemoDict = {
 
 const MAX_CALL_SECONDS = 120;
 const WORKER_URL =
-  process.env.NEXT_PUBLIC_DEMO_WORKER_URL ?? "https://demo.agjent038.com";
+  process.env.NEXT_PUBLIC_DEMO_WORKER_URL ??
+  "https://agjent038-demo.osokaleziqytt.workers.dev";
 
 type Status = "idle" | "checking" | "starting" | "talking" | "ended";
 
