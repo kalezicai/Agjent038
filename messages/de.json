@@ -1,4 +1,21 @@
 {
+  "AgentDemo": {
+    "aria": "Live-Demo mit der KI-Rezeptionistin starten",
+    "tryLabel": "KI-Rezeptionistin ausprobieren",
+    "hint": "Live-Demo · 3 kostenlose Anrufe pro Tag",
+    "callsLeftOne": "Noch 1 kostenloser Anruf heute",
+    "callsLeftMany": "Noch {n} kostenlose Anrufe heute",
+    "checking": "Verfügbarkeit wird geprüft…",
+    "connecting": "Verbindung wird hergestellt…",
+    "live": "Live · Sie sprechen mit dem Agenten",
+    "timeLeft": "Verbleibende Zeit",
+    "endCall": "Anruf beenden",
+    "ended": "Anruf beendet",
+    "tryAgain": "Erneut versuchen",
+    "quotaExceeded": "Sie haben heute alle 3 kostenlosen Demo-Anrufe genutzt. Kommen Sie morgen wieder.",
+    "micError": "Der Mikrofonzugriff ist blockiert. Bitte erlauben Sie den Zugriff und versuchen Sie es erneut.",
+    "serviceError": "Die Demo ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut."
+  },
   "Meta": {
     "title": "Agjent038 — KI-Stimmanentrainer für Kosovo Callcenter",
     "titleTemplate": "%s | Agjent038",

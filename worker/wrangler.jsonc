@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "agjent038-demo",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-08-01",
+  "account_id": "5b8aaa7b1e23843535f08ee0707146e1",
+  "kv_namespaces": [
+    {
+      "binding": "DEMO_QUOTA",
+      "id": "cbb8ce040c3049ef99e3b50a3be967e2"
+    }
+  ],
+  "vars": {
+    "MAX_CALLS_PER_IP": "3",
+    "QUOTA_WINDOW_HOURS": "24",
+    "ALLOWED_ORIGINS": "https://agjent038.com,https://agjent038.onrender.com,http://localhost:3000"
+  }
+}

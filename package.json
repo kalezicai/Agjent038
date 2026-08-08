@@ -15,9 +15,11 @@
     "next-intl": "^4.13.4",
     "pg": "8.20.0",
     "react": "19.2.6",
-    "react-dom": "19.2.6"
+    "react-dom": "19.2.6",
+    "retell-client-js-sdk": "^2.0.8"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260807.2",
     "@tailwindcss/postcss": "4.1.17",
     "@types/node": "22.19.15",
     "@types/pg": "8.18.0",

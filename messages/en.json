@@ -1,4 +1,21 @@
 {
+  "AgentDemo": {
+    "aria": "Start a live demo call with the AI receptionist",
+    "tryLabel": "Try the AI receptionist",
+    "hint": "Live demo · 3 free calls per day",
+    "callsLeftOne": "1 free call left today",
+    "callsLeftMany": "{n} free calls left today",
+    "checking": "Checking availability…",
+    "connecting": "Connecting…",
+    "live": "Live · you're talking to the agent",
+    "timeLeft": "Time left",
+    "endCall": "End call",
+    "ended": "Call ended",
+    "tryAgain": "Try again",
+    "quotaExceeded": "You've used all 3 free demo calls today. Come back tomorrow.",
+    "micError": "Microphone access is blocked. Please allow mic access and try again.",
+    "serviceError": "The demo is temporarily unavailable. Please try again later."
+  },
   "Meta": {
     "title": "Agjent038 — AI Voice Agents for Kosovo Call Centres",
     "titleTemplate": "%s | Agjent038",

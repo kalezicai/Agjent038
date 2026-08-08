@@ -1,4 +1,21 @@
 {
+  "AgentDemo": {
+    "aria": "Avvia una chiamata demo con la receptionist IA",
+    "tryLabel": "Prova la receptionist IA",
+    "hint": "Demo dal vivo · 3 chiamate gratuite al giorno",
+    "callsLeftOne": "Ancora 1 chiamata gratuita oggi",
+    "callsLeftMany": "Ancora {n} chiamate gratuite oggi",
+    "checking": "Verifica della disponibilità…",
+    "connecting": "Connessione…",
+    "live": "Dal vivo · stai parlando con l'agente",
+    "timeLeft": "Tempo rimanente",
+    "endCall": "Termina chiamata",
+    "ended": "Chiamata terminata",
+    "tryAgain": "Riprova",
+    "quotaExceeded": "Hai esaurito le 3 chiamate demo gratuite di oggi. Torna domani.",
+    "micError": "L'accesso al microfono è bloccato. Consenti l'accesso e riprova.",
+    "serviceError": "La demo non è disponibile al momento. Riprova più tardi."
+  },
   "Meta": {
     "title": "Agjent038 — Agenti vocali IA per i call center del Kosovo",
     "titleTemplate": "%s | Agjent038",

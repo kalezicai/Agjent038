@@ -181,6 +181,11 @@ body {
   }
 }
 
+.demo-call-pulse {
+  border: 1.5px solid rgba(178, 138, 76, 0.6);
+  animation: pulse-ring 2.6s ease-out infinite;
+}
+
 .pulse-ring::after {
   content: "";
   position: absolute;

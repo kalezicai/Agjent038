@@ -1,4 +1,21 @@
 {
+  "AgentDemo": {
+    "aria": "Filloni një provë live me pranimësen AI",
+    "tryLabel": "Provo pranimësen AI",
+    "hint": "Demo live · 3 thirrje falas në ditë",
+    "callsLeftOne": "1 thirrje falas e mbetur sot",
+    "callsLeftMany": "{n} thirrje falas të mbetura sot",
+    "checking": "Duke kontrolluar disponueshmërinë…",
+    "connecting": "Duke u lidhur…",
+    "live": "Live · po flisni me agjentin",
+    "timeLeft": "Koha e mbetur",
+    "endCall": "Mbyll thirrjen",
+    "ended": "Thirrja u mbyll",
+    "tryAgain": "Provo përsëri",
+    "quotaExceeded": "I keni shteruar të 3 provat falas të sotme. Kthehuni nesër.",
+    "micError": "Qasja në mikrofon është e bllokuar. Lejo mikrofonin dhe provo përsëri.",
+    "serviceError": "Demo është përkohësisht e padisponueshme. Provo përsëri më vonë."
+  },
   "Meta": {
     "title": "Agjent038 — Agjentë Zanorë AI për Qendrat e Thirrjeve në Kosovë",
     "titleTemplate": "%s | Agjent038",
